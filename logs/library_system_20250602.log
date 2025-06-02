@@ -51,3 +51,10 @@ AttributeError: 'LibraryManagementSystem' object has no attribute 'show_add_book
 2025-06-02 15:11:38,645 - INFO - Mở cửa sổ thêm sách mới
 2025-06-02 15:11:54,408 - INFO - Đã lưu sách mới
 2025-06-02 15:12:14,828 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 15:25:08,891 - INFO - Khởi động ứng dụng
+2025-06-02 15:25:08,893 - INFO - Đã tải dữ liệu thành công
+2025-06-02 15:25:22,022 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 15:25:42,945 - INFO - Khởi động ứng dụng
+2025-06-02 15:25:42,947 - INFO - Đã tải dữ liệu thành công
+2025-06-02 15:31:42,634 - INFO - Mở cửa sổ mượn sách
+2025-06-02 15:46:55,543 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
