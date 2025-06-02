@@ -1,0 +1,53 @@
+2025-06-02 15:01:15,925 - INFO - Khởi động ứng dụng
+2025-06-02 15:01:15,944 - INFO - Đã tải dữ liệu thành công
+2025-06-02 15:01:16,766 - ERROR - Lỗi không mong muốn: 'LibraryManagementSystem' object has no attribute 'show_add_book_window'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 12, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 37, in __init__
+    self.setup_book_tab()
+  File "D:\Library_Management_System\gui.py", line 47, in setup_book_tab
+    command=self.show_add_book_window).pack(side=tk.LEFT, padx=5)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LibraryManagementSystem' object has no attribute 'show_add_book_window'. Did you mean: 'show_search_book_window'?
+2025-06-02 15:03:05,347 - INFO - Khởi động ứng dụng
+2025-06-02 15:03:05,353 - INFO - Đã tải dữ liệu thành công
+2025-06-02 15:03:05,532 - ERROR - Lỗi không mong muốn: 'LibraryManagementSystem' object has no attribute 'show_add_book_window'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 13, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 37, in __init__
+    self.setup_book_tab()
+  File "D:\Library_Management_System\gui.py", line 47, in setup_book_tab
+    command=self.show_add_book_window).pack(side=tk.LEFT, padx=5)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LibraryManagementSystem' object has no attribute 'show_add_book_window'. Did you mean: 'show_search_book_window'?
+2025-06-02 15:05:17,899 - INFO - Khởi động ứng dụng
+2025-06-02 15:05:17,903 - INFO - Đã tải dữ liệu thành công
+2025-06-02 15:05:35,581 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 15:05:53,472 - INFO - Đã lưu sách mới
+2025-06-02 15:05:59,222 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 15:06:24,737 - INFO - Đã lưu sách mới
+2025-06-02 15:06:26,755 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 15:06:33,341 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-02 15:06:46,487 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-02 15:07:02,795 - INFO - Thêm bạn đọc mới thành công: 1
+2025-06-02 15:07:10,523 - INFO - Mở cửa sổ cập nhật sách
+2025-06-02 15:07:10,523 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-02 15:07:13,673 - INFO - Mở cửa sổ cập nhật sách
+2025-06-02 15:07:13,674 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-02 15:07:16,847 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-02 15:07:20,061 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 15:07:31,429 - INFO - Đã lưu sách mới
+2025-06-02 15:07:34,187 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 15:11:10,459 - INFO - Khởi động ứng dụng
+2025-06-02 15:11:10,460 - INFO - Đã tải dữ liệu thành công
+2025-06-02 15:11:12,943 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 15:11:18,404 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 15:11:36,656 - INFO - Khởi động ứng dụng
+2025-06-02 15:11:36,664 - INFO - Đã tải dữ liệu thành công
+2025-06-02 15:11:38,645 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 15:11:54,408 - INFO - Đã lưu sách mới
+2025-06-02 15:12:14,828 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng

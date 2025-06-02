@@ -10,9 +10,9 @@ readers_db = HashTable(size=HASH_TABLE_DEFAULT_SIZE)
 tracking_records = [] # Danh sách này có thể giữ nguyên vì không yêu cầu băm cụ thể
 
 # File names for data persistence
-BOOKS_FILE = "books.json"
-READERS_FILE = "readers.json"
-TRACKING_FILE = "tracking.json"
+BOOKS_FILE = "Data/books.json"
+READERS_FILE = "Data/readers.json"
+TRACKING_FILE = "Data/tracking.json"
 
 def save_data():
     global books_db, readers_db, tracking_records
