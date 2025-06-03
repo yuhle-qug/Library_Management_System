@@ -58,3 +58,44 @@ AttributeError: 'LibraryManagementSystem' object has no attribute 'show_add_book
 2025-06-02 15:25:42,947 - INFO - Đã tải dữ liệu thành công
 2025-06-02 15:31:42,634 - INFO - Mở cửa sổ mượn sách
 2025-06-02 15:46:55,543 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 23:19:47,478 - INFO - Khởi động ứng dụng
+2025-06-02 23:19:47,481 - INFO - Đã tải dữ liệu thành công
+2025-06-02 23:19:51,521 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 23:45:13,836 - INFO - Khởi động ứng dụng
+2025-06-02 23:45:13,838 - INFO - Đã tải dữ liệu thành công
+2025-06-02 23:45:18,693 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 23:45:54,368 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 23:45:58,822 - INFO - Khởi động ứng dụng
+2025-06-02 23:45:58,824 - INFO - Đã tải dữ liệu thành công
+2025-06-02 23:46:03,280 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 23:46:12,975 - INFO - Khởi động ứng dụng
+2025-06-02 23:46:12,976 - INFO - Đã tải dữ liệu thành công
+2025-06-02 23:46:28,650 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 23:46:34,269 - INFO - Khởi động ứng dụng
+2025-06-02 23:46:34,271 - INFO - Đã tải dữ liệu thành công
+2025-06-02 23:49:07,884 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 23:49:10,766 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 23:49:15,403 - INFO - Khởi động ứng dụng
+2025-06-02 23:49:15,404 - INFO - Đã tải dữ liệu thành công
+2025-06-02 23:49:17,141 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 23:49:44,611 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 23:49:49,274 - INFO - Khởi động ứng dụng
+2025-06-02 23:49:49,275 - INFO - Đã tải dữ liệu thành công
+2025-06-02 23:49:51,479 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 23:50:16,864 - INFO - Thêm sách mới thành công: 1
+2025-06-02 23:50:28,789 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 23:54:59,634 - INFO - Khởi động ứng dụng
+2025-06-02 23:54:59,638 - INFO - Đã tải dữ liệu thành công
+2025-06-02 23:55:07,897 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 23:55:36,188 - INFO - Thêm sách mới thành công: 2
+2025-06-02 23:55:55,126 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 23:56:59,935 - INFO - Khởi động ứng dụng
+2025-06-02 23:56:59,937 - INFO - Đã tải dữ liệu thành công
+2025-06-02 23:57:03,931 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 23:57:23,916 - INFO - Thêm sách mới thành công: 3
+2025-06-02 23:57:38,079 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-02 23:59:20,612 - INFO - Khởi động ứng dụng
+2025-06-02 23:59:20,614 - INFO - Đã tải dữ liệu thành công
+2025-06-02 23:59:22,244 - INFO - Mở cửa sổ thêm sách mới
+2025-06-02 23:59:34,874 - INFO - Thêm sách mới thành công: 11
+2025-06-02 23:59:52,250 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng

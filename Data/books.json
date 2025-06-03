@@ -1,1 +1,29 @@
-{}
+{
+    "11": {
+        "ma_sach": "11",
+        "ten_sach": "3",
+        "tac_gia": "1",
+        "the_loai": "2",
+        "so_luong": 4,
+        "tinh_trang": "5",
+        "nha_xuat_ban": "6"
+    },
+    "1": {
+        "ma_sach": "1",
+        "ten_sach": "harry potter",
+        "tac_gia": "huy",
+        "the_loai": "trinh thám",
+        "so_luong": 1,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Kim Đồng"
+    },
+    "2": {
+        "ma_sach": "2",
+        "ten_sach": "trinh tham",
+        "tac_gia": "duong",
+        "the_loai": "trinh tham",
+        "so_luong": 1,
+        "tinh_trang": "cũ",
+        "nha_xuat_ban": "huy"
+    }
+}

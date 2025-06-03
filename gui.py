@@ -51,11 +51,14 @@ class LibraryManagementSystem:
                   command=self.show_search_book_window).pack(side=tk.LEFT, padx=5)
 
         # Treeview để hiển thị danh sách sách
-        self.book_tree = ttk.Treeview(self.book_tab, columns=('ID', 'Tên', 'Tác giả', 'Số lượng'))
+        self.book_tree = ttk.Treeview(self.book_tab, columns=('ID', 'Tên', 'Tác giả', 'Số lượng', 'Tình trạng', 'Nhà xuất bản', 'Thể loại'))
         self.book_tree.heading('ID', text='Mã sách')
         self.book_tree.heading('Tên', text='Tên sách')
         self.book_tree.heading('Tác giả', text='Tác giả')
         self.book_tree.heading('Số lượng', text='Số lượng')
+        self.book_tree.heading('Tình trạng', text='Tình trạng')
+        self.book_tree.heading('Nhà xuất bản', text='Nhà xuất bản')
+        self.book_tree.heading('Thể loại', text='Thể loại')
         self.book_tree.pack(pady=10, padx=10, fill='both', expand=True)
 
     def setup_reader_tab(self):
@@ -72,11 +75,13 @@ class LibraryManagementSystem:
 
         # Treeview để hiển thị danh sách bạn đọc
         self.reader_tree = ttk.Treeview(self.reader_tab, 
-                                      columns=('ID', 'Tên', 'SĐT', 'Địa chỉ'))
+                                      columns=('ID', 'Tên','Ngày sinh','Giới tính', 'Địa chỉ','SDT'  ))
         self.reader_tree.heading('ID', text='Mã bạn đọc')
         self.reader_tree.heading('Tên', text='Tên')
-        self.reader_tree.heading('SĐT', text='Số điện thoại')
+        self.reader_tree.heading('Ngày sinh', text='Ngày sinh')
+        self.reader_tree.heading('Giới tính', text='Giới tính')
         self.reader_tree.heading('Địa chỉ', text='Địa chỉ')
+        self.reader_tree.heading('SDT', text='Số điện thoại')
         self.reader_tree.pack(pady=10, padx=10, fill='both', expand=True)
 
     def setup_tracking_tab(self):
@@ -106,28 +111,83 @@ class LibraryManagementSystem:
         logger.info("Mở cửa sổ thêm sách mới")
         add_window = ttk.Toplevel(self.root)
         add_window.title("Thêm Sách Mới")
-        add_window.geometry("400x300")
+        add_window.geometry("600x800")
 
         ttk.Label(add_window, text="Mã sách:").pack(pady=5)
         ma_sach_entry = ttk.Entry(add_window)
         ma_sach_entry.pack(pady=5)
 
-        ttk.Label(add_window, text="Tên sách:").pack(pady=5)
-        ten_sach_entry = ttk.Entry(add_window)
-        ten_sach_entry.pack(pady=5)
-
         ttk.Label(add_window, text="Tác giả:").pack(pady=5)
         tac_gia_entry = ttk.Entry(add_window)
         tac_gia_entry.pack(pady=5)
+
+        ttk.Label(add_window, text="Thể loại:").pack(pady=5)
+        the_loai_entry = ttk.Entry(add_window)
+        the_loai_entry.pack(pady=5)
+
+        ttk.Label(add_window, text="Tên sách:").pack(pady=5)
+        ten_sach_entry = ttk.Entry(add_window)
+        ten_sach_entry.pack(pady=5)
 
         ttk.Label(add_window, text="Số lượng:").pack(pady=5)
         so_luong_entry = ttk.Entry(add_window)
         so_luong_entry.pack(pady=5)
 
+        ttk.Label(add_window, text="Tình trạng:").pack(pady=5)
+        tinh_trang_entry = ttk.Entry(add_window)
+        tinh_trang_entry.pack(pady=5)
+
+        ttk.Label(add_window, text="Nhà xuất bản:").pack(pady=5)
+        nha_xuat_ban_entry = ttk.Entry(add_window)
+        nha_xuat_ban_entry.pack(pady=5)
+
         def save_book():
-            logger.info("Đã lưu sách mới")
-            # Logic to save book goes here
-            add_window.destroy()
+            try:
+                # Lấy dữ liệu từ các trường nhập liệu
+                ma_sach = ma_sach_entry.get().strip()
+                ten_sach = ten_sach_entry.get().strip()
+                tac_gia = tac_gia_entry.get().strip()
+                the_loai = the_loai_entry.get().strip()
+                so_luong = so_luong_entry.get().strip()
+                tinh_trang = tinh_trang_entry.get().strip()
+                nha_xuat_ban = nha_xuat_ban_entry.get().strip()
+
+                # Kiểm tra dữ liệu đầu vào
+                if not all([ma_sach, ten_sach, tac_gia, the_loai, so_luong, tinh_trang, nha_xuat_ban]):
+                    raise ValueError("Vui lòng điền đầy đủ thông tin!")
+
+                if not so_luong.isdigit() or int(so_luong) <= 0:
+                    raise ValueError("Số lượng phải là một số nguyên dương!")
+
+                # Kiểm tra mã sách đã tồn tại
+                if ma_sach in data_handler.books_db:
+                    raise ValueError("Mã sách đã tồn tại!")
+
+                # Tạo đối tượng sách mới
+                new_book = Book(
+                    ma_sach=ma_sach,
+                    ten_sach=ten_sach,
+                    tac_gia=tac_gia,
+                    the_loai=the_loai,
+                    so_luong=int(so_luong),
+                    tinh_trang=tinh_trang,
+                    nha_xuat_ban=nha_xuat_ban
+                )
+
+                # Lưu vào cơ sở dữ liệu
+                data_handler.books_db[ma_sach] = new_book
+                data_handler.save_data()
+                # Cập nhật danh sách hiển thị
+                self.update_book_list()
+
+                # Hiển thị thông báo thành công
+                logger.info(f"Thêm sách mới thành công: {ma_sach}")
+                messagebox.showinfo("Thành công", "Đã thêm sách mới!")
+                add_window.destroy()
+
+            except ValueError as e:
+                logger.error(f"Lỗi khi thêm sách: {str(e)}")
+                messagebox.showerror("Lỗi", str(e))
 
         ttk.Button(add_window, text="Lưu", command=save_book).pack(pady=20)
 
@@ -146,30 +206,55 @@ class LibraryManagementSystem:
         update_window = tk.Toplevel(self.root)
         update_window.title("Cập Nhật Thông Tin Sách")
         update_window.geometry("400x500")
-        
-        ttk.Label(update_window, text="Tên sách:").pack(pady=5)
-        ten_sach_entry = ttk.Entry(update_window)
-        ten_sach_entry.insert(0, book.ten_sach)
-        ten_sach_entry.pack(pady=5)
-        
+        ttk.Label(update_window, text="Cập nhật thông tin sách", font=("Arial", 16)).pack(pady=10)
+        # Form fields
+        ttk.Label(update_window, text="Mã sách:").pack(pady=5)
+        ma_sach_label = ttk.Label(update_window, text=book.ma_sach)
+        ma_sach_label.insert(0, book.ma_sach)
+        ma_sach_label.pack(pady=5)
+
         ttk.Label(update_window, text="Tác giả:").pack(pady=5)
         tac_gia_entry = ttk.Entry(update_window)
         tac_gia_entry.insert(0, book.tac_gia)
         tac_gia_entry.pack(pady=5)
+
+        ttk.Label(update_window, text="Thể loại:").pack(pady=5)
+        the_loai_entry = ttk.Entry(update_window)
+        the_loai_entry.insert(0, book.the_loai)
+        the_loai_entry.pack(pady=5)
+
+        ttk.Label(update_window, text="Tên sách:").pack(pady=5)
+        ten_sach_entry = ttk.Entry(update_window)
+        ten_sach_entry.insert(0, book.ten_sach)
+        ten_sach_entry.pack(pady=5)
         
         ttk.Label(update_window, text="Số lượng:").pack(pady=5)
         so_luong_entry = ttk.Entry(update_window)
         so_luong_entry.insert(0, str(book.so_luong))
         so_luong_entry.pack(pady=5)
 
+        ttk.Label(update_window, text="Tình trạng:").pack(pady=5)
+        tinh_trang_entry = ttk.Entry(update_window)
+        tinh_trang_entry.insert(0, book.tinh_trang)
+        tinh_trang_entry.pack(pady=5)
+
+        ttk.Label(update_window, text="Nhà xuất bản:").pack(pady=5)
+        nha_xuat_ban_entry = ttk.Entry(update_window)
+        nha_xuat_ban_entry.insert(0, book.nha_xuat_ban)
+        nha_xuat_ban_entry.pack(pady=5)
+        
         def update_book():
             try:
                 book.ten_sach = ten_sach_entry.get().strip()
                 book.tac_gia = tac_gia_entry.get().strip()
                 book.so_luong = int(so_luong_entry.get().strip())
-                
+                book.tinh_trang = tinh_trang_entry.get().strip()
+                book.nha_xuat_ban = nha_xuat_ban_entry.get().strip()
+                book.the_loai = the_loai_entry.get().strip()
+
                 self.update_book_list()
                 messagebox.showinfo("Thành công", "Đã cập nhật thông tin sách!")
+                data_handler.save_data()
                 update_window.destroy()
             except ValueError:
                 messagebox.showerror("Lỗi", "Số lượng phải là số nguyên!")
@@ -188,7 +273,10 @@ class LibraryManagementSystem:
                 book.ma_sach,
                 book.ten_sach,
                 book.tac_gia,
-                book.so_luong
+                book.so_luong,
+                book.tinh_trang,
+                book.nha_xuat_ban,
+                book.the_loai
             ))
         logger.debug("Đã cập nhật xong danh sách sách")
 
@@ -196,7 +284,7 @@ class LibraryManagementSystem:
         logger.info("Mở cửa sổ tìm kiếm sách")
         search_window = tk.Toplevel(self.root)
         search_window.title("Tìm Kiếm Sách")
-        search_window.geometry("400x200")
+        search_window.geometry("800x200")
 
         ttk.Label(search_window, text="Nhập từ khóa tìm kiếm:").pack(pady=5)
         search_entry = ttk.Entry(search_window)
@@ -217,19 +305,25 @@ class LibraryManagementSystem:
             result_window.geometry("600x400")
             
             result_tree = ttk.Treeview(result_window, 
-                                     columns=('ID', 'Tên', 'Tác giả', 'Số lượng'))
+                                     columns=('ID', 'Tên', 'Tác giả', 'Số lượng', 'Tình trạng', 'Nhà xuất bản', 'Thể loại'))
             result_tree.heading('ID', text='Mã sách')
             result_tree.heading('Tên', text='Tên sách')
             result_tree.heading('Tác giả', text='Tác giả')
             result_tree.heading('Số lượng', text='Số lượng')
+            result_tree.heading('Tình trạng', text='Tình trạng')
+            result_tree.heading('Nhà xuất bản', text='Nhà xuất bản')
+            result_tree.heading('Thể loại', text='Thể loại')
             result_tree.pack(pady=10, padx=10, fill='both', expand=True)
-            
+            # Thêm kết quả vào treeview
             for book in found_books:
                 result_tree.insert('', 'end', values=(
                     book.ma_sach,
                     book.ten_sach,
                     book.tac_gia,
-                    book.so_luong
+                    book.so_luong,
+                    book.tinh_trang,
+                    book.nha_xuat_ban,
+                    book.the_loai
                 ))
 
         ttk.Button(search_window, text="Tìm kiếm", command=search).pack(pady=20)    
@@ -237,7 +331,7 @@ class LibraryManagementSystem:
         logger.info("Mở cửa sổ thêm bạn đọc mới")
         add_window = ttk.Toplevel(self.root)
         add_window.title("Thêm Bạn Đọc Mới")
-        add_window.geometry("400x600")
+        add_window.geometry("400x600")  
         
         form = ScrolledFrame(add_window)
         form.pack(fill=BOTH, expand=YES, padx=20, pady=20)
@@ -289,10 +383,12 @@ class LibraryManagementSystem:
                 
                 # Save to database
                 data_handler.readers_db[ma_doc] = new_reader
+                data_handler.save_data()
                 self.update_reader_list()
                 
                 logger.info(f"Thêm bạn đọc mới thành công: {ma_doc}")
                 messagebox.showinfo("Thành công", "Đã thêm bạn đọc mới!")
+                
                 add_window.destroy()
                 
             except ValueError as e:
@@ -383,6 +479,7 @@ class LibraryManagementSystem:
                 self.update_reader_list()
                 logger.info(f"Cập nhật thông tin bạn đọc thành công: {reader_id}")
                 messagebox.showinfo("Thành công", "Đã cập nhật thông tin bạn đọc!")
+                data_handler.save_data()
                 update_window.destroy()
             except Exception as e:
                 logger.error(f"Lỗi khi cập nhật bạn đọc: {str(e)}")

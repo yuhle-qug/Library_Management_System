@@ -12,7 +12,6 @@ if __name__ == "__main__":
         root = ttk.Window(themename="cosmo")
         app = gui.LibraryManagementSystem(root)
         root.mainloop()
-        data_handler.save_data()
         logger.info("Đã lưu dữ liệu và kết thúc ứng dụng")
     except Exception as e:
         logger.error(f"Lỗi không mong muốn: {str(e)}", exc_info=True)

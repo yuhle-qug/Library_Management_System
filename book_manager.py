@@ -26,6 +26,7 @@ def add_book():
     new_book = Book(ma_sach, ten_sach, tac_gia, the_loai, so_luong, tinh_trang, nha_xuat_ban)
     data_handler.books_db[ma_sach] = new_book
     print(f"Da them sach '{ten_sach}' thanh cong.")
+    data_handler.save_data()  # Save changes to file
 
 def update_book_info():
     ui.clear_screen()
@@ -54,7 +55,7 @@ def update_book_info():
     book.tinh_trang = ui.get_input(f"Tinh trang moi ({book.tinh_trang}): ") or book.tinh_trang
     book.nha_xuat_ban = ui.get_input(f"Nha xuat ban moi ({book.nha_xuat_ban}): ") or book.nha_xuat_ban
     
-    print("Da cap nhat thong tin sach.")
+    print("Da cap nhat thong tin sach.")  # Save changes to file
 
 def search_book():
     ui.clear_screen()
