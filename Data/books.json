@@ -1,13 +1,4 @@
 {
-    "1": {
-        "ma_sach": "1",
-        "ten_sach": "Book Title 1",
-        "tac_gia": "Author 1",
-        "the_loai": "Fiction",
-        "so_luong": 10,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 1"
-    },
     "2": {
         "ma_sach": "2",
         "ten_sach": "Book Title 2",
@@ -16,474 +7,6 @@
         "so_luong": 5,
         "tinh_trang": "Used",
         "nha_xuat_ban": "Publisher 2"
-    },
-    "3": {
-        "ma_sach": "3",
-        "ten_sach": "Book Title 3",
-        "tac_gia": "Author 3",
-        "the_loai": "Science",
-        "so_luong": 7,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 3"
-    },
-    "4": {
-        "ma_sach": "4",
-        "ten_sach": "Book Title 4",
-        "tac_gia": "Author 4",
-        "the_loai": "History",
-        "so_luong": 3,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 4"
-    },
-    "5": {
-        "ma_sach": "5",
-        "ten_sach": "Book Title 5",
-        "tac_gia": "Author 5",
-        "the_loai": "Biography",
-        "so_luong": 8,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 5"
-    },
-    "6": {
-        "ma_sach": "6",
-        "ten_sach": "Book Title 6",
-        "tac_gia": "Author 6",
-        "the_loai": "Fiction",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 6"
-    },
-    "7": {
-        "ma_sach": "7",
-        "ten_sach": "Book Title 7",
-        "tac_gia": "Author 7",
-        "the_loai": "Non-Fiction",
-        "so_luong": 4,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 7"
-    },
-    "8": {
-        "ma_sach": "8",
-        "ten_sach": "Book Title 8",
-        "tac_gia": "Author 8",
-        "the_loai": "Science",
-        "so_luong": 6,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 8"
-    },
-    "9": {
-        "ma_sach": "9",
-        "ten_sach": "Book Title 9",
-        "tac_gia": "Author 9",
-        "the_loai": "History",
-        "so_luong": 1,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 9"
-    },
-    "10": {
-        "ma_sach": "10",
-        "ten_sach": "Book Title 10",
-        "tac_gia": "Author 10",
-        "the_loai": "Biography",
-        "so_luong": 9,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 10"
-    },
-    "11": {
-        "ma_sach": "11",
-        "ten_sach": "Book Title 11",
-        "tac_gia": "Author 11",
-        "the_loai": "Fiction",
-        "so_luong": 3,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 11"
-    },
-    "12": {
-        "ma_sach": "12",
-        "ten_sach": "Book Title 12",
-        "tac_gia": "Author 12",
-        "the_loai": "Non-Fiction",
-        "so_luong": 7,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 12"
-    },
-    "13": {
-        "ma_sach": "13",
-        "ten_sach": "Book Title 13",
-        "tac_gia": "Author 13",
-        "the_loai": "Science",
-        "so_luong": 5,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 13"
-    },
-    "14": {
-        "ma_sach": "14",
-        "ten_sach": "Book Title 14",
-        "tac_gia": "Author 14",
-        "the_loai": "History",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 14"
-    },
-    "15": {
-        "ma_sach": "15",
-        "ten_sach": "Book Title 15",
-        "tac_gia": "Author 15",
-        "the_loai": "Biography",
-        "so_luong": 8,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 15"
-    },
-    "16": {
-        "ma_sach": "16",
-        "ten_sach": "Book Title 16",
-        "tac_gia": "Author 16",
-        "the_loai": "Fiction",
-        "so_luong": 4,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 16"
-    },
-    "17": {
-        "ma_sach": "17",
-        "ten_sach": "Book Title 17",
-        "tac_gia": "Author 17",
-        "the_loai": "Non-Fiction",
-        "so_luong": 6,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 17"
-    },
-    "18": {
-        "ma_sach": "18",
-        "ten_sach": "Book Title 18",
-        "tac_gia": "Author 18",
-        "the_loai": "Science",
-        "so_luong": 1,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 18"
-    },
-    "19": {
-        "ma_sach": "19",
-        "ten_sach": "Book Title 19",
-        "tac_gia": "Author 19",
-        "the_loai": "History",
-        "so_luong": 9,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 19"
-    },
-    "20": {
-        "ma_sach": "20",
-        "ten_sach": "Book Title 20",
-        "tac_gia": "Author 20",
-        "the_loai": "Biography",
-        "so_luong": 3,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 20"
-    },
-    "21": {
-        "ma_sach": "21",
-        "ten_sach": "Book Title 21",
-        "tac_gia": "Author 21",
-        "the_loai": "Fiction",
-        "so_luong": 7,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 21"
-    },
-    "22": {
-        "ma_sach": "22",
-        "ten_sach": "Book Title 22",
-        "tac_gia": "Author 22",
-        "the_loai": "Non-Fiction",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 22"
-    },
-    "23": {
-        "ma_sach": "23",
-        "ten_sach": "Book Title 23",
-        "tac_gia": "Author 23",
-        "the_loai": "Science",
-        "so_luong": 4,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 23"
-    },
-    "24": {
-        "ma_sach": "24",
-        "ten_sach": "Book Title 24",
-        "tac_gia": "Author 24",
-        "the_loai": "History",
-        "so_luong": 6,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 24"
-    },
-    "25": {
-        "ma_sach": "25",
-        "ten_sach": "Book Title 25",
-        "tac_gia": "Author 25",
-        "the_loai": "Biography",
-        "so_luong": 1,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 25"
-    },
-    "26": {
-        "ma_sach": "26",
-        "ten_sach": "Book Title 26",
-        "tac_gia": "Author 26",
-        "the_loai": "Fiction",
-        "so_luong": 9,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 26"
-    },
-    "27": {
-        "ma_sach": "27",
-        "ten_sach": "Book Title 27",
-        "tac_gia": "Author 27",
-        "the_loai": "Non-Fiction",
-        "so_luong": 3,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 27"
-    },
-    "28": {
-        "ma_sach": "28",
-        "ten_sach": "Book Title 28",
-        "tac_gia": "Author 28",
-        "the_loai": "Science",
-        "so_luong": 5,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 28"
-    },
-    "29": {
-        "ma_sach": "29",
-        "ten_sach": "Book Title 29",
-        "tac_gia": "Author 29",
-        "the_loai": "History",
-        "so_luong": 7,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 29"
-    },
-    "30": {
-        "ma_sach": "30",
-        "ten_sach": "Book Title 30",
-        "tac_gia": "Author 30",
-        "the_loai": "Biography",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 30"
-    },
-    "31": {
-        "ma_sach": "31",
-        "ten_sach": "Book Title 31",
-        "tac_gia": "Author 31",
-        "the_loai": "Fiction",
-        "so_luong": 4,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 31"
-    },
-    "32": {
-        "ma_sach": "32",
-        "ten_sach": "Book Title 32",
-        "tac_gia": "Author 32",
-        "the_loai": "Non-Fiction",
-        "so_luong": 6,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 32"
-    },
-    "33": {
-        "ma_sach": "33",
-        "ten_sach": "Book Title 33",
-        "tac_gia": "Author 33",
-        "the_loai": "Science",
-        "so_luong": 1,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 33"
-    },
-    "34": {
-        "ma_sach": "34",
-        "ten_sach": "Book Title 34",
-        "tac_gia": "Author 34",
-        "the_loai": "History",
-        "so_luong": 3,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 34"
-    },
-    "35": {
-        "ma_sach": "35",
-        "ten_sach": "Book Title 35",
-        "tac_gia": "Author 35",
-        "the_loai": "Biography",
-        "so_luong": 8,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 35"
-    },
-    "36": {
-        "ma_sach": "36",
-        "ten_sach": "Book Title 36",
-        "tac_gia": "Author 36",
-        "the_loai": "Fiction",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 36"
-    },
-    "37": {
-        "ma_sach": "37",
-        "ten_sach": "Book Title 37",
-        "tac_gia": "Author 37",
-        "the_loai": "Non-Fiction",
-        "so_luong": 4,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 37"
-    },
-    "38": {
-        "ma_sach": "38",
-        "ten_sach": "Book Title 38",
-        "tac_gia": "Author 38",
-        "the_loai": "Science",
-        "so_luong": 6,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 38"
-    },
-    "39": {
-        "ma_sach": "39",
-        "ten_sach": "Book Title 39",
-        "tac_gia": "Author 39",
-        "the_loai": "History",
-        "so_luong": 1,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 39"
-    },
-    "40": {
-        "ma_sach": "40",
-        "ten_sach": "Book Title 40",
-        "tac_gia": "Author 40",
-        "the_loai": "Biography",
-        "so_luong": 9,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 40"
-    },
-    "41": {
-        "ma_sach": "41",
-        "ten_sach": "Book Title 41",
-        "tac_gia": "Author 41",
-        "the_loai": "Fiction",
-        "so_luong": 3,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 41"
-    },
-    "42": {
-        "ma_sach": "42",
-        "ten_sach": "Book Title 42",
-        "tac_gia": "Author 42",
-        "the_loai": "Non-Fiction",
-        "so_luong": 7,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 42"
-    },
-    "43": {
-        "ma_sach": "43",
-        "ten_sach": "Book Title 43",
-        "tac_gia": "Author 43",
-        "the_loai": "Science",
-        "so_luong": 5,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 43"
-    },
-    "44": {
-        "ma_sach": "44",
-        "ten_sach": "Book Title 44",
-        "tac_gia": "Author 44",
-        "the_loai": "History",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 44"
-    },
-    "45": {
-        "ma_sach": "45",
-        "ten_sach": "Book Title 45",
-        "tac_gia": "Author 45",
-        "the_loai": "Biography",
-        "so_luong": 8,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 45"
-    },
-    "46": {
-        "ma_sach": "46",
-        "ten_sach": "Book Title 46",
-        "tac_gia": "Author 46",
-        "the_loai": "Fiction",
-        "so_luong": 4,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 46"
-    },
-    "47": {
-        "ma_sach": "47",
-        "ten_sach": "Book Title 47",
-        "tac_gia": "Author 47",
-        "the_loai": "Non-Fiction",
-        "so_luong": 6,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 47"
-    },
-    "48": {
-        "ma_sach": "48",
-        "ten_sach": "Book Title 48",
-        "tac_gia": "Author 48",
-        "the_loai": "Science",
-        "so_luong": 1,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 48"
-    },
-    "49": {
-        "ma_sach": "49",
-        "ten_sach": "Book Title 49",
-        "tac_gia": "Author 49",
-        "the_loai": "History",
-        "so_luong": 9,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 49"
-    },
-    "50": {
-        "ma_sach": "50",
-        "ten_sach": "Book Title 50",
-        "tac_gia": "Author 50",
-        "the_loai": "Biography",
-        "so_luong": 3,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 50"
-    },
-    "51": {
-        "ma_sach": "51",
-        "ten_sach": "Book Title 51",
-        "tac_gia": "Author 51",
-        "the_loai": "Fiction",
-        "so_luong": 7,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 51"
-    },
-    "52": {
-        "ma_sach": "52",
-        "ten_sach": "Book Title 52",
-        "tac_gia": "Author 52",
-        "the_loai": "Non-Fiction",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 52"
-    },
-    "53": {
-        "ma_sach": "53",
-        "ten_sach": "Book Title 53",
-        "tac_gia": "Author 53",
-        "the_loai": "Science",
-        "so_luong": 4,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 53"
-    },
-    "54": {
-        "ma_sach": "54",
-        "ten_sach": "Book Title 54",
-        "tac_gia": "Author 54",
-        "the_loai": "History",
-        "so_luong": 6,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 54"
     },
     "55": {
         "ma_sach": "55",
@@ -503,239 +26,14 @@
         "tinh_trang": "Used",
         "nha_xuat_ban": "Publisher 56"
     },
-    "57": {
-        "ma_sach": "57",
-        "ten_sach": "Book Title 57",
-        "tac_gia": "Author 57",
-        "the_loai": "Non-Fiction",
-        "so_luong": 3,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 57"
-    },
-    "58": {
-        "ma_sach": "58",
-        "ten_sach": "Book Title 58",
-        "tac_gia": "Author 58",
-        "the_loai": "Science",
-        "so_luong": 5,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 58"
-    },
-    "59": {
-        "ma_sach": "59",
-        "ten_sach": "Book Title 59",
-        "tac_gia": "Author 59",
-        "the_loai": "History",
-        "so_luong": 7,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 59"
-    },
-    "60": {
-        "ma_sach": "60",
-        "ten_sach": "Book Title 60",
-        "tac_gia": "Author 60",
-        "the_loai": "Biography",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 60"
-    },
-    "61": {
-        "ma_sach": "61",
-        "ten_sach": "Book Title 61",
-        "tac_gia": "Author 61",
-        "the_loai": "Fiction",
-        "so_luong": 4,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 61"
-    },
-    "62": {
-        "ma_sach": "62",
-        "ten_sach": "Book Title 62",
-        "tac_gia": "Author 62",
-        "the_loai": "Non-Fiction",
-        "so_luong": 6,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 62"
-    },
-    "63": {
-        "ma_sach": "63",
-        "ten_sach": "Book Title 63",
-        "tac_gia": "Author 63",
-        "the_loai": "Science",
-        "so_luong": 1,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 63"
-    },
-    "64": {
-        "ma_sach": "64",
-        "ten_sach": "Book Title 64",
-        "tac_gia": "Author 64",
-        "the_loai": "History",
-        "so_luong": 3,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 64"
-    },
-    "65": {
-        "ma_sach": "65",
-        "ten_sach": "Book Title 65",
-        "tac_gia": "Author 65",
-        "the_loai": "Biography",
-        "so_luong": 8,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 65"
-    },
-    "66": {
-        "ma_sach": "66",
-        "ten_sach": "Book Title 66",
-        "tac_gia": "Author 66",
-        "the_loai": "Fiction",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 66"
-    },
-    "67": {
-        "ma_sach": "67",
-        "ten_sach": "Book Title 67",
-        "tac_gia": "Author 67",
-        "the_loai": "Non-Fiction",
-        "so_luong": 4,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 67"
-    },
-    "68": {
-        "ma_sach": "68",
-        "ten_sach": "Book Title 68",
-        "tac_gia": "Author 68",
-        "the_loai": "Science",
-        "so_luong": 6,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 68"
-    },
-    "69": {
-        "ma_sach": "69",
-        "ten_sach": "Book Title 69",
-        "tac_gia": "Author 69",
-        "the_loai": "History",
-        "so_luong": 1,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 69"
-    },
-    "70": {
-        "ma_sach": "70",
-        "ten_sach": "Book Title 70",
-        "tac_gia": "Author 70",
-        "the_loai": "Biography",
-        "so_luong": 9,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 70"
-    },
-    "71": {
-        "ma_sach": "71",
-        "ten_sach": "Book Title 71",
-        "tac_gia": "Author 71",
-        "the_loai": "Fiction",
-        "so_luong": 3,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 71"
-    },
-    "72": {
-        "ma_sach": "72",
-        "ten_sach": "Book Title 72",
-        "tac_gia": "Author 72",
-        "the_loai": "Non-Fiction",
-        "so_luong": 7,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 72"
-    },
-    "73": {
-        "ma_sach": "73",
-        "ten_sach": "Book Title 73",
-        "tac_gia": "Author 73",
+    "43": {
+        "ma_sach": "43",
+        "ten_sach": "Book Title 43",
+        "tac_gia": "Author 43",
         "the_loai": "Science",
         "so_luong": 5,
         "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 73"
-    },
-    "74": {
-        "ma_sach": "74",
-        "ten_sach": "Book Title 74",
-        "tac_gia": "Author 74",
-        "the_loai": "History",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 74"
-    },
-    "75": {
-        "ma_sach": "75",
-        "ten_sach": "Book Title 75",
-        "tac_gia": "Author 75",
-        "the_loai": "Biography",
-        "so_luong": 8,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 75"
-    },
-    "76": {
-        "ma_sach": "76",
-        "ten_sach": "Book Title 76",
-        "tac_gia": "Author 76",
-        "the_loai": "Fiction",
-        "so_luong": 4,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 76"
-    },
-    "77": {
-        "ma_sach": "77",
-        "ten_sach": "Book Title 77",
-        "tac_gia": "Author 77",
-        "the_loai": "Non-Fiction",
-        "so_luong": 6,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 77"
-    },
-    "78": {
-        "ma_sach": "78",
-        "ten_sach": "Book Title 78",
-        "tac_gia": "Author 78",
-        "the_loai": "Science",
-        "so_luong": 1,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 78"
-    },
-    "79": {
-        "ma_sach": "79",
-        "ten_sach": "Book Title 79",
-        "tac_gia": "Author 79",
-        "the_loai": "History",
-        "so_luong": 9,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 79"
-    },
-    "80": {
-        "ma_sach": "80",
-        "ten_sach": "Book Title 80",
-        "tac_gia": "Author 80",
-        "the_loai": "Biography",
-        "so_luong": 3,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 80"
-    },
-    "81": {
-        "ma_sach": "81",
-        "ten_sach": "Book Title 81",
-        "tac_gia": "Author 81",
-        "the_loai": "Fiction",
-        "so_luong": 7,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 81"
-    },
-    "82": {
-        "ma_sach": "82",
-        "ten_sach": "Book Title 82",
-        "tac_gia": "Author 82",
-        "the_loai": "Non-Fiction",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 82"
+        "nha_xuat_ban": "Publisher 43"
     },
     "83": {
         "ma_sach": "83",
@@ -746,122 +44,14 @@
         "tinh_trang": "New",
         "nha_xuat_ban": "Publisher 83"
     },
-    "84": {
-        "ma_sach": "84",
-        "ten_sach": "Book Title 84",
-        "tac_gia": "Author 84",
-        "the_loai": "History",
-        "so_luong": 6,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 84"
-    },
-    "85": {
-        "ma_sach": "85",
-        "ten_sach": "Book Title 85",
-        "tac_gia": "Author 85",
-        "the_loai": "Biography",
-        "so_luong": 1,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 85"
-    },
-    "86": {
-        "ma_sach": "86",
-        "ten_sach": "Book Title 86",
-        "tac_gia": "Author 86",
-        "the_loai": "Fiction",
-        "so_luong": 9,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 86"
-    },
-    "87": {
-        "ma_sach": "87",
-        "ten_sach": "Book Title 87",
-        "tac_gia": "Author 87",
-        "the_loai": "Non-Fiction",
-        "so_luong": 3,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 87"
-    },
-    "88": {
-        "ma_sach": "88",
-        "ten_sach": "Book Title 88",
-        "tac_gia": "Author 88",
+    "73": {
+        "ma_sach": "73",
+        "ten_sach": "Book Title 73",
+        "tac_gia": "Author 73",
         "the_loai": "Science",
         "so_luong": 5,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 88"
-    },
-    "89": {
-        "ma_sach": "89",
-        "ten_sach": "Book Title 89",
-        "tac_gia": "Author 89",
-        "the_loai": "History",
-        "so_luong": 7,
         "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 89"
-    },
-    "90": {
-        "ma_sach": "90",
-        "ten_sach": "Book Title 90",
-        "tac_gia": "Author 90",
-        "the_loai": "Biography",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 90"
-    },
-    "91": {
-        "ma_sach": "91",
-        "ten_sach": "Book Title 91",
-        "tac_gia": "Author 91",
-        "the_loai": "Fiction",
-        "so_luong": 4,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 91"
-    },
-    "92": {
-        "ma_sach": "92",
-        "ten_sach": "Book Title 92",
-        "tac_gia": "Author 92",
-        "the_loai": "Non-Fiction",
-        "so_luong": 6,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 92"
-    },
-    "93": {
-        "ma_sach": "93",
-        "ten_sach": "Book Title 93",
-        "tac_gia": "Author 93",
-        "the_loai": "Science",
-        "so_luong": 1,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 93"
-    },
-    "94": {
-        "ma_sach": "94",
-        "ten_sach": "Book Title 94",
-        "tac_gia": "Author 94",
-        "the_loai": "History",
-        "so_luong": 3,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 94"
-    },
-    "95": {
-        "ma_sach": "95",
-        "ten_sach": "Book Title 95",
-        "tac_gia": "Author 95",
-        "the_loai": "Biography",
-        "so_luong": 8,
-        "tinh_trang": "New",
-        "nha_xuat_ban": "Publisher 95"
-    },
-    "96": {
-        "ma_sach": "96",
-        "ten_sach": "Book Title 96",
-        "tac_gia": "Author 96",
-        "the_loai": "Fiction",
-        "so_luong": 2,
-        "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 96"
+        "nha_xuat_ban": "Publisher 73"
     },
     "97": {
         "ma_sach": "97",
@@ -872,14 +62,320 @@
         "tinh_trang": "New",
         "nha_xuat_ban": "Publisher 97"
     },
-    "98": {
-        "ma_sach": "98",
-        "ten_sach": "Book Title 98",
-        "tac_gia": "Author 98",
+    "77": {
+        "ma_sach": "77",
+        "ten_sach": "Book Title 77",
+        "tac_gia": "Author 77",
+        "the_loai": "Non-Fiction",
+        "so_luong": 6,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 77"
+    },
+    "46": {
+        "ma_sach": "46",
+        "ten_sach": "Book Title 46",
+        "tac_gia": "Author 46",
+        "the_loai": "Fiction",
+        "so_luong": 4,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 46"
+    },
+    "35": {
+        "ma_sach": "35",
+        "ten_sach": "Book Title 35",
+        "tac_gia": "Author 35",
+        "the_loai": "Biography",
+        "so_luong": 8,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 35"
+    },
+    "37": {
+        "ma_sach": "37",
+        "ten_sach": "Book Title 37",
+        "tac_gia": "Author 37",
+        "the_loai": "Non-Fiction",
+        "so_luong": 4,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 37"
+    },
+    "41": {
+        "ma_sach": "41",
+        "ten_sach": "Book Title 41",
+        "tac_gia": "Author 41",
+        "the_loai": "Fiction",
+        "so_luong": 3,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 41"
+    },
+    "18": {
+        "ma_sach": "18",
+        "ten_sach": "Book Title 18",
+        "tac_gia": "Author 18",
+        "the_loai": "Science",
+        "so_luong": 1,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 18"
+    },
+    "71": {
+        "ma_sach": "71",
+        "ten_sach": "Book Title 71",
+        "tac_gia": "Author 71",
+        "the_loai": "Fiction",
+        "so_luong": 3,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 71"
+    },
+    "63": {
+        "ma_sach": "63",
+        "ten_sach": "Book Title 63",
+        "tac_gia": "Author 63",
+        "the_loai": "Science",
+        "so_luong": 1,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 63"
+    },
+    "57": {
+        "ma_sach": "57",
+        "ten_sach": "Book Title 57",
+        "tac_gia": "Author 57",
+        "the_loai": "Non-Fiction",
+        "so_luong": 3,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 57"
+    },
+    "47": {
+        "ma_sach": "47",
+        "ten_sach": "Book Title 47",
+        "tac_gia": "Author 47",
+        "the_loai": "Non-Fiction",
+        "so_luong": 6,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 47"
+    },
+    "86": {
+        "ma_sach": "86",
+        "ten_sach": "Book Title 86",
+        "tac_gia": "Author 86",
+        "the_loai": "Fiction",
+        "so_luong": 9,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 86"
+    },
+    "93": {
+        "ma_sach": "93",
+        "ten_sach": "Book Title 93",
+        "tac_gia": "Author 93",
+        "the_loai": "Science",
+        "so_luong": 1,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 93"
+    },
+    "32": {
+        "ma_sach": "32",
+        "ten_sach": "Book Title 32",
+        "tac_gia": "Author 32",
+        "the_loai": "Non-Fiction",
+        "so_luong": 6,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 32"
+    },
+    "31": {
+        "ma_sach": "31",
+        "ten_sach": "Book Title 31",
+        "tac_gia": "Author 31",
+        "the_loai": "Fiction",
+        "so_luong": 4,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 31"
+    },
+    "38": {
+        "ma_sach": "38",
+        "ten_sach": "Book Title 38",
+        "tac_gia": "Author 38",
         "the_loai": "Science",
         "so_luong": 6,
         "tinh_trang": "Used",
-        "nha_xuat_ban": "Publisher 98"
+        "nha_xuat_ban": "Publisher 38"
+    },
+    "64": {
+        "ma_sach": "64",
+        "ten_sach": "Book Title 64",
+        "tac_gia": "Author 64",
+        "the_loai": "History",
+        "so_luong": 3,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 64"
+    },
+    "61": {
+        "ma_sach": "61",
+        "ten_sach": "Book Title 61",
+        "tac_gia": "Author 61",
+        "the_loai": "Fiction",
+        "so_luong": 4,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 61"
+    },
+    "91": {
+        "ma_sach": "91",
+        "ten_sach": "Book Title 91",
+        "tac_gia": "Author 91",
+        "the_loai": "Fiction",
+        "so_luong": 4,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 91"
+    },
+    "15": {
+        "ma_sach": "15",
+        "ten_sach": "Book Title 15",
+        "tac_gia": "Author 15",
+        "the_loai": "Biography",
+        "so_luong": 8,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 15"
+    },
+    "25": {
+        "ma_sach": "25",
+        "ten_sach": "Book Title 25",
+        "tac_gia": "Author 25",
+        "the_loai": "Biography",
+        "so_luong": 1,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 25"
+    },
+    "79": {
+        "ma_sach": "79",
+        "ten_sach": "Book Title 79",
+        "tac_gia": "Author 79",
+        "the_loai": "History",
+        "so_luong": 9,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 79"
+    },
+    "29": {
+        "ma_sach": "29",
+        "ten_sach": "Book Title 29",
+        "tac_gia": "Author 29",
+        "the_loai": "History",
+        "so_luong": 7,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 29"
+    },
+    "51": {
+        "ma_sach": "51",
+        "ten_sach": "Book Title 51",
+        "tac_gia": "Author 51",
+        "the_loai": "Fiction",
+        "so_luong": 7,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 51"
+    },
+    "17": {
+        "ma_sach": "17",
+        "ten_sach": "Book Title 17",
+        "tac_gia": "Author 17",
+        "the_loai": "Non-Fiction",
+        "so_luong": 6,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 17"
+    },
+    "81": {
+        "ma_sach": "81",
+        "ten_sach": "Book Title 81",
+        "tac_gia": "Author 81",
+        "the_loai": "Fiction",
+        "so_luong": 7,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 81"
+    },
+    "11": {
+        "ma_sach": "11",
+        "ten_sach": "Book Title 11",
+        "tac_gia": "Author 11",
+        "the_loai": "Fiction",
+        "so_luong": 3,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 11"
+    },
+    "24": {
+        "ma_sach": "24",
+        "ten_sach": "Book Title 24",
+        "tac_gia": "Author 24",
+        "the_loai": "History",
+        "so_luong": 6,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 24"
+    },
+    "66": {
+        "ma_sach": "66",
+        "ten_sach": "Book Title 66",
+        "tac_gia": "Author 66",
+        "the_loai": "Fiction",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 66"
+    },
+    "48": {
+        "ma_sach": "48",
+        "ten_sach": "Book Title 48",
+        "tac_gia": "Author 48",
+        "the_loai": "Science",
+        "so_luong": 1,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 48"
+    },
+    "23": {
+        "ma_sach": "23",
+        "ten_sach": "Book Title 23",
+        "tac_gia": "Author 23",
+        "the_loai": "Science",
+        "so_luong": 4,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 23"
+    },
+    "59": {
+        "ma_sach": "59",
+        "ten_sach": "Book Title 59",
+        "tac_gia": "Author 59",
+        "the_loai": "History",
+        "so_luong": 7,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 59"
+    },
+    "52": {
+        "ma_sach": "52",
+        "ten_sach": "Book Title 52",
+        "tac_gia": "Author 52",
+        "the_loai": "Non-Fiction",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 52"
+    },
+    "88": {
+        "ma_sach": "88",
+        "ten_sach": "Book Title 88",
+        "tac_gia": "Author 88",
+        "the_loai": "Science",
+        "so_luong": 5,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 88"
+    },
+    "12": {
+        "ma_sach": "12",
+        "ten_sach": "Book Title 12",
+        "tac_gia": "Author 12",
+        "the_loai": "Non-Fiction",
+        "so_luong": 7,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 12"
+    },
+    "84": {
+        "ma_sach": "84",
+        "ten_sach": "Book Title 84",
+        "tac_gia": "Author 84",
+        "the_loai": "History",
+        "so_luong": 6,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 84"
     },
     "99": {
         "ma_sach": "99",
@@ -890,6 +386,465 @@
         "tinh_trang": "New",
         "nha_xuat_ban": "Publisher 99"
     },
+    "9": {
+        "ma_sach": "9",
+        "ten_sach": "Book Title 9",
+        "tac_gia": "Author 9",
+        "the_loai": "History",
+        "so_luong": 1,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 9"
+    },
+    "4": {
+        "ma_sach": "4",
+        "ten_sach": "Book Title 4",
+        "tac_gia": "Author 4",
+        "the_loai": "History",
+        "so_luong": 3,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 4"
+    },
+    "19": {
+        "ma_sach": "19",
+        "ten_sach": "Book Title 19",
+        "tac_gia": "Author 19",
+        "the_loai": "History",
+        "so_luong": 9,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 19"
+    },
+    "22": {
+        "ma_sach": "22",
+        "ten_sach": "Book Title 22",
+        "tac_gia": "Author 22",
+        "the_loai": "Non-Fiction",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 22"
+    },
+    "40": {
+        "ma_sach": "40",
+        "ten_sach": "Book Title 40",
+        "tac_gia": "Author 40",
+        "the_loai": "Biography",
+        "so_luong": 9,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 40"
+    },
+    "75": {
+        "ma_sach": "75",
+        "ten_sach": "Book Title 75",
+        "tac_gia": "Author 75",
+        "the_loai": "Biography",
+        "so_luong": 8,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 75"
+    },
+    "5": {
+        "ma_sach": "5",
+        "ten_sach": "Book Title 5",
+        "tac_gia": "Author 5",
+        "the_loai": "Biography",
+        "so_luong": 8,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 5"
+    },
+    "72": {
+        "ma_sach": "72",
+        "ten_sach": "Book Title 72",
+        "tac_gia": "Author 72",
+        "the_loai": "Non-Fiction",
+        "so_luong": 7,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 72"
+    },
+    "36": {
+        "ma_sach": "36",
+        "ten_sach": "Book Title 36",
+        "tac_gia": "Author 36",
+        "the_loai": "Fiction",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 36"
+    },
+    "58": {
+        "ma_sach": "58",
+        "ten_sach": "Book Title 58",
+        "tac_gia": "Author 58",
+        "the_loai": "Science",
+        "so_luong": 5,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 58"
+    },
+    "92": {
+        "ma_sach": "92",
+        "ten_sach": "Book Title 92",
+        "tac_gia": "Author 92",
+        "the_loai": "Non-Fiction",
+        "so_luong": 6,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 92"
+    },
+    "60": {
+        "ma_sach": "60",
+        "ten_sach": "Book Title 60",
+        "tac_gia": "Author 60",
+        "the_loai": "Biography",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 60"
+    },
+    "68": {
+        "ma_sach": "68",
+        "ten_sach": "Book Title 68",
+        "tac_gia": "Author 68",
+        "the_loai": "Science",
+        "so_luong": 6,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 68"
+    },
+    "65": {
+        "ma_sach": "65",
+        "ten_sach": "Book Title 65",
+        "tac_gia": "Author 65",
+        "the_loai": "Biography",
+        "so_luong": 8,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 65"
+    },
+    "39": {
+        "ma_sach": "39",
+        "ten_sach": "Book Title 39",
+        "tac_gia": "Author 39",
+        "the_loai": "History",
+        "so_luong": 1,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 39"
+    },
+    "6": {
+        "ma_sach": "6",
+        "ten_sach": "Book Title 6",
+        "tac_gia": "Author 6",
+        "the_loai": "Fiction",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 6"
+    },
+    "82": {
+        "ma_sach": "82",
+        "ten_sach": "Book Title 82",
+        "tac_gia": "Author 82",
+        "the_loai": "Non-Fiction",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 82"
+    },
+    "27": {
+        "ma_sach": "27",
+        "ten_sach": "Book Title 27",
+        "tac_gia": "Author 27",
+        "the_loai": "Non-Fiction",
+        "so_luong": 3,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 27"
+    },
+    "85": {
+        "ma_sach": "85",
+        "ten_sach": "Book Title 85",
+        "tac_gia": "Author 85",
+        "the_loai": "Biography",
+        "so_luong": 1,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 85"
+    },
+    "42": {
+        "ma_sach": "42",
+        "ten_sach": "Book Title 42",
+        "tac_gia": "Author 42",
+        "the_loai": "Non-Fiction",
+        "so_luong": 7,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 42"
+    },
+    "7": {
+        "ma_sach": "7",
+        "ten_sach": "Book Title 7",
+        "tac_gia": "Author 7",
+        "the_loai": "Non-Fiction",
+        "so_luong": 4,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 7"
+    },
+    "62": {
+        "ma_sach": "62",
+        "ten_sach": "Book Title 62",
+        "tac_gia": "Author 62",
+        "the_loai": "Non-Fiction",
+        "so_luong": 6,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 62"
+    },
+    "44": {
+        "ma_sach": "44",
+        "ten_sach": "Book Title 44",
+        "tac_gia": "Author 44",
+        "the_loai": "History",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 44"
+    },
+    "78": {
+        "ma_sach": "78",
+        "ten_sach": "Book Title 78",
+        "tac_gia": "Author 78",
+        "the_loai": "Science",
+        "so_luong": 1,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 78"
+    },
+    "13": {
+        "ma_sach": "13",
+        "ten_sach": "Book Title 13",
+        "tac_gia": "Author 13",
+        "the_loai": "Science",
+        "so_luong": 5,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 13"
+    },
+    "34": {
+        "ma_sach": "34",
+        "ten_sach": "Book Title 34",
+        "tac_gia": "Author 34",
+        "the_loai": "History",
+        "so_luong": 3,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 34"
+    },
+    "1": {
+        "ma_sach": "1",
+        "ten_sach": "Book Title 1",
+        "tac_gia": "Author 1",
+        "the_loai": "Fiction",
+        "so_luong": 10,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 1"
+    },
+    "74": {
+        "ma_sach": "74",
+        "ten_sach": "Book Title 74",
+        "tac_gia": "Author 74",
+        "the_loai": "History",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 74"
+    },
+    "20": {
+        "ma_sach": "20",
+        "ten_sach": "Book Title 20",
+        "tac_gia": "Author 20",
+        "the_loai": "Biography",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 20"
+    },
+    "8": {
+        "ma_sach": "8",
+        "ten_sach": "Book Title 8",
+        "tac_gia": "Author 8",
+        "the_loai": "Science",
+        "so_luong": 6,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 8"
+    },
+    "90": {
+        "ma_sach": "90",
+        "ten_sach": "Book Title 90",
+        "tac_gia": "Author 90",
+        "the_loai": "Biography",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 90"
+    },
+    "33": {
+        "ma_sach": "33",
+        "ten_sach": "Book Title 33",
+        "tac_gia": "Author 33",
+        "the_loai": "Science",
+        "so_luong": 1,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 33"
+    },
+    "76": {
+        "ma_sach": "76",
+        "ten_sach": "Book Title 76",
+        "tac_gia": "Author 76",
+        "the_loai": "Fiction",
+        "so_luong": 4,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 76"
+    },
+    "45": {
+        "ma_sach": "45",
+        "ten_sach": "Book Title 45",
+        "tac_gia": "Author 45",
+        "the_loai": "Biography",
+        "so_luong": 8,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 45"
+    },
+    "94": {
+        "ma_sach": "94",
+        "ten_sach": "Book Title 94",
+        "tac_gia": "Author 94",
+        "the_loai": "History",
+        "so_luong": 3,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 94"
+    },
+    "101": {
+        "ma_sach": "101",
+        "ten_sach": "education",
+        "tac_gia": "đoàn vinh nhân",
+        "the_loai": "education",
+        "so_luong": 2,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "kìm đồng"
+    },
+    "53": {
+        "ma_sach": "53",
+        "ten_sach": "Book Title 53",
+        "tac_gia": "Author 53",
+        "the_loai": "Science",
+        "so_luong": 4,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 53"
+    },
+    "10": {
+        "ma_sach": "10",
+        "ten_sach": "Book Title 10",
+        "tac_gia": "Author 10",
+        "the_loai": "Biography",
+        "so_luong": 9,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 10"
+    },
+    "30": {
+        "ma_sach": "30",
+        "ten_sach": "Book Title 30",
+        "tac_gia": "Author 30",
+        "the_loai": "Biography",
+        "so_luong": 1,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 30"
+    },
+    "98": {
+        "ma_sach": "98",
+        "ten_sach": "Book Title 98",
+        "tac_gia": "Author 98",
+        "the_loai": "Science",
+        "so_luong": 6,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 98"
+    },
+    "28": {
+        "ma_sach": "28",
+        "ten_sach": "Book Title 28",
+        "tac_gia": "Author 28",
+        "the_loai": "Science",
+        "so_luong": 5,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 28"
+    },
+    "80": {
+        "ma_sach": "80",
+        "ten_sach": "Book Title 80",
+        "tac_gia": "Author 80",
+        "the_loai": "Biography",
+        "so_luong": 3,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 80"
+    },
+    "89": {
+        "ma_sach": "89",
+        "ten_sach": "Book Title 89",
+        "tac_gia": "Author 89",
+        "the_loai": "History",
+        "so_luong": 7,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 89"
+    },
+    "95": {
+        "ma_sach": "95",
+        "ten_sach": "Book Title 95",
+        "tac_gia": "Author 95",
+        "the_loai": "Biography",
+        "so_luong": 8,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 95"
+    },
+    "26": {
+        "ma_sach": "26",
+        "ten_sach": "Book Title 26",
+        "tac_gia": "Author 26",
+        "the_loai": "Fiction",
+        "so_luong": 9,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 26"
+    },
+    "87": {
+        "ma_sach": "87",
+        "ten_sach": "Book Title 87",
+        "tac_gia": "Author 87",
+        "the_loai": "Non-Fiction",
+        "so_luong": 3,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 87"
+    },
+    "14": {
+        "ma_sach": "14",
+        "ten_sach": "Book Title 14",
+        "tac_gia": "Author 14",
+        "the_loai": "History",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 14"
+    },
+    "50": {
+        "ma_sach": "50",
+        "ten_sach": "Book Title 50",
+        "tac_gia": "Author 50",
+        "the_loai": "Biography",
+        "so_luong": 3,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 50"
+    },
+    "70": {
+        "ma_sach": "70",
+        "ten_sach": "Book Title 70",
+        "tac_gia": "Author 70",
+        "the_loai": "Biography",
+        "so_luong": 9,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 70"
+    },
+    "69": {
+        "ma_sach": "69",
+        "ten_sach": "Book Title 69",
+        "tac_gia": "Author 69",
+        "the_loai": "History",
+        "so_luong": 1,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 69"
+    },
+    "16": {
+        "ma_sach": "16",
+        "ten_sach": "Book Title 16",
+        "tac_gia": "Author 16",
+        "the_loai": "Fiction",
+        "so_luong": 4,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 16"
+    },
     "100": {
         "ma_sach": "100",
         "ten_sach": "Book Title 100",
@@ -898,5 +853,59 @@
         "so_luong": 9,
         "tinh_trang": "Used",
         "nha_xuat_ban": "Publisher 100"
+    },
+    "3": {
+        "ma_sach": "3",
+        "ten_sach": "Book Title 3",
+        "tac_gia": "Author 3",
+        "the_loai": "Science",
+        "so_luong": 7,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 3"
+    },
+    "67": {
+        "ma_sach": "67",
+        "ten_sach": "Book Title 67",
+        "tac_gia": "Author 67",
+        "the_loai": "Non-Fiction",
+        "so_luong": 4,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 67"
+    },
+    "21": {
+        "ma_sach": "21",
+        "ten_sach": "Book Title 21",
+        "tac_gia": "Author 21",
+        "the_loai": "Fiction",
+        "so_luong": 7,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 21"
+    },
+    "54": {
+        "ma_sach": "54",
+        "ten_sach": "Book Title 54",
+        "tac_gia": "Author 54",
+        "the_loai": "History",
+        "so_luong": 6,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 54"
+    },
+    "96": {
+        "ma_sach": "96",
+        "ten_sach": "Book Title 96",
+        "tac_gia": "Author 96",
+        "the_loai": "Fiction",
+        "so_luong": 2,
+        "tinh_trang": "Used",
+        "nha_xuat_ban": "Publisher 96"
+    },
+    "49": {
+        "ma_sach": "49",
+        "ten_sach": "Book Title 49",
+        "tac_gia": "Author 49",
+        "the_loai": "History",
+        "so_luong": 9,
+        "tinh_trang": "New",
+        "nha_xuat_ban": "Publisher 49"
     }
 }

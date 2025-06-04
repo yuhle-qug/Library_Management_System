@@ -20,7 +20,14 @@ def add_book():
             break
         except ValueError as e:
             print(f"So luong khong hop le: {e}. Vui long nhap so nguyen.")
-    tinh_trang = ui.get_input("Tinh trang (mac dinh 'Available'): ") or "Available"
+    # Change 'Tinh trang' to fixed options
+    while True:
+        tinh_trang = ui.get_input("Tinh trang (New/Used): ").capitalize()
+        if tinh_trang in ["New", "Used"]:
+            break
+        else:
+            print("Tinh trang khong hop le. Vui long nhap 'New' hoac 'Used'.")
+
     nha_xuat_ban = ui.get_input("Nha xuat ban: ")
 
     new_book = Book(ma_sach, ten_sach, tac_gia, the_loai, so_luong, tinh_trang, nha_xuat_ban)
@@ -41,7 +48,10 @@ def update_book_info():
     
     book.ten_sach = ui.get_input(f"Ten sach moi ({book.ten_sach}): ") or book.ten_sach
     book.tac_gia = ui.get_input(f"Tac gia moi ({book.tac_gia}): ") or book.tac_gia
-    book.the_loai = ui.get_input(f"The loai moi ({book.the_loai}): ") or book.the_loai
+    # Update 'Thể loại' in 'update_book_info'
+    book.the_loai = ui.get_input(f"The loai moi ({book.the_loai}) [Fiction/Non-Fiction/Science/History/Biography/Khác...]: ") or book.the_loai
+    if book.the_loai == "Khác...":
+        book.the_loai = ui.get_input("Nhap the loai tuy chinh: ") or book.the_loai
     
     new_so_luong_str = ui.get_input(f"So luong moi ({book.so_luong}): ")
     if new_so_luong_str:

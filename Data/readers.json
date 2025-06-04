@@ -1,19 +1,35 @@
 {
-    "1": {
-        "ma_ban_doc": "1",
-        "ten": "Reader Name 1",
-        "ngay_sinh": "01/01/1990",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Address 1",
-        "so_dien_thoai": "0123456789"
-    },
     "2": {
         "ma_ban_doc": "2",
         "ten": "Reader Name 2",
         "ngay_sinh": "02/02/1992",
         "gioi_tinh": "Nữ",
         "dia_chi": "Address 2",
-        "so_dien_thoai": "0987654321"
+        "so_dien_thoai": 987654321
+    },
+    "4": {
+        "ma_ban_doc": "4",
+        "ten": "Reader Name 4",
+        "ngay_sinh": "04/04/1994",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Address 4",
+        "so_dien_thoai": 556677889
+    },
+    "1": {
+        "ma_ban_doc": "1",
+        "ten": "Reader Name 1",
+        "ngay_sinh": "01/01/1990",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Address 1",
+        "so_dien_thoai": 123456789
+    },
+    "102": {
+        "ma_ban_doc": "102",
+        "ten": "lê quang huy",
+        "ngay_sinh": "02/06/2025",
+        "gioi_tinh": "Nam",
+        "dia_chi": "1231",
+        "so_dien_thoai": 123131
     },
     "3": {
         "ma_ban_doc": "3",
@@ -21,6 +37,6 @@
         "ngay_sinh": "03/03/1993",
         "gioi_tinh": "Nam",
         "dia_chi": "Address 3",
-        "so_dien_thoai": "0112233445"
+        "so_dien_thoai": 112233445
     }
 }

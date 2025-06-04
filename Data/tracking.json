@@ -13,13 +13,45 @@
         "ten_sach_muon": "Book Title 2",
         "ngay_muon": "03/01/2025",
         "ngay_tra": null,
-        "trang_thai": "Borrowed"
+        "trang_thai": "Overtime"
     },
     {
         "ma_ban_doc": "3",
         "ma_sach_muon": "3",
         "ten_sach_muon": "Book Title 3",
         "ngay_muon": "04/01/2025",
+        "ngay_tra": null,
+        "trang_thai": "Overtime"
+    },
+    {
+        "ma_ban_doc": "4",
+        "ma_sach_muon": "4",
+        "ten_sach_muon": "Book Title 4",
+        "ngay_muon": "05/01/2025",
+        "ngay_tra": null,
+        "trang_thai": "Overtime"
+    },
+    {
+        "ma_ban_doc": "2",
+        "ma_sach_muon": "99",
+        "ten_sach_muon": "Book Title 99",
+        "ngay_muon": "04/06/2025",
+        "ngay_tra": "04/06/2025",
+        "trang_thai": "Returned"
+    },
+    {
+        "ma_ban_doc": "2",
+        "ma_sach_muon": "30",
+        "ten_sach_muon": "Book Title 30",
+        "ngay_muon": "04/06/2025",
+        "ngay_tra": null,
+        "trang_thai": "Borrowed"
+    },
+    {
+        "ma_ban_doc": "1",
+        "ma_sach_muon": "20",
+        "ten_sach_muon": "Book Title 20",
+        "ngay_muon": "04/06/2025",
         "ngay_tra": null,
         "trang_thai": "Borrowed"
     }

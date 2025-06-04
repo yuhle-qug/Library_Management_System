@@ -481,3 +481,172 @@ AttributeError: 'TrackBook' object has no attribute 'ban_doc'. Did you mean: 'ma
 2025-06-04 17:16:10,047 - INFO - Đã tải dữ liệu thành công
 2025-06-04 17:16:54,031 - INFO - Mở cửa sổ xem lịch sử mượn/trả
 2025-06-04 17:16:57,105 - INFO - Mở cửa sổ trả sách
+2025-06-04 21:32:59,171 - INFO - Khởi động ứng dụng
+2025-06-04 21:32:59,175 - INFO - Đã tải dữ liệu thành công
+2025-06-04 21:39:59,661 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 21:41:33,416 - INFO - Khởi động ứng dụng
+2025-06-04 21:41:33,420 - INFO - Đã tải dữ liệu thành công
+2025-06-04 21:42:53,363 - INFO - Khởi động ứng dụng
+2025-06-04 21:42:53,366 - INFO - Đã tải dữ liệu thành công
+2025-06-04 21:51:43,378 - INFO - Khởi động ứng dụng
+2025-06-04 21:51:43,381 - INFO - Đã tải dữ liệu thành công
+2025-06-04 21:53:56,614 - INFO - Khởi động ứng dụng
+2025-06-04 21:53:56,617 - INFO - Đã tải dữ liệu thành công
+2025-06-04 21:58:14,899 - INFO - Khởi động ứng dụng
+2025-06-04 21:58:14,902 - INFO - Đã tải dữ liệu thành công
+2025-06-04 21:58:39,001 - INFO - Khởi động ứng dụng
+2025-06-04 21:58:39,004 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:00:26,600 - INFO - Khởi động ứng dụng
+2025-06-04 22:00:26,603 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:01:43,713 - INFO - Khởi động ứng dụng
+2025-06-04 22:01:43,716 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:04:21,218 - INFO - Khởi động ứng dụng
+2025-06-04 22:04:21,221 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:04:56,673 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 22:05:04,375 - INFO - Khởi động ứng dụng
+2025-06-04 22:05:04,377 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:10:45,047 - INFO - Khởi động ứng dụng
+2025-06-04 22:10:45,050 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:10:57,940 - INFO - Khởi động ứng dụng
+2025-06-04 22:10:57,942 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:12:46,702 - INFO - Khởi động ứng dụng
+2025-06-04 22:12:46,705 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:14:28,555 - INFO - Khởi động ứng dụng
+2025-06-04 22:14:28,558 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:15:28,132 - INFO - Mở cửa sổ mượn sách
+2025-06-04 22:15:58,787 - INFO - Mở cửa sổ mượn sách
+2025-06-04 22:16:06,227 - INFO - Mượn sách thành công: 2 bởi 3
+2025-06-04 22:16:49,668 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 22:17:02,897 - INFO - Khởi động ứng dụng
+2025-06-04 22:17:02,901 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:17:34,300 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 22:18:26,171 - INFO - Khởi động ứng dụng
+2025-06-04 22:18:26,173 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:18:37,093 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 22:19:02,381 - INFO - Khởi động ứng dụng
+2025-06-04 22:19:02,386 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:21:30,097 - INFO - Khởi động ứng dụng
+2025-06-04 22:21:30,101 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:21:34,277 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-04 22:21:47,415 - INFO - Mở cửa sổ mượn sách
+2025-06-04 22:27:13,173 - INFO - Khởi động ứng dụng
+2025-06-04 22:27:13,177 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:27:15,441 - INFO - Mở cửa sổ mượn sách
+2025-06-04 22:27:21,786 - INFO - Mượn sách thành công: 3 bởi 1
+2025-06-04 22:27:24,781 - INFO - Mở cửa sổ mượn sách
+2025-06-04 22:27:31,650 - INFO - Mượn sách thành công: 9 bởi 1
+2025-06-04 22:27:41,544 - INFO - Mở cửa sổ mượn sách
+2025-06-04 22:27:50,986 - ERROR - Lỗi khi mượn sách: Mã bạn đọc không tồn tại!
+2025-06-04 22:34:57,850 - INFO - Khởi động ứng dụng
+2025-06-04 22:34:57,854 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:37:26,572 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 22:37:30,369 - INFO - Khởi động ứng dụng
+2025-06-04 22:37:30,372 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:37:37,233 - INFO - Mở cửa sổ trả sách
+2025-06-04 22:37:42,990 - INFO - Mở cửa sổ trả sách
+2025-06-04 22:40:34,562 - INFO - Khởi động ứng dụng
+2025-06-04 22:40:34,566 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:40:38,094 - INFO - Mở cửa sổ trả sách
+2025-06-04 22:42:08,486 - INFO - Khởi động ứng dụng
+2025-06-04 22:42:08,488 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:42:12,086 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 22:42:31,334 - ERROR - Lỗi khi thêm bạn đọc: invalid literal for int() with base 10: 'abc'
+2025-06-04 22:47:37,502 - INFO - Khởi động ứng dụng
+2025-06-04 22:47:37,505 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:47:39,964 - INFO - Mở cửa sổ trả sách
+2025-06-04 22:49:40,475 - INFO - Khởi động ứng dụng
+2025-06-04 22:49:40,478 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:49:45,139 - INFO - Mở cửa sổ trả sách
+2025-06-04 22:52:45,367 - INFO - Khởi động ứng dụng
+2025-06-04 22:52:45,370 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:52:48,299 - INFO - Mở cửa sổ trả sách
+2025-06-04 22:52:54,686 - WARNING - Reader ID 4 not found in database.
+2025-06-04 22:52:54,913 - WARNING - Reader ID 4 not found in database.
+2025-06-04 22:53:16,386 - INFO - Mở cửa sổ trả sách
+2025-06-04 22:53:20,214 - WARNING - Reader ID 4 not found in database.
+2025-06-04 22:55:16,326 - INFO - Khởi động ứng dụng
+2025-06-04 22:55:16,328 - INFO - Đã tải dữ liệu thành công
+2025-06-04 22:55:20,098 - INFO - Mở cửa sổ trả sách
+2025-06-04 22:55:23,497 - WARNING - Reader ID 4 not found in database.
+2025-06-04 22:57:36,309 - INFO - Mở cửa sổ mượn sách
+2025-06-04 22:57:41,293 - INFO - Mượn sách thành công: 99 bởi 2
+2025-06-04 22:57:44,620 - INFO - Mở cửa sổ mượn sách
+2025-06-04 22:57:52,205 - INFO - Mượn sách thành công: 30 bởi 2
+2025-06-04 22:58:06,034 - INFO - Mở cửa sổ trả sách
+2025-06-04 22:58:14,477 - INFO - Trả sách thành công: 99
+2025-06-04 23:02:14,269 - INFO - Khởi động ứng dụng
+2025-06-04 23:02:14,273 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:02:22,678 - INFO - Mở cửa sổ mượn sách
+2025-06-04 23:02:47,997 - INFO - Mượn sách thành công: 20 bởi 1
+2025-06-04 23:03:28,418 - INFO - Khởi động ứng dụng
+2025-06-04 23:03:28,421 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:07:55,548 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-04 23:13:05,488 - INFO - Khởi động ứng dụng
+2025-06-04 23:13:05,492 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:13:12,013 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-04 23:16:08,769 - INFO - Khởi động ứng dụng
+2025-06-04 23:16:08,772 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:16:12,927 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 23:18:36,399 - INFO - Khởi động ứng dụng
+2025-06-04 23:18:36,402 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:18:40,240 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 23:19:17,360 - INFO - Thêm sách mới thành công: 101
+2025-06-04 23:19:23,099 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-04 23:22:17,046 - INFO - Khởi động ứng dụng
+2025-06-04 23:22:17,050 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:22:20,552 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 23:22:26,442 - ERROR - Lỗi khi thêm sách: Vui lòng điền đầy đủ thông tin!
+2025-06-04 23:22:49,048 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 23:22:49,050 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-04 23:22:51,649 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 23:23:01,524 - ERROR - Lỗi khi thêm sách: Vui lòng điền đầy đủ thông tin!
+2025-06-04 23:23:25,143 - INFO - Khởi động ứng dụng
+2025-06-04 23:23:25,145 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:23:26,978 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 23:26:45,674 - INFO - Khởi động ứng dụng
+2025-06-04 23:26:45,678 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:26:47,551 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 23:28:32,338 - INFO - Khởi động ứng dụng
+2025-06-04 23:28:32,341 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:28:36,182 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 23:28:57,562 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 23:32:28,188 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 23:33:19,752 - INFO - Khởi động ứng dụng
+2025-06-04 23:33:19,755 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:33:22,838 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 23:35:27,612 - INFO - Khởi động ứng dụng
+2025-06-04 23:35:27,615 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:35:30,977 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 23:35:38,408 - ERROR - Error in date picker: bad window path name ".!toplevel2"
+2025-06-04 23:37:54,149 - INFO - Khởi động ứng dụng
+2025-06-04 23:37:54,152 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:38:06,928 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 23:38:40,120 - ERROR - Lỗi khi thêm bạn đọc: Vui lòng điền đầy đủ thông tin bắt buộc!
+2025-06-04 23:38:50,134 - ERROR - Lỗi khi thêm bạn đọc: Vui lòng điền đầy đủ thông tin bắt buộc!
+2025-06-04 23:41:10,145 - INFO - Khởi động ứng dụng
+2025-06-04 23:41:10,148 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:41:15,175 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 23:44:18,301 - INFO - Khởi động ứng dụng
+2025-06-04 23:44:18,305 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:44:20,282 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 23:44:25,444 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-04 23:44:25,445 - WARNING - Không có bạn đọc nào được chọn để cập nhật
+2025-06-04 23:44:30,414 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 23:44:30,414 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-04 23:44:32,963 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 23:44:40,146 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 23:44:50,037 - ERROR - Error in date picker: bad window path name ".!toplevel4"
+2025-06-04 23:48:10,412 - INFO - Khởi động ứng dụng
+2025-06-04 23:48:10,415 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:48:16,650 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 23:48:21,050 - ERROR - Runtime error in date picker: DatePickerDialog window could not be initialized.
+2025-06-04 23:53:12,827 - INFO - Khởi động ứng dụng
+2025-06-04 23:53:12,830 - INFO - Đã tải dữ liệu thành công
+2025-06-04 23:53:16,969 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 23:53:27,956 - INFO - Ngày sinh đã chọn (Thêm bạn đọc): 05/06/2025
+2025-06-04 23:53:40,886 - INFO - Ngày sinh đã chọn (Thêm bạn đọc): 05/05/2025
+2025-06-04 23:53:48,789 - ERROR - Lỗi khi thêm bạn đọc: Định dạng ngày sinh không hợp lệ (DD/MM/YYYY) hoặc năm không hợp lệ: Năm sinh phải nhỏ hơn năm hiện tại.
+2025-06-04 23:54:02,394 - INFO - Ngày sinh đã chọn (Thêm bạn đọc): 02/06/2025
+2025-06-04 23:54:03,567 - ERROR - Lỗi khi thêm bạn đọc: Định dạng ngày sinh không hợp lệ (DD/MM/YYYY) hoặc năm không hợp lệ: Năm sinh phải nhỏ hơn năm hiện tại.
+2025-06-04 23:55:52,616 - INFO - Ngày sinh đã chọn (Thêm bạn đọc): 02/06/2025
+2025-06-04 23:55:54,848 - ERROR - Lỗi khi thêm bạn đọc: Định dạng ngày sinh không hợp lệ (DD/MM/YYYY) hoặc năm không hợp lệ: Năm sinh phải nhỏ hơn năm hiện tại.
