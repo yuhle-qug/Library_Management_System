@@ -9,11 +9,13 @@ class HashTable:
         """
         Hàm băm đơn giản dựa trên mô tả trong tài liệu của bạn.
         Chuyển key (string) thành một chỉ số trong bảng.
-        """
+        
         h = 8 # Theo mô tả trong tài liệu [cite: 17]
         for char_val in str(key).encode('utf-8'): # Đảm bảo key là string và xử lý bytes
             h = (h * 31 + char_val) % self.size
         return h
+        """
+        return hash(str(key)) % self.size
 
     def __setitem__(self, key, value):
         """
@@ -109,3 +111,13 @@ class HashTable:
         Xóa tất cả các phần tử khỏi bảng băm.
         """
         self.table = [[] for _ in range(self.size)]
+
+    def get(self, key, default=None):
+        """
+        Lấy giá trị dựa trên key.
+        Trả về default nếu key không tồn tại.
+        """
+        try:
+            return self.__getitem__(key)
+        except KeyError:
+            return default

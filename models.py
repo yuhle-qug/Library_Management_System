@@ -2,7 +2,7 @@ import datetime
 
 class Book:
     def __init__(self, ma_sach, ten_sach, tac_gia, the_loai, so_luong, tinh_trang, nha_xuat_ban):
-        self.ma_sach = ma_sach
+        self.ma_sach = str(ma_sach)
         self.ten_sach = ten_sach
         self.tac_gia = tac_gia
         self.the_loai = the_loai
@@ -15,11 +15,16 @@ class Book:
                 f"Qty: {self.so_luong}, Status: {self.tinh_trang}]")
 
     def to_dict(self):
-        return self.__dict__
+        data = self.__dict__.copy()
+        data['ma_sach'] = str(self.ma_sach)
+        return data
 
     @classmethod
     def from_dict(cls, data_dict):
-        return cls(**data_dict)
+        data_copy = data_dict.copy()
+        if 'ma_sach' in data_copy:
+            data_copy['ma_sach'] = str(data_copy['ma_sach'])
+        return cls(**data_copy)
 
 class Reader:
     def __init__(self, ma_ban_doc, ten, ngay_sinh, gioi_tinh, dia_chi, so_dien_thoai):

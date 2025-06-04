@@ -1,1 +1,26 @@
-[]
+[
+    {
+        "ma_ban_doc": "1",
+        "ma_sach_muon": "1",
+        "ten_sach_muon": "Book Title 1",
+        "ngay_muon": "01/01/2025",
+        "ngay_tra": "02/01/2025",
+        "trang_thai": "Returned"
+    },
+    {
+        "ma_ban_doc": "2",
+        "ma_sach_muon": "2",
+        "ten_sach_muon": "Book Title 2",
+        "ngay_muon": "03/01/2025",
+        "ngay_tra": null,
+        "trang_thai": "Borrowed"
+    },
+    {
+        "ma_ban_doc": "3",
+        "ma_sach_muon": "3",
+        "ten_sach_muon": "Book Title 3",
+        "ngay_muon": "04/01/2025",
+        "ngay_tra": null,
+        "trang_thai": "Borrowed"
+    }
+]

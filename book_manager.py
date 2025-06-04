@@ -56,6 +56,7 @@ def update_book_info():
     book.nha_xuat_ban = ui.get_input(f"Nha xuat ban moi ({book.nha_xuat_ban}): ") or book.nha_xuat_ban
     
     print("Da cap nhat thong tin sach.")  # Save changes to file
+    data_handler.save_data()  # Save changes to file
 
 def search_book():
     ui.clear_screen()

@@ -1,0 +1,483 @@
+2025-06-04 11:26:57,279 - INFO - Khởi động ứng dụng
+2025-06-04 11:26:57,282 - INFO - Đã tải dữ liệu thành công
+2025-06-04 11:27:06,228 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 11:32:23,009 - INFO - Khởi động ứng dụng
+2025-06-04 11:32:23,011 - INFO - Đã tải dữ liệu thành công
+2025-06-04 11:34:39,346 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 11:42:59,030 - INFO - Khởi động ứng dụng
+2025-06-04 11:42:59,032 - INFO - Đã tải dữ liệu thành công
+2025-06-04 11:43:09,442 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 11:43:11,539 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 11:43:11,544 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-04 11:43:14,354 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 11:43:18,188 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 11:45:59,314 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 11:46:02,197 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 11:46:07,480 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 11:49:45,211 - INFO - Khởi động ứng dụng
+2025-06-04 11:49:45,215 - INFO - Đã tải dữ liệu thành công
+2025-06-04 11:49:48,309 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 11:57:46,038 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 11:57:51,732 - INFO - Khởi động ứng dụng
+2025-06-04 11:57:51,733 - INFO - Đã tải dữ liệu thành công
+2025-06-04 11:57:54,413 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 11:57:54,414 - ERROR - Mã sách '11' không tồn tại trong cơ sở dữ liệu!
+2025-06-04 11:58:14,658 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 12:06:22,078 - INFO - Khởi động ứng dụng
+2025-06-04 12:06:22,079 - ERROR - Lỗi không mong muốn: module 'logger' has no attribute 'debug'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 10, in <module>
+    data_handler.load_data()
+  File "D:\Library_Management_System\data_handler.py", line 48, in load_data
+    logger.debug(f"Tải sách: {ma_sach} -> {book_data}")
+    ^^^^^^^^^^^^
+AttributeError: module 'logger' has no attribute 'debug'
+2025-06-04 12:07:06,734 - INFO - Khởi động ứng dụng
+2025-06-04 12:07:06,737 - INFO - Đã tải dữ liệu thành công
+2025-06-04 12:07:09,914 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 12:07:09,918 - ERROR - Mã sách '11' không tồn tại trong cơ sở dữ liệu!
+2025-06-04 12:08:24,726 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 12:08:31,917 - INFO - Khởi động ứng dụng
+2025-06-04 12:08:31,919 - INFO - Đã tải dữ liệu thành công
+2025-06-04 12:08:33,370 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 12:08:54,457 - INFO - Thêm sách mới thành công: 3
+2025-06-04 12:08:59,579 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 12:08:59,580 - ERROR - Mã sách '3' không tồn tại trong cơ sở dữ liệu!
+2025-06-04 12:09:04,584 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 13:48:20,401 - INFO - Khởi động ứng dụng
+2025-06-04 13:48:20,404 - INFO - Đã tải dữ liệu thành công
+2025-06-04 13:48:26,474 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 13:48:30,768 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 13:48:30,768 - ERROR - Mã sách '1' không tồn tại trong cơ sở dữ liệu!
+2025-06-04 13:48:34,591 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 13:55:45,475 - INFO - Khởi động ứng dụng
+2025-06-04 13:55:45,478 - INFO - Đã tải dữ liệu thành công
+2025-06-04 13:55:49,193 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 13:55:49,200 - ERROR - Mã sách '1' không tồn tại trong cơ sở dữ liệu!
+2025-06-04 14:16:01,976 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:29:20,285 - INFO - Khởi động ứng dụng
+2025-06-04 14:29:20,287 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:29:22,988 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 14:29:25,755 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 14:29:25,755 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-04 14:29:29,338 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 14:29:52,891 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:29:57,847 - INFO - Khởi động ứng dụng
+2025-06-04 14:29:57,850 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:30:00,910 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 14:30:00,911 - INFO - Mở cửa sổ cập nhật cho sách: 2
+2025-06-04 14:30:32,436 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:30:36,374 - INFO - Khởi động ứng dụng
+2025-06-04 14:30:36,376 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:30:39,224 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 14:30:39,224 - INFO - Mở cửa sổ cập nhật cho sách: 3
+2025-06-04 14:31:09,242 - INFO - Khởi động ứng dụng
+2025-06-04 14:31:09,244 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:31:21,279 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 14:31:50,606 - INFO - Thêm bạn đọc mới thành công: 1
+2025-06-04 14:31:58,435 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:32:02,198 - INFO - Khởi động ứng dụng
+2025-06-04 14:32:02,200 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:32:42,818 - INFO - Mở cửa sổ tìm kiếm bạn đọc
+2025-06-04 14:32:53,261 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-04 14:33:05,029 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:33:19,205 - INFO - Khởi động ứng dụng
+2025-06-04 14:33:19,207 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:37:29,935 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:37:34,355 - INFO - Khởi động ứng dụng
+2025-06-04 14:37:34,357 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:39:49,973 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:39:55,774 - INFO - Khởi động ứng dụng
+2025-06-04 14:39:55,775 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:40:14,103 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:40:17,672 - INFO - Khởi động ứng dụng
+2025-06-04 14:40:17,672 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:43:44,816 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:43:48,673 - INFO - Khởi động ứng dụng
+2025-06-04 14:43:48,676 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:43:58,671 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:44:02,383 - INFO - Khởi động ứng dụng
+2025-06-04 14:44:02,385 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:44:53,810 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:44:59,438 - INFO - Khởi động ứng dụng
+2025-06-04 14:44:59,439 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:46:16,611 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:46:20,907 - INFO - Khởi động ứng dụng
+2025-06-04 14:46:20,909 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:46:33,958 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:46:38,957 - INFO - Khởi động ứng dụng
+2025-06-04 14:46:38,958 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:46:58,077 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:47:01,713 - INFO - Khởi động ứng dụng
+2025-06-04 14:47:01,716 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:47:22,914 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:47:27,854 - INFO - Khởi động ứng dụng
+2025-06-04 14:47:27,856 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:49:04,168 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:49:09,061 - INFO - Khởi động ứng dụng
+2025-06-04 14:49:09,063 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:49:20,616 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:49:24,757 - INFO - Khởi động ứng dụng
+2025-06-04 14:49:24,770 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:50:24,281 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:50:29,613 - INFO - Khởi động ứng dụng
+2025-06-04 14:50:29,614 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:52:05,041 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:52:09,154 - INFO - Khởi động ứng dụng
+2025-06-04 14:52:09,158 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:52:20,953 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:52:39,898 - INFO - Khởi động ứng dụng
+2025-06-04 14:52:39,900 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:52:51,454 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:52:57,168 - INFO - Khởi động ứng dụng
+2025-06-04 14:52:57,175 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:53:51,122 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:53:55,022 - INFO - Khởi động ứng dụng
+2025-06-04 14:53:55,024 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:55:17,560 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:55:21,956 - INFO - Khởi động ứng dụng
+2025-06-04 14:55:21,959 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:55:31,570 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:55:36,190 - INFO - Khởi động ứng dụng
+2025-06-04 14:55:36,191 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:55:49,737 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:55:53,874 - INFO - Khởi động ứng dụng
+2025-06-04 14:55:53,877 - INFO - Đã tải dữ liệu thành công
+2025-06-04 14:58:12,232 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 14:58:16,642 - INFO - Khởi động ứng dụng
+2025-06-04 14:58:16,646 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:00:04,012 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 15:00:08,219 - INFO - Khởi động ứng dụng
+2025-06-04 15:00:08,221 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:00:15,994 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 15:00:21,321 - INFO - Khởi động ứng dụng
+2025-06-04 15:00:21,323 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:01:55,927 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 15:01:59,906 - INFO - Khởi động ứng dụng
+2025-06-04 15:01:59,908 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:02:33,107 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 15:02:36,039 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 15:02:36,039 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-04 15:02:38,841 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-04 15:03:34,494 - INFO - Khởi động ứng dụng
+2025-06-04 15:03:34,495 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:06:20,980 - INFO - Khởi động ứng dụng
+2025-06-04 15:06:20,983 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:06:34,177 - INFO - Khởi động ứng dụng
+2025-06-04 15:06:34,180 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:07:10,918 - INFO - Khởi động ứng dụng
+2025-06-04 15:07:10,920 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:08:52,931 - INFO - Khởi động ứng dụng
+2025-06-04 15:08:52,933 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:09:15,658 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 15:09:19,996 - INFO - Khởi động ứng dụng
+2025-06-04 15:09:19,997 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:09:43,560 - INFO - Khởi động ứng dụng
+2025-06-04 15:09:43,561 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:09:43,714 - ERROR - Lỗi không mong muốn: type object 'StyleBuilderTTK' has no attribute 'create_tk_style'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 13, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 49, in __init__
+    self.style.configure("CTkButton", font=("Segoe UI", 11, "bold"))  # Áp dụng cho tất cả các nút
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\.venv\lib\python3.12\site-packages\ttkbootstrap\style.py", line 516, in configure
+    ttkstyle = Bootstyle.update_ttk_widget_style(None, style)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\.venv\lib\python3.12\site-packages\ttkbootstrap\style.py", line 5198, in update_ttk_widget_style
+    builder_method = builder.name_to_method(method_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\.venv\lib\python3.12\site-packages\ttkbootstrap\style.py", line 1150, in name_to_method
+    func = getattr(StyleBuilderTTK, method_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'StyleBuilderTTK' has no attribute 'create_tk_style'. Did you mean: 'create_entry_style'?
+2025-06-04 15:10:29,650 - INFO - Khởi động ứng dụng
+2025-06-04 15:10:29,651 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:10:51,194 - INFO - Khởi động ứng dụng
+2025-06-04 15:10:51,195 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:11:19,290 - INFO - Khởi động ứng dụng
+2025-06-04 15:11:19,292 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:14:07,682 - INFO - Khởi động ứng dụng
+2025-06-04 15:14:07,683 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:14:29,739 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 15:14:35,490 - INFO - Khởi động ứng dụng
+2025-06-04 15:14:35,492 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:15:03,242 - INFO - Khởi động ứng dụng
+2025-06-04 15:15:03,244 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:15:03,343 - ERROR - Lỗi không mong muốn: unknown font style "white"
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 13, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 38, in __init__
+    self.setup_book_tab()
+  File "D:\Library_Management_System\gui.py", line 56, in setup_book_tab
+    ctk.CTkButton(
+  File "D:\Library_Management_System\.venv\lib\python3.12\site-packages\customtkinter\windows\widgets\ctk_button.py", line 106, in __init__
+    self._draw()
+  File "D:\Library_Management_System\.venv\lib\python3.12\site-packages\customtkinter\windows\widgets\ctk_button.py", line 224, in _draw
+    self._text_label = tkinter.Label(master=self,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\.venv\lib\python3.12\site-packages\ttkbootstrap\style.py", line 5318, in __init__wrapper
+    func(self, *args, **kwargs)
+  File "C:\msys64\ucrt64\lib\python3.12\tkinter\__init__.py", line 3250, in __init__
+    Widget.__init__(self, master, 'label', cnf, kw)
+  File "C:\msys64\ucrt64\lib\python3.12\tkinter\__init__.py", line 2661, in __init__
+    self.tk.call(
+_tkinter.TclError: unknown font style "white"
+2025-06-04 15:15:59,805 - INFO - Khởi động ứng dụng
+2025-06-04 15:15:59,806 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:16:22,778 - INFO - Khởi động ứng dụng
+2025-06-04 15:16:22,779 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:16:34,126 - INFO - Khởi động ứng dụng
+2025-06-04 15:16:34,128 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:17:06,253 - INFO - Khởi động ứng dụng
+2025-06-04 15:17:06,255 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:17:19,164 - INFO - Khởi động ứng dụng
+2025-06-04 15:17:19,166 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:17:56,573 - INFO - Khởi động ứng dụng
+2025-06-04 15:17:56,575 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:18:06,341 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 15:22:03,677 - INFO - Khởi động ứng dụng
+2025-06-04 15:22:03,678 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:29:19,006 - INFO - Khởi động ứng dụng
+2025-06-04 15:29:19,008 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:30:46,075 - INFO - Khởi động ứng dụng
+2025-06-04 15:30:46,076 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:30:55,544 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 15:31:12,591 - INFO - Thêm bạn đọc mới thành công: 2
+2025-06-04 15:34:48,888 - INFO - Khởi động ứng dụng
+2025-06-04 15:34:48,890 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:36:42,462 - INFO - Khởi động ứng dụng
+2025-06-04 15:36:42,464 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:36:42,618 - ERROR - Lỗi không mong muốn: module 'data_handler' has no attribute 'tracking_db'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 13, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 40, in __init__
+    self.setup_tracking_tab()
+  File "D:\Library_Management_System\gui.py", line 263, in setup_tracking_tab
+    self.update_tracking_list()
+  File "D:\Library_Management_System\gui.py", line 809, in update_tracking_list
+    for i, tracking in enumerate(data_handler.tracking_db.values()):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'data_handler' has no attribute 'tracking_db'
+2025-06-04 15:36:51,104 - INFO - Khởi động ứng dụng
+2025-06-04 15:36:51,106 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:36:51,293 - ERROR - Lỗi không mong muốn: module 'data_handler' has no attribute 'tracking_db'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 13, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 40, in __init__
+    self.setup_tracking_tab()
+  File "D:\Library_Management_System\gui.py", line 263, in setup_tracking_tab
+    self.update_tracking_list()
+  File "D:\Library_Management_System\gui.py", line 809, in update_tracking_list
+    for i, tracking in enumerate(data_handler.tracking_db.values()):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'data_handler' has no attribute 'tracking_db'
+2025-06-04 15:37:29,466 - INFO - Khởi động ứng dụng
+2025-06-04 15:37:29,468 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:37:29,640 - ERROR - Lỗi không mong muốn: 'list' object has no attribute 'values'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 13, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 40, in __init__
+    self.setup_tracking_tab()
+  File "D:\Library_Management_System\gui.py", line 263, in setup_tracking_tab
+    self.update_tracking_list()
+  File "D:\Library_Management_System\gui.py", line 809, in update_tracking_list
+    for i, tracking in enumerate(data_handler.tracking_records.values()):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2025-06-04 15:57:10,619 - INFO - Khởi động ứng dụng
+2025-06-04 15:57:10,624 - INFO - Đã tải dữ liệu thành công
+2025-06-04 15:57:11,211 - ERROR - Lỗi không mong muốn: 'list' object has no attribute 'values'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 13, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 40, in __init__
+    self.setup_tracking_tab()
+  File "D:\Library_Management_System\gui.py", line 263, in setup_tracking_tab
+    self.update_tracking_list()
+  File "D:\Library_Management_System\gui.py", line 809, in update_tracking_list
+    for i, tracking in enumerate(data_handler.tracking_records.values()):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2025-06-04 15:59:52,906 - INFO - Khởi động ứng dụng
+2025-06-04 15:59:52,943 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:00:05,164 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:00:40,259 - ERROR - Lỗi khi mượn sách: Sách đã hết!
+2025-06-04 16:00:42,630 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:00:53,664 - INFO - Mở cửa sổ trả sách
+2025-06-04 16:04:48,618 - INFO - Khởi động ứng dụng
+2025-06-04 16:04:48,620 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:04:53,104 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:04:59,769 - INFO - Mượn sách thành công: 2 bởi 2
+2025-06-04 16:05:02,479 - INFO - Mở cửa sổ trả sách
+2025-06-04 16:05:05,862 - INFO - Trả sách thành công: 2
+2025-06-04 16:05:11,349 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:05:19,892 - INFO - Mượn sách thành công: 2 bởi 2
+2025-06-04 16:05:22,923 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:05:32,392 - ERROR - Lỗi khi mượn sách: Sách đã hết!
+2025-06-04 16:05:40,070 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:07:32,183 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-04 16:07:42,581 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 16:08:41,089 - INFO - Khởi động ứng dụng
+2025-06-04 16:08:41,091 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:08:41,172 - ERROR - Lỗi không mong muốn: module 'ttkbootstrap' has no attribute 'Notbook'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 13, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 24, in __init__
+    self.notebook = ttk.Notbook(root)
+                    ^^^^^^^^^^^
+AttributeError: module 'ttkbootstrap' has no attribute 'Notbook'. Did you mean: 'Notebook'?
+2025-06-04 16:09:01,013 - INFO - Khởi động ứng dụng
+2025-06-04 16:09:01,015 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:09:11,774 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:09:15,981 - INFO - Mượn sách thành công: 1 bởi 1
+2025-06-04 16:09:18,290 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-04 16:10:11,249 - INFO - Khởi động ứng dụng
+2025-06-04 16:10:11,250 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:10:13,061 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-04 16:10:28,195 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-04 16:10:45,114 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:10:49,786 - ERROR - Lỗi khi mượn sách: Vui lòng chọn bạn đọc!
+2025-06-04 16:10:53,054 - INFO - Mở cửa sổ trả sách
+2025-06-04 16:10:55,601 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-04 16:11:01,591 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:11:08,007 - INFO - Mượn sách thành công: 3 bởi 1
+2025-06-04 16:11:10,391 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-04 16:12:28,589 - INFO - Khởi động ứng dụng
+2025-06-04 16:12:28,590 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:12:32,281 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:12:41,070 - INFO - Mượn sách thành công: 2 bởi 1
+2025-06-04 16:12:44,030 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-04 16:15:02,098 - INFO - Khởi động ứng dụng
+2025-06-04 16:15:02,099 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:15:04,014 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-04 16:15:08,212 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:15:17,233 - INFO - Mượn sách thành công: 11 bởi 2
+2025-06-04 16:15:19,524 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-04 16:15:31,194 - INFO - Mở cửa sổ trả sách
+2025-06-04 16:15:34,032 - INFO - Trả sách thành công: 11
+2025-06-04 16:15:39,412 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 16:17:08,560 - INFO - Khởi động ứng dụng
+2025-06-04 16:17:08,564 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:17:25,277 - INFO - Mở cửa sổ thêm sách mới
+2025-06-04 16:17:52,213 - INFO - Thêm sách mới thành công: 100
+2025-06-04 16:17:55,681 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 16:17:55,682 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-04 16:17:59,327 - INFO - Mở cửa sổ cập nhật sách
+2025-06-04 16:17:59,328 - INFO - Mở cửa sổ cập nhật cho sách: 100
+2025-06-04 16:18:15,750 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-04 16:18:54,438 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-04 16:19:23,857 - INFO - Thêm bạn đọc mới thành công: 3
+2025-06-04 16:19:26,320 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-04 16:19:26,321 - WARNING - Không có bạn đọc nào được chọn để cập nhật
+2025-06-04 16:19:33,510 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-04 16:19:35,052 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-04 16:19:36,004 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-04 16:25:47,646 - INFO - Khởi động ứng dụng
+2025-06-04 16:25:47,648 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:25:50,112 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-04 16:25:53,950 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-04 16:25:53,951 - WARNING - Không có bạn đọc nào được chọn để cập nhật
+2025-06-04 16:25:58,587 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-04 16:25:58,588 - INFO - Mở cửa sổ cập nhật cho bạn đọc: 2
+2025-06-04 16:26:08,341 - INFO - Cập nhật thông tin bạn đọc thành công: 2
+2025-06-04 16:26:18,768 - INFO - Mở cửa sổ tìm kiếm bạn đọc
+2025-06-04 16:26:28,542 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 16:28:24,602 - INFO - Khởi động ứng dụng
+2025-06-04 16:28:24,604 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:28:38,361 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:28:45,360 - INFO - Mượn sách thành công: 100 bởi 3
+2025-06-04 16:28:53,486 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 16:32:10,935 - INFO - Khởi động ứng dụng
+2025-06-04 16:32:10,936 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:32:13,601 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:32:20,432 - INFO - Mượn sách thành công: 2 bởi 2
+2025-06-04 16:32:36,848 - INFO - Mở cửa sổ trả sách
+2025-06-04 16:32:40,480 - INFO - Mở cửa sổ mượn sách
+2025-06-04 16:32:47,845 - ERROR - Lỗi khi mượn sách: Sách đã hết!
+2025-06-04 16:32:52,638 - ERROR - Lỗi khi mượn sách: Sách đã hết!
+2025-06-04 16:32:55,615 - INFO - Mượn sách thành công: 100 bởi 3
+2025-06-04 16:33:02,168 - INFO - Mở cửa sổ trả sách
+2025-06-04 16:33:06,920 - INFO - Trả sách thành công: 2
+2025-06-04 16:33:09,282 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-04 16:33:23,527 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 16:33:27,939 - INFO - Khởi động ứng dụng
+2025-06-04 16:33:27,941 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:33:39,203 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 16:34:10,784 - INFO - Khởi động ứng dụng
+2025-06-04 16:34:10,785 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:35:48,901 - INFO - Khởi động ứng dụng
+2025-06-04 16:35:48,902 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:37:13,621 - INFO - Khởi động ứng dụng
+2025-06-04 16:37:13,623 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:37:48,558 - INFO - Khởi động ứng dụng
+2025-06-04 16:37:48,559 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:40:37,203 - INFO - Khởi động ứng dụng
+2025-06-04 16:40:37,206 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:46:17,444 - INFO - Khởi động ứng dụng
+2025-06-04 16:46:17,448 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:49:06,986 - INFO - Khởi động ứng dụng
+2025-06-04 16:49:06,988 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:52:04,443 - INFO - Khởi động ứng dụng
+2025-06-04 16:52:04,447 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:52:04,633 - ERROR - Lỗi không mong muốn: module 'data_handler' has no attribute 'tracking_db'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 13, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 40, in __init__
+    self.setup_tracking_tab()
+  File "D:\Library_Management_System\gui.py", line 253, in setup_tracking_tab
+    self.update_tracking_list()
+  File "D:\Library_Management_System\gui.py", line 867, in update_tracking_list
+    for i, tracking in enumerate(data_handler.tracking_db.values()):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'data_handler' has no attribute 'tracking_db'
+2025-06-04 16:54:25,447 - INFO - Khởi động ứng dụng
+2025-06-04 16:54:25,451 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:54:25,625 - ERROR - Lỗi không mong muốn: 'TrackBook' object has no attribute 'ban_doc'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 13, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 40, in __init__
+    self.setup_tracking_tab()
+  File "D:\Library_Management_System\gui.py", line 253, in setup_tracking_tab
+    self.update_tracking_list()
+  File "D:\Library_Management_System\gui.py", line 870, in update_tracking_list
+    tracking.ban_doc,
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'TrackBook' object has no attribute 'ban_doc'. Did you mean: 'ma_ban_doc'?
+2025-06-04 16:56:49,229 - INFO - Khởi động ứng dụng
+2025-06-04 16:56:49,232 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:57:00,602 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-04 16:57:15,192 - INFO - Khởi động ứng dụng
+2025-06-04 16:57:15,195 - INFO - Đã tải dữ liệu thành công
+2025-06-04 16:59:12,748 - INFO - Khởi động ứng dụng
+2025-06-04 16:59:12,752 - INFO - Đã tải dữ liệu thành công
+2025-06-04 17:00:38,788 - INFO - Khởi động ứng dụng
+2025-06-04 17:00:38,791 - INFO - Đã tải dữ liệu thành công
+2025-06-04 17:05:19,609 - INFO - Khởi động ứng dụng
+2025-06-04 17:05:19,616 - INFO - Đã tải dữ liệu thành công
+2025-06-04 17:09:23,908 - INFO - Khởi động ứng dụng
+2025-06-04 17:09:23,911 - INFO - Đã tải dữ liệu thành công
+2025-06-04 17:14:25,926 - INFO - Khởi động ứng dụng
+2025-06-04 17:14:25,930 - INFO - Đã tải dữ liệu thành công
+2025-06-04 17:15:28,644 - INFO - Khởi động ứng dụng
+2025-06-04 17:15:28,648 - INFO - Đã tải dữ liệu thành công
+2025-06-04 17:16:10,044 - INFO - Khởi động ứng dụng
+2025-06-04 17:16:10,047 - INFO - Đã tải dữ liệu thành công
+2025-06-04 17:16:54,031 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-04 17:16:57,105 - INFO - Mở cửa sổ trả sách
