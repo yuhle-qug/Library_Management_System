@@ -1,12 +1,4 @@
 {
-    "2": {
-        "ma_ban_doc": "2",
-        "ten": "Reader Name 2",
-        "ngay_sinh": "02/02/1992",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Address 2",
-        "so_dien_thoai": 987654321
-    },
     "4": {
         "ma_ban_doc": "4",
         "ten": "Reader Name 4",
@@ -38,5 +30,13 @@
         "gioi_tinh": "Nam",
         "dia_chi": "Address 3",
         "so_dien_thoai": 112233445
+    },
+    "2": {
+        "ma_ban_doc": "2",
+        "ten": "Reader Name 2",
+        "ngay_sinh": "02/02/1992",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Address 2",
+        "so_dien_thoai": 987654321
     }
 }
