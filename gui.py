@@ -11,6 +11,7 @@ from logger import logger
 from datetime import datetime, timedelta
 import customtkinter as ctk
 from ttkbootstrap.dialogs import DatePickerDialog
+from PIL import Image, ImageTk
 
 class MyDatePicker:
     def __init__(self, parent):
@@ -32,21 +33,45 @@ class LibraryManagementSystem:
         self.style = ttk.Style()
         # Theme "cosmo" đã được áp dụng cho root.
 
-        title_frame = ttk.Frame(root)
-        title_frame.pack(pady=20, padx=20, fill='x')
-        self.style.configure("Title.TFrame", background="#E3F2FD")
-        title_frame.configure(style="Title.TFrame")
+        # Tạo khoảng trống ở đầu 
+        spacing_frame = ttk.Frame(root)
+        spacing_frame.pack(pady=10)
 
-        title_label = ttk.Label(
-            title_frame,
+        # Tạo frame chứa logo và tiêu đề
+        header_frame = ttk.Frame(root)
+        header_frame.pack(pady=(0,10), padx=20, fill='x')
+        self.style.configure("Header.TFrame", background="#E3F2FD")
+        header_frame.configure(style="Header.TFrame")
+        try:
+            # Đường dẫn đến file logo của bạn
+            logo_path = "assets/hust.png"  # Thay đổi đường dẫn phù hợp
+            logo_image = Image.open(logo_path)
+            # Điều chỉnh kích thước logo
+            desired_height = 70  # Chiều cao mong muốn
+            ratio = desired_height / float(logo_image.size[1])
+            width = int(float(logo_image.size[0]) * float(ratio))
+            logo_image = logo_image.resize((width, desired_height), Image.Resampling.LANCZOS)
+            logo_photo = ImageTk.PhotoImage(logo_image)
+            
+            logo_label = ttk.Label(
+                header_frame,
+                image=logo_photo,
+                background="#E3F2FD"
+            )
+            logo_label.image = logo_photo  # Giữ reference để tránh garbage collection
+            logo_label.pack(side=tk.LEFT, padx=(0, 20))
+            title_label = ttk.Label(
+            header_frame,
             text="HỆ THỐNG QUẢN LÝ THƯ VIỆN",
             font=("Arial Unicode MS", 24, "bold"),
             foreground="#2C3E50",
             background="#E3F2FD",
-            padding=(20, 10),
-            anchor="center"
-        )
-        title_label.pack(expand=True, fill='x')
+            padding=(0, 10)
+            )
+            title_label.pack(side=tk.LEFT)
+        except Exception as e:
+            logger.error(f"Không thể tải logo: {e}")
+        
 
         # --- STYLE CHO NOTEBOOK VÀ TAB (THỬ NGHIỆM NÂNG CAO) ---
         active_tab_bg = "white"
@@ -188,7 +213,7 @@ class LibraryManagementSystem:
                     overdue_days = (today - ngay_muon_dt).days - due_days_limit
                     
                     if overdue_days > 0:
-                        record.trang_thai = "Overtime"
+                        record.trang_thai = "Overdue"
                         reader_info = data_handler.readers_db.get(record.ma_ban_doc)
                         if reader_info:
                             overdue_records.append({
@@ -245,7 +270,11 @@ class LibraryManagementSystem:
         self.sort_by.bind("<<ComboboxSelected>>", lambda e: self.update_book_list())
 
         ttk.Label(filter_frame, text="Lọc theo thể loại:").pack(side=tk.LEFT, padx=5)
-        self.filter_by_genre = ttk.Combobox(filter_frame, values=["Tất cả", "Fiction", "Non-Fiction", "Science", "History", "Biography"], state="readonly")
+        self.filter_by_genre = ttk.Combobox(
+            filter_frame, 
+            values=["Tất cả", "Khoa học", "Văn học", "Lịch sử", "Thiếu nhi", "Kinh tế", "Tâm lý", "Công nghệ", "Y học", "Khác"],
+            state="readonly"
+        )
         self.filter_by_genre.pack(side=tk.LEFT, padx=5)
         self.filter_by_genre.bind("<<ComboboxSelected>>", lambda e: self.update_book_list())
 
@@ -277,40 +306,72 @@ class LibraryManagementSystem:
         self.update_book_list()
 
     def setup_reader_tab(self):
-        # Frame chứa các nút chức năng
+    # Frame chứa các nút chức năng
         btn_frame = ttk.Frame(self.reader_tab)
         btn_frame.pack(pady=20)
+         # Thêm frame mới cho các tùy chọn sắp xếp và lọc
+        filter_frame = ttk.Frame(self.reader_tab)
+        filter_frame.pack(pady=10)
+        # Tùy chọn sắp xếp
+        ttk.Label(filter_frame, text="Sắp xếp theo:").pack(side=tk.LEFT, padx=5)
+        self.reader_sort_by = ttk.Combobox(
+            filter_frame, 
+            values=["Mã bạn đọc", "Tên", "Ngày sinh"],
+            state="readonly"
+        )
+        self.reader_sort_by.pack(side=tk.LEFT, padx=5)
+        self.reader_sort_by.set("Mã bạn đọc")  # Giá trị mặc định
+        self.reader_sort_by.bind("<<ComboboxSelected>>", lambda e: self.update_reader_list())
+        # Tùy chọn lọc theo giới tính
+        ttk.Label(filter_frame, text="Lọc theo giới tính:").pack(side=tk.LEFT, padx=5)
+        self.filter_by_gender = ttk.Combobox(
+            filter_frame, 
+            values=["Tất cả", "Nam", "Nữ", "Khác"],
+            state="readonly"
+        )
+        self.filter_by_gender.pack(side=tk.LEFT, padx=5)
+        self.filter_by_gender.set("Tất cả")  # Giá trị mặc định
+        self.filter_by_gender.bind("<<ComboboxSelected>>", lambda e: self.update_reader_list())
 
         ctk.CTkButton(
-        btn_frame,
-        text="Thêm bạn đọc",
-        fg_color="#5AAA7A",
-        corner_radius=5,
-        font=("Segoe UI", 13, "bold"),
-        text_color="white",
-        command=self.show_add_reader_window
-    ).pack(side=tk.LEFT, padx=5)
+            btn_frame,
+            text="Thêm bạn đọc",
+            fg_color="#5AAA7A",
+            corner_radius=5,
+            font=("Segoe UI", 13, "bold"),
+            text_color="white",
+            command=self.show_add_reader_window
+        ).pack(side=tk.LEFT, padx=5)
 
         ctk.CTkButton(
-        btn_frame,
-        text="Cập nhật thông tin",
-        fg_color="#587F98",
-        corner_radius=5,
-        font=("Segoe UI", 13, "bold"),
-        text_color="white",
-        command=self.show_update_reader_window
-    ).pack(side=tk.LEFT, padx=5)
+            btn_frame,
+            text="Cập nhật thông tin",
+            fg_color="#587F98",
+            corner_radius=5,
+            font=("Segoe UI", 13, "bold"),
+            text_color="white",
+            command=self.show_update_reader_window
+        ).pack(side=tk.LEFT, padx=5)
 
         ctk.CTkButton(
-        btn_frame,
-        text="Tìm kiếm bạn đọc",
-        fg_color="#B95A2D",
-        corner_radius=5,
-        font=("Segoe UI", 13, "bold"),
-        text_color="white",
-        command=self.show_search_reader_window
-    ).pack(side=tk.LEFT, padx=5)
+            btn_frame,
+            text="Tìm kiếm bạn đọc",
+            fg_color="#B95A2D",
+            corner_radius=5,
+            font=("Segoe UI", 13, "bold"),
+            text_color="white",
+            command=self.show_search_reader_window
+        ).pack(side=tk.LEFT, padx=5)
 
+        ctk.CTkButton(
+            btn_frame,
+            text="Xóa bạn đọc",
+            fg_color="#D9534F",
+            corner_radius=5,
+            font=("Segoe UI", 13, "bold"),
+            text_color="white",
+            command=self.delete_reader
+        ).pack(side=tk.LEFT, padx=5)
         # Treeview để hiển thị danh sách bạn đọc
         tree_frame = ttk.Frame(self.reader_tab)
         tree_frame.pack(fill='both', expand=True, padx=20, pady=20)
@@ -351,12 +412,46 @@ class LibraryManagementSystem:
         self.reader_tree.configure(style="Treeview")
 
         self.update_reader_list()
+    def delete_reader(self):
+        if not self.reader_tree.selection():
+            messagebox.showwarning("Cảnh báo", "Vui lòng chọn bạn đọc cần xóa!")
+            return
 
+        selected_item = self.reader_tree.selection()[0]
+        reader_id_from_tree = self.reader_tree.item(selected_item)['values'][0]
+        reader_id_key = str(reader_id_from_tree)
+
+        if reader_id_key not in data_handler.readers_db:
+            messagebox.showerror("Lỗi", f"Mã bạn đọc '{reader_id_key}' không tồn tại trong cơ sở dữ liệu!")
+            return
+
+        # Kiểm tra nếu bạn đọc đang mượn sách
+        borrowed_books = [
+            record for record in data_handler.tracking_records
+            if record.ma_ban_doc == reader_id_key and record.trang_thai in ["Đang mượn", "Quá hạn"]
+        ]
+        if borrowed_books:
+            messagebox.showerror(
+                "Lỗi",
+                f"Không thể xóa bạn đọc '{reader_id_key}' vì đang có sách mượn chưa trả!"
+            )
+            return
+
+        # Xác nhận xóa
+        if not messagebox.askyesno("Xác nhận", f"Bạn có chắc chắn muốn xóa bạn đọc '{reader_id_key}'?"):
+            return
+
+        # Xóa bạn đọc
+        del data_handler.readers_db[reader_id_key]
+        data_handler.save_data()
+        self.update_reader_list()
+        messagebox.showinfo("Thành công", f"Đã xóa bạn đọc '{reader_id_key}'!")
     def setup_tracking_tab(self):
         # Frame chứa các nút chức năng
+        
         btn_frame = ttk.Frame(self.tracking_tab)
         btn_frame.pack(pady=20)
-
+        
         ctk.CTkButton(
         btn_frame,
         text="Mượn sách",
@@ -374,7 +469,7 @@ class LibraryManagementSystem:
         corner_radius=5,
         font=("Segoe UI", 13, "bold"),
         text_color="white",
-        command=self.show_return_window
+        command=self.show_return_window  # Chỉ mở cửa sổ trả sách, không cho phép trả trực tiếp
     ).pack(side=tk.LEFT, padx=5)
 
         ctk.CTkButton(
@@ -409,6 +504,7 @@ class LibraryManagementSystem:
             columns=('Bạn đọc', 'Sách', 'Ngày mượn', 'Ngày trả', 'Trạng thái'),
             yscrollcommand=tree_scroll.set,
             bootstyle="primary",
+            selectmode="none",
             show="headings"
         )
         tree_scroll.config(command=self.tracking_tree.yview)
@@ -435,6 +531,7 @@ class LibraryManagementSystem:
 
         self.update_tracking_list()
     # Các phương thức hiển thị cửa sổ chức năng
+    
     def show_add_book_window(self):
         logger.info("Mở cửa sổ thêm sách mới")
         add_window = tk.Toplevel(self.root)
@@ -514,6 +611,10 @@ class LibraryManagementSystem:
                 # Kiểm tra mã sách đã tồn tại
                 if ma_sach in data_handler.books_db:
                     raise ValueError("Mã sách đã tồn tại!")
+                # Không ép thể loại thành "Khác", giữ nguyên giá trị người dùng nhập
+                if the_loai_var.get() == "Khác..." and custom_the_loai_var.get().strip():
+                    the_loai = custom_the_loai_var.get().strip()
+                existing_genres = self.filter_by_genre['values']
 
                 # Tạo đối tượng sách mới
                 new_book = Book(
@@ -567,7 +668,7 @@ class LibraryManagementSystem:
         
         update_window = tk.Toplevel(self.root)
         update_window.title("Cập Nhật Thông Tin Sách")
-        update_window.geometry("400x700")
+        update_window.geometry("500x700")
         ttk.Label(update_window, text="Cập nhật thông tin sách", font=("Arial", 16)).pack(pady=10)
         # Form fields
         ttk.Label(update_window, text="Mã sách:").pack(pady=5)
@@ -583,7 +684,8 @@ class LibraryManagementSystem:
         the_loai_var = tk.StringVar(value=book.the_loai)
         the_loai_combobox = ttk.Combobox(
             update_window, textvariable=the_loai_var, state="readonly",
-            values=["Fiction", "Non-Fiction", "Science", "History", "Biography", "Khác..."]
+            values=["Fiction", "Non-Fiction", "Science", "History", "Biography", "Khác..."],
+            width = 49
         )
         the_loai_combobox.pack(pady=5)
 
@@ -611,9 +713,13 @@ class LibraryManagementSystem:
         so_luong_entry.pack(pady=5)
 
         ttk.Label(update_window, text="Tình trạng:").pack(pady=5)
-        tinh_trang_entry = ttk.Entry(update_window, width=50)
-        tinh_trang_entry.insert(0, book.tinh_trang)
-        tinh_trang_entry.pack(pady=5)
+        tinh_trang_var = tk.StringVar(value="New")
+        tinh_trang_combobox = ttk.Combobox(
+            update_window, textvariable=tinh_trang_var, state="readonly",
+            values=["New", "Used"],
+            width=49
+        )
+        tinh_trang_combobox.pack(pady=5)
 
         ttk.Label(update_window, text="Nhà xuất bản:").pack(pady=5)
         nha_xuat_ban_entry = ttk.Entry(update_window, width=50)
@@ -627,10 +733,19 @@ class LibraryManagementSystem:
                 book.tac_gia = tac_gia_entry.get().strip()
                 book.the_loai = custom_the_loai_var.get().strip() if the_loai_var.get() == "Khác..." else the_loai_var.get()
                 book.so_luong = int(so_luong_entry.get().strip())
-                book.tinh_trang = tinh_trang_entry.get().strip()
+                book.tinh_trang = tinh_trang_combobox.get().strip()
                 book.nha_xuat_ban = nha_xuat_ban_entry.get().strip()
+
+                if the_loai_var.get() == "Khác..." and custom_the_loai_var.get().strip():
+                    book.the_loai = custom_the_loai_var.get().strip()
+
+                #Lưu dữ liệu
                 data_handler.save_data()
+                self.update_book_list()
                 update_window.destroy()
+                
+                #thông báo cập nhật thành công 
+                messagebox.showinfo("Thành công", "Thông tin sách đã được cập nhật!")
             except ValueError as e:
                 messagebox.showerror("Lỗi", str(e))
 
@@ -674,10 +789,17 @@ class LibraryManagementSystem:
         if books is None:
             books = list(data_handler.books_db.values())
 
+        # Danh sách thể loại sẵn có 
+        predefined_genres = ["Khoa học", "Văn học", "Lịch sử", "Thiếu nhi", "Kinh tế", "Tâm lý", "Công nghệ", "Y học"]
         # Lọc theo thể loại nếu được chọn
         selected_genre = self.filter_by_genre.get() if hasattr(self, 'filter_by_genre') else None
         if selected_genre and selected_genre != "Tất cả":
-            books = [book for book in books if book.the_loai == selected_genre]
+            if selected_genre == "Khác":
+                # Lọc các sách có thể loại không nằm trong danh sách sẵn có
+                books = [book for book in books if book.the_loai not in predefined_genres]
+            else:
+                # Lọc các sách có thể loại khớp với thể loại được chọn
+                books = [book for book in books if book.the_loai == selected_genre]
 
         # Sắp xếp theo tiêu chí được chọn
         sort_criteria = self.sort_by.get() if hasattr(self, 'sort_by') else None
@@ -721,8 +843,9 @@ class LibraryManagementSystem:
         search_criteria_var = tk.StringVar(value="Mã sách")
         search_criteria_combobox = ttk.Combobox(
             search_window, textvariable=search_criteria_var, state="readonly",
-            values=["Mã sách", "Tên", "Số điện thoại"]
+            values=["Mã sách", "Tên", "Tác giả", "Thể loại"]
         )
+        search_criteria_combobox.pack(pady=5)
         # Search entry
         ttk.Label(search_window, text="Nhập từ khóa tìm kiếm:").pack(pady=5)
         search_entry = ttk.Entry(search_window)
@@ -731,15 +854,17 @@ class LibraryManagementSystem:
         def search():
             keyword = search_entry.get().strip().lower()
             criteria = search_criteria_var.get()
-            found_readers = []
+            found_books = []
 
-            for reader in data_handler.readers_db.values():
-                if criteria == "Mã bạn đọc" and keyword in reader.ma_ban_doc.lower():
-                    found_readers.append(reader)
-                elif criteria == "Tên" and keyword in reader.ten.lower():
-                    found_readers.append(reader)
-                elif criteria == "Số điện thoại" and keyword in str(reader.so_dien_thoai).lower():
-                    found_readers.append(reader)
+            for book in data_handler.books_db.values():
+                if criteria == "Mã sách" and keyword in book.ma_sach.lower():
+                    found_books.append(book)
+                elif criteria == "Tên" and keyword in book.ten_sach.lower():
+                    found_books.append(book)
+                elif criteria == "Tác giả" and keyword in book.tac_gia.lower():
+                    found_books.append(book)
+                elif criteria == "Thể loại" and keyword in book.the_loai.lower():
+                    found_books.append(book)
 
             # Display results
             result_window = tk.Toplevel(search_window)
@@ -760,14 +885,14 @@ class LibraryManagementSystem:
             result_tree.pack(pady=10, padx=10, fill="both", expand=True)
 
             # Add results to Treeview
-            for reader in found_readers:
+            for book in found_books:
                 result_tree.insert("", "end", values=(
-                    reader["ma_ban_doc"],
-                    reader["ten"],
-                    reader["ngay_sinh"],
-                    reader["gioi_tinh"],
-                    reader["dia_chi"],
-                    reader["so_dien_thoai"]
+                    book.ma_sach,
+                    book.ten_sach,
+                    book.tac_gia,
+                    book.the_loai,
+                    book.so_luong,
+                    book.tinh_trang
                 ))
 
         ttk.Button(search_window, text="Tìm kiếm", command=search).pack(pady=20)
@@ -775,7 +900,7 @@ class LibraryManagementSystem:
         logger.info("Mở cửa sổ thêm bạn đọc mới")
         add_window = tk.Toplevel(self.root)
         add_window.title("Thêm Bạn Đọc Mới")
-        add_window.geometry("400x600")
+        add_window.geometry("700x800")
 
         form = ScrolledFrame(add_window) # Sử dụng ScrolledFrame
         form.pack(fill=tk.BOTH, expand=tk.YES, padx=10, pady=10)
@@ -791,6 +916,7 @@ class LibraryManagementSystem:
         ten_entry.pack(pady=5)
 
         ttk.Label(form, text="Ngày sinh (DD/MM/YYYY):").pack(pady=5)
+        ttk.Label(form, text="Vui lòng chọn ngày sinh bằng nút bên dưới (sử dụng chuột phải để di chuyển giữa các năm)").pack(pady=5)
         ngay_sinh_entry = ttk.Entry(form, width=50) # Tăng chiều rộng
         ngay_sinh_entry.pack(pady=5)
 
@@ -859,7 +985,8 @@ class LibraryManagementSystem:
                     datetime.strptime(ngay_sinh, "%d/%m/%Y")
                 except ValueError as date_err:
                     raise ValueError("Định dạng ngày sinh không hợp lệ! Vui lòng sử dụng định dạng DD/MM/YYYY")
-
+                if not sdt.isdigit():
+                    raise ValueError("Số điện thoại chỉ được chứa các ký tự số!")
                 new_reader = Reader(
                     ma_ban_doc=ma_doc,
                     ten=ten,
@@ -897,6 +1024,19 @@ class LibraryManagementSystem:
 
         # Lấy danh sách bạn đọc từ readers_db
         readers = list(data_handler.readers_db.values())
+        #lọc theo giới tính 
+        selected_gender = self.filter_by_gender.get()
+        if selected_gender != "Tất cả":
+            readers = [reader for reader in readers if reader.gioi_tinh == selected_gender]
+        sort_by = self.reader_sort_by.get()
+        if sort_by == "Tên":
+            readers.sort(key=lambda x: x.ten)
+        elif sort_by == "Ngày sinh":
+        # Chuyển đổi chuỗi ngày thành đối tượng datetime để so sánh
+            readers.sort(key=lambda x: datetime.strptime(x.ngay_sinh, "%d/%m/%Y"))
+        else:  # Mặc định sắp xếp theo Mã bạn đọc
+            readers.sort(key=lambda x: int(x.ma_ban_doc) if x.ma_ban_doc.isdigit() else x.ma_ban_doc)
+        # Sắp xếp theo tiêu chí được chọn
 
         # Thêm dữ liệu vào Treeview với màu xen kẽ
         for index, reader in enumerate(readers):
@@ -930,7 +1070,7 @@ class LibraryManagementSystem:
 
         update_window = tk.Toplevel(self.root)
         update_window.title("Cập Nhật Thông Tin Bạn Đọc")
-        update_window.geometry("400x600")
+        update_window.geometry("500x800")
         
         form = ScrolledFrame(update_window)
         form.pack(fill=BOTH, expand=YES, padx=20, pady=20)
@@ -1052,7 +1192,7 @@ class LibraryManagementSystem:
             # Display results
             result_window = tk.Toplevel(search_window)
             result_window.title("Kết Quả Tìm Kiếm Bạn Đọc")
-            result_window.geometry("900x400") # Điều chỉnh kích thước để hiển thị đủ cột
+            result_window.geometry("1100x400") # Điều chỉnh kích thước để hiển thị đủ cột
 
             result_tree = ttk.Treeview(
                 result_window,
@@ -1193,124 +1333,128 @@ class LibraryManagementSystem:
         self.tracking_tree.tag_configure('oddrow', background='#E8F4FA')
         self.tracking_tree.tag_configure('evenrow', background='#FFFFFF')
         logger.debug("Đã cập nhật xong danh sách mượn/trả")
-
+    
     def show_return_window(self):
         logger.info("Mở cửa sổ trả sách")
         return_window = tk.Toplevel(self.root)
         return_window.title("Trả Sách")
-        return_window.geometry("600x500")
+        return_window.geometry("800x800")
 
-        # Form
-        form = ScrolledFrame(return_window)
-        form.pack(fill=BOTH, expand=YES, padx=20, pady=20)
-
-        # Search by reader ID
-        ttk.Label(form, text="Nhập mã bạn đọc:").pack(pady=5)
+        # Nhập mã bạn đọc
+        ttk.Label(return_window, text="Nhập mã bạn đọc:").pack(pady=5)
         reader_id_var = tk.StringVar()
-        reader_id_entry = ttk.Entry(form, textvariable=reader_id_var)
+        reader_id_entry = ttk.Entry(return_window, textvariable=reader_id_var)
         reader_id_entry.pack(pady=5)
 
-        ttk.Button(
-            form,
-            text="Tìm",
-            bootstyle="primary",
-            command=lambda: update_combobox()
-        ).pack(pady=5)
-
-        # Create selection for books
-        ttk.Label(form, text="Chọn sách cần trả:").pack(pady=5)
-        record_var = tk.StringVar()
-        record_cb = ttk.Combobox(form, textvariable=record_var)
-        record_cb.pack(pady=5)
-
-        def update_combobox():
+        def update_treeview():
             reader_id = reader_id_var.get().strip()
-            record_values = []
-            logger.debug(f"Current readers_db: {data_handler.readers_db}")  # Debug log to check readers_db
-            if reader_id in data_handler.readers_db:
-                borrowed_records = [record for record in data_handler.tracking_records 
-                                    if record.ma_ban_doc == reader_id and record.trang_thai in ["Borrowed", "Overtime"]]
-                if not borrowed_records:
-                    logger.warning(f"No borrowed books found for reader ID: {reader_id}")
-                for record in borrowed_records:
-                    record_values.append(f"{record.ma_sach_muon} - {record.ten_sach_muon}")
-            else:
-                logger.warning(f"Reader ID {reader_id} not found in database.")
-            record_cb['values'] = record_values
+            if not reader_id:
+                messagebox.showwarning("Cảnh báo", "Vui lòng nhập mã bạn đọc!")
+                return
 
-        def return_book():
-            try:
-                if not record_var.get():
-                    raise ValueError("Vui lòng chọn sách cần trả!")
+            # Xóa dữ liệu cũ trong Treeview
+            for item in return_tree.get_children():
+                return_tree.delete(item)
 
-                book_id = record_var.get().split(' - ')[0]
+            # Lấy danh sách sách mượn của bạn đọc
+            borrowed_records = [
+                record for record in data_handler.tracking_records
+                if record.ma_ban_doc == reader_id and record.trang_thai == "Đang mượn"
+            ]
 
-                # Find the record
-                record = None
-                for r in data_handler.tracking_records:
-                    if r.ma_sach_muon == book_id and r.ma_ban_doc == reader_id_var.get().strip():
-                        record = r
-                        break
+            if not borrowed_records:
+                messagebox.showinfo("Thông báo", "Không tìm thấy sách mượn cho bạn đọc này!")
+                return
 
-                if not record:
-                    raise ValueError("Không tìm thấy thông tin mượn sách!")
+            for record in borrowed_records:
+                return_tree.insert("", "end", values=(
+                    record.ma_sach_muon,
+                    record.ten_sach_muon,
+                    record.ngay_muon,
+                    record.trang_thai
+                ))
 
-                # Update record
-                now = datetime.now().strftime("%d/%m/%Y")
-                record.ngay_tra = now
-                record.trang_thai = "Returned"
+        ttk.Button(return_window, text="Tìm", command=update_treeview).pack(pady=5)
 
-                # Update book quantity
-                book = data_handler.books_db[book_id]
-                book.so_luong += 1
+        # Treeview để hiển thị danh sách sách mượn
+        tree_frame = ttk.Frame(return_window)
+        tree_frame.pack(fill='both', expand=True, padx=20, pady=20)
 
-                self.update_tracking_list()
-                self.update_book_list()
-                data_handler.save_data()
+        return_tree = ttk.Treeview(
+            tree_frame,
+            columns=("Mã sách", "Tên sách", "Ngày mượn", "Trạng thái"),
+            show="headings"
+        )
+        return_tree.heading("Mã sách", text="Mã sách")
+        return_tree.heading("Tên sách", text="Tên sách")
+        return_tree.heading("Ngày mượn", text="Ngày mượn")
+        return_tree.heading("Trạng thái", text="Trạng thái")
 
-                logger.info(f"Trả sách thành công: {book_id}")
-                messagebox.showinfo("Thành công", "Đã ghi nhận trả sách!")
-                return_window.destroy()
+        return_tree.pack(fill='both', expand=True)
 
-            except ValueError as e:
-                logger.error(f"Lỗi khi trả sách: {str(e)}")
-                messagebox.showerror("Lỗi", str(e))
+        def return_books():
+            selected_items = return_tree.selection()
+            if not selected_items:
+                messagebox.showwarning("Cảnh báo", "Vui lòng chọn sách cần trả!")
+                return
 
-        ttk.Button(
-            form,
-            text="Trả sách",
-            bootstyle="success",
-            command=return_book
-        ).pack(pady=20)
+            for item in selected_items:
+                values = return_tree.item(item, "values")
+                ma_sach, ten_sach, ngay_muon, trang_thai = values
+
+                # Tìm record trong tracking_records
+                record = next((r for r in data_handler.tracking_records if r.ma_sach_muon == ma_sach), None)
+                if record:
+                    record.ngay_tra = datetime.now().strftime("%d/%m/%Y")
+                    record.trang_thai = "Đã trả"
+
+                    # Cập nhật số lượng sách trong books_db
+                    book = data_handler.books_db.get(ma_sach)
+                    if book:
+                        book.so_luong += 1
+
+        data_handler.save_data()
+        messagebox.showinfo("Thành công", "Đã ghi nhận trả sách!")
+        return_window.destroy()
+
+        ttk.Button(return_window, text="Trả sách", command=return_books).pack(pady=20)
 
     def show_history_window(self):
         logger.info("Mở cửa sổ xem lịch sử mượn/trả")
         history_window = tk.Toplevel(self.root)
         history_window.title("Lịch Sử Mượn/Trả Sách")
-        history_window.geometry("800x600")
+        history_window.geometry("1100x600")
         
         # Search frame
         search_frame = ttk.Frame(history_window)
         search_frame.pack(fill=X, padx=20, pady=20)
         
-        ttk.Label(search_frame, text="Tìm theo bạn đọc:").pack(side=LEFT)
+        ttk.Label(search_frame, text="Tìm theo mã bạn đọc:").pack(side=tk.LEFT)
         search_var = tk.StringVar()
         search_entry = ttk.Entry(search_frame, textvariable=search_var)
-        search_entry.pack(side=LEFT, padx=5)
+        search_entry.pack(side=tk.LEFT, padx=5)
         
         # Result tree
         tree = ttk.Treeview(
             history_window,
-            columns=('Bạn đọc', 'Sách', 'Ngày mượn', 'Ngày trả', 'Trạng thái'),
-            bootstyle="primary"
+            columns=('Mã bạn đọc', 'Bạn đọc', 'Sách', 'Ngày mượn', 'Ngày trả', 'Trạng thái'),
+            show = 'headings'
         )
+        tree.heading('Mã bạn đọc', text='Mã bạn đọc')
         tree.heading('Bạn đọc', text='Bạn đọc')
         tree.heading('Sách', text='Sách')
         tree.heading('Ngày mượn', text='Ngày mượn')
         tree.heading('Ngày trả', text='Ngày trả')
         tree.heading('Trạng thái', text='Trạng thái')
         tree.pack(pady=10, padx=20, fill=BOTH, expand=True)
-        
+
+        tree.column('Mã bạn đọc', width=100, anchor='center')
+        tree.column('Bạn đọc', width=150, anchor='w')
+        tree.column('Sách', width=200, anchor='w')
+        tree.column('Ngày mượn', width=120, anchor='center')
+        tree.column('Ngày trả', width=120, anchor='center')
+        tree.column('Trạng thái', width=100, anchor='center')
+        tree.pack(pady=10, padx=20, fill=tk.BOTH, expand=True)
         def search_history(*args):
             keyword = search_var.get().strip().lower()
             
@@ -1324,68 +1468,73 @@ class LibraryManagementSystem:
                 if not reader:
                     continue
                     
-                if not keyword or keyword in reader.ten.lower():
+                if not keyword or keyword == record.ma_ban_doc:
+                    # Xử lý hiển thị ngày trả và trạng thái
+                    ngay_tra_display = ""
+                    if record.trang_thai == "Đã trả":
+                        ngay_tra_display = record.ngay_tra
+                    elif record.trang_thai == "Quá hạn":
+                        ngay_tra_display = "Chưa trả"
+                    else:  # Đang mượn
+                        ngay_tra_display = "Chưa trả"
                     tree.insert('', 'end', values=(
+                        record.ma_ban_doc,
                         reader.ten,
                         record.ten_sach_muon,
                         record.ngay_muon,
-                        record.ngay_tra or "Chưa trả",
+                        ngay_tra_display,
                         record.trang_thai
                     ))
         
         search_var.trace('w', search_history)
         search_history()
     def show_overdue_books_window(self):
-        # Tạo cửa sổ mới để hiển thị danh sách sách quá hạn
+        logger.info("Mở cửa sổ danh sách sách quá hạn")
         overdue_window = tk.Toplevel(self.root)
         overdue_window.title("Danh Sách Sách Quá Hạn")
-        overdue_window.geometry("800x600")
+        overdue_window.geometry("1100x600")
 
         overdue_tree_frame = ttk.Frame(overdue_window)
         overdue_tree_frame.pack(fill='both', expand=True, padx=20, pady=20)
 
         overdue_tree = ttk.Treeview(
             overdue_tree_frame,
-            columns=("Bạn đọc", "Sách", "Ngày mượn", "Số ngày quá hạn"),
+            columns=("Mã bạn đọc", "Bạn đọc", "Sách", "Ngày mượn", "Số ngày quá hạn"),
             show="headings"
         )
-        overdue_tree.pack(fill='both', expand=True)
-
+        overdue_tree.heading("Mã bạn đọc", text="Mã bạn đọc")
         overdue_tree.heading("Bạn đọc", text="Bạn đọc")
         overdue_tree.heading("Sách", text="Sách")
         overdue_tree.heading("Ngày mượn", text="Ngày mượn")
         overdue_tree.heading("Số ngày quá hạn", text="Số ngày quá hạn")
+        overdue_tree.column("Mã bạn đọc", width=100, anchor="center")
+        overdue_tree.column("Bạn đọc", width=200, anchor="w")
+        overdue_tree.column("Sách", width=300, anchor="w")
+        overdue_tree.column("Ngày mượn", width=150, anchor="center")
+        overdue_tree.column("Số ngày quá hạn", width=150, anchor="center")
 
-        overdue_tree.column("Bạn đọc", anchor="w", width=200)
-        overdue_tree.column("Sách", anchor="w", width=200)
-        overdue_tree.column("Ngày mượn", anchor="center", width=120)
-        overdue_tree.column("Số ngày quá hạn", anchor="center", width=120)
+        overdue_tree.pack(fill='both', expand=True)
 
-        # Đảm bảo sử dụng đúng hàm today từ datetime
-        from datetime import date, timedelta
+        from datetime import date
         today = date.today()
-        
-        due_days_limit = 30
-        due_delta = timedelta(days=due_days_limit)
-
         overdue_records = []
 
         for record in data_handler.tracking_records:
-            if record.trang_thai == "Overtime":
-                try:
-                    reader_name = data_handler.readers_db.get(record.ma_ban_doc, None)
-                    reader_info = f"{reader_name.ten} (Mã: {record.ma_ban_doc})" if reader_name else f"Mã bạn đọc: {record.ma_ban_doc}"
-                    ngay_muon_dt = datetime.strptime(record.ngay_muon, "%d/%m/%Y").date()
-                    overdue_days = (date.today() - ngay_muon_dt).days - 30
-                    overdue_records.append((reader_info, record.ten_sach_muon, record.ngay_muon, overdue_days))
-                except ValueError:
-                    print(f"Lỗi định dạng ngày mượn cho record: {record.ma_sach_muon} của bạn đọc {record.ma_ban_doc}")
-
-        # Sắp xếp danh sách theo số ngày quá hạn giảm dần
-        overdue_records.sort(key=lambda x: x[3], reverse=True)
-
-        for record in overdue_records:
-            overdue_tree.insert("", "end", values=record)
+            if record.trang_thai == "Quá hạn":
+                # Lấy thông tin bạn đọc
+                reader = data_handler.readers_db.get(record.ma_ban_doc)
+                if not reader:
+                    continue
+                ngay_muon_dt = datetime.strptime(record.ngay_muon, "%d/%m/%Y").date()
+                overdue_days = (today - ngay_muon_dt).days
+                overdue_records.append((record.ma_ban_doc, record.ten_sach_muon, record.ngay_muon, overdue_days))
+                overdue_tree.insert("", "end", values=(
+                record.ma_ban_doc,
+                reader.ten,  # Thêm tên bạn đọc
+                record.ten_sach_muon,
+                record.ngay_muon,
+                f"{overdue_days} ngày"
+            ))
 
         ttk.Button(overdue_window, text="Đóng", command=overdue_window.destroy).pack(pady=10)
 

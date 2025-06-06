@@ -161,3 +161,337 @@ AttributeError: 'LibraryManagementSystem' object has no attribute 'style'
 2025-06-05 09:07:00,866 - INFO - Mở cửa sổ thêm sách mới
 2025-06-05 09:10:08,498 - INFO - Khởi động ứng dụng
 2025-06-05 09:10:08,501 - INFO - Đã tải dữ liệu thành công
+2025-06-05 09:39:55,084 - INFO - Khởi động ứng dụng
+2025-06-05 09:39:55,089 - INFO - Đã tải dữ liệu thành công
+2025-06-05 09:50:46,470 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 09:53:18,588 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 09:53:43,872 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 09:53:46,543 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 09:53:46,544 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 09:56:12,421 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 09:56:58,484 - INFO - Thêm sách mới thành công: 123
+2025-06-05 09:57:08,129 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 09:57:08,131 - INFO - Mở cửa sổ cập nhật cho sách: 12
+2025-06-05 09:57:29,106 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 09:57:29,107 - INFO - Mở cửa sổ cập nhật cho sách: 12
+2025-06-05 09:57:35,680 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 09:57:35,681 - INFO - Mở cửa sổ cập nhật cho sách: 12
+2025-06-05 09:57:44,616 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 09:58:24,094 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 09:58:35,280 - ERROR - Lỗi khi thêm sách: Vui lòng điền đầy đủ thông tin!
+2025-06-05 09:58:56,006 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 09:58:56,008 - INFO - Mở cửa sổ cập nhật cho sách: 14
+2025-06-05 09:59:13,731 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 09:59:20,326 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 10:00:25,626 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 10:00:58,761 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-05 10:00:58,762 - INFO - Mở cửa sổ cập nhật cho bạn đọc: 2
+2025-06-05 10:01:14,381 - INFO - Mở cửa sổ tìm kiếm bạn đọc
+2025-06-05 10:01:51,471 - INFO - Mở cửa sổ mượn sách
+2025-06-05 10:01:56,298 - INFO - Mở cửa sổ trả sách
+2025-06-05 10:02:30,226 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 10:05:23,416 - INFO - Khởi động ứng dụng
+2025-06-05 10:05:23,422 - INFO - Đã tải dữ liệu thành công
+2025-06-05 10:05:39,039 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 10:05:39,040 - INFO - Mở cửa sổ cập nhật cho sách: 10
+2025-06-05 10:06:45,966 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 10:06:45,967 - INFO - Mở cửa sổ cập nhật cho sách: 8
+2025-06-05 10:07:05,555 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 10:07:05,556 - INFO - Mở cửa sổ cập nhật cho sách: 8
+2025-06-05 10:07:44,868 - INFO - Mở cửa sổ mượn sách
+2025-06-05 10:08:02,028 - INFO - Mượn sách thành công: 90 bởi 1
+2025-06-05 10:08:05,116 - INFO - Mở cửa sổ trả sách
+2025-06-05 10:08:17,523 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 10:08:44,524 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-05 10:31:25,922 - INFO - Khởi động ứng dụng
+2025-06-05 10:31:25,929 - INFO - Đã tải dữ liệu thành công
+2025-06-05 10:40:11,542 - INFO - Khởi động ứng dụng
+2025-06-05 10:40:11,546 - INFO - Đã tải dữ liệu thành công
+2025-06-05 10:40:11,691 - ERROR - Lỗi không mong muốn: name 'ttkb' is not defined
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 13, in <module>
+    app = gui.LibraryManagementSystem(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Library_Management_System\gui.py", line 130, in __init__
+    self.notebook = ttkb.Notebook(self.root, bootstyle="light")
+                    ^^^^
+NameError: name 'ttkb' is not defined. Did you mean: 'ttk'?
+2025-06-05 10:51:13,016 - INFO - Khởi động ứng dụng
+2025-06-05 10:51:13,019 - INFO - Đã tải dữ liệu thành công
+2025-06-05 10:51:52,118 - INFO - Khởi động ứng dụng
+2025-06-05 10:51:52,126 - INFO - Đã tải dữ liệu thành công
+2025-06-05 11:15:05,183 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 11:15:30,832 - INFO - Ngày sinh đã chọn (Thêm bạn đọc): 01/09/2005
+2025-06-05 11:15:53,482 - INFO - Thêm bạn đọc mới thành công: 5
+2025-06-05 11:16:05,817 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 11:16:26,879 - INFO - Ngày sinh đã chọn (Thêm bạn đọc): 01/06/2000
+2025-06-05 11:17:09,502 - INFO - Thêm bạn đọc mới thành công: 6
+2025-06-05 11:18:06,716 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-05 11:18:06,717 - INFO - Mở cửa sổ cập nhật cho bạn đọc: 6
+2025-06-05 11:18:58,731 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 11:18:58,731 - INFO - Mở cửa sổ cập nhật cho sách: 75
+2025-06-05 11:23:50,635 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-05 11:24:22,206 - INFO - Khởi động ứng dụng
+2025-06-05 11:24:22,209 - INFO - Đã tải dữ liệu thành công
+2025-06-05 11:32:00,110 - INFO - Khởi động ứng dụng
+2025-06-05 11:32:00,114 - INFO - Đã tải dữ liệu thành công
+2025-06-05 11:39:47,698 - INFO - Khởi động ứng dụng
+2025-06-05 11:39:47,701 - INFO - Đã tải dữ liệu thành công
+2025-06-05 11:42:16,686 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 14:38:51,654 - INFO - Khởi động ứng dụng
+2025-06-05 14:38:51,662 - INFO - Đã tải dữ liệu thành công
+2025-06-05 14:38:59,314 - INFO - Mở cửa sổ trả sách
+2025-06-05 14:45:02,983 - INFO - Khởi động ứng dụng
+2025-06-05 14:45:02,988 - INFO - Đã tải dữ liệu thành công
+2025-06-05 14:45:06,030 - INFO - Mở cửa sổ trả sách
+2025-06-05 14:45:20,379 - INFO - Mở cửa sổ trả sách
+2025-06-05 15:46:48,577 - INFO - Khởi động ứng dụng
+2025-06-05 15:46:48,580 - INFO - Đã tải dữ liệu thành công
+2025-06-05 15:47:00,848 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 15:47:04,099 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 15:47:04,100 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 15:47:08,530 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 15:47:08,531 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 15:47:13,296 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 15:47:13,296 - INFO - Mở cửa sổ cập nhật cho sách: 2
+2025-06-05 15:47:42,939 - INFO - Khởi động ứng dụng
+2025-06-05 15:47:42,941 - INFO - Đã tải dữ liệu thành công
+2025-06-05 15:47:45,293 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 15:47:47,835 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 15:47:47,836 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 15:47:52,195 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 15:47:52,196 - INFO - Mở cửa sổ cập nhật cho sách: 1
+2025-06-05 15:48:00,503 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 15:48:00,504 - INFO - Mở cửa sổ cập nhật cho sách: 1
+2025-06-05 15:48:08,286 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 15:48:08,287 - INFO - Mở cửa sổ cập nhật cho sách: 1
+2025-06-05 16:04:58,226 - INFO - Khởi động ứng dụng
+2025-06-05 16:04:58,271 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:05:06,632 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:05:06,633 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 16:05:14,166 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:05:14,166 - INFO - Mở cửa sổ cập nhật cho sách: 2
+2025-06-05 16:05:25,993 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 16:05:38,743 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 16:05:41,335 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-05 16:05:41,335 - WARNING - Không có bạn đọc nào được chọn để cập nhật
+2025-06-05 16:05:44,052 - INFO - Mở cửa sổ tìm kiếm bạn đọc
+2025-06-05 16:05:57,806 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 16:08:53,515 - INFO - Khởi động ứng dụng
+2025-06-05 16:08:53,519 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:08:55,776 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 16:08:58,655 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:08:58,655 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 16:09:01,591 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 16:09:06,088 - INFO - Mở cửa sổ tìm kiếm bạn đọc
+2025-06-05 16:09:10,124 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-05 16:09:10,124 - WARNING - Không có bạn đọc nào được chọn để cập nhật
+2025-06-05 16:09:15,513 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 16:09:19,289 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 16:10:05,261 - INFO - Khởi động ứng dụng
+2025-06-05 16:10:05,264 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:10:09,659 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 16:10:34,620 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-05 16:10:34,620 - WARNING - Không có bạn đọc nào được chọn để cập nhật
+2025-06-05 16:10:37,367 - INFO - Mở cửa sổ tìm kiếm bạn đọc
+2025-06-05 16:10:41,227 - INFO - Mở cửa sổ mượn sách
+2025-06-05 16:10:44,308 - INFO - Mở cửa sổ trả sách
+2025-06-05 16:10:56,806 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 16:14:21,108 - INFO - Khởi động ứng dụng
+2025-06-05 16:14:21,113 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:16:30,668 - INFO - Khởi động ứng dụng
+2025-06-05 16:16:30,671 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:22:01,705 - INFO - Khởi động ứng dụng
+2025-06-05 16:22:01,709 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:22:26,155 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:22:26,155 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 16:22:28,692 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 16:23:10,370 - ERROR - Lỗi khi thêm sách: Số lượng phải là một số nguyên dương!
+2025-06-05 16:23:13,290 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 16:23:52,629 - ERROR - Lỗi khi thêm sách: Mã sách đã tồn tại!
+2025-06-05 16:23:56,102 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 16:24:12,737 - INFO - Thêm sách mới thành công: 1000
+2025-06-05 16:28:32,949 - INFO - Khởi động ứng dụng
+2025-06-05 16:28:32,952 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:29:13,635 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-05 16:29:20,378 - INFO - Khởi động ứng dụng
+2025-06-05 16:29:20,391 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:29:37,953 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 16:29:40,630 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:29:40,631 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 16:29:42,973 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 16:29:48,499 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 16:29:51,022 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-05 16:29:51,024 - WARNING - Không có bạn đọc nào được chọn để cập nhật
+2025-06-05 16:29:54,606 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-05 16:29:54,606 - INFO - Mở cửa sổ cập nhật cho bạn đọc: 5
+2025-06-05 16:30:01,232 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 16:30:05,165 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:30:05,166 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 16:30:08,728 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:30:08,729 - INFO - Mở cửa sổ cập nhật cho sách: 1
+2025-06-05 16:30:30,929 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:30:30,929 - INFO - Mở cửa sổ cập nhật cho sách: 1
+2025-06-05 16:30:45,757 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-05 16:30:45,758 - INFO - Mở cửa sổ cập nhật cho bạn đọc: 5
+2025-06-05 16:33:12,209 - INFO - Khởi động ứng dụng
+2025-06-05 16:33:12,220 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:33:15,090 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 16:33:17,692 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:33:17,693 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 16:33:21,401 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:33:21,402 - INFO - Mở cửa sổ cập nhật cho sách: 1
+2025-06-05 16:34:26,918 - INFO - Khởi động ứng dụng
+2025-06-05 16:34:26,920 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:34:28,905 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 16:34:31,031 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:34:31,031 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 16:34:34,292 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:34:34,292 - INFO - Mở cửa sổ cập nhật cho sách: 1
+2025-06-05 16:35:06,772 - INFO - Khởi động ứng dụng
+2025-06-05 16:35:06,775 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:35:09,434 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 16:35:15,338 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:35:15,338 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 16:35:17,863 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:35:17,864 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 16:35:20,747 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 16:39:48,927 - INFO - Khởi động ứng dụng
+2025-06-05 16:39:48,930 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:39:57,153 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 16:41:31,799 - INFO - Khởi động ứng dụng
+2025-06-05 16:41:31,803 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:41:34,907 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 16:41:54,989 - INFO - Khởi động ứng dụng
+2025-06-05 16:41:54,995 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:41:58,728 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 16:43:22,134 - INFO - Khởi động ứng dụng
+2025-06-05 16:43:22,136 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:43:24,953 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 16:45:22,800 - INFO - Khởi động ứng dụng
+2025-06-05 16:45:22,804 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:45:25,723 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 16:45:41,163 - INFO - Mở cửa sổ mượn sách
+2025-06-05 16:46:00,161 - INFO - Mở cửa sổ mượn sách
+2025-06-05 16:46:05,423 - ERROR - Lỗi khi mượn sách: Mã bạn đọc không tồn tại!
+2025-06-05 16:46:08,569 - INFO - Mở cửa sổ mượn sách
+2025-06-05 16:46:15,174 - ERROR - Lỗi khi mượn sách: Mã bạn đọc không tồn tại!
+2025-06-05 16:46:28,110 - INFO - Mở cửa sổ mượn sách
+2025-06-05 16:46:37,408 - INFO - Mượn sách thành công: 1 bởi 102
+2025-06-05 16:47:11,116 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-05 16:47:15,705 - INFO - Khởi động ứng dụng
+2025-06-05 16:47:15,719 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:47:20,570 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 16:48:11,881 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 16:50:23,268 - INFO - Khởi động ứng dụng
+2025-06-05 16:50:23,271 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:50:34,905 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 16:57:34,697 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-05 16:57:39,088 - INFO - Khởi động ứng dụng
+2025-06-05 16:57:39,090 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:57:41,914 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 16:57:48,023 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 16:58:08,205 - INFO - Ngày sinh đã chọn (Thêm bạn đọc): 02/06/2025
+2025-06-05 16:58:19,253 - ERROR - Lỗi khi thêm bạn đọc: Số điện thoại chỉ được chứa các ký tự số!
+2025-06-05 16:58:24,260 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-05 16:59:32,296 - INFO - Khởi động ứng dụng
+2025-06-05 16:59:32,303 - INFO - Đã tải dữ liệu thành công
+2025-06-05 16:59:34,789 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 16:59:36,948 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:59:36,949 - WARNING - Không có sách nào được chọn để cập nhật
+2025-06-05 16:59:40,421 - INFO - Mở cửa sổ cập nhật sách
+2025-06-05 16:59:40,421 - INFO - Mở cửa sổ cập nhật cho sách: 1
+2025-06-05 16:59:42,830 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 17:00:16,816 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 17:00:21,314 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-05 17:00:21,315 - WARNING - Không có bạn đọc nào được chọn để cập nhật
+2025-06-05 17:00:26,755 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-05 17:00:26,756 - INFO - Mở cửa sổ cập nhật cho bạn đọc: 1
+2025-06-05 17:00:31,716 - INFO - Mở cửa sổ tìm kiếm bạn đọc
+2025-06-05 17:01:18,883 - INFO - Mở cửa sổ tìm kiếm bạn đọc
+2025-06-05 17:02:02,743 - INFO - Mở cửa sổ mượn sách
+2025-06-05 17:03:57,474 - ERROR - Lỗi khi mượn sách: Mã bạn đọc không tồn tại!
+2025-06-05 17:04:01,340 - INFO - Mở cửa sổ trả sách
+2025-06-05 17:04:18,038 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 17:04:21,213 - INFO - Mở cửa sổ trả sách
+2025-06-05 17:04:40,995 - INFO - Mở cửa sổ trả sách
+2025-06-05 17:04:47,338 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 17:05:41,360 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-05 17:05:45,058 - INFO - Khởi động ứng dụng
+2025-06-05 17:05:45,062 - INFO - Đã tải dữ liệu thành công
+2025-06-05 17:05:51,415 - INFO - Mở cửa sổ tìm kiếm bạn đọc
+2025-06-05 17:05:55,999 - INFO - Mở cửa sổ trả sách
+2025-06-05 17:06:28,392 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-05 17:06:31,784 - INFO - Khởi động ứng dụng
+2025-06-05 17:06:31,787 - INFO - Đã tải dữ liệu thành công
+2025-06-05 17:06:35,239 - INFO - Mở cửa sổ cập nhật bạn đọc
+2025-06-05 17:06:35,240 - WARNING - Không có bạn đọc nào được chọn để cập nhật
+2025-06-05 17:06:38,827 - INFO - Mở cửa sổ trả sách
+2025-06-05 17:12:07,592 - INFO - Khởi động ứng dụng
+2025-06-05 17:12:07,595 - INFO - Đã tải dữ liệu thành công
+2025-06-05 17:12:11,632 - INFO - Mở cửa sổ trả sách
+2025-06-05 17:15:50,303 - INFO - Mở cửa sổ trả sách
+2025-06-05 17:16:00,589 - INFO - Mở cửa sổ trả sách
+2025-06-05 19:54:33,402 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-05 19:57:28,754 - INFO - Khởi động ứng dụng
+2025-06-05 19:57:28,758 - INFO - Đã tải dữ liệu thành công
+2025-06-05 19:57:34,404 - INFO - Mở cửa sổ mượn sách
+2025-06-05 19:57:38,958 - INFO - Mở cửa sổ trả sách
+2025-06-05 19:59:46,369 - INFO - Khởi động ứng dụng
+2025-06-05 19:59:46,375 - INFO - Đã tải dữ liệu thành công
+2025-06-05 19:59:50,400 - INFO - Mở cửa sổ trả sách
+2025-06-05 20:00:20,772 - INFO - Khởi động ứng dụng
+2025-06-05 20:00:20,777 - INFO - Đã tải dữ liệu thành công
+2025-06-05 20:00:24,010 - INFO - Mở cửa sổ trả sách
+2025-06-05 20:03:40,518 - INFO - Khởi động ứng dụng
+2025-06-05 20:03:40,523 - INFO - Đã tải dữ liệu thành công
+2025-06-05 20:03:43,560 - INFO - Mở cửa sổ trả sách
+2025-06-05 20:04:40,328 - INFO - Khởi động ứng dụng
+2025-06-05 20:04:40,347 - INFO - Đã tải dữ liệu thành công
+2025-06-05 20:14:36,431 - INFO - Khởi động ứng dụng
+2025-06-05 20:14:36,435 - INFO - Đã tải dữ liệu thành công
+2025-06-05 20:53:29,688 - INFO - Khởi động ứng dụng
+2025-06-05 20:53:29,691 - INFO - Đã tải dữ liệu thành công
+2025-06-05 20:56:29,705 - INFO - Khởi động ứng dụng
+2025-06-05 20:56:29,710 - INFO - Đã tải dữ liệu thành công
+2025-06-05 20:58:39,772 - INFO - Khởi động ứng dụng
+2025-06-05 20:58:39,776 - INFO - Đã tải dữ liệu thành công
+2025-06-05 20:59:11,158 - INFO - Khởi động ứng dụng
+2025-06-05 20:59:11,163 - INFO - Đã tải dữ liệu thành công
+2025-06-05 20:59:21,340 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-05 20:59:24,872 - INFO - Khởi động ứng dụng
+2025-06-05 20:59:24,877 - INFO - Đã tải dữ liệu thành công
+2025-06-05 20:59:28,284 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 21:01:26,734 - INFO - Ngày sinh đã chọn (Thêm bạn đọc): 05/06/2025
+2025-06-05 21:01:32,232 - INFO - Khởi động ứng dụng
+2025-06-05 21:01:32,235 - INFO - Đã tải dữ liệu thành công
+2025-06-05 21:01:34,729 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 21:01:54,071 - INFO - Khởi động ứng dụng
+2025-06-05 21:01:54,075 - INFO - Đã tải dữ liệu thành công
+2025-06-05 21:02:00,966 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 21:02:10,095 - INFO - Ngày sinh đã chọn (Thêm bạn đọc): 03/06/2025
+2025-06-05 21:02:53,263 - INFO - Thêm bạn đọc mới thành công: 177
+2025-06-05 21:05:24,220 - INFO - Mở cửa sổ thêm bạn đọc mới
+2025-06-05 21:06:33,104 - INFO - Mở cửa sổ mượn sách
+2025-06-05 21:06:35,266 - INFO - Mở cửa sổ trả sách
+2025-06-05 21:06:42,711 - INFO - Mở cửa sổ xem lịch sử mượn/trả
+2025-06-05 21:24:11,846 - INFO - Khởi động ứng dụng
+2025-06-05 21:24:11,848 - INFO - Đã tải dữ liệu thành công
+2025-06-05 21:31:03,637 - INFO - Khởi động ứng dụng
+2025-06-05 21:31:03,679 - ERROR - Lỗi không mong muốn: 'list' object has no attribute 'items'
+Traceback (most recent call last):
+  File "D:\Library_Management_System\main.py", line 10, in <module>
+    data_handler.load_data()
+  File "D:\Library_Management_System\data_handler.py", line 47, in load_data
+    for ma_sach, book_data in data.items():
+                              ^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'
+2025-06-05 21:34:43,626 - INFO - Khởi động ứng dụng
+2025-06-05 21:34:43,834 - INFO - Đã tải dữ liệu thành công
+2025-06-05 21:37:00,147 - INFO - Khởi động ứng dụng
+2025-06-05 21:37:00,372 - INFO - Đã tải dữ liệu thành công
+2025-06-05 21:37:09,650 - INFO - Mở cửa sổ thêm sách mới
+2025-06-05 21:37:41,399 - INFO - Thêm sách mới thành công: 10001
+2025-06-05 21:41:57,014 - INFO - Mở cửa sổ tìm kiếm sách
+2025-06-05 21:43:16,347 - INFO - Khởi động ứng dụng
+2025-06-05 21:43:16,797 - INFO - Đã tải dữ liệu thành công

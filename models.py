@@ -33,7 +33,7 @@ class Reader:
         self.ngay_sinh = ngay_sinh
         self.gioi_tinh = gioi_tinh
         self.dia_chi = dia_chi
-        self.so_dien_thoai = int(so_dien_thoai)
+        self.so_dien_thoai = so_dien_thoai
 
     def __str__(self):
         return f"Reader[ID: {self.ma_ban_doc}, Name: {self.ten}, Phone: {self.so_dien_thoai}]"
