@@ -81,5 +81,25 @@ class DataHandler:
         except (IOError, json.JSONDecodeError) as e:
             print(f"Loi khi tai {self.TRACKING_FILE}: {e}")
 
+    def is_book_borrowed(self, ma_sach):
+        for record in self.tracking_db.values():
+            if record.ma_sach_muon == ma_sach and record.trang_thai in ("Borrowed", "Overdue", "Đang mượn", "Quá hạn"):
+                return True
+        return False
+
+    def is_reader_borrowing(self, ma_ban_doc):
+        for record in self.tracking_db.values():
+            if record.ma_ban_doc == ma_ban_doc and record.trang_thai in ("Borrowed", "Overdue", "Đang mượn", "Quá hạn"):
+                return True
+        return False
+
+    def delete_book(self, ma_sach):
+        del self.books_db[ma_sach]
+        self.save_data()
+
+    def delete_reader(self, ma_ban_doc):
+        del self.readers_db[ma_ban_doc]
+        self.save_data()
+
 # Tạo một instance của DataHandler và export nó
 data_handler = DataHandler()

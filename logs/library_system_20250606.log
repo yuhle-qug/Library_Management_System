@@ -82,3 +82,78 @@
 2025-06-06 16:26:31,795 - INFO - Khởi động ứng dụng
 2025-06-06 16:26:32,355 - INFO - Đã tải dữ liệu thành công
 2025-06-06 16:26:39,465 - INFO - Đã lưu dữ liệu và kết thúc ứng dụng
+2025-06-06 21:47:06,562 - ERROR - Không thể tải logo: image "pyimage2" doesn't exist
+2025-06-06 23:19:36,908 - INFO - update_book_list called with default books.
+2025-06-06 23:19:36,934 - INFO - update_reader_list called with default readers.
+2025-06-06 23:19:45,764 - INFO - search: Found 2 books.
+2025-06-06 23:19:45,775 - INFO - update_book_list called with 2 books.
+2025-06-06 23:22:49,476 - INFO - update_book_list called with default books.
+2025-06-06 23:22:49,477 - INFO - update_book_list: Inserting values for book 123: ('123', 'Giải tích 1', 'lê quang huy', 'Toán', 2, 'Mới', 'NXB Bách Khoa')
+2025-06-06 23:22:49,478 - INFO - update_book_list: Inserting values for book B001: ('B001', 'Đắc Nhân Tâm', 'Dale Carnegie', 'Self-help', 5, 'Đã sử dụng', 'NXB Tổng hợp TP.HCM')
+2025-06-06 23:22:49,479 - INFO - update_book_list: Inserting values for book B002: ('B002', 'Nhà Giả Kim', 'Paulo Coelho', 'Fiction', 2, 'Mới', 'NXB Văn học')
+2025-06-06 23:22:49,558 - INFO - update_reader_list called with default readers.
+2025-06-06 23:22:49,559 - INFO - update_reader_list: Inserting values for reader R001: ('R001', 'Nguyễn Văn A', '01/01/1990', 'Nam', 'Hà Nội', '0123456789')
+2025-06-06 23:22:49,559 - INFO - update_reader_list: Inserting values for reader R002: ('R002', 'Trần Thị B', '15/05/1990', 'Nữ', 'TP.HCM', '0987654321')
+2025-06-06 23:23:03,850 - INFO - search: Found 2 books.
+2025-06-06 23:23:03,850 - INFO - update_book_list called with 2 books.
+2025-06-06 23:23:03,851 - INFO - update_book_list: Inserting values for book 123: ('123', 'Giải tích 1', 'lê quang huy', 'Toán', 2, 'Mới', 'NXB Bách Khoa')
+2025-06-06 23:23:03,851 - INFO - update_book_list: Inserting values for book B001: ('B001', 'Đắc Nhân Tâm', 'Dale Carnegie', 'Self-help', 5, 'Đã sử dụng', 'NXB Tổng hợp TP.HCM')
+2025-06-06 23:26:12,283 - INFO - update_book_list called with default books.
+2025-06-06 23:26:12,284 - INFO - update_book_list: Inserting values for book 123: ('123', 'Giải tích 1', 'lê quang huy', 'Toán', 2, 'Mới', 'NXB Bách Khoa')
+2025-06-06 23:26:12,284 - INFO - update_book_list: Inserting values for book B001: ('B001', 'Đắc Nhân Tâm', 'Dale Carnegie', 'Self-help', 5, 'Đã sử dụng', 'NXB Tổng hợp TP.HCM')
+2025-06-06 23:26:12,285 - INFO - update_book_list: Inserting values for book B002: ('B002', 'Nhà Giả Kim', 'Paulo Coelho', 'Fiction', 2, 'Mới', 'NXB Văn học')
+2025-06-06 23:26:12,367 - INFO - update_reader_list called with default readers.
+2025-06-06 23:26:12,368 - INFO - update_reader_list: Inserting values for reader R001: ('R001', 'Nguyễn Văn A', '01/01/1990', 'Nam', 'Hà Nội', '0123456789')
+2025-06-06 23:26:12,369 - INFO - update_reader_list: Inserting values for reader R002: ('R002', 'Trần Thị B', '15/05/1990', 'Nữ', 'TP.HCM', '0987654321')
+2025-06-06 23:26:18,225 - INFO - search: Found 2 books.
+2025-06-06 23:26:18,225 - INFO - update_book_list called with 2 books.
+2025-06-06 23:26:18,226 - INFO - update_book_list: Inserting values for book 123: ('123', 'Giải tích 1', 'lê quang huy', 'Toán', 2, 'Mới', 'NXB Bách Khoa')
+2025-06-06 23:26:18,226 - INFO - update_book_list: Inserting values for book B001: ('B001', 'Đắc Nhân Tâm', 'Dale Carnegie', 'Self-help', 5, 'Đã sử dụng', 'NXB Tổng hợp TP.HCM')
+2025-06-06 23:33:48,426 - INFO - update_book_list called with default books.
+2025-06-06 23:33:48,427 - INFO - update_book_list: Inserting values for book 123: ('123', 'Giải tích 1', 'lê quang huy', 'Toán', 2, 'Mới', 'NXB Bách Khoa')
+2025-06-06 23:33:48,427 - INFO - update_book_list: Inserting values for book B001: ('B001', 'Đắc Nhân Tâm', 'Dale Carnegie', 'Self-help', 5, 'Đã sử dụng', 'NXB Tổng hợp TP.HCM')
+2025-06-06 23:33:48,432 - INFO - update_book_list: Inserting values for book B002: ('B002', 'Nhà Giả Kim', 'Paulo Coelho', 'Fiction', 2, 'Mới', 'NXB Văn học')
+2025-06-06 23:33:48,516 - INFO - update_reader_list called with default readers.
+2025-06-06 23:33:48,517 - INFO - update_reader_list: Inserting values for reader R001: ('R001', 'Nguyễn Văn A', '01/01/1990', 'Nam', 'Hà Nội', '0123456789')
+2025-06-06 23:33:48,518 - INFO - update_reader_list: Inserting values for reader R002: ('R002', 'Trần Thị B', '15/05/1990', 'Nữ', 'TP.HCM', '0987654321')
+2025-06-06 23:34:00,393 - INFO - search: Found 2 books.
+2025-06-06 23:35:29,092 - INFO - update_book_list called with default books.
+2025-06-06 23:35:29,092 - INFO - update_book_list: Inserting values for book 123: ('123', 'Giải tích 1', 'lê quang huy', 'Toán', 2, 'Mới', 'NXB Bách Khoa')
+2025-06-06 23:35:29,093 - INFO - update_book_list: Inserting values for book B001: ('B001', 'Đắc Nhân Tâm', 'Dale Carnegie', 'Self-help', 5, 'Đã sử dụng', 'NXB Tổng hợp TP.HCM')
+2025-06-06 23:35:29,093 - INFO - update_book_list: Inserting values for book B002: ('B002', 'Nhà Giả Kim', 'Paulo Coelho', 'Fiction', 2, 'Mới', 'NXB Văn học')
+2025-06-06 23:35:29,177 - INFO - update_reader_list called with default readers.
+2025-06-06 23:35:29,178 - INFO - update_reader_list: Inserting values for reader R001: ('R001', 'Nguyễn Văn A', '01/01/1990', 'Nam', 'Hà Nội', '0123456789')
+2025-06-06 23:35:29,178 - INFO - update_reader_list: Inserting values for reader R002: ('R002', 'Trần Thị B', '15/05/1990', 'Nữ', 'TP.HCM', '0987654321')
+2025-06-06 23:35:46,465 - INFO - apply_filters: Filtered and sorted 0 books.
+2025-06-06 23:35:46,465 - INFO - update_book_list called with 0 books.
+2025-06-06 23:35:50,439 - INFO - apply_filters: Filtered and sorted 0 books.
+2025-06-06 23:35:50,440 - INFO - update_book_list called with 0 books.
+2025-06-06 23:35:57,349 - INFO - apply_filters: Filtered and sorted 1 books.
+2025-06-06 23:35:57,350 - INFO - update_book_list called with 1 books.
+2025-06-06 23:35:57,350 - INFO - update_book_list: Inserting values for book 123: ('123', 'Giải tích 1', 'lê quang huy', 'Toán', 2, 'Mới', 'NXB Bách Khoa')
+2025-06-06 23:57:16,307 - INFO - update_book_list called with default books.
+2025-06-06 23:57:16,308 - INFO - update_book_list: Inserting values for book 123: ('123', 'Giải tích 1', 'lê quang huy', 'Toán', 2, 'Mới', 'NXB Bách Khoa')
+2025-06-06 23:57:16,308 - INFO - update_book_list: Inserting values for book B001: ('B001', 'Đắc Nhân Tâm', 'Dale Carnegie', 'Self-help', 6, 'Đã sử dụng', 'NXB Tổng hợp TP.HCM')
+2025-06-06 23:57:16,309 - INFO - update_book_list: Inserting values for book B002: ('B002', 'Nhà Giả Kim', 'Paulo Coelho', 'Fiction', 2, 'Mới', 'NXB Văn học')
+2025-06-06 23:57:16,391 - INFO - update_reader_list called with default readers.
+2025-06-06 23:57:16,392 - INFO - update_reader_list: Inserting values for reader R001: ('R001', 'Nguyễn Văn A', '01/01/1990', 'Nam', 'Hà Nội', '0123456789')
+2025-06-06 23:57:16,393 - INFO - update_reader_list: Inserting values for reader R002: ('R002', 'Trần Thị B', '15/05/1990', 'Nữ', 'TP.HCM', '0987654321')
+2025-06-06 23:57:36,153 - INFO - apply_filters: Filtered and sorted 3 books.
+2025-06-06 23:57:36,153 - INFO - apply_filters: Calling update_book_list with 3 books.
+2025-06-06 23:57:36,153 - INFO - update_book_list called with 3 books.
+2025-06-06 23:57:36,154 - INFO - update_book_list: Inserting values for book 123: ('123', 'Giải tích 1', 'lê quang huy', 'Toán', 2, 'Mới', 'NXB Bách Khoa')
+2025-06-06 23:57:36,154 - INFO - update_book_list: Inserting values for book B001: ('B001', 'Đắc Nhân Tâm', 'Dale Carnegie', 'Self-help', 6, 'Đã sử dụng', 'NXB Tổng hợp TP.HCM')
+2025-06-06 23:57:36,155 - INFO - update_book_list: Inserting values for book B002: ('B002', 'Nhà Giả Kim', 'Paulo Coelho', 'Fiction', 2, 'Mới', 'NXB Văn học')
+2025-06-06 23:57:38,055 - INFO - apply_filters: Filtered and sorted 3 books.
+2025-06-06 23:57:38,055 - INFO - apply_filters: Calling update_book_list with 3 books.
+2025-06-06 23:57:38,055 - INFO - update_book_list called with 3 books.
+2025-06-06 23:57:38,056 - INFO - update_book_list: Inserting values for book 123: ('123', 'Giải tích 1', 'lê quang huy', 'Toán', 2, 'Mới', 'NXB Bách Khoa')
+2025-06-06 23:57:38,056 - INFO - update_book_list: Inserting values for book B001: ('B001', 'Đắc Nhân Tâm', 'Dale Carnegie', 'Self-help', 6, 'Đã sử dụng', 'NXB Tổng hợp TP.HCM')
+2025-06-06 23:57:38,057 - INFO - update_book_list: Inserting values for book B002: ('B002', 'Nhà Giả Kim', 'Paulo Coelho', 'Fiction', 2, 'Mới', 'NXB Văn học')
+2025-06-06 23:57:43,837 - INFO - apply_filters: Filtered and sorted 0 books.
+2025-06-06 23:57:43,838 - INFO - apply_filters: Calling update_book_list with 0 books.
+2025-06-06 23:57:43,838 - INFO - update_book_list called with 0 books.
+2025-06-06 23:57:48,870 - INFO - apply_filters: Filtered and sorted 1 books.
+2025-06-06 23:57:48,871 - INFO - apply_filters: Calling update_book_list with 1 books.
+2025-06-06 23:57:48,872 - INFO - update_book_list called with 1 books.
+2025-06-06 23:57:48,872 - INFO - update_book_list: Inserting values for book 123: ('123', 'Giải tích 1', 'lê quang huy', 'Toán', 2, 'Mới', 'NXB Bách Khoa')

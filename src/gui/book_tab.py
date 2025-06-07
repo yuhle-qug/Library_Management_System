@@ -4,6 +4,8 @@ from src.core.models import Book
 from src.core.data_handler import data_handler
 from src.utils.logger import logger
 
+FONT = ("Arial Unicode MS", 11)
+
 class BookTab:
     def __init__(self, parent, main_window):
         self.parent = parent
@@ -19,12 +21,55 @@ class BookTab:
         center_frame = ttk.Frame(button_frame)
         center_frame.pack(anchor='center')
 
-        # Tạo các nút chức năng
-        ttk.Button(center_frame, text="Thêm sách mới", command=self.show_add_book_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Cập nhật sách", command=self.show_update_book_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Tìm kiếm sách", command=self.show_search_book_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Sắp xếp", command=self.sort_books).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Lọc", command=self.filter_books).pack(side='left', padx=10)
+        ttk.Button(center_frame, text="Thêm sách mới", style="Pastel.TButton", command=self.show_add_book_window).pack(side='left', padx=10)
+        ttk.Button(center_frame, text="Cập nhật sách", style="Pastel.TButton", command=self.show_update_book_window).pack(side='left', padx=10)
+        ttk.Button(center_frame, text="Tìm kiếm sách", style="Pastel.TButton", command=self.show_search_book_window).pack(side='left', padx=10)
+        ttk.Button(center_frame, text="Xóa sách", style="Pastel.TButton", command=self.delete_book_window).pack(side='left', padx=10)
+
+        # Frame chứa các điều khiển sắp xếp và lọc
+        controls_frame = ttk.Frame(self.frame)
+        controls_frame.pack(fill='x', padx=10, pady=5)
+
+        # Phần sắp xếp
+        sort_frame = ttk.LabelFrame(controls_frame, text="Sắp xếp")
+        sort_frame.pack(side='left', padx=5, fill='x', expand=True)
+
+        ttk.Label(sort_frame, text="Sắp xếp theo:").pack(side='left', padx=5)
+        self.sort_by_combo = ttk.Combobox(sort_frame, values=["Mã sách", "Tên sách", "Tác giả", "Số lượng"], state="readonly")
+        self.sort_by_combo.current(0)  # Mặc định sắp xếp theo Mã sách
+        self.sort_by_combo.pack(side='left', padx=5)
+
+        ttk.Label(sort_frame, text="Thứ tự:").pack(side='left', padx=5)
+        self.sort_order_combo = ttk.Combobox(sort_frame, values=["Tăng dần", "Giảm dần"], state="readonly")
+        self.sort_order_combo.current(0)  # Mặc định tăng dần
+        self.sort_order_combo.pack(side='left', padx=5)
+
+        # Phần lọc
+        filter_frame = ttk.LabelFrame(controls_frame, text="Lọc")
+        filter_frame.pack(side='left', padx=5, fill='x', expand=True)
+
+        ttk.Label(filter_frame, text="Lọc theo:").pack(side='left', padx=5)
+        self.filter_by_combo = ttk.Combobox(filter_frame, values=["Thể loại", "Tình trạng"], state="readonly")
+        self.filter_by_combo.pack(side='left', padx=5)
+
+        ttk.Label(filter_frame, text="Giá trị:").pack(side='left', padx=5)
+
+        # Frame to hold dynamic filter value widget
+        self.filter_value_frame = ttk.Frame(filter_frame)
+        self.filter_value_frame.pack(side='left', padx=5, fill='x', expand=True)
+
+        # Initial dummy widget (will be replaced)
+        self.current_filter_value_widget = ttk.Entry(self.filter_value_frame)
+        self.current_filter_value_widget.pack(fill='x', expand=True)
+
+        self.filter_by_combo.bind('<<ComboboxSelected>>', self.on_filter_criteria_change)
+
+        # Nút điều khiển
+        control_buttons_frame = ttk.Frame(controls_frame)
+        control_buttons_frame.pack(side='left', padx=5)
+
+        ttk.Button(control_buttons_frame, text="Áp dụng", style="Pastel.TButton", command=self.apply_filters).pack(side='left', padx=5)
+        ttk.Button(control_buttons_frame, text="Reset", style="Pastel.TButton", command=self.reset_filters).pack(side='left', padx=5)
 
         # Frame chứa Treeview
         tree_frame = ttk.Frame(self.frame)
@@ -61,6 +106,122 @@ class BookTab:
         # Cập nhật danh sách sách
         self.update_book_list()
 
+    def on_filter_criteria_change(self, event):
+        # Clear current filter value widget
+        for widget in self.filter_value_frame.winfo_children():
+            widget.destroy()
+
+        selected_criteria = self.filter_by_combo.get()
+
+        if selected_criteria == "Thể loại":
+            values = self.get_unique_book_genres()
+            self.current_filter_value_widget = ttk.Combobox(self.filter_value_frame, values=values, state="readonly")
+            self.current_filter_value_widget.pack(fill='x', expand=True)
+            # Set default to "Tất cả" if it exists
+            if "Tất cả" in values:
+                self.current_filter_value_widget.set("Tất cả")
+        elif selected_criteria == "Tình trạng":
+            values = self.get_unique_book_statuses()
+            self.current_filter_value_widget = ttk.Combobox(self.filter_value_frame, values=values, state="readonly")
+            self.current_filter_value_widget.pack(fill='x', expand=True)
+            # Set default to "Tất cả" if it exists
+            if "Tất cả" in values:
+                self.current_filter_value_widget.set("Tất cả")
+        else:
+            # Fallback to entry for other criteria (should not happen with current values)
+            self.current_filter_value_widget = ttk.Entry(self.filter_value_frame)
+            self.current_filter_value_widget.pack(fill='x', expand=True)
+
+    def get_unique_book_genres(self):
+        genres = set()
+        for book in data_handler.books_db.values():
+            genres.add(book.the_loai)
+        # Simply return all unique genres found in the data, plus "Tất cả"
+        genre_list = ["Tất cả"] + sorted(list(genres))
+        return genre_list
+
+    def get_unique_book_statuses(self):
+        statuses = set()
+        for book in data_handler.books_db.values():
+            statuses.add(book.tinh_trang)
+        status_list = ["Tất cả"] + sorted(list(statuses))
+        return status_list
+
+    def apply_filters(self):
+        # Lấy các giá trị từ controls
+        sort_field = self.sort_by_combo.get()
+        sort_order = self.sort_order_combo.get()
+        filter_field = self.filter_by_combo.get()
+        # Get value from the currently active filter widget
+        if isinstance(self.current_filter_value_widget, ttk.Combobox):
+             filter_value = self.current_filter_value_widget.get().strip()
+        else:
+             # Should not happen with current filter criteria
+             filter_value = self.current_filter_value_widget.get().strip().lower()
+
+        # Chuyển đổi tên trường sang tên thuộc tính
+        field_map = {
+            "Mã sách": "ma_sach",
+            "Tên sách": "ten_sach",
+            "Tác giả": "tac_gia",
+            "Số lượng": "so_luong",
+            "Thể loại": "the_loai",
+            "Tình trạng": "tinh_trang",
+            "Nhà xuất bản": "nha_xuat_ban" # Keep for sorting/other potential uses if needed
+        }
+
+        # Lọc dữ liệu
+        filtered_books = list(data_handler.books_db.values())
+
+        if filter_field and filter_value and filter_value != "Tất cả":
+            field = field_map[filter_field]
+            if filter_field == "Số lượng":
+                # Handle numerical filter for quantity (if quantity filter was needed)
+                # For now, quantity filter is not in the combo, but keep the logic if needed later
+                pass # This part might need adjustment if quantity filter is re-added
+            else:
+                 # Standard text/category filter (sensitive for Combobox selection)
+                 filtered_books = [
+                     book for book in filtered_books
+                     if str(getattr(book, field)) == filter_value
+                 ]
+
+        # Sắp xếp dữ liệu
+        if sort_field:
+            field = field_map[sort_field]
+            reverse = sort_order == "Giảm dần"
+            try:
+                # Handle potential type issues with sorting, e.g., sorting numbers
+                if sort_field == "Số lượng":
+                     filtered_books.sort(key=lambda x: int(getattr(x, field)), reverse=reverse)
+                else:
+                    filtered_books.sort(key=lambda x: getattr(x, field), reverse=reverse)
+            except Exception as e:
+                logger.error(f"Lỗi khi sắp xếp sách: {e}")
+                messagebox.showerror("Lỗi", f"Không thể sắp xếp danh sách: {e}")
+                return # Stop if sorting fails
+
+        logger.info(f"apply_filters: Filtered and sorted {len(filtered_books)} books.")
+
+        # Cập nhật Treeview
+        logger.info(f"apply_filters: Calling update_book_list with {len(filtered_books)} books.")
+        self.update_book_list(filtered_books)
+
+    def reset_filters(self):
+        # Reset các controls về giá trị mặc định
+        self.sort_by_combo.current(0)
+        self.sort_order_combo.current(0)
+        self.filter_by_combo.set("") # Clear filter criteria selection
+        # Clear and reset the dynamic filter value widget
+        for widget in self.filter_value_frame.winfo_children():
+            widget.destroy()
+        # Re-add a default empty entry or set the appropriate default combo if needed
+        # For now, just clear the frame. The on_filter_criteria_change will set the widget when a criteria is selected.
+
+        # Hiển thị lại danh sách gốc (sắp xếp theo mã sách tăng dần)
+        books = sorted(data_handler.books_db.values(), key=lambda x: x.ma_sach)
+        self.update_book_list(books)
+
     def show_add_book_window(self):
         # Tạo cửa sổ mới
         add_window = tk.Toplevel(self.main_window.root)
@@ -83,14 +244,27 @@ class BookTab:
         tac_gia_entry.pack(pady=5)
 
         ttk.Label(add_window, text="Thể loại:").pack(pady=5)
-        the_loai_combo = ttk.Combobox(add_window, values=["Fiction", "Non-Fiction", "Science", "History", "Biography", "Khác..."])
+        the_loai_list = [
+            "Khoa học", "Lịch sử", "Tiểu thuyết", "Truyện ngắn", "Tâm lý", "Kinh tế", "Chính trị",
+            "Tôn giáo", "Triết học", "Thiếu nhi", "Giáo trình", "Công nghệ", "Kỹ thuật", "Y học", "Khác..."
+        ]
+        the_loai_combo = ttk.Combobox(add_window, values=the_loai_list)
         the_loai_combo.pack(pady=5)
+        
+        # Frame chứa label và entry cho thể loại khác
+        other_genre_frame = ttk.Frame(add_window)
+        other_genre_frame.pack(pady=5)
+        other_genre_label = ttk.Label(other_genre_frame, text="Nhập thể loại sách mới tại đây:")
+        other_genre_entry = ttk.Entry(other_genre_frame)
+        other_genre_label.pack(pady=2)
+        other_genre_entry.pack(pady=2)
+        other_genre_frame.pack_forget()  # Ẩn frame ban đầu
 
         def on_the_loai_change(event):
             if the_loai_combo.get() == "Khác...":
-                custom_the_loai = tk.simpledialog.askstring("Thể loại", "Nhập thể loại mới:")
-                if custom_the_loai:
-                    the_loai_combo.set(custom_the_loai)
+                other_genre_frame.pack(pady=5)
+            else:
+                other_genre_frame.pack_forget()
 
         the_loai_combo.bind('<<ComboboxSelected>>', on_the_loai_change)
 
@@ -99,7 +273,7 @@ class BookTab:
         so_luong_entry.pack(pady=5)
 
         ttk.Label(add_window, text="Tình trạng:").pack(pady=5)
-        tinh_trang_combo = ttk.Combobox(add_window, values=["New", "Used"])
+        tinh_trang_combo = ttk.Combobox(add_window, values=["Mới", "Đã sử dụng"])
         tinh_trang_combo.pack(pady=5)
 
         ttk.Label(add_window, text="Nhà xuất bản:").pack(pady=5)
@@ -128,6 +302,8 @@ class BookTab:
                     return
 
                 the_loai = the_loai_combo.get()
+                if the_loai == "Khác...":
+                    the_loai = other_genre_entry.get().strip()
                 if not the_loai:
                     messagebox.showerror("Lỗi", "Vui lòng chọn thể loại")
                     return
@@ -162,7 +338,7 @@ class BookTab:
                 messagebox.showerror("Lỗi", f"Không thể thêm sách: {e}")
 
         # Nút lưu
-        ttk.Button(add_window, text="Lưu", command=save_book).pack(pady=20)
+        ttk.Button(add_window, text="Lưu", style="Pastel.TButton", command=save_book).pack(pady=20)
 
     def show_update_book_window(self):
         # Lấy item được chọn
@@ -203,17 +379,33 @@ class BookTab:
         tac_gia_entry.pack(pady=5)
 
         ttk.Label(update_window, text="Thể loại:").pack(pady=5)
-        the_loai_combo = ttk.Combobox(update_window, values=["Fiction", "Non-Fiction", "Science", "History", "Biography", "Khác..."])
-        the_loai_combo.set(book.the_loai)
+        the_loai_list = [
+            "Khoa học", "Lịch sử", "Tiểu thuyết", "Truyện ngắn", "Tâm lý", "Kinh tế", "Chính trị",
+            "Tôn giáo", "Triết học", "Thiếu nhi", "Giáo trình", "Công nghệ", "Kỹ thuật", "Y học", "Khác..."
+        ]
+        the_loai_combo = ttk.Combobox(update_window, values=the_loai_list)
+        the_loai_combo.set(book.the_loai if book.the_loai in the_loai_list else "Khác...")
         the_loai_combo.pack(pady=5)
+        
+        # Frame chứa label và entry cho thể loại khác
+        other_genre_frame = ttk.Frame(update_window)
+        other_genre_frame.pack(pady=5)
+        other_genre_label = ttk.Label(other_genre_frame, text="Nhập thể loại sách mới tại đây:")
+        other_genre_entry = ttk.Entry(other_genre_frame)
+        other_genre_label.pack(pady=2)
+        other_genre_entry.pack(pady=2)
+        if book.the_loai not in the_loai_list:
+            other_genre_entry.insert(0, book.the_loai)
+        else:
+            other_genre_frame.pack_forget()
 
-        def on_the_loai_change(event):
+        def on_the_loai_change_update(event):
             if the_loai_combo.get() == "Khác...":
-                custom_the_loai = tk.simpledialog.askstring("Thể loại", "Nhập thể loại mới:")
-                if custom_the_loai:
-                    the_loai_combo.set(custom_the_loai)
+                other_genre_frame.pack(pady=5)
+            else:
+                other_genre_frame.pack_forget()
 
-        the_loai_combo.bind('<<ComboboxSelected>>', on_the_loai_change)
+        the_loai_combo.bind('<<ComboboxSelected>>', on_the_loai_change_update)
 
         ttk.Label(update_window, text="Số lượng:").pack(pady=5)
         so_luong_entry = ttk.Entry(update_window)
@@ -221,7 +413,7 @@ class BookTab:
         so_luong_entry.pack(pady=5)
 
         ttk.Label(update_window, text="Tình trạng:").pack(pady=5)
-        tinh_trang_combo = ttk.Combobox(update_window, values=["New", "Used"])
+        tinh_trang_combo = ttk.Combobox(update_window, values=["Mới", "Đã sử dụng"])
         tinh_trang_combo.set(book.tinh_trang)
         tinh_trang_combo.pack(pady=5)
 
@@ -243,6 +435,8 @@ class BookTab:
                     return
 
                 the_loai = the_loai_combo.get()
+                if the_loai == "Khác...":
+                    the_loai = other_genre_entry.get().strip()
                 if not the_loai:
                     messagebox.showerror("Lỗi", "Vui lòng chọn thể loại")
                     return
@@ -283,159 +477,163 @@ class BookTab:
                 messagebox.showerror("Lỗi", f"Không thể cập nhật sách: {e}")
 
         # Nút cập nhật
-        ttk.Button(update_window, text="Cập nhật", command=update_book).pack(pady=20)
-    def sort_books(self):
-        # Tạo cửa sổ sắp xếp
-        sort_window = tk.Toplevel(self.main_window.root)
-        sort_window.title("Sắp xếp sách")
-        sort_window.geometry("300x200")
-        sort_window.transient(self.main_window.root)
-        sort_window.grab_set()
+        ttk.Button(update_window, text="Cập nhật",style="Pastel.TButton", command=update_book).pack(pady=20)
 
-        # Tạo các tùy chọn sắp xếp
-        ttk.Label(sort_window, text="Sắp xếp theo:").pack(pady=10)
-        sort_by = ttk.Combobox(sort_window, values=["Mã sách", "Tên sách", "Tác giả", "Số lượng"])
-        sort_by.pack(pady=5)
-
-        ttk.Label(sort_window, text="Thứ tự:").pack(pady=10)
-        order = ttk.Combobox(sort_window, values=["Tăng dần", "Giảm dần"])
-        order.pack(pady=5)
-
-        def apply_sort():
-            sort_field = sort_by.get()
-            sort_order = order.get()
-            
-            if not sort_field or not sort_order:
-                messagebox.showwarning("Cảnh báo", "Vui lòng chọn đầy đủ thông tin sắp xếp")
+    def delete_book_window(self):
+        selected_item = self.tree.selection()
+        if not selected_item:
+            messagebox.showwarning("Cảnh báo", "Vui lòng chọn sách cần xóa")
+            return
+        book_id = self.tree.item(selected_item[0])['values'][0]
+        if messagebox.askyesno("Xác nhận", f"Bạn có chắc chắn muốn xóa sách '{book_id}' không?"):
+            if data_handler.is_book_borrowed(book_id):
+                messagebox.showerror("Lỗi", "Không thể xóa sách đang được mượn hoặc quá hạn!")
                 return
+            data_handler.delete_book(book_id)
+            self.update_book_list()
+            messagebox.showinfo("Thành công", "Đã xóa sách thành công!")
 
-            # Chuyển đổi tên trường sang tên thuộc tính
-            field_map = {
-                "Mã sách": "ma_sach",
-                "Tên sách": "ten_sach",
-                "Tác giả": "tac_gia",
-                "Số lượng": "so_luong"
-            }
-            
-            field = field_map[sort_field]
-            reverse = sort_order == "Giảm dần"
-            
-            # Sắp xếp danh sách sách
-            sorted_books = sorted(
-                data_handler.books_db.values(),
-                key=lambda x: getattr(x, field),
-                reverse=reverse
-            )
-            
-            self.update_book_list(sorted_books)
-            sort_window.destroy()
+    def show_search_book_window(self):
+        search_window = tk.Toplevel(self.main_window.root)
+        search_window.title("Tìm kiếm sách")
+        search_window.geometry("900x600")
+        search_window.transient(self.main_window.root)
+        search_window.grab_set()
+        ttk.Label(search_window, text="Tìm kiếm theo:").pack(pady=5)
+        criteria = ["Tất cả", "Mã sách", "Tên sách", "Tác giả", "Thể loại", "Nhà xuất bản"]
+        criteria_combo = ttk.Combobox(search_window, values=criteria, state="readonly")
+        criteria_combo.current(0)
+        criteria_combo.pack(pady=5)
+        ttk.Label(search_window, text="Từ khóa:").pack(pady=5)
+        search_entry = ttk.Entry(search_window)
+        search_entry.pack(pady=5)
 
-        # Nút áp dụng
-        ttk.Button(sort_window, text="Áp dụng", command=apply_sort).pack(pady=20)
-    def filter_books(self):
-        # Tạo cửa sổ lọc
-        filter_window = tk.Toplevel(self.main_window.root)
-        filter_window.title("Lọc sách")
-        filter_window.geometry("300x250")
-        filter_window.transient(self.main_window.root)
-        filter_window.grab_set()
+        # Frame for search results Treeview
+        results_frame = ttk.Frame(search_window)
+        results_frame.pack(fill='both', expand=True, padx=10, pady=5)
 
-        # Tạo các tùy chọn lọc
-        ttk.Label(filter_window, text="Lọc theo:").pack(pady=10)
-        filter_by = ttk.Combobox(filter_window, values=["Thể loại", "Tình trạng", "Nhà xuất bản"])
-        filter_by.pack(pady=5)
+        # Treeview for search results
+        columns = ('ma_sach', 'ten_sach', 'tac_gia', 'the_loai', 'so_luong', 'tinh_trang', 'nha_xuat_ban')
+        results_tree = ttk.Treeview(results_frame, columns=columns, show='headings')
 
-        ttk.Label(filter_window, text="Giá trị:").pack(pady=10)
-        filter_value = ttk.Entry(filter_window)
-        filter_value.pack(pady=5)
+        # Define columns for the results Treeview
+        results_tree.heading('ma_sach', text='Mã sách')
+        results_tree.heading('ten_sach', text='Tên sách')
+        results_tree.heading('tac_gia', text='Tác giả')
+        results_tree.heading('the_loai', text='Thể loại')
+        results_tree.heading('so_luong', text='Số lượng')
+        results_tree.heading('tinh_trang', text='Tình trạng')
+        results_tree.heading('nha_xuat_ban', text='Nhà xuất bản')
 
-        def apply_filter():
-            filter_field = filter_by.get()
-            value = filter_value.get().strip()
-            
-            if not filter_field or not value:
-                messagebox.showwarning("Cảnh báo", "Vui lòng nhập đầy đủ thông tin lọc")
-                return
+        # Set column widths (optional, can adjust as needed)
+        results_tree.column('ma_sach', width=80)
+        results_tree.column('ten_sach', width=150)
+        results_tree.column('tac_gia', width=120)
+        results_tree.column('the_loai', width=80)
+        results_tree.column('so_luong', width=60)
+        results_tree.column('tinh_trang', width=80)
+        results_tree.column('nha_xuat_ban', width=120)
 
-            # Chuyển đổi tên trường sang tên thuộc tính
-            field_map = {
-                "Thể loại": "the_loai",
-                "Tình trạng": "tinh_trang",
-                "Nhà xuất bản": "nha_xuat_ban"
-            }
-            
-            field = field_map[filter_field]
-            
-            # Lọc danh sách sách
-            filtered_books = [
-                book for book in data_handler.books_db.values()
-                if str(getattr(book, field)).lower() == value.lower()
-            ]
-            
-            self.update_book_list(filtered_books)
-            filter_window.destroy()
+        # Add scrollbar to results Treeview
+        results_scrollbar = ttk.Scrollbar(results_frame, orient='vertical', command=results_tree.yview)
+        results_tree.configure(yscrollcommand=results_scrollbar.set)
+        results_scrollbar.pack(side='right', fill='y')
+        results_tree.pack(side='left', fill='both', expand=True)
 
-        # Nút áp dụng
-        ttk.Button(filter_window, text="Áp dụng", command=apply_filter).pack(pady=20)
+        def search():
+            field = criteria_combo.get()
+            keyword = search_entry.get().strip().lower()
+            found_books = []
+            for book in data_handler.books_db.values():
+                if field == "Tất cả":
+                    if (keyword in book.ma_sach.lower() or
+                        keyword in book.ten_sach.lower() or
+                        keyword in book.tac_gia.lower() or
+                        keyword in book.the_loai.lower() or
+                        keyword in book.nha_xuat_ban.lower()):
+                        found_books.append(book)
+                elif field == "Mã sách" and keyword in book.ma_sach.lower():
+                    found_books.append(book)
+                elif field == "Tên sách" and keyword in book.ten_sach.lower():
+                    found_books.append(book)
+                elif field == "Tác giả" and keyword in book.tac_gia.lower():
+                    found_books.append(book)
+                elif field == "Thể loại" and keyword in book.the_loai.lower():
+                    found_books.append(book)
+                elif field == "Nhà xuất bản" and keyword in book.nha_xuat_ban.lower():
+                    found_books.append(book)
+            if found_books:
+                logger.info(f"search: Found {len(found_books)} books.")
+                # Clear previous results in the search window Treeview
+                for item in results_tree.get_children():
+                    results_tree.delete(item)
+                # Insert new results
+                for idx, book in enumerate(found_books):
+                    tag = 'evenrow' if idx % 2 == 0 else 'oddrow' # Reuse row tags
+                    values = (
+                        book.ma_sach,
+                        book.ten_sach,
+                        book.tac_gia,
+                        book.the_loai,
+                        book.so_luong,
+                        book.tinh_trang,
+                        book.nha_xuat_ban
+                    )
+                    results_tree.insert('', 'end', values=values, tags=(tag,))
+                results_tree.tag_configure('evenrow', background='#ffffff') # Reuse row tags config
+                results_tree.tag_configure('oddrow', background='#E3F6FF') # Reuse row tags config
+
+                results_tree.update_idletasks() # Update the search results Treeview
+
+                messagebox.showinfo("Kết quả", f"Tìm thấy {len(found_books)} sách")
+            else:
+                logger.info("search: No books found.")
+                # Xóa toàn bộ các hàng trong Treeview khi không tìm thấy kết quả
+                for item in results_tree.get_children():
+                    results_tree.delete(item)
+                results_tree.update_idletasks() # Update the search results Treeview
+                messagebox.showinfo("Kết quả", "Không tìm thấy sách nào")
+
+        ttk.Button(search_window, text="Tìm kiếm", command=search).pack(pady=20)
 
     def update_book_list(self, books=None):
+        logger.info(f"update_book_list called with {len(books) if books is not None else 'default'} books.")
         # Xóa dữ liệu cũ trong Treeview
         for item in self.tree.get_children():
             self.tree.delete(item)
 
+        # Temporarily hide headings to force redraw
+        # self.tree.config(show='') # Commenting out this line as it might cause issues
+
         # Lấy danh sách sách cần hiển thị
         if books is None:
-            books = data_handler.books_db.values()
+            books = sorted(data_handler.books_db.values(), key=lambda x: x.ma_sach)
 
         # Thêm dữ liệu mới vào Treeview
-        for book in books:
-            self.tree.insert('', 'end', values=(
-                book.ma_sach,
-                book.ten_sach,
-                book.tac_gia,
-                book.the_loai,
-                book.so_luong,
-                book.tinh_trang,
-                book.nha_xuat_ban
-            ))
+        try:
+            for idx, book in enumerate(books):
+                tag = 'evenrow' if idx % 2 == 0 else 'oddrow'
+                values = (
+                    book.ma_sach,
+                    book.ten_sach,
+                    book.tac_gia,
+                    book.the_loai,
+                    book.so_luong,
+                    book.tinh_trang,
+                    book.nha_xuat_ban
+                )
+                logger.info(f"update_book_list: Inserting values for book {book.ma_sach}: {values}")
+                self.tree.insert('', 'end', values=values, tags=(tag,))
 
-    def show_search_book_window(self):
-        # Tạo cửa sổ tìm kiếm
-        search_window = tk.Toplevel(self.main_window.root)
-        search_window.title("Tìm kiếm sách")
-        search_window.geometry("400x200")
-        search_window.transient(self.main_window.root)
-        search_window.grab_set()
+            self.tree.tag_configure('evenrow', background='#ffffff')
+            self.tree.tag_configure('oddrow', background='#E3F6FF')
 
-        # Tạo các trường tìm kiếm
-        ttk.Label(search_window, text="Nhập từ khóa tìm kiếm:").pack(pady=10)
-        search_entry = ttk.Entry(search_window)
-        search_entry.pack(pady=5)
+            # Show headings again
+            # self.tree.config(show='headings') # Commenting out this line
 
-        def search():
-            search_term = search_entry.get().strip().lower()
-            if not search_term:
-                messagebox.showwarning("Cảnh báo", "Vui lòng nhập từ khóa tìm kiếm")
-                return
+            self.tree.update_idletasks() # Explicitly update the Treeview display
 
-            # Tìm kiếm sách
-            found_books = []
-            for book in data_handler.books_db.values():
-                if (search_term in book.ma_sach.lower() or
-                    search_term in book.ten_sach.lower() or
-                    search_term in book.tac_gia.lower() or
-                    search_term in book.the_loai.lower() or
-                    search_term in book.nha_xuat_ban.lower()):
-                    found_books.append(book)
-
-            if found_books:
-                self.update_book_list(found_books)
-                messagebox.showinfo("Kết quả", f"Tìm thấy {len(found_books)} sách")
-            else:
-                messagebox.showinfo("Kết quả", "Không tìm thấy sách nào")
-                self.update_book_list()  # Hiển thị lại tất cả sách
-
-            search_window.destroy()
-
-        # Nút tìm kiếm
-        ttk.Button(search_window, text="Tìm kiếm", command=search).pack(pady=20)
+        except Exception as e:
+            logger.error(f"Lỗi khi cập nhật Treeview sách: {e}")
+            # Optionally show an error message to the user
+            # messagebox.showerror("Lỗi", f"Không thể cập nhật hiển thị sách: {e}")

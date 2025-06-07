@@ -1,18 +1,18 @@
 {
-    "R001": {
-        "ma_ban_doc": "R001",
-        "ten": "Nguyễn Văn A",
-        "ngay_sinh": "1990-01-01",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Hà Nội",
-        "so_dien_thoai": "0123456789"
-    },
     "R002": {
         "ma_ban_doc": "R002",
         "ten": "Trần Thị B",
-        "ngay_sinh": "1995-05-15",
+        "ngay_sinh": "15/05/1990",
         "gioi_tinh": "Nữ",
         "dia_chi": "TP.HCM",
         "so_dien_thoai": "0987654321"
+    },
+    "R001": {
+        "ma_ban_doc": "R001",
+        "ten": "Nguyễn Văn A",
+        "ngay_sinh": "01/01/1990",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Hà Nội",
+        "so_dien_thoai": "0123456789"
     }
 }

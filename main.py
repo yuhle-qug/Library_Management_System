@@ -3,6 +3,7 @@ from src.gui.main_window import LibraryManagementSystem
 import tkinter as tk
 from ttkbootstrap import Style
 
+
 def main():
     root = tk.Tk()
     style = Style(theme="cosmo")

@@ -1,11 +1,20 @@
 {
+    "123": {
+        "ma_sach": "123",
+        "ten_sach": "Giải tích 1",
+        "tac_gia": "lê quang huy",
+        "the_loai": "Toán",
+        "so_luong": 2,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Bách Khoa"
+    },
     "B001": {
         "ma_sach": "B001",
         "ten_sach": "Đắc Nhân Tâm",
         "tac_gia": "Dale Carnegie",
         "the_loai": "Self-help",
-        "so_luong": 5,
-        "tinh_trang": "New",
+        "so_luong": 6,
+        "tinh_trang": "Đã sử dụng",
         "nha_xuat_ban": "NXB Tổng hợp TP.HCM"
     },
     "B002": {
@@ -13,8 +22,8 @@
         "ten_sach": "Nhà Giả Kim",
         "tac_gia": "Paulo Coelho",
         "the_loai": "Fiction",
-        "so_luong": 3,
-        "tinh_trang": "New",
+        "so_luong": 2,
+        "tinh_trang": "Mới",
         "nha_xuat_ban": "NXB Văn học"
     }
 }

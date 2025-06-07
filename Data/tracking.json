@@ -3,8 +3,16 @@
         "ma_ban_doc": "R001",
         "ma_sach_muon": "B001",
         "ten_sach_muon": "Đắc Nhân Tâm",
-        "ngay_muon": "2024-06-01",
+        "ngay_muon": "01/06/2025",
+        "ngay_tra": "06/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    {
+        "ma_ban_doc": "R002",
+        "ma_sach_muon": "B002",
+        "ten_sach_muon": "Nhà Giả Kim",
+        "ngay_muon": "06/06/2025",
         "ngay_tra": null,
-        "trang_thai": "Overdue"
+        "trang_thai": "Đang mượn"
     }
 ]

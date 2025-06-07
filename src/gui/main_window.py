@@ -23,6 +23,7 @@ class LibraryManagementSystem:
         self.root.geometry("1200x800")
 
         self.style = ttk.Style()
+        self._setup_custom_button_style()
         self._setup_header()
         self._setup_notebook_style()
         self._setup_notebook()
@@ -39,7 +40,25 @@ class LibraryManagementSystem:
 
         self.check_and_update_overdue_books()
         self.update_tracking_list()
-
+        self._setup_custom_button_style()
+    def _setup_custom_button_style(self):
+        style = ttk.Style()
+        style.configure(
+            "Pastel.TButton",
+            font=("Arial", 11, "bold"),
+            foreground="#333",
+            background="#B4E4FF",  # Màu pastel xanh nhạt
+            borderwidth=0,
+            focusthickness=3,
+            focuscolor="#AEE2FF",
+            padding=8,
+            relief="flat"
+        )
+        style.map(
+            "Pastel.TButton",
+            background=[("active", "#AEE2FF"), ("pressed", "#B4E4FF")]
+        )
+   
     def _setup_header(self):
         # Tạo khoảng trống ở đầu 
         spacing_frame = ttk.Frame(self.root)
@@ -147,8 +166,8 @@ class LibraryManagementSystem:
         self.style.configure(
             "Treeview.Heading",
             font=('Arial Unicode MS', 11, 'bold'),
-            background="#E9ECEF",
-            foreground="#495057",
+            background="#1976D2",
+            foreground="#ffffff",
             relief="flat",
             borderwidth=0,
             padding=(5,5)
@@ -162,7 +181,7 @@ class LibraryManagementSystem:
         current_date = datetime.now()
         for track in data_handler.tracking_db.values():
             if track.trang_thai == "Borrowed":
-                borrow_date = datetime.strptime(track.ngay_muon, "%Y-%m-%d")
+                borrow_date = datetime.strptime(track.ngay_muon, "%d/%m/%Y")
                 if (current_date - borrow_date).days > 14:  # Quá 14 ngày
                     track.trang_thai = "Overdue"
         data_handler.save_data()
