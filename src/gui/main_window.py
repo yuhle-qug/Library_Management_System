@@ -20,7 +20,10 @@ class LibraryManagementSystem:
     def __init__(self, root):
         self.root = root
         self.root.title("Hệ Thống Quản Lý Thư Viện")
-        self.root.geometry("1200x800")
+        self.root.geometry("1500x800")
+        
+        # Thêm protocol xử lý khi đóng cửa sổ
+        self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
 
         self.style = ttk.Style()
         self._setup_custom_button_style()
@@ -38,26 +41,10 @@ class LibraryManagementSystem:
         self.notebook.add(self.reader_tab.frame, text="Quản lý Bạn đọc")
         self.notebook.add(self.tracking_tab.frame, text="Mượn/Trả Sách")
 
+        # Kiểm tra và cập nhật sách quá hạn khi khởi động
         self.check_and_update_overdue_books()
         self.update_tracking_list()
         self._setup_custom_button_style()
-    def _setup_custom_button_style(self):
-        style = ttk.Style()
-        style.configure(
-            "Pastel.TButton",
-            font=("Arial", 11, "bold"),
-            foreground="#333",
-            background="#B4E4FF",  # Màu pastel xanh nhạt
-            borderwidth=0,
-            focusthickness=3,
-            focuscolor="#AEE2FF",
-            padding=8,
-            relief="flat"
-        )
-        style.map(
-            "Pastel.TButton",
-            background=[("active", "#AEE2FF"), ("pressed", "#B4E4FF")]
-        )
    
     def _setup_header(self):
         # Tạo khoảng trống ở đầu 
@@ -176,15 +163,88 @@ class LibraryManagementSystem:
             background=[('selected', '#BBE2EC')],
             foreground=[('selected', '#1a365d')]
         )
+        # Style cho nhãn in đậm
+        self.style.configure(
+            "Bold.TLabel",
+            font=('Arial Unicode MS', 11, 'bold')
+        )
 
-    def check_and_update_overdue_books(self):
-        current_date = datetime.now()
-        for track in data_handler.tracking_db.values():
-            if track.trang_thai == "Borrowed":
-                borrow_date = datetime.strptime(track.ngay_muon, "%d/%m/%Y")
-                if (current_date - borrow_date).days > 14:  # Quá 14 ngày
-                    track.trang_thai = "Overdue"
-        data_handler.save_data()
 
     def update_tracking_list(self):
         self.tracking_tab.update_tracking_list()
+
+    def _setup_custom_button_style(self):
+            # BƯỚC 1: KÍCH HOẠT THEME 'clam' ĐỂ ĐẢM BẢO TÙY CHỈNH ĐƯỢC ÁP DỤNG
+
+            # BƯỚC 2: ĐỊNH NGHĨA CÁC MÀU SẮC
+            button_styles = {
+                "Add.TButton": {"background": "#28a745", "hover_bg": "#218838", "foreground": "white"},
+                "Update.TButton": {"background": "#007bff", "hover_bg": "#0069d9", "foreground": "white"},
+                "Delete.TButton": {"background": "#dc3545", "hover_bg": "#c82333", "foreground": "white"},
+                "Info.TButton": {"background": "#17a2b8", "hover_bg": "#138496", "foreground": "white"},
+                "Action.TButton": {"background": "#ffc107", "hover_bg": "#e0a800", "foreground": "black"},
+            }
+            
+            # BƯỚC 3: CẤU HÌNH STYLE CHO TỪNG LOẠI NÚT
+            for style_name, colors in button_styles.items():
+                self.style.configure(
+                    style_name,
+                    font=("Arial Unicode MS", 11, "bold"),
+                    foreground=colors["foreground"],
+                    background=colors["background"],
+                    borderwidth=0,
+                    padding=8,
+                    relief="flat"
+                )
+                self.style.map(
+                    style_name,
+                    background=[
+                        ("active", colors["hover_bg"]),
+                        ("pressed", colors["background"]) # Giữ màu nền khi nhấn
+                    ],
+                    foreground=[("active", colors["foreground"])]
+                )
+    def on_closing(self):
+        """Xử lý khi đóng chương trình"""
+        try:
+            # Lưu dữ liệu trước khi thoát
+            data_handler.save_data()
+            self.root.destroy()
+        except Exception as e:
+            logger.error(f"Lỗi khi đóng chương trình: {e}")
+            self.root.destroy()
+
+    def check_and_update_overdue_books(self):
+        """
+        Kiểm tra và cập nhật trạng thái sách quá hạn khi khởi động ứng dụng.
+        """
+        try:
+            current_date = datetime.now()
+            max_borrow_days = 30  # Số ngày mượn tối đa
+            overdue_count = 0
+
+            # Kiểm tra từng bản ghi mượn sách
+            for record in data_handler.tracking_db.values():
+                if record.trang_thai == "Đang mượn":  # Chỉ kiểm tra sách đang được mượn
+                    try:
+                        # Chuyển ngày mượn sang datetime object
+                        borrow_date = datetime.strptime(record.ngay_muon, "%d/%m/%Y")
+                        days_borrowed = (current_date - borrow_date).days
+
+                        # Nếu số ngày mượn vượt quá giới hạn
+                        if days_borrowed > max_borrow_days:
+                            record.trang_thai = "Quá hạn"
+                            overdue_count += 1
+                    except ValueError as e:
+                        logger.error(f"Lỗi xử lý định dạng ngày tháng cho bản ghi {record}: {e}")
+                        continue
+
+            # Lưu thay đổi vào CSDL nếu có sách quá hạn
+            if overdue_count > 0:
+                data_handler.save_data()
+                logger.info(f"Đã cập nhật {overdue_count} sách sang trạng thái quá hạn")
+                messagebox.showwarning("Thông báo", f"Có {overdue_count} sách chuyển sang trạng thái quá hạn!")
+
+        except Exception as e:
+            logger.error(f"Lỗi khi kiểm tra sách quá hạn: {e}")
+            messagebox.showerror("Lỗi", f"Không thể kiểm tra sách quá hạn: {e}")

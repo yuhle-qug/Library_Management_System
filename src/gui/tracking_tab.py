@@ -5,8 +5,6 @@ from src.core.models import TrackBook
 from src.core.data_handler import data_handler
 from src.utils.logger import logger
 
-FONT = ("Arial Unicode MS", 11)
-
 class TrackingTab:
     def __init__(self, parent, main_window):
         self.parent = parent
@@ -22,17 +20,16 @@ class TrackingTab:
         center_frame = ttk.Frame(button_frame)
         center_frame.pack(anchor='center')
 
-        ttk.Button(center_frame, text="Mượn sách", style="Pastel.TButton", command=self.show_borrow_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Trả sách", style="Pastel.TButton", command=self.show_return_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Xem lịch sử", style="Pastel.TButton", command=self.show_history_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Sách quá hạn", style="Pastel.TButton", command=self.show_overdue_books_window).pack(side='left', padx=10)
-        # Frame chứa Treeview
-        tree_frame = ttk.Frame(self.frame)
-        tree_frame.pack(fill='both', expand=True, padx=10, pady=5)
+        # Standard ttk buttons without custom styles
+        ttk.Button(center_frame, text="Mượn sách", command=self.show_borrow_window).pack(side=tk.LEFT, padx=5)
+        ttk.Button(center_frame, text="Trả sách", command=self.show_return_window).pack(side=tk.LEFT, padx=5)
+        ttk.Button(center_frame, text="Xem lịch sử", command=self.show_history_window).pack(side=tk.LEFT, padx=5)
+        ttk.Button(center_frame, text="Sách quá hạn", command=self.show_overdue_books_window).pack(side=tk.LEFT, padx=5)
+
 
         # Tạo Treeview
         columns = ('ma_ban_doc', 'ma_sach_muon', 'ten_sach_muon', 'ngay_muon', 'ngay_tra', 'trang_thai')
-        self.tree = ttk.Treeview(tree_frame, columns=columns, show='headings')
+        self.tree = ttk.Treeview(self.frame, columns=columns, show='headings')
 
         # Định nghĩa các cột
         self.tree.heading('ma_ban_doc', text='Mã bạn đọc')
@@ -51,7 +48,7 @@ class TrackingTab:
         self.tree.column('trang_thai', width=100)
 
         # Thêm thanh cuộn
-        scrollbar = ttk.Scrollbar(tree_frame, orient='vertical', command=self.tree.yview)
+        scrollbar = ttk.Scrollbar(self.frame, orient='vertical', command=self.tree.yview)
         self.tree.configure(yscrollcommand=scrollbar.set)
         scrollbar.pack(side='right', fill='y')
         self.tree.pack(side='left', fill='both', expand=True)
@@ -63,157 +60,169 @@ class TrackingTab:
         # Tạo cửa sổ mượn sách
         borrow_window = tk.Toplevel(self.main_window.root)
         borrow_window.title("Mượn sách")
-        borrow_window.geometry("600x600") # Adjusted geometry to fit new search frames
+        borrow_window.geometry("600x700")
         borrow_window.transient(self.main_window.root)
         borrow_window.grab_set()
 
-        # Khung tìm kiếm bạn đọc
-        reader_search_frame = ttk.LabelFrame(borrow_window, text="Tìm kiếm bạn đọc")
-        reader_search_frame.pack(padx=10, pady=5, fill="x")
+        # Frame chứa form nhập liệu
+        input_frame = ttk.LabelFrame(borrow_window, text="Nhập thông tin mượn sách")
+        input_frame.pack(padx=10, pady=5, fill="x")
 
-        ttk.Label(reader_search_frame, text="Tìm theo:", font=FONT).pack(side='left', padx=5)
-        reader_criteria = ["Mã bạn đọc", "Họ tên"]
-        reader_criteria_combo = ttk.Combobox(reader_search_frame, values=reader_criteria, state="readonly", font=FONT)
-        reader_criteria_combo.current(0)
-        reader_criteria_combo.pack(side='left', padx=5, expand=True, fill='x')
+        # Nhập mã bạn đọc
+        ttk.Label(input_frame, text="Mã bạn đọc:").pack(pady=5)
+        ma_ban_doc_entry = ttk.Entry(input_frame)
+        ma_ban_doc_entry.pack(pady=5, fill="x", padx=10)
 
-        reader_keyword_entry = ttk.Entry(reader_search_frame, font=FONT)
-        reader_keyword_entry.pack(side='left', padx=5, expand=True, fill='x')
+        # Frame hiển thị thông tin bạn đọc
+        reader_info_frame = ttk.LabelFrame(borrow_window, text="Thông tin bạn đọc")
+        reader_info_frame.pack(padx=10, pady=5, fill="x")
+        reader_info_label = ttk.Label(reader_info_frame, text="", justify=tk.LEFT)
+        reader_info_label.pack(pady=5, padx=5)
 
-        def search_readers():
-            field = reader_criteria_combo.get()
-            keyword = reader_keyword_entry.get().strip().lower()
-            filtered_readers = []
-            for reader in data_handler.readers_db.values():
-                if (field == "Mã bạn đọc" and keyword in reader.ma_ban_doc.lower()) or \
-                   (field == "Họ tên" and keyword in reader.ten.lower()):
-                    filtered_readers.append(reader.ma_ban_doc)
-            # Update the main reader combobox
-            ma_ban_doc_combo['values'] = filtered_readers
-            if filtered_readers:
-                ma_ban_doc_combo.current(0)
-            else:
-                ma_ban_doc_combo.set("") # Clear combobox if no results
+        # Nhập mã sách
+        ttk.Label(input_frame, text="Mã sách:").pack(pady=5)
+        ma_sach_entry = ttk.Entry(input_frame)
+        ma_sach_entry.pack(pady=5, fill="x", padx=10)
 
-        ttk.Button(reader_search_frame, text="Tìm", command=search_readers).pack(side='left', padx=5)
+        # Frame hiển thị thông tin sách
+        book_info_frame = ttk.LabelFrame(borrow_window, text="Thông tin sách")
+        book_info_frame.pack(padx=10, pady=5, fill="x")
+        book_info_label = ttk.Label(book_info_frame, text="", justify=tk.LEFT)
+        book_info_label.pack(pady=5, padx=5)
 
-        # ComboBox chọn bạn đọc sau khi tìm kiếm
-        ttk.Label(borrow_window, text="Chọn bạn đọc:", font=FONT).pack(pady=5)
-        ma_ban_doc_combo = ttk.Combobox(borrow_window, font=FONT, state="readonly") # Make read-only after search
-        ma_ban_doc_combo['values'] = [reader.ma_ban_doc for reader in data_handler.readers_db.values()]
-        ma_ban_doc_combo.pack(pady=5, fill="x", padx=10)
+        def check_info():
+            try:
+                ma_ban_doc = ma_ban_doc_entry.get().strip()
+                ma_sach = ma_sach_entry.get().strip()
 
-        # Khung tìm kiếm sách
-        book_search_frame = ttk.LabelFrame(borrow_window, text="Tìm kiếm sách có sẵn")
-        book_search_frame.pack(padx=10, pady=5, fill="x")
+                if not ma_ban_doc or not ma_sach:
+                    messagebox.showwarning("Thông báo", "Vui lòng nhập đầy đủ mã bạn đọc và mã sách")
+                    return
 
-        ttk.Label(book_search_frame, text="Tìm theo:", font=FONT).pack(side='left', padx=5)
-        book_criteria = ["Mã sách", "Tên sách"]
-        book_criteria_combo = ttk.Combobox(book_search_frame, values=book_criteria, state="readonly", font=FONT)
-        book_criteria_combo.current(0)
-        book_criteria_combo.pack(side='left', padx=5, expand=True, fill='x')
+                # Kiểm tra và hiển thị thông tin bạn đọc
+                reader = data_handler.readers_db.get(ma_ban_doc)
+                if not reader:
+                    reader_info_label.config(text="⚠️ Không tìm thấy bạn đọc với mã này")
+                    return
 
-        book_keyword_entry = ttk.Entry(book_search_frame, font=FONT)
-        book_keyword_entry.pack(side='left', padx=5, expand=True, fill='x')
+                # Đếm số sách quá hạn của bạn đọc
+                overdue_count = 0
+                for track in data_handler.tracking_db.values():
+                    if track.ma_ban_doc == ma_ban_doc and track.trang_thai == "Quá hạn":
+                        overdue_count += 1
 
-        def search_books():
-            field = book_criteria_combo.get()
-            keyword = book_keyword_entry.get().strip().lower()
-            filtered_books = []
-            for book in data_handler.books_db.values():
-                if book.so_luong > 0: # Only show available books
-                    if (field == "Mã sách" and keyword in book.ma_sach.lower()) or \
-                       (field == "Tên sách" and keyword in book.ten_sach.lower()):
-                        filtered_books.append(book.ma_sach)
-            # Update the main book combobox
-            ma_sach_combo['values'] = filtered_books
-            if filtered_books:
-                ma_sach_combo.current(0)
-            else:
-                ma_sach_combo.set("") # Clear combobox if no results
+                if overdue_count >= 10:
+                    reader_info_label.config(text="⚠️ Bạn đọc hiện có 10 sách quá hạn chưa trả!\nVui lòng trả sách quá hạn trước khi mượn thêm.")
+                    borrow_button.pack_forget()
+                    return
 
-        ttk.Button(book_search_frame, text="Tìm", command=search_books).pack(side='left', padx=5)
+                # Hiển thị thông tin bạn đọc
+                reader_info = f"Họ tên: {reader.ten}\n" \
+                            f"Ngày sinh: {reader.ngay_sinh}\n" \
+                            f"Giới tính: {reader.gioi_tinh}\n" \
+                            f"Email: {reader.email}\n" \
+                            f"Số điện thoại: {reader.so_dien_thoai}"
+                if overdue_count > 0:
+                    reader_info += f"\n⚠️ Bạn đọc hiện có {overdue_count} sách quá hạn"
+                reader_info_label.config(text=reader_info)
 
-        # ComboBox chọn sách sau khi tìm kiếm
-        ttk.Label(borrow_window, text="Chọn sách:", font=FONT).pack(pady=5)
-        ma_sach_combo = ttk.Combobox(borrow_window, font=FONT, state="readonly") # Make read-only after search
-        ma_sach_combo['values'] = [book.ma_sach for book in data_handler.books_db.values() if book.so_luong > 0]
-        ma_sach_combo.pack(pady=5, fill="x", padx=10)
+                # Kiểm tra và hiển thị thông tin sách
+                book = data_handler.books_db.get(ma_sach)
+                if not book:
+                    book_info_label.config(text="⚠️ Không tìm thấy sách với mã này")
+                    borrow_button.pack_forget()
+                    return
+                if book.so_luong <= 0 or book.tinh_trang != "Có sẵn":
+                    book_info_label.config(text="⚠️ Sách này hiện không khả dụng để mượn")
+                    borrow_button.pack_forget()
+                    return
+
+                # Kiểm tra xem bạn đọc có đang mượn sách này không
+                for record in data_handler.tracking_db.values():
+                    if (record.ma_ban_doc == ma_ban_doc and 
+                        record.ma_sach_muon == ma_sach and 
+                        record.trang_thai in ("Đang mượn", "Quá hạn")):
+                        book_info_label.config(text="⚠️ Bạn đọc đã mượn cuốn sách này và chưa trả!")
+                        borrow_button.pack_forget()
+                        return
+
+                book_info = (f"Tên sách: {book.ten_sach}\n"
+                           f"Tác giả: {book.tac_gia}\n"
+                           f"Thể loại: {book.the_loai}\n"
+                           f"Số lượng có sẵn: {book.so_luong}\n"
+                           f"Nhà xuất bản: {book.nha_xuat_ban}")
+                book_info_label.config(text=book_info)
+
+                # Hiển thị nút mượn sách khi tìm thấy cả bạn đọc và sách hợp lệ
+                borrow_button.pack(pady=20)
+
+            except Exception as e:
+                logger.error(f"Lỗi khi kiểm tra thông tin: {e}")
+                messagebox.showerror("Lỗi", str(e))
 
         def borrow_book():
             try:
-                ma_ban_doc = ma_ban_doc_combo.get()
-                if not ma_ban_doc:
-                    messagebox.showerror("Lỗi", "Vui lòng chọn mã bạn đọc")
-                    return
+                ma_ban_doc = ma_ban_doc_entry.get().strip()
+                ma_sach = ma_sach_entry.get().strip()
 
-                ma_sach = ma_sach_combo.get()
-                if not ma_sach:
-                    messagebox.showerror("Lỗi", "Vui lòng chọn mã sách")
-                    return
-
-                # Kiểm tra sách có sẵn không (kiểm tra lại vì danh sách combobox chỉ hiển thị sách có sẵn)
+                reader = data_handler.readers_db.get(ma_ban_doc)
                 book = data_handler.books_db.get(ma_sach)
-                if not book or book.so_luong <= 0:
-                    messagebox.showerror("Lỗi", "Sách không có sẵn để mượn")
+
+                if not reader or not book:
+                    messagebox.showerror("Lỗi", "Vui lòng kiểm tra lại mã bạn đọc và mã sách")
                     return
 
-                # Kiểm tra bạn đọc đã mượn sách này chưa
-                for track in data_handler.tracking_db.values():
-                    # Sử dụng cả mã sách và mã bạn đọc để kiểm tra trùng lặp chính xác hơn
-                    if (track.ma_ban_doc == ma_ban_doc and 
-                        track.ma_sach_muon == ma_sach and 
-                        track.trang_thai in ("Đang mượn", "Quá hạn")):
-                        messagebox.showerror("Lỗi", "Bạn đọc đang mượn cuốn sách này hoặc có bản ghi mượn chưa hoàn thành.")
-                        return
+                # Kiểm tra số lượng sách và tình trạng
+                if book.so_luong <= 0 or book.tinh_trang != "Có sẵn":
+                    messagebox.showerror("Lỗi", "Sách này hiện không khả dụng để mượn")
+                    return
+
+                # Hiển thị xác nhận với đầy đủ thông tin
+                confirmation_message = (
+                    f"Xác nhận cho mượn sách:\n\n"
+                    f"Thông tin bạn đọc:\n"
+                    f"- Mã bạn đọc: {ma_ban_doc}\n"
+                    f"- Họ tên: {reader.ten}\n\n"
+                    f"Thông tin sách:\n"
+                    f"- Mã sách: {ma_sach}\n"
+                    f"- Tên sách: {book.ten_sach}\n"
+                    f"- Tác giả: {book.tac_gia}\n"
+                    f"- Thể loại: {book.the_loai}"
+                )
+
+                if not messagebox.askyesno("Xác nhận mượn sách", confirmation_message):
+                    return
 
                 # Tạo bản ghi mượn sách mới
                 ngay_muon = datetime.now().strftime("%d/%m/%Y")
-                new_track = TrackBook(
-                    ma_ban_doc=ma_ban_doc,
-                    ma_sach_muon=ma_sach,
-                    ten_sach_muon=book.ten_sach,
-                    ngay_muon=ngay_muon
-                )
-                # Tạo key duy nhất bao gồm cả ngày mượn để tránh trùng lặp khi cùng 1 bạn đọc mượn cùng 1 sách nhiều lần
+                new_track = TrackBook(ma_ban_doc, ma_sach, book.ten_sach, ngay_muon)
+                
+                # Cập nhật số lượng sách
+                book.so_luong -= 1
+                if book.so_luong == 0:
+                    book.tinh_trang = "Đã mượn"
+
+                # Lưu vào CSDL
                 track_key = f"{ma_ban_doc}_{ma_sach}_{ngay_muon}"
+                data_handler.tracking_db[track_key] = new_track
+                data_handler.save_data()
 
-                if not ma_ban_doc:
-                    messagebox.showerror("Lỗi", "Không tìm thấy bạn đọc với mã này.")
-                    return
-
-                if not book:
-                    messagebox.showerror("Lỗi", "Không tìm thấy sách với mã này.")
-                    return
-
-                if book.so_luong <= 0:
-                    messagebox.showwarning("Cảnh báo", f"Sách '{book.ten_sach}' hiện không có sẵn.")
-                    return
-
-                # Confirmation dialog before borrowing
-                confirm_message = (
-                    f"BẠN CÓ CHẮC CHẮN MUỐN THỰC HIỆN GIAO DỊCH NÀY?\n\n"
-                    f"- Bạn đọc: {ma_ban_doc} - {ma_ban_doc}\n"
-                    f"- Sách mượn: {ma_sach} - {book.ten_sach}"
-                )
-                if messagebox.askyesno("Xác nhận mượn sách", confirm_message):
-                    # Proceed with borrowing
-                    data_handler.tracking_db[track_key] = new_track
-                    book.so_luong -= 1
-                    data_handler.save_data()
-                    self.main_window.update_tracking_list() # Update main tracking list
-                    messagebox.showinfo("Thành công", "Mượn sách thành công!")
-                    borrow_window.destroy()
-                else:
-                    # Cancel borrowing
-                    messagebox.showinfo("Thông báo", "Giao dịch mượn sách đã bị hủy.")
+                # Cập nhật giao diện
+                self.update_tracking_list()
+                messagebox.showinfo("Thành công", f"Đã cho mượn sách '{book.ten_sach}' thành công!")
+                borrow_window.destroy()
 
             except Exception as e:
-                logger.error(f"Lỗi khi mượn sách: {e}")
-                messagebox.showerror("Lỗi", f"Không thể thực hiện mượn sách: {e}")
+                logger.error(f"Lỗi khi cho mượn sách: {e}")
+                messagebox.showerror("Lỗi", f"Không thể cho mượn sách: {e}")
 
-        # Nút mượn sách
-        ttk.Button(borrow_window, text="Mượn sách", style="Pastel.TButton", command=borrow_book).pack(pady=20)
+        # Nút kiểm tra thông tin
+        ttk.Button(input_frame, text="Kiểm tra thông tin", command=check_info).pack(pady=10)
+
+        # Nút mượn sách (ẩn ban đầu)
+        borrow_button = ttk.Button(borrow_window, text="Xác nhận mượn sách", command=borrow_book)
+        # Nút mượn sách chỉ hiện khi đã kiểm tra thông tin hợp lệ
+        borrow_button.pack_forget()
 
     def show_return_window(self):
         # Tạo cửa sổ trả sách
@@ -227,13 +236,13 @@ class TrackingTab:
         filter_frame = ttk.LabelFrame(return_window, text="Tìm kiếm/Lọc sách đang mượn")
         filter_frame.pack(padx=10, pady=5, fill="x")
 
-        ttk.Label(filter_frame, text="Tìm theo:", font=FONT).pack(side='left', padx=5)
+        ttk.Label(filter_frame, text="Tìm theo:", style="Bold.TLabel").pack(side='left', padx=5)
         filter_criteria = ["Tất cả", "Mã bạn đọc", "Mã sách", "Tên sách"]
-        filter_criteria_combo = ttk.Combobox(filter_frame, values=filter_criteria, state="readonly", font=FONT)
+        filter_criteria_combo = ttk.Combobox(filter_frame, values=filter_criteria, state="readonly")
         filter_criteria_combo.current(0)
         filter_criteria_combo.pack(side='left', padx=5, expand=True, fill='x')
 
-        filter_keyword_entry = ttk.Entry(filter_frame, font=FONT)
+        filter_keyword_entry = ttk.Entry(filter_frame)
         filter_keyword_entry.pack(side='left', padx=5, expand=True, fill='x')
 
         # Frame chứa Treeview
@@ -269,42 +278,66 @@ class TrackingTab:
             for item in tree.get_children():
                 tree.delete(item)
             
-            tracks_to_display = filtered_tracks if filtered_tracks is not None else [track for track in data_handler.tracking_db.values() if track.trang_thai == "Đang mượn"]
+            tracks_to_display = filtered_tracks if filtered_tracks is not None else [
+                track for track in data_handler.tracking_db.values() 
+                if track.trang_thai in ("Đang mượn", "Quá hạn")
+            ]
 
-            # Thêm các sách đang mượn
+            # Thêm các sách đang mượn và quá hạn
             idx = 0
             for track in tracks_to_display:
-                if track.trang_thai == "Đang mượn":
-                    tag = 'evenrow' if idx % 2 == 0 else 'oddrow'
-                    tree.insert('', 'end', values=(
-                        track.ma_ban_doc,
-                        track.ma_sach_muon,
-                        track.ten_sach_muon,
-                        track.ngay_muon,
-                        track.trang_thai
-                    ), tags=(tag,))
-                    idx += 1
-            tree.tag_configure('evenrow', background='#ffffff')
+                tag = 'overdue' if track.trang_thai == "Quá hạn" else ('evenrow' if idx % 2 == 0 else 'oddrow')
+                tree.insert('', 'end', values=(
+                    track.ma_ban_doc,
+                    track.ma_sach_muon,
+                    track.ten_sach_muon,
+                    track.ngay_muon,
+                    track.trang_thai
+                ), tags=(tag,))
+                idx += 1
+            
+            # Configure tags            tree.tag_configure('evenrow', background='#ffffff')
             tree.tag_configure('oddrow', background='#E3F6FF')
+            tree.tag_configure('overdue', background='#FFE3E3')  # Light red background for overdue items
 
         def filter_borrowed_books():
             field = filter_criteria_combo.get()
             keyword = filter_keyword_entry.get().strip().lower()
             filtered_tracks = []
+            
+            # First update all book statuses
+            current_date = datetime.now()
+            max_borrow_days = 30
+
             for track in data_handler.tracking_db.values():
-                 # Chỉ lọc các bản ghi đang mượn hoặc quá hạn
+                if track.trang_thai == "Đang mượn":
+                    try:
+                        borrow_date = datetime.strptime(track.ngay_muon, "%d/%m/%Y")
+                        days_borrowed = (current_date - borrow_date).days
+                        
+                        if days_borrowed > max_borrow_days:
+                            track.trang_thai = "Quá hạn"
+                            data_handler.save_data()
+                    except ValueError as e:
+                        logger.error(f"Lỗi xử lý ngày mượn: {e}")
+
+            # Then apply filters
+            for track in data_handler.tracking_db.values():
                 if track.trang_thai in ("Đang mượn", "Quá hạn"):
                     if field == "Tất cả":
-                         if (keyword in track.ma_ban_doc.lower() or
-                             keyword in track.ma_sach_muon.lower() or
-                             keyword in track.ten_sach_muon.lower()):
-                              filtered_tracks.append(track)
+                        if not keyword or (
+                            keyword in track.ma_ban_doc.lower() or
+                            keyword in track.ma_sach_muon.lower() or
+                            keyword in track.ten_sach_muon.lower()
+                        ):
+                            filtered_tracks.append(track)
                     elif field == "Mã bạn đọc" and keyword in track.ma_ban_doc.lower():
-                         filtered_tracks.append(track)
+                        filtered_tracks.append(track)
                     elif field == "Mã sách" and keyword in track.ma_sach_muon.lower():
-                         filtered_tracks.append(track)
+                        filtered_tracks.append(track)
                     elif field == "Tên sách" and keyword in track.ten_sach_muon.lower():
-                         filtered_tracks.append(track)
+                        filtered_tracks.append(track)
+            
             update_return_treeview(filtered_tracks)
 
         ttk.Button(filter_frame, text="Tìm", command=filter_borrowed_books).pack(side='left', padx=5)
@@ -313,42 +346,37 @@ class TrackingTab:
         update_return_treeview()
 
         def return_books():
-            selected_items = tree.selection()
-            if not selected_items:
-                messagebox.showwarning("Cảnh báo", "Vui lòng chọn sách cần trả")
+            selected_item = tree.selection()
+            if not selected_item:
+                messagebox.showwarning("Cảnh báo", "Vui lòng chọn sách cần trả", style="Bold.TLabel")
                 return
 
             try:
-                for item in selected_items:
-                    values = tree.item(item)['values']
-                    ma_ban_doc = values[0]
-                    ma_sach = values[1]
-                    ngay_muon = values[3]
+                track_key = tree.item(selected_item[0])['values'][0] # Using track_key as identifier
+                track = data_handler.tracking_db.get(track_key)
+                if track:
+                    # Cập nhật trạng thái
+                    track.trang_thai = "Đã trả"
+                    track.ngay_tra = datetime.now().strftime("%d/%m/%Y")
 
-                    # Tìm bản ghi mượn sách
-                    track_key = f"{ma_ban_doc}_{ma_sach}_{ngay_muon}"
-                    track = data_handler.tracking_db.get(track_key)
-                    if track:
-                        # Cập nhật trạng thái
-                        track.trang_thai = "Đã trả"
-                        track.ngay_tra = datetime.now().strftime("%d/%m/%Y")
-
-                        # Cập nhật số lượng sách
-                        book = data_handler.books_db.get(ma_sach)
-                        if book:
-                            book.so_luong += 1
+                    # Cập nhật số lượng sách
+                    book = data_handler.books_db.get(track.ma_sach_muon)
+                    if book:
+                        book.so_luong += 1
 
                 data_handler.save_data()
-                self.update_tracking_list()
-                messagebox.showinfo("Thành công", "Đã trả sách thành công")
-                return_window.destroy()
-
+                self.main_window.update_tracking_list()
+                update_return_treeview() # Update return window list
+                messagebox.showinfo("Thành công", "Trả sách thành công!")
             except Exception as e:
                 logger.error(f"Lỗi khi trả sách: {e}")
-                messagebox.showerror("Lỗi", f"Không thể trả sách: {e}")
+                messagebox.showerror("Lỗi", f"Không thể trả sách: {e}", style="Bold.TLabel")
 
         # Nút trả sách
-        ttk.Button(return_window, text="Trả sách đã chọn", command=return_books).pack(pady=20)
+        ttk.Button(return_window, text="Trả sách được chọn", command=return_books).pack(pady=10)
+
+        # Cập nhật danh sách sách đang mượn khi mở cửa sổ
+        update_return_treeview()
 
     def update_tracking_list(self):
         # Xóa dữ liệu cũ trong Treeview
@@ -382,7 +410,7 @@ class TrackingTab:
         search_frame.pack(padx=10, pady=10, fill='x', anchor='center')
 
         # Tiêu chí tìm kiếm
-        ttk.Label(search_frame, text="Tìm theo:").pack(side='left', padx=5)
+        ttk.Label(search_frame, text="Tìm theo:", style="Bold.TLabel").pack(side='left', padx=5)
         history_criteria = ["Mã bạn đọc", "Mã sách"]
         self.history_criteria_combo = ttk.Combobox(search_frame, values=history_criteria, state="readonly")
         self.history_criteria_combo.current(0) # Default to Reader ID
@@ -496,6 +524,14 @@ class TrackingTab:
                     current_date = datetime.now()
                     days_borrowed = (current_date - borrow_date).days
 
+                # Determine tag based on status
+                if track.trang_thai == "Quá hạn":
+                    tag = 'overdue'
+                else:
+                    # Keep alternating colors for non-overdue items
+                    count = len(self.history_tree.get_children())
+                    tag = 'evenrow' if count % 2 == 0 else 'oddrow'
+
                 self.history_tree.insert('', tk.END,
                     values=(
                         track.ma_ban_doc,
@@ -505,7 +541,8 @@ class TrackingTab:
                         track.ngay_tra,
                         track.trang_thai,
                         days_borrowed # Add days borrowed column
-                    )
+                    ),
+                    tags=(tag,)
                 )
             except Exception as e:
                 logger.error(f"Error inserting history record into treeview: {track} - {e}")
@@ -513,10 +550,10 @@ class TrackingTab:
                 self.history_tree.insert('', tk.END,
                     values=(track.ma_ban_doc, track.ma_sach_muon, "Error loading data", "", "", "", ""))
 
-        # Apply alternating row colors
-        for i, item in enumerate(self.history_tree.get_children()):
-            tag = 'evenrow' if i % 2 == 0 else 'oddrow'
-            self.history_tree.item(item, tags=(tag,))
+        # Configure the tags
+        self.history_tree.tag_configure('evenrow', background='#ffffff')
+        self.history_tree.tag_configure('oddrow', background='#E3F6FF')
+        self.history_tree.tag_configure('overdue', background='#FFE3E3')  # Light red background
 
         # Scroll to the top after update
         if self.history_tree.get_children():
@@ -538,5 +575,66 @@ class TrackingTab:
         self.update_history_list(filtered_records)
 
     def update_overdue_list(self):
-        # Implementation of update_overdue_list method
-        pass
+        # Xóa dữ liệu cũ trong Treeview
+        for item in self.overdue_tree.get_children():
+            self.overdue_tree.delete(item)
+
+        try:
+            current_date = datetime.now()
+            max_borrow_days = 30  # Số ngày mượn tối đa
+            overdue_records = []
+
+            # Lọc và hiển thị sách quá hạn
+            for track in data_handler.tracking_db.values():
+                if track.trang_thai != "Đã trả":  # Chỉ xét sách chưa trả
+                    try:
+                        # Chuyển ngày mượn sang datetime object
+                        borrow_date = datetime.strptime(track.ngay_muon, "%d/%m/%Y")
+                        days_borrowed = (current_date - borrow_date).days
+
+                        # Nếu số ngày mượn vượt quá giới hạn
+                        if days_borrowed > max_borrow_days:
+                            # Cập nhật trạng thái quá hạn
+                            track.trang_thai = "Quá hạn"
+                            data_handler.save_data()
+                            overdue_records.append(track)
+
+                    except ValueError as e:
+                        logger.error(f"Lỗi xử lý định dạng ngày tháng: {e}")
+                        continue
+
+            # Thêm các sách quá hạn vào treeview
+            for track in overdue_records:
+                try:
+                    borrow_date = datetime.strptime(track.ngay_muon, "%d/%m/%Y")
+                    days_overdue = (current_date - borrow_date).days - max_borrow_days
+
+                    self.overdue_tree.insert('', tk.END,
+                        values=(
+                            track.ma_ban_doc,
+                            track.ma_sach_muon,
+                            track.ten_sach_muon,
+                            track.ngay_muon,
+                            days_overdue  # Số ngày quá hạn
+                        ),
+                        tags=('overdue',)
+                    )
+                except Exception as e:
+                    logger.error(f"Error inserting overdue record into treeview: {track} - {e}")
+                    self.overdue_tree.insert('', tk.END,
+                        values=(track.ma_ban_doc, track.ma_sach_muon, "Error loading data", "", ""))
+
+            # Configure tags
+            self.overdue_tree.tag_configure('overdue', background='#FFE3E3')  # Light red background
+
+            # Hiển thị thông báo số lượng sách quá hạn
+            if overdue_records:
+                messagebox.showinfo("Thông báo", f"Có {len(overdue_records)} sách đang quá hạn!")
+
+            # Scroll to the top after update
+            if self.overdue_tree.get_children():
+                self.overdue_tree.yview_moveto(0)
+
+        except Exception as e:
+            logger.error(f"Lỗi khi cập nhật danh sách sách quá hạn: {e}")
+            messagebox.showerror("Lỗi", f"Không thể cập nhật danh sách sách quá hạn: {e}")

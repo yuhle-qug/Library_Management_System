@@ -4,7 +4,6 @@ from src.core.models import Book
 from src.core.data_handler import data_handler
 from src.utils.logger import logger
 
-FONT = ("Arial Unicode MS", 11)
 
 class BookTab:
     def __init__(self, parent, main_window):
@@ -21,10 +20,30 @@ class BookTab:
         center_frame = ttk.Frame(button_frame)
         center_frame.pack(anchor='center')
 
-        ttk.Button(center_frame, text="Thêm sách mới", style="Pastel.TButton", command=self.show_add_book_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Cập nhật sách", style="Pastel.TButton", command=self.show_update_book_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Tìm kiếm sách", style="Pastel.TButton", command=self.show_search_book_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Xóa sách", style="Pastel.TButton", command=self.delete_book_window).pack(side='left', padx=10)
+        # Update button definitions
+        ttk.Button(
+            center_frame, 
+            text="Thêm sách mới",
+            command=self.show_add_book_window
+        ).pack(side=tk.LEFT, padx=5)
+
+        ttk.Button(
+            center_frame,
+            text="Cập nhật thông tin",
+            command=self.show_update_book_window,
+        ).pack(side=tk.LEFT, padx=5)
+
+        ttk.Button(
+            center_frame, 
+            text="Tìm kiếm sách",
+            command=self.show_search_book_window,
+        ).pack(side=tk.LEFT, padx=5)
+
+        ttk.Button(
+            center_frame, 
+            text="Xóa sách",
+            command=self.delete_book_window,
+        ).pack(side=tk.LEFT, padx=5)
 
         # Frame chứa các điều khiển sắp xếp và lọc
         controls_frame = ttk.Frame(self.frame)
@@ -33,7 +52,6 @@ class BookTab:
         # Phần sắp xếp
         sort_frame = ttk.LabelFrame(controls_frame, text="Sắp xếp")
         sort_frame.pack(side='left', padx=5, fill='x', expand=True)
-
         ttk.Label(sort_frame, text="Sắp xếp theo:").pack(side='left', padx=5)
         self.sort_by_combo = ttk.Combobox(sort_frame, values=["Mã sách", "Tên sách", "Tác giả", "Số lượng"], state="readonly")
         self.sort_by_combo.current(0)  # Mặc định sắp xếp theo Mã sách
@@ -273,7 +291,8 @@ class BookTab:
         so_luong_entry.pack(pady=5)
 
         ttk.Label(add_window, text="Tình trạng:").pack(pady=5)
-        tinh_trang_combo = ttk.Combobox(add_window, values=["Mới", "Đã sử dụng"])
+        tinh_trang_combo = ttk.Combobox(add_window, values=["Mới", "Đã sử dụng"], state="readonly")
+        tinh_trang_combo.current(0)
         tinh_trang_combo.pack(pady=5)
 
         ttk.Label(add_window, text="Nhà xuất bản:").pack(pady=5)
@@ -344,24 +363,24 @@ class BookTab:
         # Lấy item được chọn
         selected_item = self.tree.selection()
         if not selected_item:
-            messagebox.showwarning("Cảnh báo", "Vui lòng chọn sách cần cập nhật")
+            messagebox.showwarning("Cảnh báo", "Vui lòng chọn sách cần cập nhật!")
             return
 
         # Lấy thông tin sách được chọn
-        book_id = self.tree.item(selected_item[0])['values'][0]
+        book_id = str(self.tree.item(selected_item[0])['values'][0])
         book = data_handler.books_db.get(book_id)
         if not book:
-            messagebox.showerror("Lỗi", "Không tìm thấy thông tin sách")
+            messagebox.showerror("Lỗi", "Không tìm thấy thông tin sách!")
             return
 
-        # Tạo cửa sổ cập nhật
+        # Tạo cửa sổ mới
         update_window = tk.Toplevel(self.main_window.root)
-        update_window.title("Cập nhật thông tin sách")
+        update_window.title("Cập nhật sách")
         update_window.geometry("600x700")
         update_window.transient(self.main_window.root)
         update_window.grab_set()
 
-        # Tạo các trường nhập liệu với giá trị hiện tại
+        # Tạo các trường nhập liệu
         ttk.Label(update_window, text="Mã sách:").pack(pady=5)
         ma_sach_entry = ttk.Entry(update_window)
         ma_sach_entry.insert(0, book.ma_sach)
@@ -384,7 +403,7 @@ class BookTab:
             "Tôn giáo", "Triết học", "Thiếu nhi", "Giáo trình", "Công nghệ", "Kỹ thuật", "Y học", "Khác..."
         ]
         the_loai_combo = ttk.Combobox(update_window, values=the_loai_list)
-        the_loai_combo.set(book.the_loai if book.the_loai in the_loai_list else "Khác...")
+        the_loai_combo.set(book.the_loai)
         the_loai_combo.pack(pady=5)
         
         # Frame chứa label và entry cho thể loại khác
@@ -409,11 +428,11 @@ class BookTab:
 
         ttk.Label(update_window, text="Số lượng:").pack(pady=5)
         so_luong_entry = ttk.Entry(update_window)
-        so_luong_entry.insert(0, str(book.so_luong))
+        so_luong_entry.insert(0, book.so_luong)
         so_luong_entry.pack(pady=5)
 
         ttk.Label(update_window, text="Tình trạng:").pack(pady=5)
-        tinh_trang_combo = ttk.Combobox(update_window, values=["Mới", "Đã sử dụng"])
+        tinh_trang_combo = ttk.Combobox(update_window, values=["Có sẵn", "Đã mượn", "Đang sửa chữa"], state="readonly")
         tinh_trang_combo.set(book.tinh_trang)
         tinh_trang_combo.pack(pady=5)
 
@@ -477,125 +496,156 @@ class BookTab:
                 messagebox.showerror("Lỗi", f"Không thể cập nhật sách: {e}")
 
         # Nút cập nhật
-        ttk.Button(update_window, text="Cập nhật",style="Pastel.TButton", command=update_book).pack(pady=20)
+        ttk.Button(update_window, text="Cập nhật", style="Pastel.TButton", command=update_book).pack(pady=20)
 
     def delete_book_window(self):
+        # Lấy item được chọn
         selected_item = self.tree.selection()
         if not selected_item:
-            messagebox.showwarning("Cảnh báo", "Vui lòng chọn sách cần xóa")
+            messagebox.showwarning("Cảnh báo", "Vui lòng chọn sách cần xóa!")
             return
-        book_id = self.tree.item(selected_item[0])['values'][0]
-        if messagebox.askyesno("Xác nhận", f"Bạn có chắc chắn muốn xóa sách '{book_id}' không?"):
-            if data_handler.is_book_borrowed(book_id):
-                messagebox.showerror("Lỗi", "Không thể xóa sách đang được mượn hoặc quá hạn!")
-                return
-            data_handler.delete_book(book_id)
-            self.update_book_list()
-            messagebox.showinfo("Thành công", "Đã xóa sách thành công!")
+
+        # Lấy thông tin sách được chọn
+        book_id = str(self.tree.item(selected_item[0])['values'][0])
+        book = data_handler.books_db.get(book_id)
+        if not book:
+            messagebox.showerror("Lỗi", "Không tìm thấy thông tin sách!")
+            return
+
+        # Kiểm tra xem sách có đang được mượn không
+        if data_handler.is_book_borrowed(book_id):
+            messagebox.showerror("Lỗi", "Không thể xóa sách đang được mượn!")
+            return
+
+        # Hiển thị hộp thoại xác nhận
+        if messagebox.askyesno("Xác nhận", f"Bạn có chắc chắn muốn xóa sách có Mã sách: {book_id}?"):
+            try:
+                # Thực hiện xóa sách bằng data_handler
+                data_handler.delete_book(book_id)
+                self.update_book_list()
+                messagebox.showinfo("Thành công", "Đã xóa sách thành công!")
+            except Exception as e:
+                logger.error(f"Lỗi khi xóa sách: {e}")
+                messagebox.showerror("Lỗi", f"Không thể xóa sách: {e}")
 
     def show_search_book_window(self):
+        # Tạo cửa sổ tìm kiếm
         search_window = tk.Toplevel(self.main_window.root)
         search_window.title("Tìm kiếm sách")
-        search_window.geometry("900x600")
+        search_window.geometry("800x600")
         search_window.transient(self.main_window.root)
         search_window.grab_set()
-        ttk.Label(search_window, text="Tìm kiếm theo:").pack(pady=5)
-        criteria = ["Tất cả", "Mã sách", "Tên sách", "Tác giả", "Thể loại", "Nhà xuất bản"]
-        criteria_combo = ttk.Combobox(search_window, values=criteria, state="readonly")
-        criteria_combo.current(0)
-        criteria_combo.pack(pady=5)
-        ttk.Label(search_window, text="Từ khóa:").pack(pady=5)
-        search_entry = ttk.Entry(search_window)
-        search_entry.pack(pady=5)
 
-        # Frame for search results Treeview
-        results_frame = ttk.Frame(search_window)
-        results_frame.pack(fill='both', expand=True, padx=10, pady=5)
+        # Frame chứa các điều khiển tìm kiếm
+        search_controls_frame = ttk.Frame(search_window)
+        search_controls_frame.pack(padx=10, pady=10, fill='x')
 
-        # Treeview for search results
+        ttk.Label(search_controls_frame, text="Tìm kiếm theo:").pack(side='left', padx=5)
+        search_criteria = ["Mã sách", "Tên sách", "Tác giả", "Thể loại", "Tình trạng", "Nhà xuất bản"]
+        self.search_criteria_combo = ttk.Combobox(search_controls_frame, values=search_criteria, state="readonly")
+        self.search_criteria_combo.current(0)
+        self.search_criteria_combo.pack(side='left', padx=5)
+
+        ttk.Label(search_controls_frame, text="Từ khóa:").pack(side='left', padx=5)
+        self.search_keyword_entry = ttk.Entry(search_controls_frame)
+        self.search_keyword_entry.pack(side='left', padx=5, expand=True, fill='x')
+        self.search_keyword_entry.bind('<Return>', lambda event=None: self.search(search_tree))
+        #TreeView
+         # Frame chứa Treeview để hiển thị kết quả tìm kiếm
+        tree_frame = ttk.Frame(search_window)
+        tree_frame.pack(fill='both', expand=True, padx=10, pady=10)
+
+
+            # Tạo Treeview
         columns = ('ma_sach', 'ten_sach', 'tac_gia', 'the_loai', 'so_luong', 'tinh_trang', 'nha_xuat_ban')
-        results_tree = ttk.Treeview(results_frame, columns=columns, show='headings')
+        search_tree = ttk.Treeview(tree_frame, columns=columns, show='headings')
 
-        # Define columns for the results Treeview
-        results_tree.heading('ma_sach', text='Mã sách')
-        results_tree.heading('ten_sach', text='Tên sách')
-        results_tree.heading('tac_gia', text='Tác giả')
-        results_tree.heading('the_loai', text='Thể loại')
-        results_tree.heading('so_luong', text='Số lượng')
-        results_tree.heading('tinh_trang', text='Tình trạng')
-        results_tree.heading('nha_xuat_ban', text='Nhà xuất bản')
+        # Định nghĩa các cột
+        search_tree.heading('ma_sach', text='Mã sách')
+        search_tree.heading('ten_sach', text='Tên sách')
+        search_tree.heading('tac_gia', text='Tác giả')
+        search_tree.heading('the_loai', text='Thể loại')
+        search_tree.heading('so_luong', text='Số lượng')
+        search_tree.heading('tinh_trang', text='Tình trạng')
+        search_tree.heading('nha_xuat_ban', text='Nhà xuất bản')
 
-        # Set column widths (optional, can adjust as needed)
-        results_tree.column('ma_sach', width=80)
-        results_tree.column('ten_sach', width=150)
-        results_tree.column('tac_gia', width=120)
-        results_tree.column('the_loai', width=80)
-        results_tree.column('so_luong', width=60)
-        results_tree.column('tinh_trang', width=80)
-        results_tree.column('nha_xuat_ban', width=120)
+        # Đặt độ rộng cột
+        search_tree.column('ma_sach', width=100)
+        search_tree.column('ten_sach', width=200)
+        search_tree.column('tac_gia', width=150)
+        search_tree.column('the_loai', width=100)
+        search_tree.column('so_luong', width=80)
+        search_tree.column('tinh_trang', width=100)
+        search_tree.column('nha_xuat_ban', width=150)
 
-        # Add scrollbar to results Treeview
-        results_scrollbar = ttk.Scrollbar(results_frame, orient='vertical', command=results_tree.yview)
-        results_tree.configure(yscrollcommand=results_scrollbar.set)
-        results_scrollbar.pack(side='right', fill='y')
-        results_tree.pack(side='left', fill='both', expand=True)
+        # Thêm thanh cuộn
+        scrollbar = ttk.Scrollbar(tree_frame, orient='vertical', command=search_tree.yview)
+        search_tree.configure(yscrollcommand=scrollbar.set)
+        scrollbar.pack(side='right', fill='y')
+        search_tree.pack(side='left', fill='both', expand=True)
+        ttk.Button(search_controls_frame, text="Tìm kiếm", command=lambda: self.search(search_tree)).pack(side='left', padx=5)
 
-        def search():
-            field = criteria_combo.get()
-            keyword = search_entry.get().strip().lower()
-            found_books = []
-            for book in data_handler.books_db.values():
-                if field == "Tất cả":
-                    if (keyword in book.ma_sach.lower() or
-                        keyword in book.ten_sach.lower() or
-                        keyword in book.tac_gia.lower() or
-                        keyword in book.the_loai.lower() or
-                        keyword in book.nha_xuat_ban.lower()):
-                        found_books.append(book)
-                elif field == "Mã sách" and keyword in book.ma_sach.lower():
-                    found_books.append(book)
-                elif field == "Tên sách" and keyword in book.ten_sach.lower():
-                    found_books.append(book)
-                elif field == "Tác giả" and keyword in book.tac_gia.lower():
-                    found_books.append(book)
-                elif field == "Thể loại" and keyword in book.the_loai.lower():
-                    found_books.append(book)
-                elif field == "Nhà xuất bản" and keyword in book.nha_xuat_ban.lower():
-                    found_books.append(book)
-            if found_books:
-                logger.info(f"search: Found {len(found_books)} books.")
-                # Clear previous results in the search window Treeview
-                for item in results_tree.get_children():
-                    results_tree.delete(item)
-                # Insert new results
-                for idx, book in enumerate(found_books):
-                    tag = 'evenrow' if idx % 2 == 0 else 'oddrow' # Reuse row tags
-                    values = (
-                        book.ma_sach,
-                        book.ten_sach,
-                        book.tac_gia,
-                        book.the_loai,
-                        book.so_luong,
-                        book.tinh_trang,
-                        book.nha_xuat_ban
-                    )
-                    results_tree.insert('', 'end', values=values, tags=(tag,))
-                results_tree.tag_configure('evenrow', background='#ffffff') # Reuse row tags config
-                results_tree.tag_configure('oddrow', background='#E3F6FF') # Reuse row tags config
+    def search(self, treeview):
+        try:
+            # Lấy tiêu chí tìm kiếm và từ khóa
+            search_criteria = self.search_criteria_combo.get()
+            search_keyword = self.search_keyword_entry.get().strip()
 
-                results_tree.update_idletasks() # Update the search results Treeview
+            if not search_keyword:
+                messagebox.showwarning("Cảnh báo", "Vui lòng nhập từ khóa tìm kiếm!")
+                return
 
-                messagebox.showinfo("Kết quả", f"Tìm thấy {len(found_books)} sách")
+            # Chuyển đổi tiêu chí tìm kiếm sang tên thuộc tính
+            field_map = {
+                "Mã sách": "ma_sach",
+                "Tên sách": "ten_sach",
+                "Tác giả": "tac_gia",
+                "Thể loại": "the_loai",
+                "Tình trạng": "tinh_trang",
+                "Nhà xuất bản": "nha_xuat_ban"
+            }
+
+            field = field_map.get(search_criteria)
+            if not field:
+                messagebox.showerror("Lỗi", "Tiêu chí tìm kiếm không hợp lệ!")
+                return
+
+            # Lọc danh sách sách theo từ khóa
+            filtered_books = [
+                book for book in data_handler.books_db.values()
+                if search_keyword.lower() in str(getattr(book, field)).lower()
+            ]
+
+            # Xóa dữ liệu cũ trong Treeview
+            for item in treeview.get_children():
+                treeview.delete(item)
+
+            # Thêm dữ liệu mới vào Treeview
+            for idx, book in enumerate(filtered_books):
+                tag = 'evenrow' if idx % 2 == 0 else 'oddrow'
+                values = (
+                    book.ma_sach,
+                    book.ten_sach,
+                    book.tac_gia,
+                    book.the_loai,
+                    book.so_luong,
+                    book.tinh_trang,
+                    book.nha_xuat_ban
+                )
+                treeview.insert('', 'end', values=values, tags=(tag,))
+
+            treeview.tag_configure('evenrow', background='#ffffff')
+            treeview.tag_configure('oddrow', background='#E3F6FF')
+
+            # Hiển thị thông báo kết quả tìm kiếm
+            if filtered_books:
+                messagebox.showinfo("Kết quả tìm kiếm", f"Tìm thấy {len(filtered_books)} quyển sách.")
             else:
-                logger.info("search: No books found.")
-                # Xóa toàn bộ các hàng trong Treeview khi không tìm thấy kết quả
-                for item in results_tree.get_children():
-                    results_tree.delete(item)
-                results_tree.update_idletasks() # Update the search results Treeview
-                messagebox.showinfo("Kết quả", "Không tìm thấy sách nào")
+                messagebox.showinfo("Kết quả tìm kiếm", "Không tìm thấy quyển sách nào.")
 
-        ttk.Button(search_window, text="Tìm kiếm", command=search).pack(pady=20)
-
+        except Exception as e:
+            logger.error(f"Lỗi khi tìm kiếm sách: {e}")
+            messagebox.showerror("Lỗi", f"Không thể thực hiện tìm kiếm: {e}")
     def update_book_list(self, books=None):
         logger.info(f"update_book_list called with {len(books) if books is not None else 'default'} books.")
         # Xóa dữ liệu cũ trong Treeview
@@ -635,5 +685,4 @@ class BookTab:
 
         except Exception as e:
             logger.error(f"Lỗi khi cập nhật Treeview sách: {e}")
-            # Optionally show an error message to the user
-            # messagebox.showerror("Lỗi", f"Không thể cập nhật hiển thị sách: {e}")
+            messagebox.showerror("Lỗi", f"Không thể cập nhật hiển thị sách: {e}")

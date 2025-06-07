@@ -6,7 +6,6 @@ from src.utils.logger import logger
 from src.gui.date_picker import MyDatePicker
 import datetime
 
-FONT = ("Arial Unicode MS", 11)
 
 class ReaderTab:
     def __init__(self, parent, main_window):
@@ -18,15 +17,35 @@ class ReaderTab:
     def setup_ui(self):
         # Frame chứa các nút chức năng
         button_frame = ttk.Frame(self.frame)
-        button_frame.pack(fill='x', padx=10, pady=5)
+        button_frame.pack(fill='x', padx=5, pady=5)
 
         center_frame = ttk.Frame(button_frame)
         center_frame.pack(anchor='center')
 
-        ttk.Button(center_frame, text="Thêm bạn đọc mới", style="Pastel.TButton", command=self.show_add_reader_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Cập nhật bạn đọc", style="Pastel.TButton", command=self.show_update_reader_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Tìm kiếm bạn đọc", style="Pastel.TButton", command=self.show_search_reader_window).pack(side='left', padx=10)
-        ttk.Button(center_frame, text="Xóa bạn đọc", style="Pastel.TButton", command=self.delete_reader_window).pack(side='left', padx=10)
+        # Standard ttk buttons without custom styles
+        ttk.Button(
+            center_frame, 
+            text="Thêm bạn đọc mới",
+            command=self.show_add_reader_window
+        ).pack(side=tk.LEFT, padx=5)
+
+        ttk.Button(
+            center_frame, 
+            text="Cập nhật thông tin",
+            command=self.show_update_reader_window
+        ).pack(side=tk.LEFT, padx=5)
+
+        ttk.Button(
+            center_frame, 
+            text="Tìm kiếm bạn đọc",
+            command=self.show_search_reader_window
+        ).pack(side=tk.LEFT, padx=5)
+
+        ttk.Button(
+            center_frame, 
+            text="Xóa bạn đọc",
+            command=self.delete_reader_window
+        ).pack(side=tk.LEFT, padx=5)
 
         # Frame chứa các điều khiển sắp xếp và lọc
         controls_frame = ttk.Frame(self.frame)
@@ -53,17 +72,24 @@ class ReaderTab:
         ttk.Label(filter_frame, text="Lọc theo:").pack(side='left', padx=5)
         self.filter_by_combo = ttk.Combobox(filter_frame, values=["Giới tính", "Địa chỉ"], state="readonly")
         self.filter_by_combo.pack(side='left', padx=5)
+        self.filter_by_combo.bind('<<ComboboxSelected>>', self.on_filter_criteria_change)
 
         ttk.Label(filter_frame, text="Giá trị:").pack(side='left', padx=5)
-        self.filter_value_entry = ttk.Entry(filter_frame)
-        self.filter_value_entry.pack(side='left', padx=5)
+    
+        # Frame to hold dynamic filter value widget
+        self.filter_value_frame = ttk.Frame(filter_frame)
+        self.filter_value_frame.pack(side='left', padx=5, fill='x', expand=True)
+
+        # Initial dummy widget (will be replaced)
+        self.current_filter_value_widget = ttk.Entry(self.filter_value_frame)
+        self.current_filter_value_widget.pack(fill='x', expand=True)
 
         # Nút điều khiển
         control_buttons_frame = ttk.Frame(controls_frame)
         control_buttons_frame.pack(side='left', padx=5)
 
-        ttk.Button(control_buttons_frame, text="Áp dụng", style="Pastel.TButton", command=self.apply_filters).pack(side='left', padx=5)
-        ttk.Button(control_buttons_frame, text="Reset", style="Pastel.TButton", command=self.reset_filters).pack(side='left', padx=5)
+        ttk.Button(control_buttons_frame, text="Áp dụng", command=self.apply_filters).pack(side='left', padx=5)
+        ttk.Button(control_buttons_frame, text="Reset", command=self.reset_filters).pack(side='left', padx=5)
 
         # Frame chứa Treeview
         tree_frame = ttk.Frame(self.frame)
@@ -107,19 +133,18 @@ class ReaderTab:
         add_window.grab_set()
 
         # Tạo các trường nhập liệu
-        ttk.Label(add_window, text="Mã bạn đọc:", font=FONT).pack(pady=5)
+        ttk.Label(add_window, text="Mã bạn đọc:", style="Bold.TLabel").pack(pady=5)
         ma_ban_doc_entry = ttk.Entry(add_window)
         ma_ban_doc_entry.pack(pady=5)
 
-        ttk.Label(add_window, text="Họ tên:", font=FONT).pack(pady=5)
+        ttk.Label(add_window, text="Họ tên:", style="Bold.TLabel").pack(pady=5)
         ten_entry = ttk.Entry(add_window)
         ten_entry.pack(pady=5)
 
-        ttk.Label(add_window, text="Ngày sinh:", font=FONT).pack(pady=5)
+        ttk.Label(add_window, text="Ngày sinh:", style="Bold.TLabel").pack(pady=5)
         ngay_sinh_frame = ttk.Frame(add_window)
         ngay_sinh_frame.pack(pady=5)
         ngay_sinh_entry = ttk.Entry(ngay_sinh_frame)
-        ngay_sinh_entry.pack(side='left', padx=5)
         
         def open_date_picker():
             date_picker = MyDatePicker(add_window)
@@ -130,15 +155,15 @@ class ReaderTab:
 
         ttk.Button(ngay_sinh_frame, text="Chọn ngày", command=open_date_picker).pack(side='left')
 
-        ttk.Label(add_window, text="Giới tính:", font=FONT).pack(pady=5)
-        gioi_tinh_combo = ttk.Combobox(add_window, values=["Nam", "Nữ", "Khác"], font=FONT)
+        ttk.Label(add_window, text="Giới tính:", style="Bold.TLabel").pack(pady=5)
+        gioi_tinh_combo = ttk.Combobox(add_window, values=["Nam", "Nữ", "Khác"])
         gioi_tinh_combo.pack(pady=5)
 
-        ttk.Label(add_window, text="Địa chỉ:", font=FONT).pack(pady=5)
+        ttk.Label(add_window, text="Địa chỉ:", style="Bold.TLabel").pack(pady=5)
         dia_chi_entry = ttk.Entry(add_window)
         dia_chi_entry.pack(pady=5)
 
-        ttk.Label(add_window, text="Số điện thoại:", font=FONT).pack(pady=5)
+        ttk.Label(add_window, text="Số điện thoại:", style="Bold.TLabel").pack(pady=5)
         so_dien_thoai_entry = ttk.Entry(add_window)
         so_dien_thoai_entry.pack(pady=5)
 
@@ -214,18 +239,18 @@ class ReaderTab:
         update_window.grab_set()
 
         # Tạo các trường nhập liệu với giá trị hiện tại
-        ttk.Label(update_window, text="Mã bạn đọc:", font=FONT).pack(pady=5)
+        ttk.Label(update_window, text="Mã bạn đọc:", style="Bold.TLabel").pack(pady=5)
         ma_ban_doc_entry = ttk.Entry(update_window)
         ma_ban_doc_entry.insert(0, reader.ma_ban_doc)
         ma_ban_doc_entry.configure(state='readonly')
         ma_ban_doc_entry.pack(pady=5)
 
-        ttk.Label(update_window, text="Họ tên:", font=FONT).pack(pady=5)
+        ttk.Label(update_window, text="Họ tên:", style="Bold.TLabel").pack(pady=5)
         ten_entry = ttk.Entry(update_window)
         ten_entry.insert(0, reader.ten)
         ten_entry.pack(pady=5)
 
-        ttk.Label(update_window, text="Ngày sinh:", font=FONT).pack(pady=5)
+        ttk.Label(update_window, text="Ngày sinh:", style="Bold.TLabel").pack(pady=5)
         ngay_sinh_frame = ttk.Frame(update_window)
         ngay_sinh_frame.pack(pady=5)
         ngay_sinh_entry = ttk.Entry(ngay_sinh_frame)
@@ -245,17 +270,17 @@ class ReaderTab:
 
         ttk.Button(ngay_sinh_frame, text="Chọn ngày", command=open_date_picker).pack(side='left')
 
-        ttk.Label(update_window, text="Giới tính:", font=FONT).pack(pady=5)
-        gioi_tinh_combo = ttk.Combobox(update_window, values=["Nam", "Nữ", "Khác"], font=FONT)
+        ttk.Label(update_window, text="Giới tính:").pack(pady=5)
+        gioi_tinh_combo = ttk.Combobox(update_window, values=["Nam", "Nữ", "Khác"])
         gioi_tinh_combo.set(reader.gioi_tinh)
         gioi_tinh_combo.pack(pady=5)
 
-        ttk.Label(update_window, text="Địa chỉ:", font=FONT).pack(pady=5)
+        ttk.Label(update_window, text="Địa chỉ:", style="Bold.TLabel").pack(pady=5)
         dia_chi_entry = ttk.Entry(update_window)
         dia_chi_entry.insert(0, reader.dia_chi)
         dia_chi_entry.pack(pady=5)
 
-        ttk.Label(update_window, text="Số điện thoại:", font=FONT).pack(pady=5)
+        ttk.Label(update_window, text="Số điện thoại:", style="Bold.TLabel").pack(pady=5)
         so_dien_thoai_entry = ttk.Entry(update_window)
         so_dien_thoai_entry.insert(0, reader.so_dien_thoai)
         so_dien_thoai_entry.pack(pady=5)
@@ -304,7 +329,7 @@ class ReaderTab:
                 messagebox.showerror("Lỗi", f"Không thể cập nhật bạn đọc: {e}")
 
         # Nút cập nhật
-        ttk.Button(update_window, text="Cập nhật", command=update_reader).pack(pady=20)
+        ttk.Button(update_window, text="Cập nhật",command=update_reader).pack(pady=20)
 
     def update_reader_list(self, readers=None):
         logger.info(f"update_reader_list called with {len(readers) if readers is not None else 'default'} readers.")
@@ -352,7 +377,13 @@ class ReaderTab:
         sort_field = self.sort_by_combo.get()
         sort_order = self.sort_order_combo.get()
         filter_field = self.filter_by_combo.get()
-        filter_value = self.filter_value_entry.get().strip().lower()
+        
+        # Get value from the currently active filter widget
+        if isinstance(self.current_filter_value_widget, ttk.Combobox):
+            filter_value = self.current_filter_value_widget.get().strip()
+        else:
+            # Should not happen with current filter criteria
+            filter_value = self.current_filter_value_widget.get().strip().lower()
 
         # Chuyển đổi tên trường sang tên thuộc tính
         field_map = {
@@ -366,11 +397,12 @@ class ReaderTab:
 
         # Lọc dữ liệu
         filtered_readers = list(data_handler.readers_db.values())
-        if filter_field and filter_value:
+
+        if filter_field and filter_value and filter_value != "Tất cả":
             field = field_map[filter_field]
             filtered_readers = [
                 reader for reader in filtered_readers
-                if str(getattr(reader, field)).lower() == filter_value
+                if str(getattr(reader, field)) == filter_value
             ]
 
         logger.info(f"apply_filters (reader_tab): Filtered {len(filtered_readers)} readers.")
@@ -395,8 +427,15 @@ class ReaderTab:
         # Reset các controls về giá trị mặc định
         self.sort_by_combo.current(0)
         self.sort_order_combo.current(0)
-        self.filter_by_combo.set("")
-        self.filter_value_entry.delete(0, tk.END)
+        self.filter_by_combo.set("")  # Clear filter criteria selection
+        
+        # Clear and reset the dynamic filter value widget
+        for widget in self.filter_value_frame.winfo_children():
+            widget.destroy()
+        
+        # Re-add a default empty entry
+        self.current_filter_value_widget = ttk.Entry(self.filter_value_frame)
+        self.current_filter_value_widget.pack(fill='x', expand=True)
 
         # Hiển thị lại danh sách gốc (sắp xếp theo mã bạn đọc tăng dần)
         readers = sorted(data_handler.readers_db.values(), key=lambda x: x.ma_ban_doc)
@@ -408,12 +447,12 @@ class ReaderTab:
         search_window.geometry("900x600")
         search_window.transient(self.main_window.root)
         search_window.grab_set()
-        ttk.Label(search_window, text="Tìm kiếm theo:").pack(pady=5)
+        ttk.Label(search_window, text="Tìm kiếm theo:", style="Bold.TLabel").pack(pady=5)
         criteria = ["Tất cả", "Mã bạn đọc", "Họ tên", "Số điện thoại"]
         criteria_combo = ttk.Combobox(search_window, values=criteria, state="readonly")
         criteria_combo.current(0)
         criteria_combo.pack(pady=5)
-        ttk.Label(search_window, text="Từ khóa:").pack(pady=5)
+        ttk.Label(search_window, text="Từ khóa:", style="Bold.TLabel").pack(pady=5)
         search_entry = ttk.Entry(search_window)
         search_entry.pack(pady=5)
 
@@ -502,11 +541,57 @@ class ReaderTab:
         if not selected_item:
             messagebox.showwarning("Cảnh báo", "Vui lòng chọn bạn đọc cần xóa")
             return
+            
         reader_id = self.tree.item(selected_item[0])['values'][0]
         if messagebox.askyesno("Xác nhận", f"Bạn có chắc chắn muốn xóa bạn đọc '{reader_id}' không?"):
-            if data_handler.is_reader_borrowing(reader_id):
-                messagebox.showerror("Lỗi", "Không thể xóa bạn đọc đang mượn hoặc quá hạn!")
-                return
-            data_handler.delete_reader(reader_id)
-            self.update_reader_list()
-            messagebox.showinfo("Thành công", "Đã xóa bạn đọc thành công!")
+            try:
+                if data_handler.is_reader_borrowing(reader_id):
+                    messagebox.showerror("Lỗi", "Không thể xóa bạn đọc đang mượn hoặc quá hạn!")
+                    return
+                    
+                data_handler.delete_reader(reader_id)
+                self.update_reader_list()
+                messagebox.showinfo("Thành công", "Đã xóa bạn đọc thành công!")
+            except Exception as e:
+                logger.error(f"Lỗi khi xóa bạn đọc: {e}")
+                messagebox.showerror("Lỗi", f"Không thể xóa bạn đọc: {e}")
+
+    def get_unique_reader_genders(self):
+        genders = set()
+        for reader in data_handler.readers_db.values():
+            genders.add(reader.gioi_tinh)
+        # Return all unique genders plus "Tất cả"
+        gender_list = ["Tất cả"] + sorted(list(genders))
+        return gender_list
+
+    def get_unique_reader_addresses(self):
+        addresses = set()
+        for reader in data_handler.readers_db.values():
+            addresses.add(reader.dia_chi)
+        # Return all unique addresses plus "Tất cả"
+        address_list = ["Tất cả"] + sorted(list(addresses))
+        return address_list
+
+    def on_filter_criteria_change(self, event):
+        # Clear current filter value widget
+        for widget in self.filter_value_frame.winfo_children():
+            widget.destroy()
+
+        selected_criteria = self.filter_by_combo.get()
+
+        if selected_criteria == "Giới tính":
+            values = self.get_unique_reader_genders()
+            self.current_filter_value_widget = ttk.Combobox(self.filter_value_frame, values=values)
+            self.current_filter_value_widget.pack(fill='x', expand=True)
+            if "Tất cả" in values:
+                self.current_filter_value_widget.set("Tất cả")
+        elif selected_criteria == "Địa chỉ":
+            values = self.get_unique_reader_addresses()
+            self.current_filter_value_widget = ttk.Combobox(self.filter_value_frame, values=values)
+            self.current_filter_value_widget.pack(fill='x', expand=True)
+            if "Tất cả" in values:
+                self.current_filter_value_widget.set("Tất cả")
+        else:
+            # Fallback to entry for other criteria
+            self.current_filter_value_widget = ttk.Entry(self.filter_value_frame)
+            self.current_filter_value_widget.pack(fill='x', expand=True)

@@ -207,13 +207,13 @@ class LibraryManagementSystem:
         overdue_records = []
 
         for record in data_handler.tracking_records:
-            if record.trang_thai == "Borrowed":
+            if record.trang_thai == "Đang mượn":
                 try:
                     ngay_muon_dt = datetime.strptime(record.ngay_muon, "%d/%m/%Y").date()
                     overdue_days = (today - ngay_muon_dt).days - due_days_limit
                     
                     if overdue_days > 0:
-                        record.trang_thai = "Overdue"
+                        record.trang_thai = "Quá hạn"
                         reader_info = data_handler.readers_db.get(record.ma_ban_doc)
                         if reader_info:
                             overdue_records.append({
@@ -1268,7 +1268,7 @@ class LibraryManagementSystem:
                 for record in data_handler.tracking_records:
                     if (record.ma_ban_doc == reader_id and 
                         record.ma_sach_muon == book_id and 
-                        record.trang_thai == "Borrowed"):
+                        record.trang_thai == "Đang mượn"):
                         raise ValueError("Bạn đọc đã mượn cuốn sách này và chưa trả!")
 
                 # Display confirmation popup

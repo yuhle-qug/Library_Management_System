@@ -45,8 +45,8 @@ class Reader:
     def from_dict(cls, data_dict):
         return cls(**data_dict)
 
-class TrackBook:
-    def __init__(self, ma_ban_doc, ma_sach_muon, ten_sach_muon, ngay_muon, ngay_tra=None, trang_thai="Borrowed"):
+class TrackBook:    
+    def __init__(self, ma_ban_doc, ma_sach_muon, ten_sach_muon, ngay_muon, ngay_tra=None, trang_thai="Đang mượn"):
         self.ma_ban_doc = ma_ban_doc
         self.ma_sach_muon = ma_sach_muon
         self.ten_sach_muon = ten_sach_muon
@@ -54,9 +54,8 @@ class TrackBook:
         self.ngay_tra = ngay_tra
         self.trang_thai = trang_thai
 
-    def __str__(self):
-        return (f"Track[ReaderID: {self.ma_ban_doc}, BookID: {self.ma_sach_muon}, "
-                f"Borrowed: {self.ngay_muon}, Returned: {self.ngay_tra}, Status: {self.trang_thai}]")
+    def __str__(self):        return (f"Track[Mã bạn đọc: {self.ma_ban_doc}, Mã sách: {self.ma_sach_muon}, "
+                f"Ngày mượn: {self.ngay_muon}, Ngày trả: {self.ngay_tra}, Trạng thái: {self.trang_thai}]")
 
     def to_dict(self):
         return self.__dict__
