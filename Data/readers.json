@@ -1,27 +1,11 @@
 {
-    "R079": {
-        "ma_ban_doc": "R079",
-        "ten": "Trần Xuân Tuấn",
-        "ngay_sinh": "08/05/1999",
+    "R004": {
+        "ma_ban_doc": "R004",
+        "ten": "Dương Xuân Tùng",
+        "ngay_sinh": "11/10/2004",
         "gioi_tinh": "Nữ",
-        "dia_chi": "Số 65, Phố Uyên, Hà Nội",
-        "so_dien_thoai": "0871021011"
-    },
-    "R060": {
-        "ma_ban_doc": "R060",
-        "ten": "Hồ Quang Dung",
-        "ngay_sinh": "09/11/1991",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 37, Đường Hà, Hà Nội",
-        "so_dien_thoai": "0393402280"
-    },
-    "R009": {
-        "ma_ban_doc": "R009",
-        "ten": "Phạm Phương Tài",
-        "ngay_sinh": "14/02/1999",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 72, Đường Hải, Hà Nội",
-        "so_dien_thoai": "0913684689"
+        "dia_chi": "Số 45, Đường Mai, Hà Nội",
+        "so_dien_thoai": "0743969903"
     },
     "R012": {
         "ma_ban_doc": "R012",
@@ -31,21 +15,13 @@
         "dia_chi": "Số 119, Đường Lan, Hà Nội",
         "so_dien_thoai": "0561702102"
     },
-    "R091": {
-        "ma_ban_doc": "R091",
-        "ten": "Võ Thành Thảo",
-        "ngay_sinh": "19/02/2003",
+    "R064": {
+        "ma_ban_doc": "R064",
+        "ten": "Huỳnh Đình Châu",
+        "ngay_sinh": "22/01/1993",
         "gioi_tinh": "Nữ",
-        "dia_chi": "Số 108, Phố Phú, Hà Nội",
-        "so_dien_thoai": "0889236678"
-    },
-    "R050": {
-        "ma_ban_doc": "R050",
-        "ten": "Đỗ Quang Phúc",
-        "ngay_sinh": "11/09/1994",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 146, Phố Ngọc, Hà Nội",
-        "so_dien_thoai": "0449003287"
+        "dia_chi": "Số 68, Phố Trí, Hà Nội",
+        "so_dien_thoai": "0991439249"
     },
     "R028": {
         "ma_ban_doc": "R028",
@@ -55,117 +31,13 @@
         "dia_chi": "Số 36, Phố Thành, Hà Nội",
         "so_dien_thoai": "0555232796"
     },
-    "R093": {
-        "ma_ban_doc": "R093",
-        "ten": "Đỗ Quang An",
-        "ngay_sinh": "05/02/1990",
+    "R087": {
+        "ma_ban_doc": "R087",
+        "ten": "Huỳnh Quang Thảo",
+        "ngay_sinh": "09/01/1994",
         "gioi_tinh": "Nam",
-        "dia_chi": "Số 160, Phố Hương, Hà Nội",
-        "so_dien_thoai": "0490286663"
-    },
-    "R048": {
-        "ma_ban_doc": "R048",
-        "ten": "Vũ Hoàng Em",
-        "ngay_sinh": "07/08/2002",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 79, Phố Hải, Hà Nội",
-        "so_dien_thoai": "0552670175"
-    },
-    "R068": {
-        "ma_ban_doc": "R068",
-        "ten": "Võ Phương Tâm",
-        "ngay_sinh": "14/04/2001",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 161, Phố Trí, Hà Nội",
-        "so_dien_thoai": "0744290659"
-    },
-    "R092": {
-        "ma_ban_doc": "R092",
-        "ten": "Đỗ Hoàng Linh",
-        "ngay_sinh": "05/02/1993",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 74, Đường Mai, Hà Nội",
-        "so_dien_thoai": "0374149427"
-    },
-    "R022": {
-        "ma_ban_doc": "R022",
-        "ten": "Ngô Đức Hải",
-        "ngay_sinh": "13/07/1994",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 165, Đường Thảo, Hà Nội",
-        "so_dien_thoai": "0592599248"
-    },
-    "R005": {
-        "ma_ban_doc": "R005",
-        "ten": "Đỗ Xuân Thành",
-        "ngay_sinh": "23/11/2002",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 12, Đường Thành, Hà Nội",
-        "so_dien_thoai": "0930034250"
-    },
-    "R073": {
-        "ma_ban_doc": "R073",
-        "ten": "Nguyễn Đình Hùng",
-        "ngay_sinh": "15/04/1996",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 120, Phố Em, Hà Nội",
-        "so_dien_thoai": "0590347906"
-    },
-    "R076": {
-        "ma_ban_doc": "R076",
-        "ten": "Võ Quang Lan",
-        "ngay_sinh": "13/12/1993",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 195, Đường Châu, Hà Nội",
-        "so_dien_thoai": "0678988859"
-    },
-    "R007": {
-        "ma_ban_doc": "R007",
-        "ten": "Vũ Phương Hải",
-        "ngay_sinh": "28/03/2005",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 169, Phố Uyên, Hà Nội",
-        "so_dien_thoai": "0628051694"
-    },
-    "R086": {
-        "ma_ban_doc": "R086",
-        "ten": "Phan Quang Tùng",
-        "ngay_sinh": "17/04/1999",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 12, Đường Yến, Hà Nội",
-        "so_dien_thoai": "0402319187"
-    },
-    "R053": {
-        "ma_ban_doc": "R053",
-        "ten": "Hoàng Hoàng Ngọc",
-        "ngay_sinh": "20/09/1992",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 142, Đường Hùng, Hà Nội",
-        "so_dien_thoai": "0345942423"
-    },
-    "R096": {
-        "ma_ban_doc": "R096",
-        "ten": "Hoàng Văn Bình",
-        "ngay_sinh": "28/02/1994",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 160, Đường Hải, Hà Nội",
-        "so_dien_thoai": "0456908388"
-    },
-    "R017": {
-        "ma_ban_doc": "R017",
-        "ten": "Nguyễn Anh Uyên",
-        "ngay_sinh": "07/01/1992",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 165, Đường Quân, Hà Nội",
-        "so_dien_thoai": "0804748202"
-    },
-    "R058": {
-        "ma_ban_doc": "R058",
-        "ten": "Phạm Phương Phú",
-        "ngay_sinh": "13/11/2002",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 166, Đường Phú, Hà Nội",
-        "so_dien_thoai": "0807538319"
+        "dia_chi": "Số 81, Đường Hùng, Hà Nội",
+        "so_dien_thoai": "0823909997"
     },
     "R090": {
         "ma_ban_doc": "R090",
@@ -175,6 +47,158 @@
         "dia_chi": "Số 37, Đường Phúc, Hà Nội",
         "so_dien_thoai": "0824029101"
     },
+    "R085": {
+        "ma_ban_doc": "R085",
+        "ten": "Hoàng Đức Linh",
+        "ngay_sinh": "13/01/1996",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 97, Đường Châu, Hà Nội",
+        "so_dien_thoai": "0302001243"
+    },
+    "R060": {
+        "ma_ban_doc": "R060",
+        "ten": "Hồ Quang Dung",
+        "ngay_sinh": "09/11/1991",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 37, Đường Hà, Hà Nội",
+        "so_dien_thoai": "0393402280"
+    },
+    "R046": {
+        "ma_ban_doc": "R046",
+        "ten": "Hoàng Thu Hà",
+        "ngay_sinh": "19/07/1991",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 106, Phố Hà, Hà Nội",
+        "so_dien_thoai": "0971210946"
+    },
+    "R049": {
+        "ma_ban_doc": "R049",
+        "ten": "Hồ Đức Xuân",
+        "ngay_sinh": "09/02/1990",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 22, Đường Uyên, Hà Nội",
+        "so_dien_thoai": "0858381191"
+    },
+    "R002": {
+        "ma_ban_doc": "R002",
+        "ten": "Hoàng Hải Bình",
+        "ngay_sinh": "23/06/1996",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 181, Phố Hùng, Hà Nội",
+        "so_dien_thoai": "0485773599"
+    },
+    "R089": {
+        "ma_ban_doc": "R089",
+        "ten": "Phạm Minh Tâm",
+        "ngay_sinh": "13/06/2005",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 127, Đường Tâm, Hà Nội",
+        "so_dien_thoai": "0541097281"
+    },
+    "R078": {
+        "ma_ban_doc": "R078",
+        "ten": "Lê Xuân Phú",
+        "ngay_sinh": "09/02/2004",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 76, Phố Hà, Hà Nội",
+        "so_dien_thoai": "0421183739"
+    },
+    "R043": {
+        "ma_ban_doc": "R043",
+        "ten": "Lê Quang Bình",
+        "ngay_sinh": "01/08/1994",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 99, Phố Dung, Hà Nội",
+        "so_dien_thoai": "0389881613"
+    },
+    "R022": {
+        "ma_ban_doc": "R022",
+        "ten": "Ngô Đức Hải",
+        "ngay_sinh": "13/07/1994",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 165, Đường Thảo, Hà Nội",
+        "so_dien_thoai": "0592599248"
+    },
+    "R003": {
+        "ma_ban_doc": "R003",
+        "ten": "Lê Đình Tùng",
+        "ngay_sinh": "20/08/2003",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 106, Phố Việt, Hà Nội",
+        "so_dien_thoai": "0765472752"
+    },
+    "R009": {
+        "ma_ban_doc": "R009",
+        "ten": "Phạm Phương Tài",
+        "ngay_sinh": "14/02/1999",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 72, Đường Hải, Hà Nội",
+        "so_dien_thoai": "0913684689"
+    },
+    "R010": {
+        "ma_ban_doc": "R010",
+        "ten": "Lê Anh Tâm",
+        "ngay_sinh": "09/03/1995",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 83, Đường Dung, Hà Nội",
+        "so_dien_thoai": "0446814467"
+    },
+    "R086": {
+        "ma_ban_doc": "R086",
+        "ten": "Phan Quang Tùng",
+        "ngay_sinh": "17/04/1999",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 12, Đường Yến, Hà Nội",
+        "so_dien_thoai": "0402319187"
+    },
+    "R005": {
+        "ma_ban_doc": "R005",
+        "ten": "Đỗ Xuân Thành",
+        "ngay_sinh": "23/11/2002",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 12, Đường Thành, Hà Nội",
+        "so_dien_thoai": "0930034250"
+    },
+    "R016": {
+        "ma_ban_doc": "R016",
+        "ten": "Lê Đình Hà",
+        "ngay_sinh": "01/05/1999",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 140, Đường Linh, Hà Nội",
+        "so_dien_thoai": "0438629521"
+    },
+    "R021": {
+        "ma_ban_doc": "R021",
+        "ten": "Hồ Xuân Uyên",
+        "ngay_sinh": "09/08/1994",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 97, Phố Ngọc, Hà Nội",
+        "so_dien_thoai": "0675319302"
+    },
+    "R018": {
+        "ma_ban_doc": "R018",
+        "ten": "Dương Hồng Thảo",
+        "ngay_sinh": "13/09/2003",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 22, Đường Uyên, Hà Nội",
+        "so_dien_thoai": "0822284638"
+    },
+    "R036": {
+        "ma_ban_doc": "R036",
+        "ten": "Đỗ Thị An",
+        "ngay_sinh": "22/12/2002",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 160, Phố Mai, Hà Nội",
+        "so_dien_thoai": "0660387194"
+    },
+    "R050": {
+        "ma_ban_doc": "R050",
+        "ten": "Đỗ Quang Phúc",
+        "ngay_sinh": "11/09/1994",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 146, Phố Ngọc, Hà Nội",
+        "so_dien_thoai": "0449003287"
+    },
     "R008": {
         "ma_ban_doc": "R008",
         "ten": "Đỗ Quang Em",
@@ -183,29 +207,13 @@
         "dia_chi": "Số 170, Phố Tài, Hà Nội",
         "so_dien_thoai": "0758203106"
     },
-    "R094": {
-        "ma_ban_doc": "R094",
-        "ten": "Đặng Hoàng Hùng",
-        "ngay_sinh": "17/03/1997",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 111, Đường Châu, Hà Nội",
-        "so_dien_thoai": "0355201627"
-    },
-    "R038": {
-        "ma_ban_doc": "R038",
-        "ten": "Vũ Thành Việt",
-        "ngay_sinh": "09/08/2001",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 75, Đường Việt, Hà Nội",
-        "so_dien_thoai": "0721220563"
-    },
-    "R047": {
-        "ma_ban_doc": "R047",
-        "ten": "Phan Thành Bình",
-        "ngay_sinh": "11/02/1990",
+    "R011": {
+        "ma_ban_doc": "R011",
+        "ten": "Trần Phương Quân",
+        "ngay_sinh": "14/01/1991",
         "gioi_tinh": "Nữ",
-        "dia_chi": "Số 180, Đường Hương, Hà Nội",
-        "so_dien_thoai": "0458205432"
+        "dia_chi": "Số 164, Phố Phương, Hà Nội",
+        "so_dien_thoai": "0415051645"
     },
     "R063": {
         "ma_ban_doc": "R063",
@@ -215,77 +223,53 @@
         "dia_chi": "Số 154, Phố Phúc, Hà Nội",
         "so_dien_thoai": "0365280453"
     },
-    "R095": {
-        "ma_ban_doc": "R095",
-        "ten": "Trần Văn An",
-        "ngay_sinh": "25/10/2002",
+    "R017": {
+        "ma_ban_doc": "R017",
+        "ten": "Nguyễn Anh Uyên",
+        "ngay_sinh": "07/01/1992",
         "gioi_tinh": "Nam",
-        "dia_chi": "Số 97, Phố Mai, Hà Nội",
-        "so_dien_thoai": "0398032679"
+        "dia_chi": "Số 165, Đường Quân, Hà Nội",
+        "so_dien_thoai": "0804748202"
     },
-    "R023": {
-        "ma_ban_doc": "R023",
-        "ten": "Dương Hồng Linh",
-        "ngay_sinh": "28/06/2002",
+    "R015": {
+        "ma_ban_doc": "R015",
+        "ten": "Phạm Hoàng Tuấn",
+        "ngay_sinh": "23/09/1993",
         "gioi_tinh": "Nam",
-        "dia_chi": "Số 196, Phố Phú, Hà Nội",
-        "so_dien_thoai": "0707738217"
+        "dia_chi": "Số 175, Phố Xuân, Hà Nội",
+        "so_dien_thoai": "0618057248"
     },
-    "R039": {
-        "ma_ban_doc": "R039",
-        "ten": "Phạm Hải Giang",
-        "ngay_sinh": "04/04/1991",
+    "R075": {
+        "ma_ban_doc": "R075",
+        "ten": "Hoàng Xuân Bình",
+        "ngay_sinh": "17/06/1993",
         "gioi_tinh": "Nam",
-        "dia_chi": "Số 129, Đường Linh, Hà Nội",
-        "so_dien_thoai": "0318338990"
+        "dia_chi": "Số 148, Phố Phúc, Hà Nội",
+        "so_dien_thoai": "0903286694"
     },
-    "R077": {
-        "ma_ban_doc": "R077",
-        "ten": "Huỳnh Thị Hải",
-        "ngay_sinh": "01/06/2000",
+    "R092": {
+        "ma_ban_doc": "R092",
+        "ten": "Đỗ Hoàng Linh",
+        "ngay_sinh": "05/02/1993",
         "gioi_tinh": "Nữ",
-        "dia_chi": "Số 91, Phố Việt, Hà Nội",
-        "so_dien_thoai": "0954253995"
+        "dia_chi": "Số 74, Đường Mai, Hà Nội",
+        "so_dien_thoai": "0374149427"
     },
-    "R065": {
-        "ma_ban_doc": "R065",
-        "ten": "Đỗ Thanh Lan",
-        "ngay_sinh": "24/01/2004",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 65, Đường Dung, Hà Nội",
-        "so_dien_thoai": "0896623511"
-    },
-    "R037": {
-        "ma_ban_doc": "R037",
-        "ten": "Phạm Thu Xuân",
-        "ngay_sinh": "14/03/1992",
+    "R048": {
+        "ma_ban_doc": "R048",
+        "ten": "Vũ Hoàng Em",
+        "ngay_sinh": "07/08/2002",
         "gioi_tinh": "Nam",
-        "dia_chi": "Số 128, Phố Hải, Hà Nội",
-        "so_dien_thoai": "0516729117"
+        "dia_chi": "Số 79, Phố Hải, Hà Nội",
+        "so_dien_thoai": "0552670175"
     },
-    "R097": {
-        "ma_ban_doc": "R097",
-        "ten": "Phan Đình Phúc",
-        "ngay_sinh": "25/12/1999",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 55, Phố Phương, Hà Nội",
-        "so_dien_thoai": "0791913649"
-    },
-    "R041": {
-        "ma_ban_doc": "R041",
-        "ten": "Đỗ Anh Tâm",
-        "ngay_sinh": "08/03/2005",
+    "R079": {
+        "ma_ban_doc": "R079",
+        "ten": "Trần Xuân Tuấn",
+        "ngay_sinh": "08/05/1999",
         "gioi_tinh": "Nữ",
-        "dia_chi": "Số 158, Đường Phú, Hà Nội",
-        "so_dien_thoai": "0823035401"
-    },
-    "R045": {
-        "ma_ban_doc": "R045",
-        "ten": "Đỗ Thu Bình",
-        "ngay_sinh": "19/10/1995",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 163, Phố Châu, Hà Nội",
-        "so_dien_thoai": "0332852170"
+        "dia_chi": "Số 65, Phố Uyên, Hà Nội",
+        "so_dien_thoai": "0871021011"
     },
     "R081": {
         "ma_ban_doc": "R081",
@@ -295,13 +279,61 @@
         "dia_chi": "Số 93, Đường Ngọc, Hà Nội",
         "so_dien_thoai": "0690909837"
     },
-    "R083": {
-        "ma_ban_doc": "R083",
-        "ten": "Phạm Thanh Hải",
-        "ngay_sinh": "14/12/1990",
+    "R013": {
+        "ma_ban_doc": "R013",
+        "ten": "Trần Hồng Lan",
+        "ngay_sinh": "13/02/1990",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 148, Phố Châu, Hà Nội",
+        "so_dien_thoai": "0906356686"
+    },
+    "R047": {
+        "ma_ban_doc": "R047",
+        "ten": "Phan Thành Bình",
+        "ngay_sinh": "11/02/1990",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 180, Đường Hương, Hà Nội",
+        "so_dien_thoai": "0458205432"
+    },
+    "R054": {
+        "ma_ban_doc": "R054",
+        "ten": "Đặng Văn Hương",
+        "ngay_sinh": "04/08/1995",
         "gioi_tinh": "Nam",
-        "dia_chi": "Số 56, Phố Tùng, Hà Nội",
-        "so_dien_thoai": "0805211309"
+        "dia_chi": "Số 96, Đường Dung, Hà Nội",
+        "so_dien_thoai": "0605278364"
+    },
+    "R007": {
+        "ma_ban_doc": "R007",
+        "ten": "Vũ Phương Hải",
+        "ngay_sinh": "28/03/2005",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 169, Phố Uyên, Hà Nội",
+        "so_dien_thoai": "0628051694"
+    },
+    "R040": {
+        "ma_ban_doc": "R040",
+        "ten": "Dương Thành Lan",
+        "ngay_sinh": "01/12/1997",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 75, Đường Hương, Hà Nội",
+        "so_dien_thoai": "0832937849"
+    },
+    "R080": {
+        "ma_ban_doc": "R080",
+        "ten": "Hồ Văn Dung",
+        "ngay_sinh": "05/08/2002",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 68, Phố Hùng, Hà Nội",
+        "so_dien_thoai": "0883300585"
+    },
+    "R052": {
+        "ma_ban_doc": "R052",
+        "ten": "Bùi Xuân Phú",
+        "ngay_sinh": "01/10/2003",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 134, Đường Nam, Hà Nội",
+        "so_dien_thoai": "0440093434"
     },
     "R044": {
         "ma_ban_doc": "R044",
@@ -310,6 +342,54 @@
         "gioi_tinh": "Nữ",
         "dia_chi": "Số 140, Phố Uyên, Hà Nội",
         "so_dien_thoai": "0552666085"
+    },
+    "R070": {
+        "ma_ban_doc": "R070",
+        "ten": "Nguyễn Hồng Trí",
+        "ngay_sinh": "04/06/1991",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 156, Phố Thảo, Hà Nội",
+        "so_dien_thoai": "0790527119"
+    },
+    "R037": {
+        "ma_ban_doc": "R037",
+        "ten": "Phạm Thu Xuân",
+        "ngay_sinh": "14/03/1992",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 128, Phố Hải, Hà Nội",
+        "so_dien_thoai": "0516729117"
+    },
+    "R041": {
+        "ma_ban_doc": "R041",
+        "ten": "Đỗ Anh Tâm",
+        "ngay_sinh": "08/03/2005",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 158, Đường Phú, Hà Nội",
+        "so_dien_thoai": "0823035401"
+    },
+    "R099": {
+        "ma_ban_doc": "R099",
+        "ten": "Dương Xuân Mai",
+        "ngay_sinh": "22/03/1995",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 123, Phố Châu, Hà Nội",
+        "so_dien_thoai": "0867348140"
+    },
+    "R084": {
+        "ma_ban_doc": "R084",
+        "ten": "Ngô Đình Hùng",
+        "ngay_sinh": "08/09/1996",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 106, Đường Quân, Hà Nội",
+        "so_dien_thoai": "0554233716"
+    },
+    "R097": {
+        "ma_ban_doc": "R097",
+        "ten": "Phan Đình Phúc",
+        "ngay_sinh": "25/12/1999",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 55, Phố Phương, Hà Nội",
+        "so_dien_thoai": "0791913649"
     },
     "R032": {
         "ma_ban_doc": "R032",
@@ -327,253 +407,13 @@
         "dia_chi": "Số 187, Phố Ngọc, Hà Nội",
         "so_dien_thoai": "0911646397"
     },
-    "R054": {
-        "ma_ban_doc": "R054",
-        "ten": "Đặng Văn Hương",
-        "ngay_sinh": "04/08/1995",
+    "R039": {
+        "ma_ban_doc": "R039",
+        "ten": "Phạm Hải Giang",
+        "ngay_sinh": "04/04/1991",
         "gioi_tinh": "Nam",
-        "dia_chi": "Số 96, Đường Dung, Hà Nội",
-        "so_dien_thoai": "0605278364"
-    },
-    "R098": {
-        "ma_ban_doc": "R098",
-        "ten": "Lê Xuân Bình",
-        "ngay_sinh": "16/05/1996",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 83, Phố Yến, Hà Nội",
-        "so_dien_thoai": "0630288040"
-    },
-    "R029": {
-        "ma_ban_doc": "R029",
-        "ten": "Lê Hoàng Lan",
-        "ngay_sinh": "15/07/1993",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 130, Đường Dung, Hà Nội",
-        "so_dien_thoai": "0833368860"
-    },
-    "R019": {
-        "ma_ban_doc": "R019",
-        "ten": "Bùi Thành Dung",
-        "ngay_sinh": "27/06/1993",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 125, Phố Xuân, Hà Nội",
-        "so_dien_thoai": "0691063292"
-    },
-    "R049": {
-        "ma_ban_doc": "R049",
-        "ten": "Hồ Đức Xuân",
-        "ngay_sinh": "09/02/1990",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 22, Đường Uyên, Hà Nội",
-        "so_dien_thoai": "0858381191"
-    },
-    "R069": {
-        "ma_ban_doc": "R069",
-        "ten": "Trần Đình Phương",
-        "ngay_sinh": "21/06/2005",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 138, Đường Em, Hà Nội",
-        "so_dien_thoai": "0300392121"
-    },
-    "R003": {
-        "ma_ban_doc": "R003",
-        "ten": "Lê Đình Tùng",
-        "ngay_sinh": "20/08/2003",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 106, Phố Việt, Hà Nội",
-        "so_dien_thoai": "0765472752"
-    },
-    "R021": {
-        "ma_ban_doc": "R021",
-        "ten": "Hồ Xuân Uyên",
-        "ngay_sinh": "09/08/1994",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 97, Phố Ngọc, Hà Nội",
-        "so_dien_thoai": "0675319302"
-    },
-    "R100": {
-        "ma_ban_doc": "R100",
-        "ten": "Lý Thành Phúc",
-        "ngay_sinh": "03/07/2001",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 5, Phố Thành, Hà Nội",
-        "so_dien_thoai": "0812506832"
-    },
-    "R051": {
-        "ma_ban_doc": "R051",
-        "ten": "Đặng Thành Tâm",
-        "ngay_sinh": "28/12/2004",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 168, Đường Việt, Hà Nội",
-        "so_dien_thoai": "0920814146"
-    },
-    "R074": {
-        "ma_ban_doc": "R074",
-        "ten": "Ngô Quang Tùng",
-        "ngay_sinh": "02/07/2001",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 109, Đường Linh, Hà Nội",
-        "so_dien_thoai": "0464507299"
-    },
-    "R020": {
-        "ma_ban_doc": "R020",
-        "ten": "Trần Anh Hùng",
-        "ngay_sinh": "06/07/2002",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 174, Phố Linh, Hà Nội",
-        "so_dien_thoai": "0777240632"
-    },
-    "R072": {
-        "ma_ban_doc": "R072",
-        "ten": "Đặng Xuân Lan",
-        "ngay_sinh": "02/11/1999",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 188, Đường Tuấn, Hà Nội",
-        "so_dien_thoai": "0661314402"
-    },
-    "R061": {
-        "ma_ban_doc": "R061",
-        "ten": "Ngô Anh Em",
-        "ngay_sinh": "06/02/1998",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 66, Phố Tùng, Hà Nội",
-        "so_dien_thoai": "0611289828"
-    },
-    "R067": {
-        "ma_ban_doc": "R067",
-        "ten": "Phạm Quang Dung",
-        "ngay_sinh": "27/01/1997",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 179, Đường Việt, Hà Nội",
-        "so_dien_thoai": "0775250566"
-    },
-    "R055": {
-        "ma_ban_doc": "R055",
-        "ten": "Phan Hồng Dung",
-        "ngay_sinh": "06/02/1991",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 72, Đường Uyên, Hà Nội",
-        "so_dien_thoai": "0713410228"
-    },
-    "R066": {
-        "ma_ban_doc": "R066",
-        "ten": "Võ Thị Phú",
-        "ngay_sinh": "26/09/1993",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 185, Phố Uyên, Hà Nội",
-        "so_dien_thoai": "0665747218"
-    },
-    "R087": {
-        "ma_ban_doc": "R087",
-        "ten": "Huỳnh Quang Thảo",
-        "ngay_sinh": "09/01/1994",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 81, Đường Hùng, Hà Nội",
-        "so_dien_thoai": "0823909997"
-    },
-    "R099": {
-        "ma_ban_doc": "R099",
-        "ten": "Dương Xuân Mai",
-        "ngay_sinh": "22/03/1995",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 123, Phố Châu, Hà Nội",
-        "so_dien_thoai": "0867348140"
-    },
-    "R035": {
-        "ma_ban_doc": "R035",
-        "ten": "Phan Thị Trí",
-        "ngay_sinh": "01/02/1999",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 34, Đường Trí, Hà Nội",
-        "so_dien_thoai": "0595774250"
-    },
-    "R075": {
-        "ma_ban_doc": "R075",
-        "ten": "Hoàng Xuân Bình",
-        "ngay_sinh": "17/06/1993",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 148, Phố Phúc, Hà Nội",
-        "so_dien_thoai": "0903286694"
-    },
-    "R015": {
-        "ma_ban_doc": "R015",
-        "ten": "Phạm Hoàng Tuấn",
-        "ngay_sinh": "23/09/1993",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 175, Phố Xuân, Hà Nội",
-        "so_dien_thoai": "0618057248"
-    },
-    "R013": {
-        "ma_ban_doc": "R013",
-        "ten": "Trần Hồng Lan",
-        "ngay_sinh": "13/02/1990",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 148, Phố Châu, Hà Nội",
-        "so_dien_thoai": "0906356686"
-    },
-    "R088": {
-        "ma_ban_doc": "R088",
-        "ten": "Huỳnh Hải Linh",
-        "ngay_sinh": "15/07/2000",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 166, Phố Giang, Hà Nội",
-        "so_dien_thoai": "0369110334"
-    },
-    "R078": {
-        "ma_ban_doc": "R078",
-        "ten": "Lê Xuân Phú",
-        "ngay_sinh": "09/02/2004",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 76, Phố Hà, Hà Nội",
-        "so_dien_thoai": "0421183739"
-    },
-    "R040": {
-        "ma_ban_doc": "R040",
-        "ten": "Dương Thành Lan",
-        "ngay_sinh": "01/12/1997",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 75, Đường Hương, Hà Nội",
-        "so_dien_thoai": "0832937849"
-    },
-    "R062": {
-        "ma_ban_doc": "R062",
-        "ten": "Hoàng Đình Thảo",
-        "ngay_sinh": "20/03/2004",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 56, Đường Châu, Hà Nội",
-        "so_dien_thoai": "0755254301"
-    },
-    "R052": {
-        "ma_ban_doc": "R052",
-        "ten": "Bùi Xuân Phú",
-        "ngay_sinh": "01/10/2003",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 134, Đường Nam, Hà Nội",
-        "so_dien_thoai": "0440093434"
-    },
-    "R056": {
-        "ma_ban_doc": "R056",
-        "ten": "Lý Phương Tài",
-        "ngay_sinh": "25/11/1996",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 162, Phố Việt, Hà Nội",
-        "so_dien_thoai": "0324087057"
-    },
-    "R024": {
-        "ma_ban_doc": "R024",
-        "ten": "Dương Thanh Châu",
-        "ngay_sinh": "15/12/1994",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 83, Đường Giang, Hà Nội",
-        "so_dien_thoai": "0785478996"
-    },
-    "R085": {
-        "ma_ban_doc": "R085",
-        "ten": "Hoàng Đức Linh",
-        "ngay_sinh": "13/01/1996",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 97, Đường Châu, Hà Nội",
-        "so_dien_thoai": "0302001243"
+        "dia_chi": "Số 129, Đường Linh, Hà Nội",
+        "so_dien_thoai": "0318338990"
     },
     "R059": {
         "ma_ban_doc": "R059",
@@ -583,173 +423,21 @@
         "dia_chi": "Số 131, Đường Linh, Hà Nội",
         "so_dien_thoai": "0558271324"
     },
-    "R042": {
-        "ma_ban_doc": "R042",
-        "ten": "Lê Thanh Giang",
-        "ngay_sinh": "05/02/2003",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 68, Phố Việt, Hà Nội",
-        "so_dien_thoai": "0465883607"
-    },
-    "R080": {
-        "ma_ban_doc": "R080",
-        "ten": "Hồ Văn Dung",
-        "ngay_sinh": "05/08/2002",
+    "R093": {
+        "ma_ban_doc": "R093",
+        "ten": "Đỗ Quang An",
+        "ngay_sinh": "05/02/1990",
         "gioi_tinh": "Nam",
-        "dia_chi": "Số 68, Phố Hùng, Hà Nội",
-        "so_dien_thoai": "0883300585"
+        "dia_chi": "Số 160, Phố Hương, Hà Nội",
+        "so_dien_thoai": "0490286663"
     },
-    "B0111": {
-        "ma_ban_doc": "B0111",
-        "ten": "Lê Quang Huy",
-        "ngay_sinh": "02/06/2025",
+    "R074": {
+        "ma_ban_doc": "R074",
+        "ten": "Ngô Quang Tùng",
+        "ngay_sinh": "02/07/2001",
         "gioi_tinh": "Nữ",
-        "dia_chi": "183",
-        "so_dien_thoai": "01234"
-    },
-    "R026": {
-        "ma_ban_doc": "R026",
-        "ten": "Vũ Thị Phúc",
-        "ngay_sinh": "09/08/1995",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 4, Đường Quân, Hà Nội",
-        "so_dien_thoai": "0756029477"
-    },
-    "R036": {
-        "ma_ban_doc": "R036",
-        "ten": "Đỗ Thị An",
-        "ngay_sinh": "22/12/2002",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 160, Phố Mai, Hà Nội",
-        "so_dien_thoai": "0660387194"
-    },
-    "R064": {
-        "ma_ban_doc": "R064",
-        "ten": "Huỳnh Đình Châu",
-        "ngay_sinh": "22/01/1993",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 68, Phố Trí, Hà Nội",
-        "so_dien_thoai": "0991439249"
-    },
-    "R025": {
-        "ma_ban_doc": "R025",
-        "ten": "Hồ Quang Phúc",
-        "ngay_sinh": "18/01/2002",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 146, Phố Tuấn, Hà Nội",
-        "so_dien_thoai": "0987688959"
-    },
-    "R006": {
-        "ma_ban_doc": "R006",
-        "ten": "Huỳnh Văn An",
-        "ngay_sinh": "07/03/1997",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 10, Đường Hương, Hà Nội",
-        "so_dien_thoai": "0541965818"
-    },
-    "R071": {
-        "ma_ban_doc": "R071",
-        "ten": "Phan Quang Thảo",
-        "ngay_sinh": "28/07/1992",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 53, Phố Trí, Hà Nội",
-        "so_dien_thoai": "0958900596"
-    },
-    "R031": {
-        "ma_ban_doc": "R031",
-        "ten": "Lý Hải Thảo",
-        "ngay_sinh": "08/09/1991",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 116, Phố Hải, Hà Nội",
-        "so_dien_thoai": "0442057442"
-    },
-    "R002": {
-        "ma_ban_doc": "R002",
-        "ten": "Hoàng Hải Bình",
-        "ngay_sinh": "23/06/1996",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 181, Phố Hùng, Hà Nội",
-        "so_dien_thoai": "0485773599"
-    },
-    "R001": {
-        "ma_ban_doc": "R001",
-        "ten": "Nguyễn Thu Thành",
-        "ngay_sinh": "03/06/1992",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 156, Đường Yến, Hà Nội",
-        "so_dien_thoai": "0668851739]]]]]]]]]"
-    },
-    "R089": {
-        "ma_ban_doc": "R089",
-        "ten": "Phạm Minh Tâm",
-        "ngay_sinh": "13/06/2005",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 127, Đường Tâm, Hà Nội",
-        "so_dien_thoai": "0541097281"
-    },
-    "R030": {
-        "ma_ban_doc": "R030",
-        "ten": "Phạm Phương Tuấn",
-        "ngay_sinh": "20/10/1995",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 24, Đường Phúc, Hà Nội",
-        "so_dien_thoai": "0626909221"
-    },
-    "R018": {
-        "ma_ban_doc": "R018",
-        "ten": "Dương Hồng Thảo",
-        "ngay_sinh": "13/09/2003",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 22, Đường Uyên, Hà Nội",
-        "so_dien_thoai": "0822284638"
-    },
-    "R010": {
-        "ma_ban_doc": "R010",
-        "ten": "Lê Anh Tâm",
-        "ngay_sinh": "09/03/1995",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 83, Đường Dung, Hà Nội",
-        "so_dien_thoai": "0446814467"
-    },
-    "R043": {
-        "ma_ban_doc": "R043",
-        "ten": "Lê Quang Bình",
-        "ngay_sinh": "01/08/1994",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 99, Phố Dung, Hà Nội",
-        "so_dien_thoai": "0389881613"
-    },
-    "R084": {
-        "ma_ban_doc": "R084",
-        "ten": "Ngô Đình Hùng",
-        "ngay_sinh": "08/09/1996",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 106, Đường Quân, Hà Nội",
-        "so_dien_thoai": "0554233716"
-    },
-    "R070": {
-        "ma_ban_doc": "R070",
-        "ten": "Nguyễn Hồng Trí",
-        "ngay_sinh": "04/06/1991",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 156, Phố Thảo, Hà Nội",
-        "so_dien_thoai": "0790527119"
-    },
-    "R014": {
-        "ma_ban_doc": "R014",
-        "ten": "Ngô Đức Phú",
-        "ngay_sinh": "08/09/2005",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 79, Đường Hà, Hà Nội",
-        "so_dien_thoai": "0646778370"
-    },
-    "R011": {
-        "ma_ban_doc": "R011",
-        "ten": "Trần Phương Quân",
-        "ngay_sinh": "14/01/1991",
-        "gioi_tinh": "Nữ",
-        "dia_chi": "Số 164, Phố Phương, Hà Nội",
-        "so_dien_thoai": "0415051645"
+        "dia_chi": "Số 109, Đường Linh, Hà Nội",
+        "so_dien_thoai": "0464507299"
     },
     "R034": {
         "ma_ban_doc": "R034",
@@ -759,21 +447,157 @@
         "dia_chi": "Số 29, Phố Việt, Hà Nội",
         "so_dien_thoai": "0830159416"
     },
-    "R033": {
-        "ma_ban_doc": "R033",
-        "ten": "Vũ Thanh Ngọc",
-        "ngay_sinh": "07/07/2001",
-        "gioi_tinh": "Nam",
-        "dia_chi": "Số 113, Đường Châu, Hà Nội",
-        "so_dien_thoai": "0887057364"
-    },
-    "R057": {
-        "ma_ban_doc": "R057",
-        "ten": "Đặng Thu Hùng",
-        "ngay_sinh": "13/02/2004",
+    "R025": {
+        "ma_ban_doc": "R025",
+        "ten": "Hồ Quang Phúc",
+        "ngay_sinh": "18/01/2002",
         "gioi_tinh": "Nữ",
-        "dia_chi": "Số 35, Đường Thảo, Hà Nội",
-        "so_dien_thoai": "0457975108"
+        "dia_chi": "Số 146, Phố Tuấn, Hà Nội",
+        "so_dien_thoai": "0987688959"
+    },
+    "R026": {
+        "ma_ban_doc": "R026",
+        "ten": "Vũ Thị Phúc",
+        "ngay_sinh": "09/08/1995",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 4, Đường Quân, Hà Nội",
+        "so_dien_thoai": "0756029477"
+    },
+    "R067": {
+        "ma_ban_doc": "R067",
+        "ten": "Phạm Quang Dung",
+        "ngay_sinh": "27/01/1997",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 179, Đường Việt, Hà Nội",
+        "so_dien_thoai": "0775250566"
+    },
+    "R100": {
+        "ma_ban_doc": "R100",
+        "ten": "Lý Thành Phúc",
+        "ngay_sinh": "03/07/2001",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 5, Phố Thành, Hà Nội",
+        "so_dien_thoai": "0812506832"
+    },
+    "R053": {
+        "ma_ban_doc": "R053",
+        "ten": "Hoàng Hoàng Ngọc",
+        "ngay_sinh": "20/09/1992",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 142, Đường Hùng, Hà Nội",
+        "so_dien_thoai": "0345942423"
+    },
+    "R076": {
+        "ma_ban_doc": "R076",
+        "ten": "Võ Quang Lan",
+        "ngay_sinh": "13/12/1993",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 195, Đường Châu, Hà Nội",
+        "so_dien_thoai": "0678988859"
+    },
+    "R035": {
+        "ma_ban_doc": "R035",
+        "ten": "Phan Thị Trí",
+        "ngay_sinh": "01/02/1999",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 34, Đường Trí, Hà Nội",
+        "so_dien_thoai": "0595774250"
+    },
+    "R014": {
+        "ma_ban_doc": "R014",
+        "ten": "Ngô Đức Phú",
+        "ngay_sinh": "08/09/2005",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 79, Đường Hà, Hà Nội",
+        "so_dien_thoai": "0646778370"
+    },
+    "R062": {
+        "ma_ban_doc": "R062",
+        "ten": "Hoàng Đình Thảo",
+        "ngay_sinh": "20/03/2004",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 56, Đường Châu, Hà Nội",
+        "so_dien_thoai": "0755254301"
+    },
+    "R031": {
+        "ma_ban_doc": "R031",
+        "ten": "Lý Hải Thảo",
+        "ngay_sinh": "08/09/1991",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 116, Phố Hải, Hà Nội",
+        "so_dien_thoai": "0442057442"
+    },
+    "R073": {
+        "ma_ban_doc": "R073",
+        "ten": "Nguyễn Đình Hùng",
+        "ngay_sinh": "15/04/1996",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 120, Phố Em, Hà Nội",
+        "so_dien_thoai": "0590347906"
+    },
+    "R068": {
+        "ma_ban_doc": "R068",
+        "ten": "Võ Phương Tâm",
+        "ngay_sinh": "14/04/2001",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 161, Phố Trí, Hà Nội",
+        "so_dien_thoai": "0744290659"
+    },
+    "R020": {
+        "ma_ban_doc": "R020",
+        "ten": "Trần Anh Hùng",
+        "ngay_sinh": "06/07/2002",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 174, Phố Linh, Hà Nội",
+        "so_dien_thoai": "0777240632"
+    },
+    "R006": {
+        "ma_ban_doc": "R006",
+        "ten": "Huỳnh Văn An",
+        "ngay_sinh": "07/03/1997",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 10, Đường Hương, Hà Nội",
+        "so_dien_thoai": "0541965818"
+    },
+    "R042": {
+        "ma_ban_doc": "R042",
+        "ten": "Lê Thanh Giang",
+        "ngay_sinh": "05/02/2003",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 68, Phố Việt, Hà Nội",
+        "so_dien_thoai": "0465883607"
+    },
+    "R091": {
+        "ma_ban_doc": "R091",
+        "ten": "Võ Thành Thảo",
+        "ngay_sinh": "19/02/2003",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 108, Phố Phú, Hà Nội",
+        "so_dien_thoai": "0889236678"
+    },
+    "R098": {
+        "ma_ban_doc": "R098",
+        "ten": "Lê Xuân Bình",
+        "ngay_sinh": "16/05/1996",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 83, Phố Yến, Hà Nội",
+        "so_dien_thoai": "0630288040"
+    },
+    "R024": {
+        "ma_ban_doc": "R024",
+        "ten": "Dương Thanh Châu",
+        "ngay_sinh": "15/12/1994",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 83, Đường Giang, Hà Nội",
+        "so_dien_thoai": "0785478996"
+    },
+    "R066": {
+        "ma_ban_doc": "R066",
+        "ten": "Võ Thị Phú",
+        "ngay_sinh": "26/09/1993",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 185, Phố Uyên, Hà Nội",
+        "so_dien_thoai": "0665747218"
     },
     "R082": {
         "ma_ban_doc": "R082",
@@ -783,28 +607,204 @@
         "dia_chi": "Số 39, Phố Việt, Hà Nội",
         "so_dien_thoai": "0349525341"
     },
-    "R016": {
-        "ma_ban_doc": "R016",
-        "ten": "Lê Đình Hà",
-        "ngay_sinh": "01/05/1999",
+    "B0111": {
+        "ma_ban_doc": "B0111",
+        "ten": "Lê Quang Huy",
+        "ngay_sinh": "02/06/2025",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "183",
+        "so_dien_thoai": "01234"
+    },
+    "R058": {
+        "ma_ban_doc": "R058",
+        "ten": "Phạm Phương Phú",
+        "ngay_sinh": "13/11/2002",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 166, Đường Phú, Hà Nội",
+        "so_dien_thoai": "0807538319"
+    },
+    "R045": {
+        "ma_ban_doc": "R045",
+        "ten": "Đỗ Thu Bình",
+        "ngay_sinh": "19/10/1995",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 163, Phố Châu, Hà Nội",
+        "so_dien_thoai": "0332852170"
+    },
+    "R055": {
+        "ma_ban_doc": "R055",
+        "ten": "Phan Hồng Dung",
+        "ngay_sinh": "06/02/1991",
         "gioi_tinh": "Nam",
-        "dia_chi": "Số 140, Đường Linh, Hà Nội",
-        "so_dien_thoai": "0438629521"
+        "dia_chi": "Số 72, Đường Uyên, Hà Nội",
+        "so_dien_thoai": "0713410228"
     },
-    "R046": {
-        "ma_ban_doc": "R046",
-        "ten": "Hoàng Thu Hà",
-        "ngay_sinh": "19/07/1991",
+    "R057": {
+        "ma_ban_doc": "R057",
+        "ten": "Đặng Thu Hùng",
+        "ngay_sinh": "13/02/2004",
         "gioi_tinh": "Nữ",
-        "dia_chi": "Số 106, Phố Hà, Hà Nội",
-        "so_dien_thoai": "0971210946"
+        "dia_chi": "Số 35, Đường Thảo, Hà Nội",
+        "so_dien_thoai": "0457975108"
     },
-    "R004": {
-        "ma_ban_doc": "R004",
-        "ten": "Dương Xuân Tùng",
-        "ngay_sinh": "11/10/2004",
+    "R061": {
+        "ma_ban_doc": "R061",
+        "ten": "Ngô Anh Em",
+        "ngay_sinh": "06/02/1998",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 66, Phố Tùng, Hà Nội",
+        "so_dien_thoai": "0611289828"
+    },
+    "R095": {
+        "ma_ban_doc": "R095",
+        "ten": "Trần Văn An",
+        "ngay_sinh": "25/10/2002",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 97, Phố Mai, Hà Nội",
+        "so_dien_thoai": "0398032679"
+    },
+    "R030": {
+        "ma_ban_doc": "R030",
+        "ten": "Phạm Phương Tuấn",
+        "ngay_sinh": "20/10/1995",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 24, Đường Phúc, Hà Nội",
+        "so_dien_thoai": "0626909221"
+    },
+    "R065": {
+        "ma_ban_doc": "R065",
+        "ten": "Đỗ Thanh Lan",
+        "ngay_sinh": "24/01/2004",
         "gioi_tinh": "Nữ",
-        "dia_chi": "Số 45, Đường Mai, Hà Nội",
-        "so_dien_thoai": "0743969903"
+        "dia_chi": "Số 65, Đường Dung, Hà Nội",
+        "so_dien_thoai": "0896623511"
+    },
+    "R071": {
+        "ma_ban_doc": "R071",
+        "ten": "Phan Quang Thảo",
+        "ngay_sinh": "28/07/1992",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 53, Phố Trí, Hà Nội",
+        "so_dien_thoai": "0958900596"
+    },
+    "R056": {
+        "ma_ban_doc": "R056",
+        "ten": "Lý Phương Tài",
+        "ngay_sinh": "25/11/1996",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 162, Phố Việt, Hà Nội",
+        "so_dien_thoai": "0324087057"
+    },
+    "R038": {
+        "ma_ban_doc": "R038",
+        "ten": "Vũ Thành Việt",
+        "ngay_sinh": "09/08/2001",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 75, Đường Việt, Hà Nội",
+        "so_dien_thoai": "0721220563"
+    },
+    "R083": {
+        "ma_ban_doc": "R083",
+        "ten": "Phạm Thanh Hải",
+        "ngay_sinh": "14/12/1990",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 56, Phố Tùng, Hà Nội",
+        "so_dien_thoai": "0805211309"
+    },
+    "R088": {
+        "ma_ban_doc": "R088",
+        "ten": "Huỳnh Hải Linh",
+        "ngay_sinh": "15/07/2000",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 166, Phố Giang, Hà Nội",
+        "so_dien_thoai": "0369110334"
+    },
+    "R033": {
+        "ma_ban_doc": "R033",
+        "ten": "Vũ Thanh Ngọc",
+        "ngay_sinh": "07/07/2001",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 113, Đường Châu, Hà Nội",
+        "so_dien_thoai": "0887057364"
+    },
+    "R001": {
+        "ma_ban_doc": "R001",
+        "ten": "Nguyễn Thu Thành",
+        "ngay_sinh": "03/06/1992",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 156, Đường Yến, Hà Nội",
+        "so_dien_thoai": "0668851739]]]]]]]]]"
+    },
+    "R023": {
+        "ma_ban_doc": "R023",
+        "ten": "Dương Hồng Linh",
+        "ngay_sinh": "28/06/2002",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 196, Phố Phú, Hà Nội",
+        "so_dien_thoai": "0707738217"
+    },
+    "R051": {
+        "ma_ban_doc": "R051",
+        "ten": "Đặng Thành Tâm",
+        "ngay_sinh": "28/12/2004",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 168, Đường Việt, Hà Nội",
+        "so_dien_thoai": "0920814146"
+    },
+    "R019": {
+        "ma_ban_doc": "R019",
+        "ten": "Bùi Thành Dung",
+        "ngay_sinh": "27/06/1993",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 125, Phố Xuân, Hà Nội",
+        "so_dien_thoai": "0691063292"
+    },
+    "R094": {
+        "ma_ban_doc": "R094",
+        "ten": "Đặng Hoàng Hùng",
+        "ngay_sinh": "17/03/1997",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 111, Đường Châu, Hà Nội",
+        "so_dien_thoai": "0355201627"
+    },
+    "R077": {
+        "ma_ban_doc": "R077",
+        "ten": "Huỳnh Thị Hải",
+        "ngay_sinh": "01/06/2000",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 91, Phố Việt, Hà Nội",
+        "so_dien_thoai": "0954253995"
+    },
+    "R072": {
+        "ma_ban_doc": "R072",
+        "ten": "Đặng Xuân Lan",
+        "ngay_sinh": "02/11/1999",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 188, Đường Tuấn, Hà Nội",
+        "so_dien_thoai": "0661314402"
+    },
+    "R029": {
+        "ma_ban_doc": "R029",
+        "ten": "Lê Hoàng Lan",
+        "ngay_sinh": "15/07/1993",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 130, Đường Dung, Hà Nội",
+        "so_dien_thoai": "0833368860"
+    },
+    "R096": {
+        "ma_ban_doc": "R096",
+        "ten": "Hoàng Văn Bình",
+        "ngay_sinh": "28/02/1994",
+        "gioi_tinh": "Nữ",
+        "dia_chi": "Số 160, Đường Hải, Hà Nội",
+        "so_dien_thoai": "0456908388"
+    },
+    "R069": {
+        "ma_ban_doc": "R069",
+        "ten": "Trần Đình Phương",
+        "ngay_sinh": "21/06/2005",
+        "gioi_tinh": "Nam",
+        "dia_chi": "Số 138, Đường Em, Hà Nội",
+        "so_dien_thoai": "0300392121"
     }
 }

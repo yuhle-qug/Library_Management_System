@@ -18,6 +18,9 @@ from src.gui.date_picker import MyDatePicker
 
 class LibraryManagementSystem:
     def __init__(self, root):
+        """
+        Khởi tạo hệ thống quản lý thư viện.
+        """
         self.root = root
         self.root.title("Hệ Thống Quản Lý Thư Viện")
         self.root.geometry("1500x800")
@@ -25,6 +28,7 @@ class LibraryManagementSystem:
         # Thêm protocol xử lý khi đóng cửa sổ
         self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
 
+        # Cấu hình giao diện
         self.style = ttk.Style()
         self._setup_custom_button_style()
         self._setup_header()
@@ -37,6 +41,7 @@ class LibraryManagementSystem:
         self.reader_tab = ReaderTab(self.notebook, self)
         self.tracking_tab = TrackingTab(self.notebook, self)
 
+        # Thêm các tab vào giao diện
         self.notebook.add(self.book_tab.frame, text="Quản lý Sách")
         self.notebook.add(self.reader_tab.frame, text="Quản lý Bạn đọc")
         self.notebook.add(self.tracking_tab.frame, text="Mượn/Trả Sách")
@@ -44,9 +49,11 @@ class LibraryManagementSystem:
         # Kiểm tra và cập nhật sách quá hạn khi khởi động
         self.check_and_update_overdue_books()
         self.update_tracking_list()
-        self._setup_custom_button_style()
-   
+
     def _setup_header(self):
+        """
+        Cấu hình tiêu đề và logo của ứng dụng.
+        """
         # Tạo khoảng trống ở đầu 
         spacing_frame = ttk.Frame(self.root)
         spacing_frame.pack(pady=10)
@@ -87,6 +94,9 @@ class LibraryManagementSystem:
             logger.error(f"Không thể tải logo: {e}")
 
     def _setup_notebook_style(self):
+        """
+        Cấu hình giao diện cho các tab trong ứng dụng.
+        """
         active_tab_bg = "white"
         active_tab_fg = "#003366"
         try:
@@ -137,9 +147,16 @@ class LibraryManagementSystem:
                         font=[("selected", ('Arial Unicode MS', 10, 'bold'))])
 
     def _setup_notebook(self):
+        """
+        Tạo và cấu hình Notebook (các tab chính).
+        """
         self.notebook = ttk.Notebook(self.root)
         self.notebook.pack(expand=True, fill='both', padx=10, pady=(5, 10))
+
     def _setup_treeview_style(self):
+        """
+        Cấu hình giao diện cho Treeview (bảng hiển thị dữ liệu).
+        """
         self.style.configure(
             "Treeview",
             background="#ffffff",
@@ -169,43 +186,48 @@ class LibraryManagementSystem:
             font=('Arial Unicode MS', 11, 'bold')
         )
 
-
     def update_tracking_list(self):
+        """
+        Cập nhật danh sách mượn/trả sách.
+        """
         self.tracking_tab.update_tracking_list()
 
     def _setup_custom_button_style(self):
-            # BƯỚC 1: KÍCH HOẠT THEME 'clam' ĐỂ ĐẢM BẢO TÙY CHỈNH ĐƯỢC ÁP DỤNG
+        """
+        Cấu hình style cho các nút bấm trong ứng dụng.
+        """
+        button_styles = {
+            "Add.TButton": {"background": "#28a745", "hover_bg": "#218838", "foreground": "white"},
+            "Update.TButton": {"background": "#007bff", "hover_bg": "#0069d9", "foreground": "white"},
+            "Delete.TButton": {"background": "#dc3545", "hover_bg": "#c82333", "foreground": "white"},
+            "Info.TButton": {"background": "#17a2b8", "hover_bg": "#138496", "foreground": "white"},
+            "Action.TButton": {"background": "#ffc107", "hover_bg": "#e0a800", "foreground": "black"},
+        }
+        
+        # Cấu hình style cho từng loại nút
+        for style_name, colors in button_styles.items():
+            self.style.configure(
+                style_name,
+                font=("Arial Unicode MS", 11, "bold"),
+                foreground=colors["foreground"],
+                background=colors["background"],
+                borderwidth=0,
+                padding=8,
+                relief="flat"
+            )
+            self.style.map(
+                style_name,
+                background=[
+                    ("active", colors["hover_bg"]),
+                    ("pressed", colors["background"]) # Giữ màu nền khi nhấn
+                ],
+                foreground=[("active", colors["foreground"])]
+            )
 
-            # BƯỚC 2: ĐỊNH NGHĨA CÁC MÀU SẮC
-            button_styles = {
-                "Add.TButton": {"background": "#28a745", "hover_bg": "#218838", "foreground": "white"},
-                "Update.TButton": {"background": "#007bff", "hover_bg": "#0069d9", "foreground": "white"},
-                "Delete.TButton": {"background": "#dc3545", "hover_bg": "#c82333", "foreground": "white"},
-                "Info.TButton": {"background": "#17a2b8", "hover_bg": "#138496", "foreground": "white"},
-                "Action.TButton": {"background": "#ffc107", "hover_bg": "#e0a800", "foreground": "black"},
-            }
-            
-            # BƯỚC 3: CẤU HÌNH STYLE CHO TỪNG LOẠI NÚT
-            for style_name, colors in button_styles.items():
-                self.style.configure(
-                    style_name,
-                    font=("Arial Unicode MS", 11, "bold"),
-                    foreground=colors["foreground"],
-                    background=colors["background"],
-                    borderwidth=0,
-                    padding=8,
-                    relief="flat"
-                )
-                self.style.map(
-                    style_name,
-                    background=[
-                        ("active", colors["hover_bg"]),
-                        ("pressed", colors["background"]) # Giữ màu nền khi nhấn
-                    ],
-                    foreground=[("active", colors["foreground"])]
-                )
     def on_closing(self):
-        """Xử lý khi đóng chương trình"""
+        """
+        Xử lý khi đóng chương trình.
+        """
         try:
             # Lưu dữ liệu trước khi thoát
             data_handler.save_data()

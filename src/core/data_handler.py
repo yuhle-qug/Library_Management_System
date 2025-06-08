@@ -6,33 +6,34 @@ from src.utils.logger import logger
 
 class DataHandler:
     def __init__(self):
-        # Khởi tạo bằng HashTable thay vì dict
-        self.HASH_TABLE_DEFAULT_SIZE = 100
-        self.books_db = HashTable(size=self.HASH_TABLE_DEFAULT_SIZE)
-        self.readers_db = HashTable(size=self.HASH_TABLE_DEFAULT_SIZE)
-        self.tracking_db = HashTable(size=self.HASH_TABLE_DEFAULT_SIZE)
+        """Khởi tạo DataHandler với các HashTable để lưu trữ dữ liệu"""
+        self.HASH_TABLE_DEFAULT_SIZE = 100  # Kích thước mặc định của HashTable
+        self.books_db = HashTable(size=self.HASH_TABLE_DEFAULT_SIZE)  # CSDL sách
+        self.readers_db = HashTable(size=self.HASH_TABLE_DEFAULT_SIZE)  # CSDL bạn đọc
+        self.tracking_db = HashTable(size=self.HASH_TABLE_DEFAULT_SIZE)  # CSDL theo dõi mượn sách
 
-        # File names for data persistence
+        # Đường dẫn file để lưu trữ dữ liệu
         self.BOOKS_FILE = "Data/books.json"
         self.READERS_FILE = "Data/readers.json"
         self.TRACKING_FILE = "Data/tracking.json"
 
-        # Load dữ liệu khi khởi tạo
+        # Tải dữ liệu từ file khi khởi tạo
         self.load_data()
 
     def save_data(self):
         """Lưu dữ liệu vào các file JSON"""
         try:
-            # Chuyển HashTable thành dict để serialize JSON
+            # Lưu dữ liệu sách
             books_to_save = {key: book.to_dict() for key, book in self.books_db.items()}
             with open(self.BOOKS_FILE, 'w', encoding='utf-8') as f:
                 json.dump(books_to_save, f, indent=4, ensure_ascii=False)
 
+            # Lưu dữ liệu bạn đọc
             readers_to_save = {key: reader.to_dict() for key, reader in self.readers_db.items()}
             with open(self.READERS_FILE, 'w', encoding='utf-8') as f:
                 json.dump(readers_to_save, f, indent=4, ensure_ascii=False)
-            
-            # Chuyển tracking_db thành dictionary để serialize JSON
+
+            # Lưu dữ liệu theo dõi mượn sách
             tracking_to_save = {key: record.to_dict() for key, record in self.tracking_db.items()}
             with open(self.TRACKING_FILE, 'w', encoding='utf-8') as f:
                 json.dump(tracking_to_save, f, indent=4, ensure_ascii=False)
@@ -44,7 +45,7 @@ class DataHandler:
 
     def load_data(self):
         """Tải dữ liệu từ các file JSON"""
-        # Load books
+        # Tải dữ liệu sách
         self.books_db.clear()
         try:
             with open(self.BOOKS_FILE, 'r', encoding='utf-8') as f:
@@ -57,7 +58,7 @@ class DataHandler:
             logger.error(f"Lỗi khi tải {self.BOOKS_FILE}: {e}")
             raise
 
-        # Load readers
+        # Tải dữ liệu bạn đọc
         self.readers_db.clear()
         try:
             with open(self.READERS_FILE, 'r', encoding='utf-8') as f:
@@ -70,7 +71,7 @@ class DataHandler:
             logger.error(f"Lỗi khi tải {self.READERS_FILE}: {e}")
             raise
 
-        # Load tracking data
+        # Tải dữ liệu theo dõi mượn sách
         self.tracking_db.clear()
         try:
             with open(self.TRACKING_FILE, 'r', encoding='utf-8') as f:

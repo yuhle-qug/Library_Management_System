@@ -7,12 +7,18 @@ from src.utils.logger import logger
 
 class BookTab:
     def __init__(self, parent, main_window):
+        """
+        Khởi tạo tab quản lý sách.
+        """
         self.parent = parent
         self.main_window = main_window
         self.frame = ttk.Frame(parent)
         self.setup_ui()
 
     def setup_ui(self):
+        """
+        Cấu hình giao diện cho tab quản lý sách.
+        """
         # Frame chứa các nút chức năng
         button_frame = ttk.Frame(self.frame)
         button_frame.pack(fill='x', padx=10, pady=5)
@@ -20,25 +26,28 @@ class BookTab:
         center_frame = ttk.Frame(button_frame)
         center_frame.pack(anchor='center')
 
-        # Update button definitions
+        # Nút thêm sách mới
         ttk.Button(
             center_frame, 
             text="Thêm sách mới",
             command=self.show_add_book_window
         ).pack(side=tk.LEFT, padx=5)
 
+        # Nút cập nhật thông tin sách
         ttk.Button(
             center_frame,
             text="Cập nhật thông tin",
             command=self.show_update_book_window,
         ).pack(side=tk.LEFT, padx=5)
 
+        # Nút tìm kiếm sách
         ttk.Button(
             center_frame, 
             text="Tìm kiếm sách",
             command=self.show_search_book_window,
         ).pack(side=tk.LEFT, padx=5)
 
+        # Nút xóa sách
         ttk.Button(
             center_frame, 
             text="Xóa sách",
@@ -72,11 +81,11 @@ class BookTab:
 
         ttk.Label(filter_frame, text="Giá trị:").pack(side='left', padx=5)
 
-        # Frame to hold dynamic filter value widget
+        # Frame chứa widget giá trị lọc động
         self.filter_value_frame = ttk.Frame(filter_frame)
         self.filter_value_frame.pack(side='left', padx=5, fill='x', expand=True)
 
-        # Initial dummy widget (will be replaced)
+        # Widget mặc định (sẽ được thay thế)
         self.current_filter_value_widget = ttk.Entry(self.filter_value_frame)
         self.current_filter_value_widget.pack(fill='x', expand=True)
 
