@@ -124,6 +124,16 @@ class ReaderTab:
         # Cập nhật danh sách bạn đọc
         self.update_reader_list()
 
+    def is_valid_phone_number(self, phone):
+        """Kiểm tra số điện thoại có hợp lệ không (10 số, bắt đầu bằng số 0)"""
+        if not phone.isdigit():  # Kiểm tra chỉ chứa số
+            return False
+        if len(phone) != 10:  # Kiểm tra độ dài 10 số
+            return False
+        if not phone.startswith('0'):  # Kiểm tra bắt đầu bằng số 0
+            return False
+        return True
+
     def show_add_reader_window(self):
         # Tạo cửa sổ mới
         add_window = tk.Toplevel(self.main_window.root)
@@ -145,6 +155,7 @@ class ReaderTab:
         ngay_sinh_frame = ttk.Frame(add_window)
         ngay_sinh_frame.pack(pady=5)
         ngay_sinh_entry = ttk.Entry(ngay_sinh_frame)
+        ngay_sinh_entry.pack(side='left', padx=5) # Thêm dòng này để hiển thị ô nhập ngày sinh
         
         def open_date_picker():
             date_picker = MyDatePicker(add_window)
@@ -201,6 +212,9 @@ class ReaderTab:
                 so_dien_thoai = so_dien_thoai_entry.get().strip()
                 if not so_dien_thoai:
                     messagebox.showerror("Lỗi", "Số điện thoại không được để trống")
+                    return
+                if not self.is_valid_phone_number(so_dien_thoai):
+                    messagebox.showerror("Lỗi", "Số điện thoại không hợp lệ. Vui lòng nhập lại.")
                     return
 
                 new_reader = Reader(ma_ban_doc, ten, ngay_sinh, gioi_tinh, dia_chi, so_dien_thoai)
@@ -310,6 +324,9 @@ class ReaderTab:
                 so_dien_thoai = so_dien_thoai_entry.get().strip()
                 if not so_dien_thoai:
                     messagebox.showerror("Lỗi", "Số điện thoại không được để trống")
+                    return
+                if not self.is_valid_phone_number(so_dien_thoai):
+                    messagebox.showerror("Lỗi", "Số điện thoại không hợp lệ. Vui lòng nhập lại.")
                     return
 
                 # Cập nhật thông tin bạn đọc

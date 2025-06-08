@@ -13,15 +13,14 @@ class DataHandler:
         self.tracking_db = HashTable(size=self.HASH_TABLE_DEFAULT_SIZE)
 
         # File names for data persistence
-        self.BOOKS_FILE = "Data/books.json"
-        self.READERS_FILE = "Data/readers.json"
-        self.TRACKING_FILE = "Data/tracking.json"
+        self.BOOKS_FILE = "data/books.json"
+        self.READERS_FILE = "data/readers.json"
+        self.TRACKING_FILE = "data/tracking.json"
 
         # Load dữ liệu khi khởi tạo
         self.load_data()
 
     def save_data(self):
-        """Lưu dữ liệu vào các file JSON"""
         try:
             # Chuyển HashTable thành dict để serialize JSON
             books_to_save = {key: book.to_dict() for key, book in self.books_db.items()}
@@ -43,7 +42,6 @@ class DataHandler:
             raise
 
     def load_data(self):
-        """Tải dữ liệu từ các file JSON"""
         # Load books
         self.books_db.clear()
         try:
@@ -84,36 +82,24 @@ class DataHandler:
             raise
 
     def is_book_borrowed(self, ma_sach):
-        """Kiểm tra xem sách có đang được mượn không"""
         for record in self.tracking_db.values():
             if record.ma_sach_muon == ma_sach and record.trang_thai in ("Đang mượn", "Quá hạn"):
                 return True
         return False
 
     def is_reader_borrowing(self, ma_ban_doc):
-        """Kiểm tra xem bạn đọc có đang mượn sách nào không"""
         for record in self.tracking_db.values():
             if record.ma_ban_doc == ma_ban_doc and record.trang_thai in ("Đang mượn", "Quá hạn"):
                 return True
         return False
 
     def delete_book(self, ma_sach):
-        """Xóa sách khỏi CSDL"""
         del self.books_db[ma_sach]
         self.save_data()
 
     def delete_reader(self, ma_ban_doc):
-        """Xóa bạn đọc khỏi CSDL"""
         del self.readers_db[ma_ban_doc]
         self.save_data()
 
-    def count_borrowed_books(self, ma_sach):
-        """Đếm số lượng sách đang được mượn với mã sách cụ thể"""
-        count = 0
-        for record in self.tracking_db.values():
-            if record.ma_sach_muon == ma_sach and record.trang_thai in ("Đang mượn", "Quá hạn"):
-                count += 1
-        return count
-
-# Tạo một instance của DataHandler
+# Create a singleton instance
 data_handler = DataHandler()

@@ -120,7 +120,6 @@ class TrackingTab:
                 reader_info = f"Họ tên: {reader.ten}\n" \
                             f"Ngày sinh: {reader.ngay_sinh}\n" \
                             f"Giới tính: {reader.gioi_tinh}\n" \
-                            f"Email: {reader.email}\n" \
                             f"Số điện thoại: {reader.so_dien_thoai}"
                 if overdue_count > 0:
                     reader_info += f"\n⚠️ Bạn đọc hiện có {overdue_count} sách quá hạn"

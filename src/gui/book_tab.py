@@ -423,7 +423,6 @@ class BookTab:
                 other_genre_frame.pack(pady=5)
             else:
                 other_genre_frame.pack_forget()
-
         the_loai_combo.bind('<<ComboboxSelected>>', on_the_loai_change_update)
 
         ttk.Label(update_window, text="Số lượng:").pack(pady=5)
@@ -464,6 +463,12 @@ class BookTab:
                     so_luong = int(so_luong_entry.get())
                     if so_luong < 0:
                         raise ValueError("Số lượng phải là số không âm")
+                    
+                    # Kiểm tra số lượng sách đang mượn
+                    so_sach_dang_muon = data_handler.count_borrowed_books(book.ma_sach)
+                    if so_luong < so_sach_dang_muon:
+                        raise ValueError(f"Số lượng sách không được nhỏ hơn số sách đang được mượn ({so_sach_dang_muon} quyển)")
+
                 except ValueError as e:
                     messagebox.showerror("Lỗi", f"Số lượng không hợp lệ: {e}")
                     return
