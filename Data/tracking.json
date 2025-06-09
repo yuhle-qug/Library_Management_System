@@ -1,570 +1,10 @@
 {
-    "R034_B033_22/04/2025": {
-        "ma_ban_doc": "R034",
-        "ma_sach_muon": "B033",
-        "ten_sach_muon": "Sách 33: Những điều cần biết về Âm nhạc",
-        "ngay_muon": "22/04/2025",
-        "ngay_tra": "03/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R005_B011_09/05/2025": {
-        "ma_ban_doc": "R005",
-        "ma_sach_muon": "B011",
-        "ten_sach_muon": "Sách 11: Cẩm nang Nghệ thuật",
-        "ngay_muon": "09/05/2025",
-        "ngay_tra": "06/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R015_B076_07/06/2025": {
-        "ma_ban_doc": "R015",
-        "ma_sach_muon": "B076",
-        "ten_sach_muon": "Sách 76: Cẩm nang Y học",
-        "ngay_muon": "07/06/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Đang mượn"
-    },
-    "R003_B060_16/05/2025": {
-        "ma_ban_doc": "R003",
-        "ma_sach_muon": "B060",
-        "ten_sach_muon": "Sách 60: Hướng dẫn Du lịch",
-        "ngay_muon": "16/05/2025",
-        "ngay_tra": "03/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R099_B004_21/04/2025": {
-        "ma_ban_doc": "R099",
-        "ma_sach_muon": "B004",
-        "ten_sach_muon": "Sách 4: Hướng dẫn Kinh tế",
-        "ngay_muon": "21/04/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R069_B077_22/04/2025": {
-        "ma_ban_doc": "R069",
-        "ma_sach_muon": "B077",
-        "ten_sach_muon": "Sách 77: Những điều cần biết về Ngoại ngữ",
-        "ngay_muon": "22/04/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R059_B091_05/06/2025": {
-        "ma_ban_doc": "R059",
-        "ma_sach_muon": "B091",
-        "ten_sach_muon": "Sách 91: Cẩm nang Du lịch",
-        "ngay_muon": "05/06/2025",
-        "ngay_tra": "06/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R067_B013_20/05/2025": {
-        "ma_ban_doc": "R067",
-        "ma_sach_muon": "B013",
-        "ten_sach_muon": "Sách 13: Hướng dẫn Âm nhạc",
-        "ngay_muon": "20/05/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Đang mượn"
-    },
-    "R100_B003_02/06/2025": {
-        "ma_ban_doc": "R100",
-        "ma_sach_muon": "B003",
-        "ten_sach_muon": "Sách 3: Hướng dẫn Tâm lý",
-        "ngay_muon": "02/06/2025",
-        "ngay_tra": "07/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R038_B099_10/04/2025": {
-        "ma_ban_doc": "R038",
-        "ma_sach_muon": "B099",
-        "ten_sach_muon": "Sách 99: Khám phá Tâm lý",
-        "ngay_muon": "10/04/2025",
-        "ngay_tra": "14/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R048_B006_11/04/2025": {
-        "ma_ban_doc": "R048",
-        "ma_sach_muon": "B006",
-        "ten_sach_muon": "Sách 6: Cẩm nang Khoa học",
-        "ngay_muon": "11/04/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
     "R062_B022_01/05/2025": {
         "ma_ban_doc": "R062",
         "ma_sach_muon": "B022",
         "ten_sach_muon": "Sách 22: Khám phá Văn học",
         "ngay_muon": "01/05/2025",
         "ngay_tra": "24/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R038_B029_29/05/2025": {
-        "ma_ban_doc": "R038",
-        "ma_sach_muon": "B029",
-        "ten_sach_muon": "Sách 29: Khám phá Giáo dục",
-        "ngay_muon": "29/05/2025",
-        "ngay_tra": "29/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R037_B087_26/05/2025": {
-        "ma_ban_doc": "R037",
-        "ma_sach_muon": "B087",
-        "ten_sach_muon": "Sách 87: Những điều cần biết về Nghệ thuật",
-        "ngay_muon": "26/05/2025",
-        "ngay_tra": "05/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R016_B032_12/05/2025": {
-        "ma_ban_doc": "R016",
-        "ma_sach_muon": "B032",
-        "ten_sach_muon": "Sách 32: Cẩm nang Triết học",
-        "ngay_muon": "12/05/2025",
-        "ngay_tra": "07/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R024_B096_16/04/2025": {
-        "ma_ban_doc": "R024",
-        "ma_sach_muon": "B096",
-        "ten_sach_muon": "Sách 96: Cẩm nang Khoa học",
-        "ngay_muon": "16/04/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R009_B004_21/05/2025": {
-        "ma_ban_doc": "R009",
-        "ma_sach_muon": "B004",
-        "ten_sach_muon": "Sách 4: Hướng dẫn Kinh tế",
-        "ngay_muon": "21/05/2025",
-        "ngay_tra": "24/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R092_B084_29/05/2025": {
-        "ma_ban_doc": "R092",
-        "ma_sach_muon": "B084",
-        "ten_sach_muon": "Sách 84: Hướng dẫn Văn học",
-        "ngay_muon": "29/05/2025",
-        "ngay_tra": "01/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R006_B014_30/04/2025": {
-        "ma_ban_doc": "R006",
-        "ma_sach_muon": "B014",
-        "ten_sach_muon": "Sách 14: Khám phá Ngoại ngữ",
-        "ngay_muon": "30/04/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R060_B039_01/05/2025": {
-        "ma_ban_doc": "R060",
-        "ma_sach_muon": "B039",
-        "ten_sach_muon": "Sách 39: Hướng dẫn Lịch sử",
-        "ngay_muon": "01/05/2025",
-        "ngay_tra": "05/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R035_B081_31/05/2025": {
-        "ma_ban_doc": "R035",
-        "ma_sach_muon": "B081",
-        "ten_sach_muon": "Sách 81: Khám phá Ngoại ngữ",
-        "ngay_muon": "31/05/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R068_B066_06/05/2025": {
-        "ma_ban_doc": "R068",
-        "ma_sach_muon": "B066",
-        "ten_sach_muon": "Sách 66: Cẩm nang Kinh tế",
-        "ngay_muon": "06/05/2025",
-        "ngay_tra": "19/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R013_B092_20/04/2025": {
-        "ma_ban_doc": "R013",
-        "ma_sach_muon": "B092",
-        "ten_sach_muon": "Sách 92: Hướng dẫn Triết học",
-        "ngay_muon": "20/04/2025",
-        "ngay_tra": "05/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R012_B087_02/06/2025": {
-        "ma_ban_doc": "R012",
-        "ma_sach_muon": "B087",
-        "ten_sach_muon": "Sách 87: Những điều cần biết về Nghệ thuật",
-        "ngay_muon": "02/06/2025",
-        "ngay_tra": "04/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R034_B048_09/04/2025": {
-        "ma_ban_doc": "R034",
-        "ma_sach_muon": "B048",
-        "ten_sach_muon": "Sách 48: Cẩm nang Khoa học",
-        "ngay_muon": "09/04/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R067_B021_29/04/2025": {
-        "ma_ban_doc": "R067",
-        "ma_sach_muon": "B021",
-        "ten_sach_muon": "Sách 21: Những điều cần biết về Tâm lý",
-        "ngay_muon": "29/04/2025",
-        "ngay_tra": "26/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R018_B076_03/06/2025": {
-        "ma_ban_doc": "R018",
-        "ma_sach_muon": "B076",
-        "ten_sach_muon": "Sách 76: Cẩm nang Y học",
-        "ngay_muon": "03/06/2025",
-        "ngay_tra": "03/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R030_B080_16/04/2025": {
-        "ma_ban_doc": "R030",
-        "ma_sach_muon": "B080",
-        "ten_sach_muon": "Sách 80: Nghiên cứu về Du lịch",
-        "ngay_muon": "16/04/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R038_B021_22/04/2025": {
-        "ma_ban_doc": "R038",
-        "ma_sach_muon": "B021",
-        "ten_sach_muon": "Sách 21: Những điều cần biết về Tâm lý",
-        "ngay_muon": "22/04/2025",
-        "ngay_tra": "20/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R023_B012_20/04/2025": {
-        "ma_ban_doc": "R023",
-        "ma_sach_muon": "B012",
-        "ten_sach_muon": "Sách 12: Nghiên cứu về Công nghệ",
-        "ngay_muon": "20/04/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R052_B050_08/04/2025": {
-        "ma_ban_doc": "R052",
-        "ma_sach_muon": "B050",
-        "ten_sach_muon": "Sách 50: Hướng dẫn Ngoại ngữ",
-        "ngay_muon": "08/04/2025",
-        "ngay_tra": "31/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R098_B027_21/05/2025": {
-        "ma_ban_doc": "R098",
-        "ma_sach_muon": "B027",
-        "ten_sach_muon": "Sách 27: Nghiên cứu về Kinh tế",
-        "ngay_muon": "21/05/2025",
-        "ngay_tra": "27/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R093_B080_23/04/2025": {
-        "ma_ban_doc": "R093",
-        "ma_sach_muon": "B080",
-        "ten_sach_muon": "Sách 80: Nghiên cứu về Du lịch",
-        "ngay_muon": "23/04/2025",
-        "ngay_tra": "11/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R015_B068_03/06/2025": {
-        "ma_ban_doc": "R015",
-        "ma_sach_muon": "B068",
-        "ten_sach_muon": "Sách 68: Nghiên cứu về Thiếu nhi",
-        "ngay_muon": "03/06/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Đang mượn"
-    },
-    "R067_B005_07/05/2025": {
-        "ma_ban_doc": "R067",
-        "ma_sach_muon": "B005",
-        "ten_sach_muon": "Sách 5: Nghiên cứu về Khoa học",
-        "ngay_muon": "07/05/2025",
-        "ngay_tra": "10/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R043_B091_29/05/2025": {
-        "ma_ban_doc": "R043",
-        "ma_sach_muon": "B091",
-        "ten_sach_muon": "Sách 91: Cẩm nang Du lịch",
-        "ngay_muon": "29/05/2025",
-        "ngay_tra": "01/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R048_B076_10/05/2025": {
-        "ma_ban_doc": "R048",
-        "ma_sach_muon": "B076",
-        "ten_sach_muon": "Sách 76: Cẩm nang Y học",
-        "ngay_muon": "10/05/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Đang mượn"
-    },
-    "R039_B059_05/06/2025": {
-        "ma_ban_doc": "R039",
-        "ma_sach_muon": "B059",
-        "ten_sach_muon": "Sách 59: Hướng dẫn Y học",
-        "ngay_muon": "05/06/2025",
-        "ngay_tra": "05/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R009_B070_26/05/2025": {
-        "ma_ban_doc": "R009",
-        "ma_sach_muon": "B070",
-        "ten_sach_muon": "Sách 70: Khám phá Triết học",
-        "ngay_muon": "26/05/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R041_B046_16/04/2025": {
-        "ma_ban_doc": "R041",
-        "ma_sach_muon": "B046",
-        "ten_sach_muon": "Sách 46: Nghiên cứu về Kinh tế",
-        "ngay_muon": "16/04/2025",
-        "ngay_tra": "18/04/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R100_B018_30/05/2025": {
-        "ma_ban_doc": "R100",
-        "ma_sach_muon": "B018",
-        "ten_sach_muon": "Sách 18: Nghiên cứu về Văn học",
-        "ngay_muon": "30/05/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R021_B002_20/05/2025": {
-        "ma_ban_doc": "R021",
-        "ma_sach_muon": "B002",
-        "ten_sach_muon": "Sách 2: Những điều cần biết về Văn học",
-        "ngay_muon": "20/05/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R033_B099_19/04/2025": {
-        "ma_ban_doc": "R033",
-        "ma_sach_muon": "B099",
-        "ten_sach_muon": "Sách 99: Khám phá Tâm lý",
-        "ngay_muon": "19/04/2025",
-        "ngay_tra": "27/04/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R087_B017_26/05/2025": {
-        "ma_ban_doc": "R087",
-        "ma_sach_muon": "B017",
-        "ten_sach_muon": "Sách 17: Nghiên cứu về Tâm lý",
-        "ngay_muon": "26/05/2025",
-        "ngay_tra": "27/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R030_B032_03/06/2025": {
-        "ma_ban_doc": "R030",
-        "ma_sach_muon": "B032",
-        "ten_sach_muon": "Sách 32: Cẩm nang Triết học",
-        "ngay_muon": "03/06/2025",
-        "ngay_tra": "05/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R030_B056_11/05/2025": {
-        "ma_ban_doc": "R030",
-        "ma_sach_muon": "B056",
-        "ten_sach_muon": "Sách 56: Cẩm nang Thể thao",
-        "ngay_muon": "11/05/2025",
-        "ngay_tra": "12/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R074_B009_17/05/2025": {
-        "ma_ban_doc": "R074",
-        "ma_sach_muon": "B009",
-        "ten_sach_muon": "Sách 9: Nghiên cứu về Du lịch",
-        "ngay_muon": "17/05/2025",
-        "ngay_tra": "29/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R022_B020_08/05/2025": {
-        "ma_ban_doc": "R022",
-        "ma_sach_muon": "B020",
-        "ten_sach_muon": "Sách 20: Nghiên cứu về Kinh tế",
-        "ngay_muon": "08/05/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R060_B002_07/06/2025": {
-        "ma_ban_doc": "R060",
-        "ma_sach_muon": "B002",
-        "ten_sach_muon": "Sách 2: Những điều cần biết về Văn học",
-        "ngay_muon": "07/06/2025",
-        "ngay_tra": null,
-        "trang_thai": "Đang mượn"
-    },
-    "R096_B059_23/04/2025": {
-        "ma_ban_doc": "R096",
-        "ma_sach_muon": "B059",
-        "ten_sach_muon": "Sách 59: Hướng dẫn Y học",
-        "ngay_muon": "23/04/2025",
-        "ngay_tra": "01/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R091_B050_02/06/2025": {
-        "ma_ban_doc": "R091",
-        "ma_sach_muon": "B050",
-        "ten_sach_muon": "Sách 50: Hướng dẫn Ngoại ngữ",
-        "ngay_muon": "02/06/2025",
-        "ngay_tra": "03/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R077_B098_08/05/2025": {
-        "ma_ban_doc": "R077",
-        "ma_sach_muon": "B098",
-        "ten_sach_muon": "Sách 98: Những điều cần biết về Thiếu nhi",
-        "ngay_muon": "08/05/2025",
-        "ngay_tra": "14/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R070_B009_23/05/2025": {
-        "ma_ban_doc": "R070",
-        "ma_sach_muon": "B009",
-        "ten_sach_muon": "Sách 9: Nghiên cứu về Du lịch",
-        "ngay_muon": "23/05/2025",
-        "ngay_tra": "31/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R100_B065_09/04/2025": {
-        "ma_ban_doc": "R100",
-        "ma_sach_muon": "B065",
-        "ten_sach_muon": "Sách 65: Những điều cần biết về Du lịch",
-        "ngay_muon": "09/04/2025",
-        "ngay_tra": "08/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R008_B022_28/04/2025": {
-        "ma_ban_doc": "R008",
-        "ma_sach_muon": "B022",
-        "ten_sach_muon": "Sách 22: Khám phá Văn học",
-        "ngay_muon": "28/04/2025",
-        "ngay_tra": "18/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R089_B061_07/06/2025": {
-        "ma_ban_doc": "R089",
-        "ma_sach_muon": "B061",
-        "ten_sach_muon": "Sách 61: Nghiên cứu về Y học",
-        "ngay_muon": "07/06/2025",
-        "ngay_tra": "07/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R032_B010_13/05/2025": {
-        "ma_ban_doc": "R032",
-        "ma_sach_muon": "B010",
-        "ten_sach_muon": "Sách 10: Khám phá Giáo dục",
-        "ngay_muon": "13/05/2025",
-        "ngay_tra": "27/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R018_B077_27/04/2025": {
-        "ma_ban_doc": "R018",
-        "ma_sach_muon": "B077",
-        "ten_sach_muon": "Sách 77: Những điều cần biết về Ngoại ngữ",
-        "ngay_muon": "27/04/2025",
-        "ngay_tra": "04/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R099_B030_26/04/2025": {
-        "ma_ban_doc": "R099",
-        "ma_sach_muon": "B030",
-        "ten_sach_muon": "Sách 30: Những điều cần biết về Y học",
-        "ngay_muon": "26/04/2025",
-        "ngay_tra": "24/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R077_B099_02/06/2025": {
-        "ma_ban_doc": "R077",
-        "ma_sach_muon": "B099",
-        "ten_sach_muon": "Sách 99: Khám phá Tâm lý",
-        "ngay_muon": "02/06/2025",
-        "ngay_tra": "04/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R011_B059_18/05/2025": {
-        "ma_ban_doc": "R011",
-        "ma_sach_muon": "B059",
-        "ten_sach_muon": "Sách 59: Hướng dẫn Y học",
-        "ngay_muon": "18/05/2025",
-        "ngay_tra": "24/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R042_B037_23/04/2025": {
-        "ma_ban_doc": "R042",
-        "ma_sach_muon": "B037",
-        "ten_sach_muon": "Sách 37: Khám phá Công nghệ",
-        "ngay_muon": "23/04/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R008_B065_08/04/2025": {
-        "ma_ban_doc": "R008",
-        "ma_sach_muon": "B065",
-        "ten_sach_muon": "Sách 65: Những điều cần biết về Du lịch",
-        "ngay_muon": "08/04/2025",
-        "ngay_tra": "10/04/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R051_B087_20/04/2025": {
-        "ma_ban_doc": "R051",
-        "ma_sach_muon": "B087",
-        "ten_sach_muon": "Sách 87: Những điều cần biết về Nghệ thuật",
-        "ngay_muon": "20/04/2025",
-        "ngay_tra": "01/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R013_B025_04/06/2025": {
-        "ma_ban_doc": "R013",
-        "ma_sach_muon": "B025",
-        "ten_sach_muon": "Sách 25: Khám phá Ngoại ngữ",
-        "ngay_muon": "04/06/2025",
-        "ngay_tra": "07/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R046_B022_05/05/2025": {
-        "ma_ban_doc": "R046",
-        "ma_sach_muon": "B022",
-        "ten_sach_muon": "Sách 22: Khám phá Văn học",
-        "ngay_muon": "05/05/2025",
-        "ngay_tra": "25/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R099_B028_22/05/2025": {
-        "ma_ban_doc": "R099",
-        "ma_sach_muon": "B028",
-        "ten_sach_muon": "Sách 28: Khám phá Kinh tế",
-        "ngay_muon": "22/05/2025",
-        "ngay_tra": "29/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R055_B057_02/05/2025": {
-        "ma_ban_doc": "R055",
-        "ma_sach_muon": "B057",
-        "ten_sach_muon": "Sách 57: Hướng dẫn Văn học",
-        "ngay_muon": "02/05/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R056_B046_10/05/2025": {
-        "ma_ban_doc": "R056",
-        "ma_sach_muon": "B046",
-        "ten_sach_muon": "Sách 46: Nghiên cứu về Kinh tế",
-        "ngay_muon": "10/05/2025",
-        "ngay_tra": "24/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R012_B065_01/06/2025": {
-        "ma_ban_doc": "R012",
-        "ma_sach_muon": "B065",
-        "ten_sach_muon": "Sách 65: Những điều cần biết về Du lịch",
-        "ngay_muon": "01/06/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Đang mượn"
-    },
-    "R062_B058_07/06/2025": {
-        "ma_ban_doc": "R062",
-        "ma_sach_muon": "B058",
-        "ten_sach_muon": "Sách 58: Hướng dẫn Kinh tế",
-        "ngay_muon": "07/06/2025",
-        "ngay_tra": "07/06/2025",
         "trang_thai": "Đã trả"
     },
     "R001_B068_08/06/2025": {
@@ -575,133 +15,21 @@
         "ngay_tra": null,
         "trang_thai": "Đang mượn"
     },
-    "R089_B079_16/04/2025": {
-        "ma_ban_doc": "R089",
-        "ma_sach_muon": "B079",
-        "ten_sach_muon": "Sách 79: Cẩm nang Giáo dục",
-        "ngay_muon": "16/04/2025",
+    "R099_B004_21/04/2025": {
+        "ma_ban_doc": "R099",
+        "ma_sach_muon": "B004",
+        "ten_sach_muon": "Sách 4: Hướng dẫn Kinh tế",
+        "ngay_muon": "21/04/2025",
         "ngay_tra": "N/A",
         "trang_thai": "Quá hạn"
     },
-    "R007_B013_06/05/2025": {
-        "ma_ban_doc": "R007",
-        "ma_sach_muon": "B013",
-        "ten_sach_muon": "Sách 13: Hướng dẫn Âm nhạc",
-        "ngay_muon": "06/05/2025",
-        "ngay_tra": "02/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R065_B093_19/05/2025": {
-        "ma_ban_doc": "R065",
-        "ma_sach_muon": "B093",
-        "ten_sach_muon": "Sách 93: Nghiên cứu về Lịch sử",
-        "ngay_muon": "19/05/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Đang mượn"
-    },
-    "R080_B076_13/05/2025": {
-        "ma_ban_doc": "R080",
-        "ma_sach_muon": "B076",
-        "ten_sach_muon": "Sách 76: Cẩm nang Y học",
-        "ngay_muon": "13/05/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Đang mượn"
-    },
-    "R067_B003_04/05/2025": {
-        "ma_ban_doc": "R067",
-        "ma_sach_muon": "B003",
-        "ten_sach_muon": "Sách 3: Hướng dẫn Tâm lý",
-        "ngay_muon": "04/05/2025",
+    "R055_B057_02/05/2025": {
+        "ma_ban_doc": "R055",
+        "ma_sach_muon": "B057",
+        "ten_sach_muon": "Sách 57: Hướng dẫn Văn học",
+        "ngay_muon": "02/05/2025",
         "ngay_tra": "N/A",
         "trang_thai": "Quá hạn"
-    },
-    "R015_B092_26/05/2025": {
-        "ma_ban_doc": "R015",
-        "ma_sach_muon": "B092",
-        "ten_sach_muon": "Sách 92: Hướng dẫn Triết học",
-        "ngay_muon": "26/05/2025",
-        "ngay_tra": "28/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R030_B036_28/04/2025": {
-        "ma_ban_doc": "R030",
-        "ma_sach_muon": "B036",
-        "ten_sach_muon": "Sách 36: Khám phá Tâm lý",
-        "ngay_muon": "28/04/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R081_B019_11/04/2025": {
-        "ma_ban_doc": "R081",
-        "ma_sach_muon": "B019",
-        "ten_sach_muon": "Sách 19: Cẩm nang Thể thao",
-        "ngay_muon": "11/04/2025",
-        "ngay_tra": "19/04/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R014_B022_01/06/2025": {
-        "ma_ban_doc": "R014",
-        "ma_sach_muon": "B022",
-        "ten_sach_muon": "Sách 22: Khám phá Văn học",
-        "ngay_muon": "01/06/2025",
-        "ngay_tra": "06/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R093_B093_23/04/2025": {
-        "ma_ban_doc": "R093",
-        "ma_sach_muon": "B093",
-        "ten_sach_muon": "Sách 93: Nghiên cứu về Lịch sử",
-        "ngay_muon": "23/04/2025",
-        "ngay_tra": "05/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R019_B088_12/05/2025": {
-        "ma_ban_doc": "R019",
-        "ma_sach_muon": "B088",
-        "ten_sach_muon": "Sách 88: Những điều cần biết về Nghệ thuật",
-        "ngay_muon": "12/05/2025",
-        "ngay_tra": "01/06/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R037_B045_12/05/2025": {
-        "ma_ban_doc": "R037",
-        "ma_sach_muon": "B045",
-        "ten_sach_muon": "Sách 45: Cẩm nang Công nghệ",
-        "ngay_muon": "12/05/2025",
-        "ngay_tra": "18/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R090_B050_10/04/2025": {
-        "ma_ban_doc": "R090",
-        "ma_sach_muon": "B050",
-        "ten_sach_muon": "Sách 50: Hướng dẫn Ngoại ngữ",
-        "ngay_muon": "10/04/2025",
-        "ngay_tra": "23/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R029_B007_09/05/2025": {
-        "ma_ban_doc": "R029",
-        "ma_sach_muon": "B007",
-        "ten_sach_muon": "Sách 7: Cẩm nang Thể thao",
-        "ngay_muon": "09/05/2025",
-        "ngay_tra": "15/05/2025",
-        "trang_thai": "Đã trả"
-    },
-    "R034_B002_30/04/2025": {
-        "ma_ban_doc": "R034",
-        "ma_sach_muon": "B002",
-        "ten_sach_muon": "Sách 2: Những điều cần biết về Văn học",
-        "ngay_muon": "30/04/2025",
-        "ngay_tra": "N/A",
-        "trang_thai": "Quá hạn"
-    },
-    "R042_B021_14/05/2025": {
-        "ma_ban_doc": "R042",
-        "ma_sach_muon": "B021",
-        "ten_sach_muon": "Sách 21: Những điều cần biết về Tâm lý",
-        "ngay_muon": "14/05/2025",
-        "ngay_tra": "28/05/2025",
-        "trang_thai": "Đã trả"
     },
     "R095_B037_19/05/2025": {
         "ma_ban_doc": "R095",
@@ -719,11 +47,275 @@
         "ngay_tra": "29/05/2025",
         "trang_thai": "Đã trả"
     },
-    "R059_B058_17/04/2025": {
+    "R013_B025_04/06/2025": {
+        "ma_ban_doc": "R013",
+        "ma_sach_muon": "B025",
+        "ten_sach_muon": "Sách 25: Khám phá Ngoại ngữ",
+        "ngay_muon": "04/06/2025",
+        "ngay_tra": "07/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R100_B003_02/06/2025": {
+        "ma_ban_doc": "R100",
+        "ma_sach_muon": "B003",
+        "ten_sach_muon": "Sách 3: Hướng dẫn Tâm lý",
+        "ngay_muon": "02/06/2025",
+        "ngay_tra": "07/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R048_B076_10/05/2025": {
+        "ma_ban_doc": "R048",
+        "ma_sach_muon": "B076",
+        "ten_sach_muon": "Sách 76: Cẩm nang Y học",
+        "ngay_muon": "10/05/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Đang mượn"
+    },
+    "R087_B017_26/05/2025": {
+        "ma_ban_doc": "R087",
+        "ma_sach_muon": "B017",
+        "ten_sach_muon": "Sách 17: Nghiên cứu về Tâm lý",
+        "ngay_muon": "26/05/2025",
+        "ngay_tra": "27/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R100_B018_30/05/2025": {
+        "ma_ban_doc": "R100",
+        "ma_sach_muon": "B018",
+        "ten_sach_muon": "Sách 18: Nghiên cứu về Văn học",
+        "ngay_muon": "30/05/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R008_B065_08/04/2025": {
+        "ma_ban_doc": "R008",
+        "ma_sach_muon": "B065",
+        "ten_sach_muon": "Sách 65: Những điều cần biết về Du lịch",
+        "ngay_muon": "08/04/2025",
+        "ngay_tra": "10/04/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R048_B006_11/04/2025": {
+        "ma_ban_doc": "R048",
+        "ma_sach_muon": "B006",
+        "ten_sach_muon": "Sách 6: Cẩm nang Khoa học",
+        "ngay_muon": "11/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R059_B091_05/06/2025": {
         "ma_ban_doc": "R059",
-        "ma_sach_muon": "B058",
-        "ten_sach_muon": "Sách 58: Hướng dẫn Kinh tế",
-        "ngay_muon": "17/04/2025",
+        "ma_sach_muon": "B091",
+        "ten_sach_muon": "Sách 91: Cẩm nang Du lịch",
+        "ngay_muon": "05/06/2025",
+        "ngay_tra": "06/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R077_B099_02/06/2025": {
+        "ma_ban_doc": "R077",
+        "ma_sach_muon": "B099",
+        "ten_sach_muon": "Sách 99: Khám phá Tâm lý",
+        "ngay_muon": "02/06/2025",
+        "ngay_tra": "04/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R012_B041_04/06/2025": {
+        "ma_ban_doc": "R012",
+        "ma_sach_muon": "B041",
+        "ten_sach_muon": "Sách 41: Nghiên cứu về Âm nhạc",
+        "ngay_muon": "04/06/2025",
+        "ngay_tra": "04/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R029_B007_09/05/2025": {
+        "ma_ban_doc": "R029",
+        "ma_sach_muon": "B007",
+        "ten_sach_muon": "Sách 7: Cẩm nang Thể thao",
+        "ngay_muon": "09/05/2025",
+        "ngay_tra": "15/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R018_B076_03/06/2025": {
+        "ma_ban_doc": "R018",
+        "ma_sach_muon": "B076",
+        "ten_sach_muon": "Sách 76: Cẩm nang Y học",
+        "ngay_muon": "03/06/2025",
+        "ngay_tra": "03/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R016_B032_12/05/2025": {
+        "ma_ban_doc": "R016",
+        "ma_sach_muon": "B032",
+        "ten_sach_muon": "Sách 32: Cẩm nang Triết học",
+        "ngay_muon": "12/05/2025",
+        "ngay_tra": "07/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R093_B080_23/04/2025": {
+        "ma_ban_doc": "R093",
+        "ma_sach_muon": "B080",
+        "ten_sach_muon": "Sách 80: Nghiên cứu về Du lịch",
+        "ngay_muon": "23/04/2025",
+        "ngay_tra": "11/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R081_B019_11/04/2025": {
+        "ma_ban_doc": "R081",
+        "ma_sach_muon": "B019",
+        "ten_sach_muon": "Sách 19: Cẩm nang Thể thao",
+        "ngay_muon": "11/04/2025",
+        "ngay_tra": "19/04/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R012_B065_01/06/2025": {
+        "ma_ban_doc": "R012",
+        "ma_sach_muon": "B065",
+        "ten_sach_muon": "Sách 65: Những điều cần biết về Du lịch",
+        "ngay_muon": "01/06/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Đang mượn"
+    },
+    "R042_B021_14/05/2025": {
+        "ma_ban_doc": "R042",
+        "ma_sach_muon": "B021",
+        "ten_sach_muon": "Sách 21: Những điều cần biết về Tâm lý",
+        "ngay_muon": "14/05/2025",
+        "ngay_tra": "28/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R017_B069_22/05/2025": {
+        "ma_ban_doc": "R017",
+        "ma_sach_muon": "B069",
+        "ten_sach_muon": "Sách 69: Khám phá Ngoại ngữ",
+        "ngay_muon": "22/05/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Đang mượn"
+    },
+    "R037_B045_12/05/2025": {
+        "ma_ban_doc": "R037",
+        "ma_sach_muon": "B045",
+        "ten_sach_muon": "Sách 45: Cẩm nang Công nghệ",
+        "ngay_muon": "12/05/2025",
+        "ngay_tra": "18/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R014_B022_01/06/2025": {
+        "ma_ban_doc": "R014",
+        "ma_sach_muon": "B022",
+        "ten_sach_muon": "Sách 22: Khám phá Văn học",
+        "ngay_muon": "01/06/2025",
+        "ngay_tra": "06/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R058_B005_24/05/2025": {
+        "ma_ban_doc": "R058",
+        "ma_sach_muon": "B005",
+        "ten_sach_muon": "Sách 5: Nghiên cứu về Khoa học",
+        "ngay_muon": "24/05/2025",
+        "ngay_tra": "07/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R013_B092_20/04/2025": {
+        "ma_ban_doc": "R013",
+        "ma_sach_muon": "B092",
+        "ten_sach_muon": "Sách 92: Hướng dẫn Triết học",
+        "ngay_muon": "20/04/2025",
+        "ngay_tra": "05/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R090_B050_10/04/2025": {
+        "ma_ban_doc": "R090",
+        "ma_sach_muon": "B050",
+        "ten_sach_muon": "Sách 50: Hướng dẫn Ngoại ngữ",
+        "ngay_muon": "10/04/2025",
+        "ngay_tra": "23/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R067_B013_20/05/2025": {
+        "ma_ban_doc": "R067",
+        "ma_sach_muon": "B013",
+        "ten_sach_muon": "Sách 13: Hướng dẫn Âm nhạc",
+        "ngay_muon": "20/05/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Đang mượn"
+    },
+    "R004_B035_09/05/2025": {
+        "ma_ban_doc": "R004",
+        "ma_sach_muon": "B035",
+        "ten_sach_muon": "Sách 35: Nghiên cứu về Lịch sử",
+        "ngay_muon": "09/05/2025",
+        "ngay_tra": "11/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R030_B080_16/04/2025": {
+        "ma_ban_doc": "R030",
+        "ma_sach_muon": "B080",
+        "ten_sach_muon": "Sách 80: Nghiên cứu về Du lịch",
+        "ngay_muon": "16/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R034_B002_30/04/2025": {
+        "ma_ban_doc": "R034",
+        "ma_sach_muon": "B002",
+        "ten_sach_muon": "Sách 2: Những điều cần biết về Văn học",
+        "ngay_muon": "30/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R074_B009_17/05/2025": {
+        "ma_ban_doc": "R074",
+        "ma_sach_muon": "B009",
+        "ten_sach_muon": "Sách 9: Nghiên cứu về Du lịch",
+        "ngay_muon": "17/05/2025",
+        "ngay_tra": "29/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R033_B099_19/04/2025": {
+        "ma_ban_doc": "R033",
+        "ma_sach_muon": "B099",
+        "ten_sach_muon": "Sách 99: Khám phá Tâm lý",
+        "ngay_muon": "19/04/2025",
+        "ngay_tra": "27/04/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R030_B032_03/06/2025": {
+        "ma_ban_doc": "R030",
+        "ma_sach_muon": "B032",
+        "ten_sach_muon": "Sách 32: Cẩm nang Triết học",
+        "ngay_muon": "03/06/2025",
+        "ngay_tra": "05/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R043_B091_29/05/2025": {
+        "ma_ban_doc": "R043",
+        "ma_sach_muon": "B091",
+        "ten_sach_muon": "Sách 91: Cẩm nang Du lịch",
+        "ngay_muon": "29/05/2025",
+        "ngay_tra": "01/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R007_B013_06/05/2025": {
+        "ma_ban_doc": "R007",
+        "ma_sach_muon": "B013",
+        "ten_sach_muon": "Sách 13: Hướng dẫn Âm nhạc",
+        "ngay_muon": "06/05/2025",
+        "ngay_tra": "02/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R008_B099_25/04/2025": {
+        "ma_ban_doc": "R008",
+        "ma_sach_muon": "B099",
+        "ten_sach_muon": "Sách 99: Khám phá Tâm lý",
+        "ngay_muon": "25/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R023_B012_20/04/2025": {
+        "ma_ban_doc": "R023",
+        "ma_sach_muon": "B012",
+        "ten_sach_muon": "Sách 12: Nghiên cứu về Công nghệ",
+        "ngay_muon": "20/04/2025",
         "ngay_tra": "N/A",
         "trang_thai": "Quá hạn"
     },
@@ -735,36 +327,164 @@
         "ngay_tra": "30/05/2025",
         "trang_thai": "Đã trả"
     },
-    "R080_B027_20/05/2025": {
-        "ma_ban_doc": "R080",
+    "R022_B020_08/05/2025": {
+        "ma_ban_doc": "R022",
+        "ma_sach_muon": "B020",
+        "ten_sach_muon": "Sách 20: Nghiên cứu về Kinh tế",
+        "ngay_muon": "08/05/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R059_B058_17/04/2025": {
+        "ma_ban_doc": "R059",
+        "ma_sach_muon": "B058",
+        "ten_sach_muon": "Sách 58: Hướng dẫn Kinh tế",
+        "ngay_muon": "17/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R024_B096_16/04/2025": {
+        "ma_ban_doc": "R024",
+        "ma_sach_muon": "B096",
+        "ten_sach_muon": "Sách 96: Cẩm nang Khoa học",
+        "ngay_muon": "16/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R098_B027_21/05/2025": {
+        "ma_ban_doc": "R098",
         "ma_sach_muon": "B027",
         "ten_sach_muon": "Sách 27: Nghiên cứu về Kinh tế",
+        "ngay_muon": "21/05/2025",
+        "ngay_tra": "27/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R037_B087_26/05/2025": {
+        "ma_ban_doc": "R037",
+        "ma_sach_muon": "B087",
+        "ten_sach_muon": "Sách 87: Những điều cần biết về Nghệ thuật",
+        "ngay_muon": "26/05/2025",
+        "ngay_tra": "05/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R012_B087_02/06/2025": {
+        "ma_ban_doc": "R012",
+        "ma_sach_muon": "B087",
+        "ten_sach_muon": "Sách 87: Những điều cần biết về Nghệ thuật",
+        "ngay_muon": "02/06/2025",
+        "ngay_tra": "04/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R069_B077_22/04/2025": {
+        "ma_ban_doc": "R069",
+        "ma_sach_muon": "B077",
+        "ten_sach_muon": "Sách 77: Những điều cần biết về Ngoại ngữ",
+        "ngay_muon": "22/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R034_B048_09/04/2025": {
+        "ma_ban_doc": "R034",
+        "ma_sach_muon": "B048",
+        "ten_sach_muon": "Sách 48: Cẩm nang Khoa học",
+        "ngay_muon": "09/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R099_B030_26/04/2025": {
+        "ma_ban_doc": "R099",
+        "ma_sach_muon": "B030",
+        "ten_sach_muon": "Sách 30: Những điều cần biết về Y học",
+        "ngay_muon": "26/04/2025",
+        "ngay_tra": "24/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R021_B002_20/05/2025": {
+        "ma_ban_doc": "R021",
+        "ma_sach_muon": "B002",
+        "ten_sach_muon": "Sách 2: Những điều cần biết về Văn học",
         "ngay_muon": "20/05/2025",
         "ngay_tra": "N/A",
         "trang_thai": "Quá hạn"
     },
-    "R008_B099_25/04/2025": {
-        "ma_ban_doc": "R008",
-        "ma_sach_muon": "B099",
-        "ten_sach_muon": "Sách 99: Khám phá Tâm lý",
-        "ngay_muon": "25/04/2025",
+    "R009_B070_26/05/2025": {
+        "ma_ban_doc": "R009",
+        "ma_sach_muon": "B070",
+        "ten_sach_muon": "Sách 70: Khám phá Triết học",
+        "ngay_muon": "26/05/2025",
         "ngay_tra": "N/A",
         "trang_thai": "Quá hạn"
     },
-    "R068_B064_04/05/2025": {
-        "ma_ban_doc": "R068",
-        "ma_sach_muon": "B064",
-        "ten_sach_muon": "Sách 64: Hướng dẫn Khoa học",
-        "ngay_muon": "04/05/2025",
-        "ngay_tra": "06/06/2025",
+    "R042_B037_23/04/2025": {
+        "ma_ban_doc": "R042",
+        "ma_sach_muon": "B037",
+        "ten_sach_muon": "Sách 37: Khám phá Công nghệ",
+        "ngay_muon": "23/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R089_B079_16/04/2025": {
+        "ma_ban_doc": "R089",
+        "ma_sach_muon": "B079",
+        "ten_sach_muon": "Sách 79: Cẩm nang Giáo dục",
+        "ngay_muon": "16/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R060_B039_01/05/2025": {
+        "ma_ban_doc": "R060",
+        "ma_sach_muon": "B039",
+        "ten_sach_muon": "Sách 39: Hướng dẫn Lịch sử",
+        "ngay_muon": "01/05/2025",
+        "ngay_tra": "05/06/2025",
         "trang_thai": "Đã trả"
     },
-    "R004_B035_09/05/2025": {
-        "ma_ban_doc": "R004",
-        "ma_sach_muon": "B035",
-        "ten_sach_muon": "Sách 35: Nghiên cứu về Lịch sử",
-        "ngay_muon": "09/05/2025",
-        "ngay_tra": "11/05/2025",
+    "R070_B009_23/05/2025": {
+        "ma_ban_doc": "R070",
+        "ma_sach_muon": "B009",
+        "ten_sach_muon": "Sách 9: Nghiên cứu về Du lịch",
+        "ngay_muon": "23/05/2025",
+        "ngay_tra": "31/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R030_B036_28/04/2025": {
+        "ma_ban_doc": "R030",
+        "ma_sach_muon": "B036",
+        "ten_sach_muon": "Sách 36: Khám phá Tâm lý",
+        "ngay_muon": "28/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R006_B014_30/04/2025": {
+        "ma_ban_doc": "R006",
+        "ma_sach_muon": "B014",
+        "ten_sach_muon": "Sách 14: Khám phá Ngoại ngữ",
+        "ngay_muon": "30/04/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R039_B059_05/06/2025": {
+        "ma_ban_doc": "R039",
+        "ma_sach_muon": "B059",
+        "ten_sach_muon": "Sách 59: Hướng dẫn Y học",
+        "ngay_muon": "05/06/2025",
+        "ngay_tra": "05/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R009_B004_21/05/2025": {
+        "ma_ban_doc": "R009",
+        "ma_sach_muon": "B004",
+        "ten_sach_muon": "Sách 4: Hướng dẫn Kinh tế",
+        "ngay_muon": "21/05/2025",
+        "ngay_tra": "24/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R089_B061_07/06/2025": {
+        "ma_ban_doc": "R089",
+        "ma_sach_muon": "B061",
+        "ten_sach_muon": "Sách 61: Nghiên cứu về Y học",
+        "ngay_muon": "07/06/2025",
+        "ngay_tra": "07/06/2025",
         "trang_thai": "Đã trả"
     },
     "R097_B045_22/05/2025": {
@@ -775,28 +495,92 @@
         "ngay_tra": "06/06/2025",
         "trang_thai": "Đã trả"
     },
-    "R017_B069_22/05/2025": {
-        "ma_ban_doc": "R017",
-        "ma_sach_muon": "B069",
-        "ten_sach_muon": "Sách 69: Khám phá Ngoại ngữ",
-        "ngay_muon": "22/05/2025",
+    "R030_B056_11/05/2025": {
+        "ma_ban_doc": "R030",
+        "ma_sach_muon": "B056",
+        "ten_sach_muon": "Sách 56: Cẩm nang Thể thao",
+        "ngay_muon": "11/05/2025",
+        "ngay_tra": "12/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R011_B059_18/05/2025": {
+        "ma_ban_doc": "R011",
+        "ma_sach_muon": "B059",
+        "ten_sach_muon": "Sách 59: Hướng dẫn Y học",
+        "ngay_muon": "18/05/2025",
+        "ngay_tra": "24/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R077_B098_08/05/2025": {
+        "ma_ban_doc": "R077",
+        "ma_sach_muon": "B098",
+        "ten_sach_muon": "Sách 98: Những điều cần biết về Thiếu nhi",
+        "ngay_muon": "08/05/2025",
+        "ngay_tra": "14/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R051_B087_20/04/2025": {
+        "ma_ban_doc": "R051",
+        "ma_sach_muon": "B087",
+        "ten_sach_muon": "Sách 87: Những điều cần biết về Nghệ thuật",
+        "ngay_muon": "20/04/2025",
+        "ngay_tra": "01/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R041_B046_16/04/2025": {
+        "ma_ban_doc": "R041",
+        "ma_sach_muon": "B046",
+        "ten_sach_muon": "Sách 46: Nghiên cứu về Kinh tế",
+        "ngay_muon": "16/04/2025",
+        "ngay_tra": "18/04/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R034_B033_22/04/2025": {
+        "ma_ban_doc": "R034",
+        "ma_sach_muon": "B033",
+        "ten_sach_muon": "Sách 33: Những điều cần biết về Âm nhạc",
+        "ngay_muon": "22/04/2025",
+        "ngay_tra": "03/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R065_B093_19/05/2025": {
+        "ma_ban_doc": "R065",
+        "ma_sach_muon": "B093",
+        "ten_sach_muon": "Sách 93: Nghiên cứu về Lịch sử",
+        "ngay_muon": "19/05/2025",
         "ngay_tra": "N/A",
         "trang_thai": "Đang mượn"
     },
-    "R075_B050_10/04/2025": {
-        "ma_ban_doc": "R075",
-        "ma_sach_muon": "B050",
-        "ten_sach_muon": "Sách 50: Hướng dẫn Ngoại ngữ",
-        "ngay_muon": "10/04/2025",
-        "ngay_tra": "22/04/2025",
+    "R067_B003_04/05/2025": {
+        "ma_ban_doc": "R067",
+        "ma_sach_muon": "B003",
+        "ten_sach_muon": "Sách 3: Hướng dẫn Tâm lý",
+        "ngay_muon": "04/05/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R038_B021_22/04/2025": {
+        "ma_ban_doc": "R038",
+        "ma_sach_muon": "B021",
+        "ten_sach_muon": "Sách 21: Những điều cần biết về Tâm lý",
+        "ngay_muon": "22/04/2025",
+        "ngay_tra": "20/05/2025",
         "trang_thai": "Đã trả"
     },
-    "R058_B005_24/05/2025": {
-        "ma_ban_doc": "R058",
+    "R068_B064_04/05/2025": {
+        "ma_ban_doc": "R068",
+        "ma_sach_muon": "B064",
+        "ten_sach_muon": "Sách 64: Hướng dẫn Khoa học",
+        "ngay_muon": "04/05/2025",
+        "ngay_tra": "06/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R067_B005_07/05/2025": {
+        "ma_ban_doc": "R067",
         "ma_sach_muon": "B005",
         "ten_sach_muon": "Sách 5: Nghiên cứu về Khoa học",
-        "ngay_muon": "24/05/2025",
-        "ngay_tra": "07/06/2025",
+        "ngay_muon": "07/05/2025",
+        "ngay_tra": "10/05/2025",
         "trang_thai": "Đã trả"
     },
     "R038_B091_27/05/2025": {
@@ -807,12 +591,228 @@
         "ngay_tra": "02/06/2025",
         "trang_thai": "Đã trả"
     },
-    "R012_B041_04/06/2025": {
-        "ma_ban_doc": "R012",
-        "ma_sach_muon": "B041",
-        "ten_sach_muon": "Sách 41: Nghiên cứu về Âm nhạc",
-        "ngay_muon": "04/06/2025",
-        "ngay_tra": "04/06/2025",
+    "R068_B066_06/05/2025": {
+        "ma_ban_doc": "R068",
+        "ma_sach_muon": "B066",
+        "ten_sach_muon": "Sách 66: Cẩm nang Kinh tế",
+        "ngay_muon": "06/05/2025",
+        "ngay_tra": "19/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R080_B076_13/05/2025": {
+        "ma_ban_doc": "R080",
+        "ma_sach_muon": "B076",
+        "ten_sach_muon": "Sách 76: Cẩm nang Y học",
+        "ngay_muon": "13/05/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Đang mượn"
+    },
+    "R038_B099_10/04/2025": {
+        "ma_ban_doc": "R038",
+        "ma_sach_muon": "B099",
+        "ten_sach_muon": "Sách 99: Khám phá Tâm lý",
+        "ngay_muon": "10/04/2025",
+        "ngay_tra": "14/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R092_B084_29/05/2025": {
+        "ma_ban_doc": "R092",
+        "ma_sach_muon": "B084",
+        "ten_sach_muon": "Sách 84: Hướng dẫn Văn học",
+        "ngay_muon": "29/05/2025",
+        "ngay_tra": "01/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R015_B076_07/06/2025": {
+        "ma_ban_doc": "R015",
+        "ma_sach_muon": "B076",
+        "ten_sach_muon": "Sách 76: Cẩm nang Y học",
+        "ngay_muon": "07/06/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Đang mượn"
+    },
+    "R080_B027_20/05/2025": {
+        "ma_ban_doc": "R080",
+        "ma_sach_muon": "B027",
+        "ten_sach_muon": "Sách 27: Nghiên cứu về Kinh tế",
+        "ngay_muon": "20/05/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R015_B068_03/06/2025": {
+        "ma_ban_doc": "R015",
+        "ma_sach_muon": "B068",
+        "ten_sach_muon": "Sách 68: Nghiên cứu về Thiếu nhi",
+        "ngay_muon": "03/06/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Đang mượn"
+    },
+    "R096_B059_23/04/2025": {
+        "ma_ban_doc": "R096",
+        "ma_sach_muon": "B059",
+        "ten_sach_muon": "Sách 59: Hướng dẫn Y học",
+        "ngay_muon": "23/04/2025",
+        "ngay_tra": "01/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R062_B058_07/06/2025": {
+        "ma_ban_doc": "R062",
+        "ma_sach_muon": "B058",
+        "ten_sach_muon": "Sách 58: Hướng dẫn Kinh tế",
+        "ngay_muon": "07/06/2025",
+        "ngay_tra": "07/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R019_B088_12/05/2025": {
+        "ma_ban_doc": "R019",
+        "ma_sach_muon": "B088",
+        "ten_sach_muon": "Sách 88: Những điều cần biết về Nghệ thuật",
+        "ngay_muon": "12/05/2025",
+        "ngay_tra": "01/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R052_B050_08/04/2025": {
+        "ma_ban_doc": "R052",
+        "ma_sach_muon": "B050",
+        "ten_sach_muon": "Sách 50: Hướng dẫn Ngoại ngữ",
+        "ngay_muon": "08/04/2025",
+        "ngay_tra": "31/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R046_B022_05/05/2025": {
+        "ma_ban_doc": "R046",
+        "ma_sach_muon": "B022",
+        "ten_sach_muon": "Sách 22: Khám phá Văn học",
+        "ngay_muon": "05/05/2025",
+        "ngay_tra": "25/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R005_B011_09/05/2025": {
+        "ma_ban_doc": "R005",
+        "ma_sach_muon": "B011",
+        "ten_sach_muon": "Sách 11: Cẩm nang Nghệ thuật",
+        "ngay_muon": "09/05/2025",
+        "ngay_tra": "06/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R003_B060_16/05/2025": {
+        "ma_ban_doc": "R003",
+        "ma_sach_muon": "B060",
+        "ten_sach_muon": "Sách 60: Hướng dẫn Du lịch",
+        "ngay_muon": "16/05/2025",
+        "ngay_tra": "03/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R008_B022_28/04/2025": {
+        "ma_ban_doc": "R008",
+        "ma_sach_muon": "B022",
+        "ten_sach_muon": "Sách 22: Khám phá Văn học",
+        "ngay_muon": "28/04/2025",
+        "ngay_tra": "18/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R018_B077_27/04/2025": {
+        "ma_ban_doc": "R018",
+        "ma_sach_muon": "B077",
+        "ten_sach_muon": "Sách 77: Những điều cần biết về Ngoại ngữ",
+        "ngay_muon": "27/04/2025",
+        "ngay_tra": "04/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R075_B050_10/04/2025": {
+        "ma_ban_doc": "R075",
+        "ma_sach_muon": "B050",
+        "ten_sach_muon": "Sách 50: Hướng dẫn Ngoại ngữ",
+        "ngay_muon": "10/04/2025",
+        "ngay_tra": "22/04/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R060_B002_07/06/2025": {
+        "ma_ban_doc": "R060",
+        "ma_sach_muon": "B002",
+        "ten_sach_muon": "Sách 2: Những điều cần biết về Văn học",
+        "ngay_muon": "07/06/2025",
+        "ngay_tra": null,
+        "trang_thai": "Đang mượn"
+    },
+    "R100_B065_09/04/2025": {
+        "ma_ban_doc": "R100",
+        "ma_sach_muon": "B065",
+        "ten_sach_muon": "Sách 65: Những điều cần biết về Du lịch",
+        "ngay_muon": "09/04/2025",
+        "ngay_tra": "08/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R035_B081_31/05/2025": {
+        "ma_ban_doc": "R035",
+        "ma_sach_muon": "B081",
+        "ten_sach_muon": "Sách 81: Khám phá Ngoại ngữ",
+        "ngay_muon": "31/05/2025",
+        "ngay_tra": "N/A",
+        "trang_thai": "Quá hạn"
+    },
+    "R091_B050_02/06/2025": {
+        "ma_ban_doc": "R091",
+        "ma_sach_muon": "B050",
+        "ten_sach_muon": "Sách 50: Hướng dẫn Ngoại ngữ",
+        "ngay_muon": "02/06/2025",
+        "ngay_tra": "03/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R032_B010_13/05/2025": {
+        "ma_ban_doc": "R032",
+        "ma_sach_muon": "B010",
+        "ten_sach_muon": "Sách 10: Khám phá Giáo dục",
+        "ngay_muon": "13/05/2025",
+        "ngay_tra": "27/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R093_B093_23/04/2025": {
+        "ma_ban_doc": "R093",
+        "ma_sach_muon": "B093",
+        "ten_sach_muon": "Sách 93: Nghiên cứu về Lịch sử",
+        "ngay_muon": "23/04/2025",
+        "ngay_tra": "05/06/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R015_B092_26/05/2025": {
+        "ma_ban_doc": "R015",
+        "ma_sach_muon": "B092",
+        "ten_sach_muon": "Sách 92: Hướng dẫn Triết học",
+        "ngay_muon": "26/05/2025",
+        "ngay_tra": "28/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R067_B021_29/04/2025": {
+        "ma_ban_doc": "R067",
+        "ma_sach_muon": "B021",
+        "ten_sach_muon": "Sách 21: Những điều cần biết về Tâm lý",
+        "ngay_muon": "29/04/2025",
+        "ngay_tra": "26/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R056_B046_10/05/2025": {
+        "ma_ban_doc": "R056",
+        "ma_sach_muon": "B046",
+        "ten_sach_muon": "Sách 46: Nghiên cứu về Kinh tế",
+        "ngay_muon": "10/05/2025",
+        "ngay_tra": "24/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R038_B029_29/05/2025": {
+        "ma_ban_doc": "R038",
+        "ma_sach_muon": "B029",
+        "ten_sach_muon": "Sách 29: Khám phá Giáo dục",
+        "ngay_muon": "29/05/2025",
+        "ngay_tra": "29/05/2025",
+        "trang_thai": "Đã trả"
+    },
+    "R099_B028_22/05/2025": {
+        "ma_ban_doc": "R099",
+        "ma_sach_muon": "B028",
+        "ten_sach_muon": "Sách 28: Khám phá Kinh tế",
+        "ngay_muon": "22/05/2025",
+        "ngay_tra": "29/05/2025",
         "trang_thai": "Đã trả"
     }
 }

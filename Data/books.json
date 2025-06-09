@@ -1,11 +1,245 @@
 {
-    "B054": {
-        "ma_sach": "B054",
-        "ten_sach": "Sách 54: Cẩm nang Triết học",
-        "tac_gia": "Trần Hồng Châu",
+    "B087": {
+        "ma_sach": "B087",
+        "ten_sach": "Sách 87: Những điều cần biết về Nghệ thuật",
+        "tac_gia": "Phạm Hoàng Tùng",
+        "the_loai": "Văn học",
+        "so_luong": 5,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Tổng hợp"
+    },
+    "B029": {
+        "ma_sach": "B029",
+        "ten_sach": "Sách 29: Khám phá Giáo dục",
+        "tac_gia": "Bùi Hồng Bình",
+        "the_loai": "Khoa học",
+        "so_luong": 3,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Giáo dục"
+    },
+    "B018": {
+        "ma_sach": "B018",
+        "ten_sach": "Sách 18: Nghiên cứu về Văn học",
+        "tac_gia": "Phan Anh Châu",
+        "the_loai": "Du lịch",
+        "so_luong": 5,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Thanh niên"
+    },
+    "B027": {
+        "ma_sach": "B027",
+        "ten_sach": "Sách 27: Nghiên cứu về Kinh tế",
+        "tac_gia": "Lê Thị Xuân",
         "the_loai": "Triết học",
+        "so_luong": 1,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Chính trị Quốc gia"
+    },
+    "B046": {
+        "ma_sach": "B046",
+        "ten_sach": "Sách 46: Nghiên cứu về Kinh tế",
+        "tac_gia": "Lê Thị Hương",
+        "the_loai": "Giáo dục",
+        "so_luong": 5,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Khoa học Kỹ thuật"
+    },
+    "B016": {
+        "ma_sach": "B016",
+        "ten_sach": "Sách 16: Cẩm nang Thiếu nhi",
+        "tac_gia": "Phan Văn Nam",
+        "the_loai": "Y học",
+        "so_luong": 3,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Khoa học Kỹ thuật"
+    },
+    "B071": {
+        "ma_sach": "B071",
+        "ten_sach": "Sách 71: Khám phá Triết học",
+        "tac_gia": "Đặng Hoàng Hương",
+        "the_loai": "Nghệ thuật",
         "so_luong": 2,
         "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Giáo dục"
+    },
+    "B034": {
+        "ma_sach": "B034",
+        "ten_sach": "Sách 34: Hướng dẫn Du lịch",
+        "tac_gia": "Lê Thanh Lan",
+        "the_loai": "Thể thao",
+        "so_luong": 5,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Giáo dục"
+    },
+    "B074": {
+        "ma_sach": "B074",
+        "ten_sach": "Sách 74: Cẩm nang Lịch sử",
+        "tac_gia": "Bùi Thành Dung",
+        "the_loai": "Du lịch",
+        "so_luong": 2,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Đại học Quốc gia"
+    },
+    "B039": {
+        "ma_sach": "B039",
+        "ten_sach": "Sách 39: Hướng dẫn Lịch sử",
+        "tac_gia": "Lý Hồng Việt",
+        "the_loai": "Nghệ thuật",
+        "so_luong": 1,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Tổng hợp"
+    },
+    "B100": {
+        "ma_sach": "B100",
+        "ten_sach": "Sách 100: Những điều cần biết về Triết học",
+        "tac_gia": "Lê Quang Ngọc",
+        "the_loai": "Âm nhạc",
+        "so_luong": 3,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Trẻ"
+    },
+    "B013": {
+        "ma_sach": "B013",
+        "ten_sach": "Sách 13: Hướng dẫn Âm nhạc",
+        "tac_gia": "Hoàng Đức Uyên",
+        "the_loai": "Tâm lý",
+        "so_luong": 3,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Đại học Quốc gia"
+    },
+    "B078": {
+        "ma_sach": "B078",
+        "ten_sach": "Sách 78: Nghiên cứu về Giáo dục",
+        "tac_gia": "Hoàng Phương Linh",
+        "the_loai": "Khoa học",
+        "so_luong": 2,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Kim Đồng"
+    },
+    "B032": {
+        "ma_sach": "B032",
+        "ten_sach": "Sách 32: Cẩm nang Triết học",
+        "tac_gia": "Huỳnh Quang Phúc",
+        "the_loai": "Khoa học",
+        "so_luong": 1,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Văn học"
+    },
+    "B017": {
+        "ma_sach": "B017",
+        "ten_sach": "Sách 17: Nghiên cứu về Tâm lý",
+        "tac_gia": "Ngô Thị An",
+        "the_loai": "Triết học",
+        "so_luong": 2,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Hội Nhà văn"
+    },
+    "B053": {
+        "ma_sach": "B053",
+        "ten_sach": "Sách 53: Hướng dẫn Y học",
+        "tac_gia": "Nguyễn Văn Lan",
+        "the_loai": "Lịch sử",
+        "so_luong": 4,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Văn học"
+    },
+    "B075": {
+        "ma_sach": "B075",
+        "ten_sach": "Sách 75: Hướng dẫn Văn học",
+        "tac_gia": "Phan Hoàng Tâm",
+        "the_loai": "Kinh tế",
+        "so_luong": 4,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Đại học Quốc gia"
+    },
+    "B033": {
+        "ma_sach": "B033",
+        "ten_sach": "Sách 33: Những điều cần biết về Âm nhạc",
+        "tac_gia": "Nguyễn Hải Dung",
+        "the_loai": "Ngoại ngữ",
+        "so_luong": 4,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Giáo dục"
+    },
+    "B065": {
+        "ma_sach": "B065",
+        "ten_sach": "Sách 65: Những điều cần biết về Du lịch",
+        "tac_gia": "Dương Phương Mai",
+        "the_loai": "Y học",
+        "so_luong": 1,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Thanh niên"
+    },
+    "B045": {
+        "ma_sach": "B045",
+        "ten_sach": "Sách 45: Cẩm nang Công nghệ",
+        "tac_gia": "Võ Đình Việt",
+        "the_loai": "Công nghệ",
+        "so_luong": 4,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Tổng hợp"
+    },
+    "B060": {
+        "ma_sach": "B060",
+        "ten_sach": "Sách 60: Hướng dẫn Du lịch",
+        "tac_gia": "Nguyễn Minh Linh",
+        "the_loai": "Du lịch",
+        "so_luong": 5,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Trẻ"
+    },
+    "B008": {
+        "ma_sach": "B008",
+        "ten_sach": "Sách 8: Khám phá Nghệ thuật",
+        "tac_gia": "Đặng Thành Em",
+        "the_loai": "Du lịch",
+        "so_luong": 5,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Kim Đồng"
+    },
+    "B095": {
+        "ma_sach": "B095",
+        "ten_sach": "Sách 95: Khám phá Nghệ thuật",
+        "tac_gia": "Huỳnh Minh Dung",
+        "the_loai": "Thiếu nhi",
+        "so_luong": 2,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Tổng hợp"
+    },
+    "B044": {
+        "ma_sach": "B044",
+        "ten_sach": "Sách 44: Khám phá Du lịch",
+        "tac_gia": "Lý Đình Hương",
+        "the_loai": "Kinh tế",
+        "so_luong": 3,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Trẻ"
+    },
+    "B052": {
+        "ma_sach": "B052",
+        "ten_sach": "Sách 52: Những điều cần biết về Du lịch",
+        "tac_gia": "Phan Quang Nam",
+        "the_loai": "Văn học",
+        "so_luong": 3,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Giáo dục"
+    },
+    "B067": {
+        "ma_sach": "B067",
+        "ten_sach": "Sách 67: Hướng dẫn Công nghệ",
+        "tac_gia": "Huỳnh Anh Tùng",
+        "the_loai": "Triết học",
+        "so_luong": 4,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Văn học"
+    },
+    "B003": {
+        "ma_sach": "B003",
+        "ten_sach": "Sách 3: Hướng dẫn Tâm lý",
+        "tac_gia": "Ngô Thành Tâm",
+        "the_loai": "Kinh tế",
+        "so_luong": 5,
+        "tinh_trang": "Đã sử dụng",
         "nha_xuat_ban": "NXB Thanh niên"
     },
     "B099": {
@@ -17,14 +251,32 @@
         "tinh_trang": "Có sẵn",
         "nha_xuat_ban": "NXB Giáo dục"
     },
-    "B060": {
-        "ma_sach": "B060",
-        "ten_sach": "Sách 60: Hướng dẫn Du lịch",
-        "tac_gia": "Nguyễn Minh Linh",
-        "the_loai": "Du lịch",
-        "so_luong": 5,
-        "tinh_trang": "Đã sử dụng",
+    "B096": {
+        "ma_sach": "B096",
+        "ten_sach": "Sách 96: Cẩm nang Khoa học",
+        "tac_gia": "Võ Anh Thành",
+        "the_loai": "Thể thao",
+        "so_luong": 2,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Giáo dục"
+    },
+    "B072": {
+        "ma_sach": "B072",
+        "ten_sach": "Sách 72: Nghiên cứu về Lịch sử",
+        "tac_gia": "Ngô Văn Uyên",
+        "the_loai": "Công nghệ",
+        "so_luong": 4,
+        "tinh_trang": "Có sẵn",
         "nha_xuat_ban": "NXB Trẻ"
+    },
+    "B001": {
+        "ma_sach": "B001",
+        "ten_sach": "Sách 1: Những điều cần biết về Giáo dục",
+        "tac_gia": "Huỳnh Hồng Linh",
+        "the_loai": "Nghệ thuật",
+        "so_luong": 2,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Văn học"
     },
     "B080": {
         "ma_sach": "B080",
@@ -35,140 +287,41 @@
         "tinh_trang": "Đã sử dụng",
         "nha_xuat_ban": "NXB Khoa học Kỹ thuật"
     },
-    "B079": {
-        "ma_sach": "B079",
-        "ten_sach": "Sách 79: Cẩm nang Giáo dục",
-        "tac_gia": "Đặng Thanh Tuấn",
-        "the_loai": "Y học",
-        "so_luong": 1,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Đại học Quốc gia"
+    "B047": {
+        "ma_sach": "B047",
+        "ten_sach": "Sách 47: Nghiên cứu về Công nghệ",
+        "tac_gia": "Trần Văn Tâm",
+        "the_loai": "Giáo dục",
+        "so_luong": 4,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Chính trị Quốc gia"
     },
-    "B065": {
-        "ma_sach": "B065",
-        "ten_sach": "Sách 65: Những điều cần biết về Du lịch",
-        "tac_gia": "Dương Phương Mai",
-        "the_loai": "Y học",
-        "so_luong": 1,
+    "B090": {
+        "ma_sach": "B090",
+        "ten_sach": "Sách 90: Khám phá Giáo dục",
+        "tac_gia": "Hoàng Đình Phú",
+        "the_loai": "Lịch sử",
+        "so_luong": 4,
         "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Chính trị Quốc gia"
+    },
+    "B054": {
+        "ma_sach": "B054",
+        "ten_sach": "Sách 54: Cẩm nang Triết học",
+        "tac_gia": "Trần Hồng Châu",
+        "the_loai": "Triết học",
+        "so_luong": 2,
+        "tinh_trang": "Mới",
         "nha_xuat_ban": "NXB Thanh niên"
     },
-    "B066": {
-        "ma_sach": "B066",
-        "ten_sach": "Sách 66: Cẩm nang Kinh tế",
-        "tac_gia": "Bùi Quang Phúc",
-        "the_loai": "Thể thao",
-        "so_luong": 1,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Chính trị Quốc gia"
-    },
-    "B095": {
-        "ma_sach": "B095",
-        "ten_sach": "Sách 95: Khám phá Nghệ thuật",
-        "tac_gia": "Huỳnh Minh Dung",
-        "the_loai": "Thiếu nhi",
-        "so_luong": 2,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Tổng hợp"
-    },
-    "B045": {
-        "ma_sach": "B045",
-        "ten_sach": "Sách 45: Cẩm nang Công nghệ",
-        "tac_gia": "Võ Đình Việt",
-        "the_loai": "Công nghệ",
-        "so_luong": 4,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Tổng hợp"
-    },
-    "B013": {
-        "ma_sach": "B013",
-        "ten_sach": "Sách 13: Hướng dẫn Âm nhạc",
-        "tac_gia": "Hoàng Đức Uyên",
-        "the_loai": "Tâm lý",
-        "so_luong": 3,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Đại học Quốc gia"
-    },
-    "B082": {
-        "ma_sach": "B082",
-        "ten_sach": "Sách 82: Hướng dẫn Lịch sử",
-        "tac_gia": "Đặng Thanh Thành",
-        "the_loai": "Công nghệ",
-        "so_luong": 1,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Văn học"
-    },
-    "B037": {
-        "ma_sach": "B037",
-        "ten_sach": "Sách 37: Khám phá Công nghệ",
-        "tac_gia": "Ngô Thành Việt",
-        "the_loai": "Công nghệ",
-        "so_luong": 4,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Chính trị Quốc gia"
-    },
-    "B014": {
-        "ma_sach": "B014",
-        "ten_sach": "Sách 14: Khám phá Ngoại ngữ",
-        "tac_gia": "Dương Thành Mai",
-        "the_loai": "Văn học",
-        "so_luong": 2,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Kim Đồng"
-    },
-    "B022": {
-        "ma_sach": "B022",
-        "ten_sach": "Sách 22: Khám phá Văn học",
-        "tac_gia": "Trần Hoàng Tài",
-        "the_loai": "Triết học",
-        "so_luong": 4,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Hội Nhà văn"
-    },
-    "B031": {
-        "ma_sach": "B031",
-        "ten_sach": "Sách 31: Hướng dẫn Văn học",
-        "tac_gia": "Võ Thành Tùng",
-        "the_loai": "Lịch sử",
-        "so_luong": 3,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Đại học Quốc gia"
-    },
-    "B070": {
-        "ma_sach": "B070",
-        "ten_sach": "Sách 70: Khám phá Triết học",
-        "tac_gia": "Võ Thanh Trí",
-        "the_loai": "Nghệ thuật",
-        "so_luong": 1,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Chính trị Quốc gia"
-    },
-    "B049": {
-        "ma_sach": "B049",
-        "ten_sach": "Sách 49: Hướng dẫn Giáo dục",
-        "tac_gia": "Đặng Quang Ngọc",
-        "the_loai": "Khoa học",
-        "so_luong": 2,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Tổng hợp"
-    },
-    "B011": {
-        "ma_sach": "B011",
-        "ten_sach": "Sách 11: Cẩm nang Nghệ thuật",
-        "tac_gia": "Đặng Xuân Tuấn",
+    "B092": {
+        "ma_sach": "B092",
+        "ten_sach": "Sách 92: Hướng dẫn Triết học",
+        "tac_gia": "Trần Hồng Phú",
         "the_loai": "Giáo dục",
-        "so_luong": 2,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Kim Đồng"
-    },
-    "B008": {
-        "ma_sach": "B008",
-        "ten_sach": "Sách 8: Khám phá Nghệ thuật",
-        "tac_gia": "Đặng Thành Em",
-        "the_loai": "Du lịch",
         "so_luong": 5,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Kim Đồng"
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Hội Nhà văn"
     },
     "B040": {
         "ma_sach": "B040",
@@ -179,23 +332,50 @@
         "tinh_trang": "Đã sử dụng",
         "nha_xuat_ban": "NXB Kim Đồng"
     },
-    "B075": {
-        "ma_sach": "B075",
-        "ten_sach": "Sách 75: Hướng dẫn Văn học",
-        "tac_gia": "Phan Hoàng Tâm",
-        "the_loai": "Kinh tế",
-        "so_luong": 4,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Đại học Quốc gia"
+    "B098": {
+        "ma_sach": "B098",
+        "ten_sach": "Sách 98: Những điều cần biết về Thiếu nhi",
+        "tac_gia": "Vũ Minh Ngọc",
+        "the_loai": "Y học",
+        "so_luong": 3,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Kim Đồng"
     },
-    "B036": {
-        "ma_sach": "B036",
-        "ten_sach": "Sách 36: Khám phá Tâm lý",
-        "tac_gia": "Lý Thu Giang",
+    "B038": {
+        "ma_sach": "B038",
+        "ten_sach": "Sách 38: Nghiên cứu về Văn học",
+        "tac_gia": "Huỳnh Anh Em",
         "the_loai": "Ngoại ngữ",
+        "so_luong": 5,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Kim Đồng"
+    },
+    "B059": {
+        "ma_sach": "B059",
+        "ten_sach": "Sách 59: Hướng dẫn Y học",
+        "tac_gia": "Phan Thu Tâm",
+        "the_loai": "Nghệ thuật",
+        "so_luong": 2,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Tổng hợp"
+    },
+    "B024": {
+        "ma_sach": "B024",
+        "ten_sach": "Sách 24: Nghiên cứu về Khoa học",
+        "tac_gia": "Hồ Anh Quân",
+        "the_loai": "Công nghệ",
         "so_luong": 3,
         "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Văn học"
+        "nha_xuat_ban": "NXB Hội Nhà văn"
+    },
+    "B064": {
+        "ma_sach": "B064",
+        "ten_sach": "Sách 64: Hướng dẫn Khoa học",
+        "tac_gia": "Lý Anh Châu",
+        "the_loai": "Triết học",
+        "so_luong": 4,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Chính trị Quốc gia"
     },
     "B083": {
         "ma_sach": "B083",
@@ -203,6 +383,69 @@
         "tac_gia": "Đỗ Xuân Tâm",
         "the_loai": "Du lịch",
         "so_luong": 3,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Hội Nhà văn"
+    },
+    "B043": {
+        "ma_sach": "B043",
+        "ten_sach": "Sách 43: Nghiên cứu về Thiếu nhi",
+        "tac_gia": "Hoàng Văn Uyên",
+        "the_loai": "Khoa học",
+        "so_luong": 5,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Chính trị Quốc gia"
+    },
+    "B088": {
+        "ma_sach": "B088",
+        "ten_sach": "Sách 88: Những điều cần biết về Nghệ thuật",
+        "tac_gia": "Ngô Minh Bình",
+        "the_loai": "Triết học",
+        "so_luong": 3,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Kim Đồng"
+    },
+    "B025": {
+        "ma_sach": "B025",
+        "ten_sach": "Sách 25: Khám phá Ngoại ngữ",
+        "tac_gia": "Trần Xuân Xuân",
+        "the_loai": "Thiếu nhi",
+        "so_luong": 4,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Trẻ"
+    },
+    "B086": {
+        "ma_sach": "B086",
+        "ten_sach": "Sách 86: Cẩm nang Khoa học",
+        "tac_gia": "Đỗ Đức Tài",
+        "the_loai": "Nghệ thuật",
+        "so_luong": 4,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Giáo dục"
+    },
+    "B010": {
+        "ma_sach": "B010",
+        "ten_sach": "Sách 10: Khám phá Giáo dục",
+        "tac_gia": "Vũ Thành Bình",
+        "the_loai": "Nghệ thuật",
+        "so_luong": 4,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Tổng hợp"
+    },
+    "B051": {
+        "ma_sach": "B051",
+        "ten_sach": "Sách 51: Hướng dẫn Văn học",
+        "tac_gia": "Lý Hoàng Hải",
+        "the_loai": "Công nghệ",
+        "so_luong": 1,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Thanh niên"
+    },
+    "B020": {
+        "ma_sach": "B020",
+        "ten_sach": "Sách 20: Nghiên cứu về Kinh tế",
+        "tac_gia": "Ngô Hải Quân",
+        "the_loai": "Ngoại ngữ",
+        "so_luong": 4,
         "tinh_trang": "Đã sử dụng",
         "nha_xuat_ban": "NXB Hội Nhà văn"
     },
@@ -215,132 +458,6 @@
         "tinh_trang": "Có sẵn",
         "nha_xuat_ban": "NXB Hội Nhà văn"
     },
-    "B059": {
-        "ma_sach": "B059",
-        "ten_sach": "Sách 59: Hướng dẫn Y học",
-        "tac_gia": "Phan Thu Tâm",
-        "the_loai": "Nghệ thuật",
-        "so_luong": 2,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Tổng hợp"
-    },
-    "B030": {
-        "ma_sach": "B030",
-        "ten_sach": "Sách 30: Những điều cần biết về Y học",
-        "tac_gia": "Ngô Hải Nam",
-        "the_loai": "Du lịch",
-        "so_luong": 2,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Thanh niên"
-    },
-    "B056": {
-        "ma_sach": "B056",
-        "ten_sach": "Sách 56: Cẩm nang Thể thao",
-        "tac_gia": "Lê Anh Hải",
-        "the_loai": "Công nghệ",
-        "so_luong": 5,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Thanh niên"
-    },
-    "B012": {
-        "ma_sach": "B012",
-        "ten_sach": "Sách 12: Nghiên cứu về Công nghệ",
-        "tac_gia": "Nguyễn Quang Uyên",
-        "the_loai": "Du lịch",
-        "so_luong": 2,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Giáo dục"
-    },
-    "B081": {
-        "ma_sach": "B081",
-        "ten_sach": "Sách 81: Khám phá Ngoại ngữ",
-        "tac_gia": "Đỗ Hồng Tài",
-        "the_loai": "Văn học",
-        "so_luong": 5,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Thanh niên"
-    },
-    "B009": {
-        "ma_sach": "B009",
-        "ten_sach": "Sách 9: Nghiên cứu về Du lịch",
-        "tac_gia": "Bùi Quang Thành",
-        "the_loai": "Nghệ thuật",
-        "so_luong": 4,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Chính trị Quốc gia"
-    },
-    "B091": {
-        "ma_sach": "B091",
-        "ten_sach": "Sách 91: Cẩm nang Du lịch",
-        "tac_gia": "Đỗ Quang Tùng",
-        "the_loai": "Thiếu nhi",
-        "so_luong": 4,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Trẻ"
-    },
-    "B044": {
-        "ma_sach": "B044",
-        "ten_sach": "Sách 44: Khám phá Du lịch",
-        "tac_gia": "Lý Đình Hương",
-        "the_loai": "Kinh tế",
-        "so_luong": 3,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Trẻ"
-    },
-    "B064": {
-        "ma_sach": "B064",
-        "ten_sach": "Sách 64: Hướng dẫn Khoa học",
-        "tac_gia": "Lý Anh Châu",
-        "the_loai": "Triết học",
-        "so_luong": 4,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Chính trị Quốc gia"
-    },
-    "B078": {
-        "ma_sach": "B078",
-        "ten_sach": "Sách 78: Nghiên cứu về Giáo dục",
-        "tac_gia": "Hoàng Phương Linh",
-        "the_loai": "Khoa học",
-        "so_luong": 2,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Kim Đồng"
-    },
-    "B073": {
-        "ma_sach": "B073",
-        "ten_sach": "Sách 73: Hướng dẫn Khoa học",
-        "tac_gia": "Võ Phương Phú",
-        "the_loai": "Văn học",
-        "so_luong": 5,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Tổng hợp"
-    },
-    "B052": {
-        "ma_sach": "B052",
-        "ten_sach": "Sách 52: Những điều cần biết về Du lịch",
-        "tac_gia": "Phan Quang Nam",
-        "the_loai": "Văn học",
-        "so_luong": 3,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Giáo dục"
-    },
-    "B007": {
-        "ma_sach": "B007",
-        "ten_sach": "Sách 7: Cẩm nang Thể thao",
-        "tac_gia": "Bùi Phương Ngọc",
-        "the_loai": "Khoa học",
-        "so_luong": 3,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Chính trị Quốc gia"
-    },
-    "B010": {
-        "ma_sach": "B010",
-        "ten_sach": "Sách 10: Khám phá Giáo dục",
-        "tac_gia": "Vũ Thành Bình",
-        "the_loai": "Nghệ thuật",
-        "so_luong": 4,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Tổng hợp"
-    },
     "B004": {
         "ma_sach": "B004",
         "ten_sach": "Sách 4: Hướng dẫn Kinh tế",
@@ -349,6 +466,15 @@
         "so_luong": 4,
         "tinh_trang": "Đã sử dụng",
         "nha_xuat_ban": "NXB Đại học Quốc gia"
+    },
+    "B082": {
+        "ma_sach": "B082",
+        "ten_sach": "Sách 82: Hướng dẫn Lịch sử",
+        "tac_gia": "Đặng Thanh Thành",
+        "the_loai": "Công nghệ",
+        "so_luong": 1,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Văn học"
     },
     "B200": {
         "ma_sach": "B200",
@@ -368,140 +494,14 @@
         "tinh_trang": "Đã sử dụng",
         "nha_xuat_ban": "NXB Đại học Quốc gia"
     },
-    "B087": {
-        "ma_sach": "B087",
-        "ten_sach": "Sách 87: Những điều cần biết về Nghệ thuật",
-        "tac_gia": "Phạm Hoàng Tùng",
-        "the_loai": "Văn học",
-        "so_luong": 5,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Tổng hợp"
-    },
-    "B019": {
-        "ma_sach": "B019",
-        "ten_sach": "Sách 19: Cẩm nang Thể thao",
-        "tac_gia": "Hồ Thanh Châu",
-        "the_loai": "Du lịch",
-        "so_luong": 3,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Đại học Quốc gia"
-    },
-    "B043": {
-        "ma_sach": "B043",
-        "ten_sach": "Sách 43: Nghiên cứu về Thiếu nhi",
-        "tac_gia": "Hoàng Văn Uyên",
-        "the_loai": "Khoa học",
-        "so_luong": 5,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Chính trị Quốc gia"
-    },
-    "B084": {
-        "ma_sach": "B084",
-        "ten_sach": "Sách 84: Hướng dẫn Văn học",
-        "tac_gia": "Hoàng Minh Phú",
-        "the_loai": "Giáo dục",
-        "so_luong": 4,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Tổng hợp"
-    },
-    "B088": {
-        "ma_sach": "B088",
-        "ten_sach": "Sách 88: Những điều cần biết về Nghệ thuật",
-        "tac_gia": "Ngô Minh Bình",
-        "the_loai": "Triết học",
-        "so_luong": 3,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Kim Đồng"
-    },
-    "B023": {
-        "ma_sach": "B023",
-        "ten_sach": "Sách 23: Cẩm nang Ngoại ngữ",
-        "tac_gia": "Lý Xuân An",
-        "the_loai": "Giáo dục",
-        "so_luong": 1,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Khoa học Kỹ thuật"
-    },
-    "B097": {
-        "ma_sach": "B097",
-        "ten_sach": "Sách 97: Nghiên cứu về Tâm lý",
-        "tac_gia": "Bùi Quang Thành",
-        "the_loai": "Lịch sử",
-        "so_luong": 2,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Thanh niên"
-    },
-    "B034": {
-        "ma_sach": "B034",
-        "ten_sach": "Sách 34: Hướng dẫn Du lịch",
-        "tac_gia": "Lê Thanh Lan",
-        "the_loai": "Thể thao",
-        "so_luong": 5,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Giáo dục"
-    },
-    "B018": {
-        "ma_sach": "B018",
-        "ten_sach": "Sách 18: Nghiên cứu về Văn học",
-        "tac_gia": "Phan Anh Châu",
-        "the_loai": "Du lịch",
-        "so_luong": 5,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Thanh niên"
-    },
-    "B057": {
-        "ma_sach": "B057",
-        "ten_sach": "Sách 57: Hướng dẫn Văn học",
-        "tac_gia": "Trần Thành Tuấn",
-        "the_loai": "Du lịch",
-        "so_luong": 1,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Trẻ"
-    },
-    "B027": {
-        "ma_sach": "B027",
-        "ten_sach": "Sách 27: Nghiên cứu về Kinh tế",
-        "tac_gia": "Lê Thị Xuân",
-        "the_loai": "Triết học",
-        "so_luong": 1,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Chính trị Quốc gia"
-    },
-    "B085": {
-        "ma_sach": "B085",
-        "ten_sach": "Sách 85: Cẩm nang Công nghệ",
-        "tac_gia": "Trần Phương Linh",
-        "the_loai": "Văn học",
-        "so_luong": 5,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Hội Nhà văn"
-    },
-    "B035": {
-        "ma_sach": "B035",
-        "ten_sach": "Sách 35: Nghiên cứu về Lịch sử",
-        "tac_gia": "Hồ Thanh Việt",
-        "the_loai": "Y học",
-        "so_luong": 4,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Trẻ"
-    },
-    "B002": {
-        "ma_sach": "B002",
-        "ten_sach": "Sách 2: Những điều cần biết về Văn học",
-        "tac_gia": "Đặng Anh Linh",
+    "B026": {
+        "ma_sach": "B026",
+        "ten_sach": "Sách 26: Những điều cần biết về Lịch sử",
+        "tac_gia": "Võ Minh Việt",
         "the_loai": "Công nghệ",
         "so_luong": 1,
         "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Thanh niên"
-    },
-    "B074": {
-        "ma_sach": "B074",
-        "ten_sach": "Sách 74: Cẩm nang Lịch sử",
-        "tac_gia": "Bùi Thành Dung",
-        "the_loai": "Du lịch",
-        "so_luong": 2,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Đại học Quốc gia"
+        "nha_xuat_ban": "NXB Giáo dục"
     },
     "B028": {
         "ma_sach": "B028",
@@ -512,312 +512,6 @@
         "tinh_trang": "Đã sử dụng",
         "nha_xuat_ban": "NXB Đại học Quốc gia"
     },
-    "B038": {
-        "ma_sach": "B038",
-        "ten_sach": "Sách 38: Nghiên cứu về Văn học",
-        "tac_gia": "Huỳnh Anh Em",
-        "the_loai": "Ngoại ngữ",
-        "so_luong": 5,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Kim Đồng"
-    },
-    "B071": {
-        "ma_sach": "B071",
-        "ten_sach": "Sách 71: Khám phá Triết học",
-        "tac_gia": "Đặng Hoàng Hương",
-        "the_loai": "Nghệ thuật",
-        "so_luong": 2,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Giáo dục"
-    },
-    "B015": {
-        "ma_sach": "B015",
-        "ten_sach": "Sách 15: Những điều cần biết về Thể thao",
-        "tac_gia": "Đặng Anh Ngọc",
-        "the_loai": "Kinh tế",
-        "so_luong": 5,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Tổng hợp"
-    },
-    "B024": {
-        "ma_sach": "B024",
-        "ten_sach": "Sách 24: Nghiên cứu về Khoa học",
-        "tac_gia": "Hồ Anh Quân",
-        "the_loai": "Công nghệ",
-        "so_luong": 3,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Hội Nhà văn"
-    },
-    "B020": {
-        "ma_sach": "B020",
-        "ten_sach": "Sách 20: Nghiên cứu về Kinh tế",
-        "tac_gia": "Ngô Hải Quân",
-        "the_loai": "Ngoại ngữ",
-        "so_luong": 4,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Hội Nhà văn"
-    },
-    "B039": {
-        "ma_sach": "B039",
-        "ten_sach": "Sách 39: Hướng dẫn Lịch sử",
-        "tac_gia": "Lý Hồng Việt",
-        "the_loai": "Nghệ thuật",
-        "so_luong": 1,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Tổng hợp"
-    },
-    "B067": {
-        "ma_sach": "B067",
-        "ten_sach": "Sách 67: Hướng dẫn Công nghệ",
-        "tac_gia": "Huỳnh Anh Tùng",
-        "the_loai": "Triết học",
-        "so_luong": 4,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Văn học"
-    },
-    "B089": {
-        "ma_sach": "B089",
-        "ten_sach": "Sách 89: Khám phá Nghệ thuật",
-        "tac_gia": "Hồ Thu Yến",
-        "the_loai": "Thể thao",
-        "so_luong": 4,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Giáo dục"
-    },
-    "B072": {
-        "ma_sach": "B072",
-        "ten_sach": "Sách 72: Nghiên cứu về Lịch sử",
-        "tac_gia": "Ngô Văn Uyên",
-        "the_loai": "Công nghệ",
-        "so_luong": 4,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Trẻ"
-    },
-    "B076": {
-        "ma_sach": "B076",
-        "ten_sach": "Sách 76: Cẩm nang Y học",
-        "tac_gia": "Võ Hồng Tài",
-        "the_loai": "Khoa học",
-        "so_luong": 4,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Hội Nhà văn"
-    },
-    "B058": {
-        "ma_sach": "B058",
-        "ten_sach": "Sách 58: Hướng dẫn Kinh tế",
-        "tac_gia": "Bùi Phương Dung",
-        "the_loai": "Khoa học",
-        "so_luong": 5,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Thanh niên"
-    },
-    "B032": {
-        "ma_sach": "B032",
-        "ten_sach": "Sách 32: Cẩm nang Triết học",
-        "tac_gia": "Huỳnh Quang Phúc",
-        "the_loai": "Khoa học",
-        "so_luong": 1,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Văn học"
-    },
-    "B053": {
-        "ma_sach": "B053",
-        "ten_sach": "Sách 53: Hướng dẫn Y học",
-        "tac_gia": "Nguyễn Văn Lan",
-        "the_loai": "Lịch sử",
-        "so_luong": 4,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Văn học"
-    },
-    "B025": {
-        "ma_sach": "B025",
-        "ten_sach": "Sách 25: Khám phá Ngoại ngữ",
-        "tac_gia": "Trần Xuân Xuân",
-        "the_loai": "Thiếu nhi",
-        "so_luong": 4,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Trẻ"
-    },
-    "B061": {
-        "ma_sach": "B061",
-        "ten_sach": "Sách 61: Nghiên cứu về Y học",
-        "tac_gia": "Hồ Phương Em",
-        "the_loai": "Ngoại ngữ",
-        "so_luong": 2,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Tổng hợp"
-    },
-    "B093": {
-        "ma_sach": "B093",
-        "ten_sach": "Sách 93: Nghiên cứu về Lịch sử",
-        "tac_gia": "Đỗ Anh Mai",
-        "the_loai": "Âm nhạc",
-        "so_luong": 5,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Văn học"
-    },
-    "B042": {
-        "ma_sach": "B042",
-        "ten_sach": "Sách 42: Hướng dẫn Tâm lý",
-        "tac_gia": "Võ Thanh An",
-        "the_loai": "Thiếu nhi",
-        "so_luong": 1,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Khoa học Kỹ thuật"
-    },
-    "B029": {
-        "ma_sach": "B029",
-        "ten_sach": "Sách 29: Khám phá Giáo dục",
-        "tac_gia": "Bùi Hồng Bình",
-        "the_loai": "Khoa học",
-        "so_luong": 3,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Giáo dục"
-    },
-    "B047": {
-        "ma_sach": "B047",
-        "ten_sach": "Sách 47: Nghiên cứu về Công nghệ",
-        "tac_gia": "Trần Văn Tâm",
-        "the_loai": "Giáo dục",
-        "so_luong": 4,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Chính trị Quốc gia"
-    },
-    "B077": {
-        "ma_sach": "B077",
-        "ten_sach": "Sách 77: Những điều cần biết về Ngoại ngữ",
-        "tac_gia": "Nguyễn Hoàng Châu",
-        "the_loai": "Âm nhạc",
-        "so_luong": 1,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Khoa học Kỹ thuật"
-    },
-    "B046": {
-        "ma_sach": "B046",
-        "ten_sach": "Sách 46: Nghiên cứu về Kinh tế",
-        "tac_gia": "Lê Thị Hương",
-        "the_loai": "Giáo dục",
-        "so_luong": 5,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Khoa học Kỹ thuật"
-    },
-    "B041": {
-        "ma_sach": "B041",
-        "ten_sach": "Sách 41: Nghiên cứu về Âm nhạc",
-        "tac_gia": "Đỗ Xuân An",
-        "the_loai": "Nghệ thuật",
-        "so_luong": 5,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Kim Đồng"
-    },
-    "B096": {
-        "ma_sach": "B096",
-        "ten_sach": "Sách 96: Cẩm nang Khoa học",
-        "tac_gia": "Võ Anh Thành",
-        "the_loai": "Thể thao",
-        "so_luong": 2,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Giáo dục"
-    },
-    "B063": {
-        "ma_sach": "B063",
-        "ten_sach": "Sách 63: Nghiên cứu về Lịch sử",
-        "tac_gia": "Phạm Quang Dung",
-        "the_loai": "Âm nhạc",
-        "so_luong": 4,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Giáo dục"
-    },
-    "B001": {
-        "ma_sach": "B001",
-        "ten_sach": "Sách 1: Những điều cần biết về Giáo dục",
-        "tac_gia": "Huỳnh Hồng Linh",
-        "the_loai": "Nghệ thuật",
-        "so_luong": 2,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Văn học"
-    },
-    "B051": {
-        "ma_sach": "B051",
-        "ten_sach": "Sách 51: Hướng dẫn Văn học",
-        "tac_gia": "Lý Hoàng Hải",
-        "the_loai": "Công nghệ",
-        "so_luong": 1,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Thanh niên"
-    },
-    "B003": {
-        "ma_sach": "B003",
-        "ten_sach": "Sách 3: Hướng dẫn Tâm lý",
-        "tac_gia": "Ngô Thành Tâm",
-        "the_loai": "Kinh tế",
-        "so_luong": 5,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Thanh niên"
-    },
-    "B086": {
-        "ma_sach": "B086",
-        "ten_sach": "Sách 86: Cẩm nang Khoa học",
-        "tac_gia": "Đỗ Đức Tài",
-        "the_loai": "Nghệ thuật",
-        "so_luong": 4,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Giáo dục"
-    },
-    "B092": {
-        "ma_sach": "B092",
-        "ten_sach": "Sách 92: Hướng dẫn Triết học",
-        "tac_gia": "Trần Hồng Phú",
-        "the_loai": "Giáo dục",
-        "so_luong": 5,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Hội Nhà văn"
-    },
-    "B006": {
-        "ma_sach": "B006",
-        "ten_sach": "Sách 6: Cẩm nang Khoa học",
-        "tac_gia": "Phạm Thu Linh",
-        "the_loai": "Thể thao",
-        "so_luong": 2,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Giáo dục"
-    },
-    "B017": {
-        "ma_sach": "B017",
-        "ten_sach": "Sách 17: Nghiên cứu về Tâm lý",
-        "tac_gia": "Ngô Thị An",
-        "the_loai": "Triết học",
-        "so_luong": 2,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Hội Nhà văn"
-    },
-    "B016": {
-        "ma_sach": "B016",
-        "ten_sach": "Sách 16: Cẩm nang Thiếu nhi",
-        "tac_gia": "Phan Văn Nam",
-        "the_loai": "Y học",
-        "so_luong": 3,
-        "tinh_trang": "Đã sử dụng",
-        "nha_xuat_ban": "NXB Khoa học Kỹ thuật"
-    },
-    "B026": {
-        "ma_sach": "B026",
-        "ten_sach": "Sách 26: Những điều cần biết về Lịch sử",
-        "tac_gia": "Võ Minh Việt",
-        "the_loai": "Công nghệ",
-        "so_luong": 1,
-        "tinh_trang": "Có sẵn",
-        "nha_xuat_ban": "NXB Giáo dục"
-    },
-    "B098": {
-        "ma_sach": "B098",
-        "ten_sach": "Sách 98: Những điều cần biết về Thiếu nhi",
-        "tac_gia": "Vũ Minh Ngọc",
-        "the_loai": "Y học",
-        "so_luong": 3,
-        "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Kim Đồng"
-    },
     "B005": {
         "ma_sach": "B005",
         "ten_sach": "Sách 5: Nghiên cứu về Khoa học",
@@ -825,15 +519,6 @@
         "the_loai": "Tâm lý",
         "so_luong": 5,
         "tinh_trang": "Mới",
-        "nha_xuat_ban": "NXB Kim Đồng"
-    },
-    "B048": {
-        "ma_sach": "B048",
-        "ten_sach": "Sách 48: Cẩm nang Khoa học",
-        "tac_gia": "Nguyễn Hồng Linh",
-        "the_loai": "Khoa học",
-        "so_luong": 4,
-        "tinh_trang": "Đã sử dụng",
         "nha_xuat_ban": "NXB Kim Đồng"
     },
     "B055": {
@@ -845,32 +530,275 @@
         "tinh_trang": "Mới",
         "nha_xuat_ban": "NXB Giáo dục"
     },
-    "B090": {
-        "ma_sach": "B090",
-        "ten_sach": "Sách 90: Khám phá Giáo dục",
-        "tac_gia": "Hoàng Đình Phú",
-        "the_loai": "Lịch sử",
+    "B011": {
+        "ma_sach": "B011",
+        "ten_sach": "Sách 11: Cẩm nang Nghệ thuật",
+        "tac_gia": "Đặng Xuân Tuấn",
+        "the_loai": "Giáo dục",
+        "so_luong": 2,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Kim Đồng"
+    },
+    "B056": {
+        "ma_sach": "B056",
+        "ten_sach": "Sách 56: Cẩm nang Thể thao",
+        "tac_gia": "Lê Anh Hải",
+        "the_loai": "Công nghệ",
+        "so_luong": 5,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Thanh niên"
+    },
+    "B002": {
+        "ma_sach": "B002",
+        "ten_sach": "Sách 2: Những điều cần biết về Văn học",
+        "tac_gia": "Đặng Anh Linh",
+        "the_loai": "Công nghệ",
+        "so_luong": 1,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Thanh niên"
+    },
+    "B037": {
+        "ma_sach": "B037",
+        "ten_sach": "Sách 37: Khám phá Công nghệ",
+        "tac_gia": "Ngô Thành Việt",
+        "the_loai": "Công nghệ",
         "so_luong": 4,
         "tinh_trang": "Đã sử dụng",
         "nha_xuat_ban": "NXB Chính trị Quốc gia"
     },
-    "B100": {
-        "ma_sach": "B100",
-        "ten_sach": "Sách 100: Những điều cần biết về Triết học",
-        "tac_gia": "Lê Quang Ngọc",
+    "B057": {
+        "ma_sach": "B057",
+        "ten_sach": "Sách 57: Hướng dẫn Văn học",
+        "tac_gia": "Trần Thành Tuấn",
+        "the_loai": "Du lịch",
+        "so_luong": 1,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Trẻ"
+    },
+    "B063": {
+        "ma_sach": "B063",
+        "ten_sach": "Sách 63: Nghiên cứu về Lịch sử",
+        "tac_gia": "Phạm Quang Dung",
         "the_loai": "Âm nhạc",
-        "so_luong": 3,
+        "so_luong": 4,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Giáo dục"
+    },
+    "B091": {
+        "ma_sach": "B091",
+        "ten_sach": "Sách 91: Cẩm nang Du lịch",
+        "tac_gia": "Đỗ Quang Tùng",
+        "the_loai": "Thiếu nhi",
+        "so_luong": 4,
         "tinh_trang": "Có sẵn",
         "nha_xuat_ban": "NXB Trẻ"
     },
-    "B062": {
-        "ma_sach": "B062",
-        "ten_sach": "Sách 62: Hướng dẫn Thể thao",
-        "tac_gia": "Phan Đình Hải",
+    "B030": {
+        "ma_sach": "B030",
+        "ten_sach": "Sách 30: Những điều cần biết về Y học",
+        "tac_gia": "Ngô Hải Nam",
+        "the_loai": "Du lịch",
+        "so_luong": 2,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Thanh niên"
+    },
+    "B066": {
+        "ma_sach": "B066",
+        "ten_sach": "Sách 66: Cẩm nang Kinh tế",
+        "tac_gia": "Bùi Quang Phúc",
         "the_loai": "Thể thao",
         "so_luong": 1,
         "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Chính trị Quốc gia"
+    },
+    "B015": {
+        "ma_sach": "B015",
+        "ten_sach": "Sách 15: Những điều cần biết về Thể thao",
+        "tac_gia": "Đặng Anh Ngọc",
+        "the_loai": "Kinh tế",
+        "so_luong": 5,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Tổng hợp"
+    },
+    "B006": {
+        "ma_sach": "B006",
+        "ten_sach": "Sách 6: Cẩm nang Khoa học",
+        "tac_gia": "Phạm Thu Linh",
+        "the_loai": "Thể thao",
+        "so_luong": 2,
+        "tinh_trang": "Mới",
         "nha_xuat_ban": "NXB Giáo dục"
+    },
+    "B014": {
+        "ma_sach": "B014",
+        "ten_sach": "Sách 14: Khám phá Ngoại ngữ",
+        "tac_gia": "Dương Thành Mai",
+        "the_loai": "Văn học",
+        "so_luong": 2,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Kim Đồng"
+    },
+    "B049": {
+        "ma_sach": "B049",
+        "ten_sach": "Sách 49: Hướng dẫn Giáo dục",
+        "tac_gia": "Đặng Quang Ngọc",
+        "the_loai": "Khoa học",
+        "so_luong": 2,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Tổng hợp"
+    },
+    "B061": {
+        "ma_sach": "B061",
+        "ten_sach": "Sách 61: Nghiên cứu về Y học",
+        "tac_gia": "Hồ Phương Em",
+        "the_loai": "Ngoại ngữ",
+        "so_luong": 2,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Tổng hợp"
+    },
+    "B081": {
+        "ma_sach": "B081",
+        "ten_sach": "Sách 81: Khám phá Ngoại ngữ",
+        "tac_gia": "Đỗ Hồng Tài",
+        "the_loai": "Văn học",
+        "so_luong": 5,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Thanh niên"
+    },
+    "B023": {
+        "ma_sach": "B023",
+        "ten_sach": "Sách 23: Cẩm nang Ngoại ngữ",
+        "tac_gia": "Lý Xuân An",
+        "the_loai": "Giáo dục",
+        "so_luong": 1,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Khoa học Kỹ thuật"
+    },
+    "B058": {
+        "ma_sach": "B058",
+        "ten_sach": "Sách 58: Hướng dẫn Kinh tế",
+        "tac_gia": "Bùi Phương Dung",
+        "the_loai": "Khoa học",
+        "so_luong": 5,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Thanh niên"
+    },
+    "B048": {
+        "ma_sach": "B048",
+        "ten_sach": "Sách 48: Cẩm nang Khoa học",
+        "tac_gia": "Nguyễn Hồng Linh",
+        "the_loai": "Khoa học",
+        "so_luong": 4,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Kim Đồng"
+    },
+    "B035": {
+        "ma_sach": "B035",
+        "ten_sach": "Sách 35: Nghiên cứu về Lịch sử",
+        "tac_gia": "Hồ Thanh Việt",
+        "the_loai": "Y học",
+        "so_luong": 4,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Trẻ"
+    },
+    "B076": {
+        "ma_sach": "B076",
+        "ten_sach": "Sách 76: Cẩm nang Y học",
+        "tac_gia": "Võ Hồng Tài",
+        "the_loai": "Khoa học",
+        "so_luong": 4,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Hội Nhà văn"
+    },
+    "B022": {
+        "ma_sach": "B022",
+        "ten_sach": "Sách 22: Khám phá Văn học",
+        "tac_gia": "Trần Hoàng Tài",
+        "the_loai": "Triết học",
+        "so_luong": 4,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Hội Nhà văn"
+    },
+    "B019": {
+        "ma_sach": "B019",
+        "ten_sach": "Sách 19: Cẩm nang Thể thao",
+        "tac_gia": "Hồ Thanh Châu",
+        "the_loai": "Du lịch",
+        "so_luong": 3,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Đại học Quốc gia"
+    },
+    "B070": {
+        "ma_sach": "B070",
+        "ten_sach": "Sách 70: Khám phá Triết học",
+        "tac_gia": "Võ Thanh Trí",
+        "the_loai": "Nghệ thuật",
+        "so_luong": 1,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Chính trị Quốc gia"
+    },
+    "B097": {
+        "ma_sach": "B097",
+        "ten_sach": "Sách 97: Nghiên cứu về Tâm lý",
+        "tac_gia": "Bùi Quang Thành",
+        "the_loai": "Lịch sử",
+        "so_luong": 2,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Thanh niên"
+    },
+    "B084": {
+        "ma_sach": "B084",
+        "ten_sach": "Sách 84: Hướng dẫn Văn học",
+        "tac_gia": "Hoàng Minh Phú",
+        "the_loai": "Giáo dục",
+        "so_luong": 4,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Tổng hợp"
+    },
+    "B085": {
+        "ma_sach": "B085",
+        "ten_sach": "Sách 85: Cẩm nang Công nghệ",
+        "tac_gia": "Trần Phương Linh",
+        "the_loai": "Văn học",
+        "so_luong": 5,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Hội Nhà văn"
+    },
+    "B036": {
+        "ma_sach": "B036",
+        "ten_sach": "Sách 36: Khám phá Tâm lý",
+        "tac_gia": "Lý Thu Giang",
+        "the_loai": "Ngoại ngữ",
+        "so_luong": 3,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Văn học"
+    },
+    "B007": {
+        "ma_sach": "B007",
+        "ten_sach": "Sách 7: Cẩm nang Thể thao",
+        "tac_gia": "Bùi Phương Ngọc",
+        "the_loai": "Khoa học",
+        "so_luong": 3,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Chính trị Quốc gia"
+    },
+    "B089": {
+        "ma_sach": "B089",
+        "ten_sach": "Sách 89: Khám phá Nghệ thuật",
+        "tac_gia": "Hồ Thu Yến",
+        "the_loai": "Thể thao",
+        "so_luong": 4,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Giáo dục"
+    },
+    "B041": {
+        "ma_sach": "B041",
+        "ten_sach": "Sách 41: Nghiên cứu về Âm nhạc",
+        "tac_gia": "Đỗ Xuân An",
+        "the_loai": "Nghệ thuật",
+        "so_luong": 5,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Kim Đồng"
     },
     "B069": {
         "ma_sach": "B069",
@@ -880,6 +808,60 @@
         "so_luong": 3,
         "tinh_trang": "Có sẵn",
         "nha_xuat_ban": "NXB Thanh niên"
+    },
+    "B009": {
+        "ma_sach": "B009",
+        "ten_sach": "Sách 9: Nghiên cứu về Du lịch",
+        "tac_gia": "Bùi Quang Thành",
+        "the_loai": "Nghệ thuật",
+        "so_luong": 4,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Chính trị Quốc gia"
+    },
+    "B079": {
+        "ma_sach": "B079",
+        "ten_sach": "Sách 79: Cẩm nang Giáo dục",
+        "tac_gia": "Đặng Thanh Tuấn",
+        "the_loai": "Y học",
+        "so_luong": 1,
+        "tinh_trang": "Có sẵn",
+        "nha_xuat_ban": "NXB Đại học Quốc gia"
+    },
+    "B031": {
+        "ma_sach": "B031",
+        "ten_sach": "Sách 31: Hướng dẫn Văn học",
+        "tac_gia": "Võ Thành Tùng",
+        "the_loai": "Lịch sử",
+        "so_luong": 3,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Đại học Quốc gia"
+    },
+    "B093": {
+        "ma_sach": "B093",
+        "ten_sach": "Sách 93: Nghiên cứu về Lịch sử",
+        "tac_gia": "Đỗ Anh Mai",
+        "the_loai": "Âm nhạc",
+        "so_luong": 5,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Văn học"
+    },
+    "B077": {
+        "ma_sach": "B077",
+        "ten_sach": "Sách 77: Những điều cần biết về Ngoại ngữ",
+        "tac_gia": "Nguyễn Hoàng Châu",
+        "the_loai": "Âm nhạc",
+        "so_luong": 1,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Khoa học Kỹ thuật"
+    },
+    "B073": {
+        "ma_sach": "B073",
+        "ten_sach": "Sách 73: Hướng dẫn Khoa học",
+        "tac_gia": "Võ Phương Phú",
+        "the_loai": "Văn học",
+        "so_luong": 5,
+        "tinh_trang": "Mới",
+        "nha_xuat_ban": "NXB Tổng hợp"
     },
     "B050": {
         "ma_sach": "B050",
@@ -899,13 +881,31 @@
         "tinh_trang": "Có sẵn",
         "nha_xuat_ban": "NXB Chính trị Quốc gia"
     },
-    "B033": {
-        "ma_sach": "B033",
-        "ten_sach": "Sách 33: Những điều cần biết về Âm nhạc",
-        "tac_gia": "Nguyễn Hải Dung",
-        "the_loai": "Ngoại ngữ",
-        "so_luong": 4,
-        "tinh_trang": "Mới",
+    "B012": {
+        "ma_sach": "B012",
+        "ten_sach": "Sách 12: Nghiên cứu về Công nghệ",
+        "tac_gia": "Nguyễn Quang Uyên",
+        "the_loai": "Du lịch",
+        "so_luong": 2,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Giáo dục"
+    },
+    "B042": {
+        "ma_sach": "B042",
+        "ten_sach": "Sách 42: Hướng dẫn Tâm lý",
+        "tac_gia": "Võ Thanh An",
+        "the_loai": "Thiếu nhi",
+        "so_luong": 1,
+        "tinh_trang": "Đã sử dụng",
+        "nha_xuat_ban": "NXB Khoa học Kỹ thuật"
+    },
+    "B062": {
+        "ma_sach": "B062",
+        "ten_sach": "Sách 62: Hướng dẫn Thể thao",
+        "tac_gia": "Phan Đình Hải",
+        "the_loai": "Thể thao",
+        "so_luong": 1,
+        "tinh_trang": "Đã sử dụng",
         "nha_xuat_ban": "NXB Giáo dục"
     }
 }
